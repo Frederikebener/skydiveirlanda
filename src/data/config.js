@@ -7,7 +7,7 @@ export const config = {
         backgroundType: 'video', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
-        enableCountdown: true // Toggle to show or hide the countdown bar
+        enableCountdown: false // Toggle to show or hide the countdown bar
     },
     evaluation: {
         googleReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJFTJet6X3XEgRlDp9BaZEUZQ',
@@ -21,5 +21,5 @@ export const config = {
     map: {
         zoom: 7 // 7=all Ireland, 12=county, 14=neighborhood, 15=street level
     },
-    showPressel: true // Set to false to disable the pressel page
+    showPressel: false // Set to false to disable the pressel page
 };
