@@ -1,0 +1,276 @@
+/* =========================================
+   BASE STYLES (Shared across all devices)
+   ========================================= */
+
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --secondary-color: #ffc107;
+    --text-color: #333;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --max-width: 1400px;
+    --font-main: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --bg-light: #f4f7f6;
+    --primary-blue: #0082C9;
+    --dark-blue: #003366;
+    --light-blue: #DDF3FF;
+    --bg-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: var(--max-width);
+    font-weight: 800;
+    font-family: var(--font-main);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
+}
+
+.btn-lg {
+    padding: 15px 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-blue {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+@keyframes shineEffect {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.countdown-bar {
+    display: none;
+}
+
+.tablet-br {
+    display: none;
+}
+
+/* =========================================
+   MOBILE MENU & HEADER GLOBAL STRUCTURAL
+   ========================================= */
+
+/* Hide mobile button by default on desktop */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 10000;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+    transform: scale(1.1);
+}
+
+.site-header.scrolled .mobile-menu-button {
+    color: var(--primary-color);
+}
+
+/* Mobile Background Shield */
+.header-background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.header-background.visible {
+    opacity: 1;
+}
+
+/* Mobile Menu Overlay - Global Hidden State */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 40px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-overlay.active {
+    transform: translateX(0);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.mobile-nav a {
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.mobile-nav a:hover {
+    color: var(--primary-dark);
+    transform: translateY(-5px);
+}
+
+.mobile-cta {
+    margin-top: 20px;
+    width: 100%;
+    padding: 16px 32px !important;
+    font-size: 16px !important;
+    text-align: center;
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+/* Enable Hamburger on Tablets & Mobile */
+@media (max-width: 1024px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    header.site-header .header-container .header-logo {
+        display: flex !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+        z-index: 100;
+        background-color: transparent;
+        padding: 0;
+    }
+}
