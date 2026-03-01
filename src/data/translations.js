@@ -1008,6 +1008,7 @@ export const translations = {
             "Debe poder comprometerse con varios días de formación y saltos"
         ],
         "coursepage.faq.title": "Preguntas <strong style='color: var(--primary-color)'>Frecuentes</strong>",
+        "coursepage.faqs.contact": "¿Todavía tienes dudas? Habla ahora con un instructor en WhatsApp",
         "coursepage.faqs": [
             { "question": "¿Cuánto tiempo dura el curso AFF?", "answer": "La mayoría de los alumnos completan los 7 niveles en 2 a 5 días, según el tiempo y la programación. Algunos tardan un poco más — cada persona avanza a su propio ritmo." },
             { "question": "¿Cuánto cuesta el AFF?", "answer": "Contáctanos para conocer los precios actuales. El curso incluye escuela en tierra, los 7 saltos AFF, honorarios del instructor, alquiler de equipo y firmas en el logbook." },
@@ -1262,6 +1263,7 @@ export const translations = {
             "Doit être capable de s'engager sur plusieurs jours de formation et de sauts"
         ],
         "coursepage.faq.title": "Questions <strong style='color: var(--primary-color)'>Fréquentes</strong>",
+        "coursepage.faqs.contact": "Vous avez encore des doutes ? Parlez maintenant sur WhatsApp",
         "coursepage.faqs": [
             { "question": "Combien de temps dure le cours AFF ?", "answer": "La plupart des élèves complètent les 7 niveaux en 2 à 5 jours, selon la météo et la planification. Certains prennent un peu plus de temps — chacun progresse à son propre rythme." },
             { "question": "Combien coûte l'AFF ?", "answer": "Contactez-nous pour les tarifs actuels. Le cours comprend l'école au sol, les 7 sauts AFF, les honoraires de l'instructeur, la location du matériel et les validations du carnet de sauts." },
@@ -1457,6 +1459,7 @@ export const translations = {
         "countdown.minutes": "m",
         "countdown.seconds": "s",
         "coursepage.meta.title": "AFF Fallschirmsprung Kurs – SkyDiveThru Irland",
+        "coursepage.faqs.contact": "Noch Zweifel? Sprechen Sie jetzt mit einem Ausbilder über WhatsApp.",
         "coursepage.meta.description": "Lerne alleine Fallschirm zu springen mit dem AFF-Kurs bei SkyDiveThru Irland. Sicheres, progressives und zertifiziertes Training in Birr, Co. Offaly.",
         "coursepage.badge": "AFF Fallschirmsprung Kurs",
         "coursepage.hero.title": "Verwandle deine Leidenschaft für das Fallschirmspringen in totale Freiheit",
