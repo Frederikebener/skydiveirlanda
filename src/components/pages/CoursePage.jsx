@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { CountdownBar } from '../layout/CountdownBar';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import { config } from '../../data/config';
 import img1 from '../../assets/BIRR TRIO2- 1920X1080.png';
 import img2 from '../../assets/BIRR TRIO3- 1920X1080.png';
 import img3 from '../../assets/BIRR TRIO- 1920X1080.png';
@@ -46,7 +47,7 @@ export const CoursePage = () => {
                 <meta name="description" content={t('coursepage.meta.description')} />
             </Helmet>
 
-            <CountdownBar />
+            {config.hero.enableCountdown && <CountdownBar />}
             <Header />
 
             {/* ── HERO ── */}

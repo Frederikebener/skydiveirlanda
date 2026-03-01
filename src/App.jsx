@@ -66,7 +66,7 @@ function AppContent() {
                 {!isReviewPage && !isNotFound && !isCoursePage && (
                     <>
                         <ScrollToAnchor />
-                        <CountdownBar isHidden={isHeaderHidden} />
+                        {config.hero.enableCountdown && <CountdownBar isHidden={isHeaderHidden} />}
                         <Header isHidden={isHeaderHidden} />
                     </>
                 )}
