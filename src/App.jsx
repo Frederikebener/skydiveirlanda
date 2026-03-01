@@ -21,6 +21,14 @@ function AppContent() {
     const isNotFound = location.pathname !== '/' && location.pathname !== '/avaliar' && location.pathname !== '/course';
 
     useEffect(() => {
+        if (config.hero.enableCountdown) {
+            document.body.classList.add('has-countdown');
+        } else {
+            document.body.classList.remove('has-countdown');
+        }
+    }, []);
+
+    useEffect(() => {
         const hasSeenPressel = sessionStorage.getItem('hasSeenPressel');
         if (config.showPressel && !hasSeenPressel && (location.pathname === '/' || location.pathname === '/course')) {
             setShowPressel(true);

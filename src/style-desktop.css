@@ -33,9 +33,13 @@ html {
     overflow-x: hidden;
 }
 
-body {
+body.has-countdown {
     padding-top: 40px;
     /* Space for fixed countdown bar */
+}
+
+body {
+    padding-top: 0;
     overflow-x: hidden;
 }
 
@@ -97,9 +101,13 @@ body {
     opacity: 0.8;
 }
 
-.site-header {
+body.has-countdown .site-header {
     top: 40px !important;
     /* Always stay below the countdown bar on desktop */
+}
+
+.site-header {
+    top: 0 !important;
 }
 
 .site-header.scrolled {
@@ -115,8 +123,12 @@ body {
 
 /* Hide only on desktop */
 @media (min-width: 992px) {
-    .header-hidden {
+    body.has-countdown .header-hidden {
         transform: translateY(calc(-100% - 40px)) !important;
+    }
+
+    .header-hidden {
+        transform: translateY(-100%) !important;
     }
 }
 
