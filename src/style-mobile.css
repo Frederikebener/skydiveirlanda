@@ -45,12 +45,9 @@
         font-size: 10px;
     }
 
-    body.has-countdown .site-header {
+    body.has-countdown .site-header,
+    body.has-countdown .site-header.scrolled {
         top: 60px !important;
-    }
-
-    .site-header {
-        top: 0 !important;
     }
 
     .hero {

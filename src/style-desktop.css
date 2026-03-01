@@ -101,13 +101,9 @@ body {
     opacity: 0.8;
 }
 
-body.has-countdown .site-header {
+body.has-countdown .site-header,
+body.has-countdown .site-header.scrolled {
     top: 40px !important;
-    /* Always stay below the countdown bar on desktop */
-}
-
-.site-header {
-    top: 0 !important;
 }
 
 .site-header.scrolled {
