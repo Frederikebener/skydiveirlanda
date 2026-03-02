@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { useLanguage } from '../../context/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 import course1 from '../../assets/BIRR TRIO2- 1920X1080.png';
 import course2 from '../../assets/BIRR TRIO3- 1920X1080.png';
 import course3 from '../../assets/BIRR TRIO- 1920X1080.png';
@@ -14,6 +15,7 @@ import 'swiper/css/effect-fade';
 
 export const Course = () => {
     const { t } = useLanguage();
+    const navigate = useNavigate();
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
     const descriptionRef = useRef(null);
@@ -81,7 +83,7 @@ export const Course = () => {
                             <p dangerouslySetInnerHTML={{ __html: t('course.description') }} />
                         </div>
                         <div className="course-cta-wrapper">
-                            <button ref={ctaRef} className="package-cta course-cta">
+                            <button ref={ctaRef} className="package-cta course-cta" onClick={() => navigate('/course')}>
                                 {t('course.cta')}
                             </button>
                         </div>
