@@ -532,10 +532,11 @@
     .video-wrapper {
         width: 100%;
         max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: -20px;
+        margin-right: 38px;
     }
 }
+
 /* Tighten spacing between Dream and Contact on Tablet */
 .dream-section {
     padding-bottom: 20px !important;
@@ -544,4 +545,3 @@
 .contact-section {
     padding-top: 20px !important;
 }
-

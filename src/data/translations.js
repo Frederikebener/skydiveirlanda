@@ -726,7 +726,7 @@ export const translations = {
             "Instrutores recordistas dedicados"
         ],
         "coursepage.pricing.card1.desc": "Ideal para quem quer começar sem compromisso com pacote fechado e progredir no seu ritmo.",
-        "coursepage.pricing.card1.cta": "Escolher meu pacote de salto",
+        "coursepage.pricing.card1.cta": "Escolher pacote de salto",
         "coursepage.pricing.card2.badge": "O mais escolhido por nossos aventureiros",
         "coursepage.pricing.card2.title": "Curso AFF Completo",
         "coursepage.pricing.card2.subtitle": "Para quem quer garantir toda a formação.",
@@ -1504,7 +1504,7 @@ export const translations = {
             "Internationale Zertifizierung"
         ],
         "coursepage.pricing.card2.desc": "Intensive und immersive Ausbildung, um alles auf einmal zu meistern.",
-        "coursepage.pricing.card2.cta": "Meine Ausbildung beginnen!",
+        "coursepage.pricing.card2.cta": "Ausbildug beginnenn!",
         "coursepage.safety.title": "Ein Kurs, der dich auf sicheren Sport vorbereitet",
         "coursepage.safety.p1": "Der Kurs ist so rigoros, dass unser Ziel ist, dass du den automatischen Öffnungsautomaten (AAD) niemals aktivieren musst.",
         "coursepage.safety.p2": "Unsere Mission ist nicht nur, das Sicherheitsnetz zu lehren, sondern dich so kompetent zu machen, dass du dein größter Schutz wirst.",

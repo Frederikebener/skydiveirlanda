@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import sky360Img from '../../assets/package-sky360.jpg';
 import classicImg from '../../assets/BIRR DUPLO3 - 1024 x 768.png';
-import eliteImg from '../../assets/BIRR DUPLO8 - 1024 x 768.png';
+import eliteImg from '../../assets/package-record.jpg';
 import recordImg from '../../assets/BIRR DUO9- 1920X1080.png';
 
 export const Packages = () => {

@@ -184,7 +184,7 @@ export const CoursePage = () => {
 
                             <p className="cp-card-desc" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.desc') }} />
 
-                            <a href="#cp-contact" className="cp-btn-primary">
+                            <a href="#cp-contact" className="cp-btn-blue">
                                 {t('coursepage.pricing.card2.cta')}
                             </a>
                         </div>

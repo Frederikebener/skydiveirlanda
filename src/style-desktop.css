@@ -1696,9 +1696,9 @@ img {
 
 .video-wrapper {
     width: auto;
-    /* Allow margins to pull the width */
-
-    /* Pull left to align with logo, pull right to align with button */
+    /* Pull left to align with logo/title, pull right to align with button/subtitle */
+    margin-left: -20px;
+    margin-right: 38px;
     padding: 0;
     opacity: 0;
 }
@@ -1711,8 +1711,8 @@ img {
 .video-player-container {
     position: relative;
     width: 100%;
-    max-width: calc(75vh * 16 / 9);
-    margin-left: 15px;
+    max-width: 100%;
+    margin: 0;
     aspect-ratio: 16 / 9;
     background: #000;
     border-radius: 40px;
@@ -2980,11 +2980,12 @@ img {
     }
 
     .video-wrapper {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 55px;
     }
 
     .video-player-container {
-        margin-left: 0;
+        margin: 0 auto;
         max-width: 100%;
     }
 
