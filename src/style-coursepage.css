@@ -5,7 +5,7 @@
 /* ── Layout ── */
 .cp-container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -78,7 +78,7 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
 
 }
@@ -556,7 +556,7 @@
 }
 
 .cp-safety-container {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -812,7 +812,7 @@
 }
 
 .cp-faq-container {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -822,6 +822,7 @@
 
 .cp-faq-header {
     flex: 0 0 40%;
+    margin-left: 20px;
 }
 
 .cp-faq-badge {
@@ -976,7 +977,7 @@
 }
 
 .cp-cta-container {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     background-color: var(--primary-color);

@@ -274,7 +274,7 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 150px;
     /* Added padding to separate from header */
     color: var(--white);
     padding-bottom: 50px;
@@ -2939,6 +2939,13 @@ img {
         transition: all 0.3s ease;
     }
 
+    .course-image-col {
+    flex: 0 0 40%;
+    position: relative;
+    width: 150px;
+    opacity: 1;
+}
+
     .package-features li {
         display: flex;
         align-items: flex-start;
@@ -3027,10 +3034,10 @@ img {
 
     .packages-header {
         padding: 40px;
-        padding-top: 0px;
-        padding-bottom: 20px;
-        padding-left: -10px;
-        padding-right: -10px;
+    
+        padding-bottom:50px;
+        margin-left:27px;
+        margin-right:-15px;
         gap: 30;
     }
 
@@ -3038,6 +3045,7 @@ img {
     .hero {
         padding-left: 40px;
         padding-right: 40px;
+        padding-top: 60px;
 
     }
 
@@ -3092,7 +3100,7 @@ img {
 
     .video-title {
         flex: 0 0 50%;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .video-subtitle {
@@ -3125,6 +3133,17 @@ img {
         gap: 30px;
     }
 
+    .packages-title {
+    flex: 0 0 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #151515;
+    max-width: 600px;
+    opacity: 0;
+    /* Aligns with logo */
+}
     /* 6. Contact — 2 columns: text left, map right — fits 1366px */
     .contact-card {
         display: grid !important;
@@ -3322,4 +3341,26 @@ img {
         font-size: 12px !important;
         padding: 8px !important;
     }
+
+    .course-text-col {
+    flex: 1;
+    padding-left: 0;
+    margin-left: 8px;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dream-title {
+    flex: 1;
+    margin-left: 15px;
+    padding-left: 0;
+    max-width: 620px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #151515;
+    opacity: 0;
+}
 }
