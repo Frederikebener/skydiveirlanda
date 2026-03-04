@@ -1,4 +1,4 @@
-export const translations = {
+module.exports = {
     en: {
         "404.title": "404",
         "404.subtitle": "Page Not Found",
@@ -46,13 +46,13 @@ export const translations = {
                 "cta": "I want this one"
             },
             {
-                "title": "Basic Jump",
+                "title": "Tandem Basic",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
                     "No photos or videos"
                 ],
-                "description": "Ideal for those who want to focus 100% on the pure sensation of flying!",
+                "description": "Ideal for those who want to focus 100% on the pure sensation of flying, without worrying about records.",
                 "price_label": "Starting from",
                 "price": "€357.00",
                 "payment": "cash or card payment",
@@ -72,7 +72,7 @@ export const translations = {
                 "cta": "I want this one"
             },
             {
-                "title": "Vip Jump",
+                "title": "Tandem Vip",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
@@ -88,7 +88,7 @@ export const translations = {
             }
         ],
         "video.title": "Feel the Adrenaline of a <br/><strong style='color: var(--primary-color);'>Real 360° Skydive!</strong>",
-        "video.subtitle": "<strong style='color: var(--primary-color);'> Press play and immerse yourself</strong> in the complete 360° freefall experience above Birr’s breathtaking skyline.",
+        "video.subtitle": "<strong style='color: var(--primary-color);'> Press play, move your screen, and immerse yourself</strong> in the complete 360° freefall experience above Birr’s breathtaking skyline.",
         "video.cta": "Book your jump now",
         "about.title": "<strong style='color: var(--primary-color);'>About Us</strong>",
         "about.p1": "We are <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, one of the most traditional skydiving schools in Ireland, with over two decades of training students, athletes and instructors.",
@@ -128,6 +128,18 @@ export const translations = {
             {
                 "question": "What happens if the weather is bad?",
                 "answer": "If the weather is unsuitable for jumping, we will reschedule your jump for the next available date that works for you, at no extra cost."
+            },
+            {
+                "question": "Do I need any previous experience?",
+                "answer": "No experience is needed for a tandem jump! Your instructor will handle all the technical parts. You'll just need a brief 15-minute training session before we board the plane."
+            },
+            {
+                "question": "Can I bring my own camera or GoPro?",
+                "answer": "For safety reasons regulated by aviation authorities, tandem students are not allowed to carry any cameras. But don't worry, our instructors are experts at capturing your jump in 360°!"
+            },
+            {
+                "question": "How long does the entire experience take?",
+                "answer": "You should plan to spend about 3 to 4 hours with us. This includes registration, training, the flight, the jump, and receiving your digital media after landing."
             },
             {
                 "question": "Can my friends and family come to watch?",
@@ -272,7 +284,7 @@ export const translations = {
         "packages.subtitle": "Cuireann ár bpacáistí go léir <strong style='color: var(--primary-color);'>sábháilteacht agus sult</strong> ar fáil, ach ní sheachadann ach ceann amháin an t-eispéireas iomlán leis an bhfíseán tumtha 360º, trófaí fíor do shárú.",
         "packages.cards": [
             {
-                "title": "Tandem Premium 360",
+                "title": "Premium 360º Jump",
                 "badge": "Is iomláine",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
@@ -289,7 +301,7 @@ export const translations = {
                 "cta": "Léim anois!"
             },
             {
-                "title": "Tandem Basic",
+                "title": "Basic Jump",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
@@ -302,7 +314,7 @@ export const translations = {
                 "cta": "Léim anois!"
             },
             {
-                "title": "Tandem Plus",
+                "title": "Basic Jump Plus",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
@@ -528,7 +540,7 @@ export const translations = {
         "packages.subtitle": "Todos os nossos pacotes oferecem <strong style='color: var(--primary-color);'>segurança e emoção</strong>, mas apenas um entrega a experiência completa com o vídeo 360º imersivo, o verdadeiro troféu da sua superação.",
         "packages.cards": [
             {
-                "title": "Tandem Premium 360",
+                "title": "Premium 360º Jump",
                 "badge": "Mais Escolhido",
                 "features": [
                     "Salto realizado a 12.000ft",
@@ -558,7 +570,7 @@ export const translations = {
                 "cta": "Eu quero este"
             },
             {
-                "title": "Tandem Plus",
+                "title": "Basic Jump Plus",
                 "features": [
                     "Salto realizado a 12.000ft",
                     "Acompanhado de um instrutor certificado pela USPA e CBPQ",
@@ -759,7 +771,7 @@ export const translations = {
         "404.description": "Lo sentimos, no pudimos encontrar la página que buscas. Puede haber sido movida o la dirección es incorrecta.",
         "404.button": "Volver al Inicio",
         "hero.badge": "Centro de Paracaidismo en Birr/Irlanda",
-        "hero.title": "Vive la emoción de tu primer salto en paracaídas con <strong>video 360° exclusivo</strong>",
+        "hero.title": "Vive la emoción de tu primer salto en paracaídas con <br /><strong>video 360° exclusivo</strong>",
         "hero.subtitle": "Tu primer salto capturado para siempre en 360º. Es como viajar en el tiempo y revivir la adrenalina cada vez que lo ves.",
         "hero.cta": "¡Reserva tu salto ahora!",
         "pressel.title": "INAUGURACIÓN DE SKYDIVETHRU IRELAND",
@@ -783,7 +795,7 @@ export const translations = {
         "packages.subtitle": "Todos nuestros paquetes ofrecen <strong style='color: var(--primary-color);'>seguridad y emoción</strong>, pero solo uno entrega la experiencia completa con el video 360º imersivo, el verdadero trofeo de tu superación.",
         "packages.cards": [
             {
-                "title": "Tandem Premium 360",
+                "title": "Premium 360º Jump",
                 "badge": "Más Elegido",
                 "features": [
                     "Salto realizado a 12.000 pies",
@@ -813,7 +825,7 @@ export const translations = {
                 "cta": "Quiero este"
             },
             {
-                "title": "Tandem Plus",
+                "title": "Basic Jump Plus",
                 "features": [
                     "Salto realizado a 12.000 pies",
                     "Acompañado por un instructor certificado por USPA y CBPQ",
@@ -998,10 +1010,11 @@ export const translations = {
         "coursepage.faq.title": "Preguntas <strong style='color: var(--primary-color)'>Frecuentes</strong>",
         "coursepage.faqs.contact": "¿Todavía tienes dudas? Habla ahora con un instructor en WhatsApp",
         "coursepage.faqs": [
-            { "question": "¿Cuál es la edad mínima para saltar?", "answer": "La edad mínima es de 18 años y no hay límite máximo de edad, siempre que tengas buena salud." },
-            { "question": "¿Es necesario haber hecho un salto en tándem antes?", "answer": "¡No! Nuestro curso AFF está diseñado para que los principiantes absolutos progresen directamente a saltar por su cuenta." },
-            { "question": "¿Puedo hacer una pausa entre niveles en el modelo fraccionado?", "answer": "Sí. Sin embargo, para mantener las habilidades de seguridad, si haces una pausa demasiado larga es posible que necesites un breve salto de reentrenamiento." },
-            { "question": "¿Es posible pagar a plazos?", "answer": "Sí, ofrecemos planes de pago flexibles directamente durante el proceso de pago o con nuestro equipo." }
+            { "question": "¿Cuánto tiempo dura el curso AFF?", "answer": "La mayoría de los alumnos completan los 7 niveles en 2 a 5 días, según el tiempo y la programación. Algunos tardan un poco más — cada persona avanza a su propio ritmo." },
+            { "question": "¿Cuánto cuesta el AFF?", "answer": "Contáctanos para conocer los precios actuales. El curso incluye escuela en tierra, los 7 saltos AFF, honorarios del instructor, alquiler de equipo y firmas en el logbook." },
+            { "question": "¿Cuál es la diferencia entre AFF y un salto en tándem?", "answer": "Un salto en tándem es una experiencia única en la que estás sujeto a un instructor. El AFF es un curso de formación completo donde sales y vuelas solo (con supervisión), terminando con una licencia de paracaidismo reconocida." },
+            { "question": "¿Puedo hacer un salto en tándem antes del AFF?", "answer": "¡Por supuesto! Muchos alumnos hacen primero un tándem para experimentar el paracaidismo antes de comprometerse con el curso AFF completo. Ofrecemos paquetes combinados." },
+            { "question": "¿Hay un número mínimo de saltos después del AFF?", "answer": "Para obtener una licencia A de USPA necesitas al menos 25 saltos en total. El AFF te da 7, y completas el resto como saltos en solitario de estudiante con nuestro apoyo." }
         ],
         "coursepage.cta.title": "¿Listo para despegar del suelo y dominar el cielo con tus propias alas?",
         "coursepage.cta.subtitle": "",
@@ -1038,7 +1051,7 @@ export const translations = {
         "packages.subtitle": "Tous nos forfaits offrent <strong style='color: var(--primary-color);'>sécurité et émotion</strong>, mais un seul offre l'expérience complète avec la vidéo 360º immersive, le vrai trophée de votre dépassement.",
         "packages.cards": [
             {
-                "title": "Tandem Premium 360",
+                "title": "Premium 360º Jump",
                 "badge": "Le Plus Choisi",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
@@ -1055,7 +1068,7 @@ export const translations = {
                 "cta": "Je veux celui-ci"
             },
             {
-                "title": "Tandem Basic",
+                "title": "Basic Jump",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1068,7 +1081,7 @@ export const translations = {
                 "cta": "Je veux celui-ci"
             },
             {
-                "title": "Tandem Plus",
+                "title": "Basic Jump Plus",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1081,7 +1094,7 @@ export const translations = {
                 "cta": "Je veux celui-ci"
             },
             {
-                "title": "Tandem Vip",
+                "title": "Vip Jump",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1252,10 +1265,11 @@ export const translations = {
         "coursepage.faq.title": "Questions <strong style='color: var(--primary-color)'>Fréquentes</strong>",
         "coursepage.faqs.contact": "Vous avez encore des doutes ? Parlez maintenant sur WhatsApp",
         "coursepage.faqs": [
-            { "question": "Quel est l'âge minimum pour sauter ?", "answer": "L'âge minimum est de 18 ans et il n'y a pas de limite d'âge supérieure, à condition que vous soyez en bonne santé." },
-            { "question": "Est-il nécessaire d'avoir fait un saut en tandem avant ?", "answer": "Non ! Notre cours AFF est conçu pour que les débutants absolus progressent directement vers le saut en solo." },
-            { "question": "Puis-je faire une pause entre les niveaux dans le modèle fractionné ?", "answer": "Oui. Cependant, pour maintenir les compétences de sécurité, si vous faites une pause trop longue, vous pourriez avoir besoin d'un court saut de réentraînement." },
-            { "question": "Est-il possible de payer en plusieurs fois ?", "answer": "Oui, nous proposons des plans de paiement flexibles directement lors du paiement ou avec notre équipe." }
+            { "question": "Combien de temps dure le cours AFF ?", "answer": "La plupart des élèves complètent les 7 niveaux en 2 à 5 jours, selon la météo et la planification. Certains prennent un peu plus de temps — chacun progresse à son propre rythme." },
+            { "question": "Combien coûte l'AFF ?", "answer": "Contactez-nous pour les tarifs actuels. Le cours comprend l'école au sol, les 7 sauts AFF, les honoraires de l'instructeur, la location du matériel et les validations du carnet de sauts." },
+            { "question": "Quelle est la différence entre l'AFF et un saut en tandem ?", "answer": "Un saut en tandem est une expérience ponctuelle où vous êtes attaché à un instructeur. L'AFF est un cours de formation complet où vous sortez et volez seul (sous supervision), se terminant par une licence de parachutisme reconnue." },
+            { "question": "Puis-je faire un saut en tandem avant l'AFF ?", "answer": "Absolument ! Beaucoup d'élèves font d'abord un tandem pour ressentir le parachutisme avant de s'engager dans le cours AFF complet. Nous proposons des forfaits combinés." },
+            { "question": "Y a-t-il un nombre minimum de sauts après l'AFF ?", "answer": "Pour obtenir une licence A de l'USPA, vous avez besoin d'au moins 25 sauts au total. L'AFF vous en donne 7, et vous complétez le reste comme sauts d'élève en solo avec notre soutien." }
         ],
         "coursepage.cta.title": "Prêt à décoller et à maîtriser le ciel de vos propres ailes ?",
         "coursepage.cta.subtitle": "",
@@ -1507,10 +1521,11 @@ export const translations = {
         ],
         "coursepage.faq.title": "Häufig <strong style='color: var(--primary-color)'>Gestellte Fragen</strong>",
         "coursepage.faqs": [
-            { "question": "Was ist das Mindestalter für einen Sprung?", "answer": "Das Mindestalter beträgt 18 Jahre und es gibt kein Höchstalter, vorausgesetzt, Sie sind bei guter Gesundheit." },
-            { "question": "Ist es erforderlich, vorher einen Tandemsprung gemacht zu haben?", "answer": "Nein! Unser AFF-Kurs ist so konzipiert, dass absolute Anfänger direkt zu eigenen Sprüngen übergehen können." },
-            { "question": "Kann ich im fraktionierten Modell zwischen den Levels pausieren?", "answer": "Ja. Wenn Sie jedoch zu lange pausieren, benötigen Sie möglicherweise einen kurzen Auffrischungssprung, um Ihre Sicherheitsfähigkeiten aufrechtzuerhalten." },
-            { "question": "Ist Ratenzahlung möglich?", "answer": "Ja, wir bieten flexible Zahlungspläne direkt beim Checkout oder mit unserem Team an." }
+            { "question": "Wie lange dauert der AFF Kurs?", "answer": "Die meisten Schüler absolvieren die 7 Level in 2–5 Tagen, abhängig von Wetter und Zeitplan. Manche brauchen etwas länger — jeder macht in seinem eigenen Tempo Fortschritte." },
+            { "question": "Wie viel kostet der AFF?", "answer": "Kontaktiere uns für aktuelle Preise. Der Kurs umfasst die Bodenschule, alle 7 AFF-Sprünge, Ausbildergebühren, Ausrüstungsmiete und Logbuch-Unterschriften." },
+            { "question": "Was ist der Unterschied zwischen AFF und einem Tandemsprung?", "answer": "Ein Tandemsprung ist ein einmaliges Erlebnis. AFF ist ein vollständiger Ausbildungskurs, bei dem du alleine springst (unter Aufsicht) und mit einer anerkannten Lizenz abschließt." },
+            { "question": "Kann ich vor dem AFF einen Tandemsprung machen?", "answer": "Absolut! Viele Schüler machen zuerst einen Tandemsprung, um ein Gefühl für das Fallschirmspringen zu bekommen. Wir bieten Kombi-Pakete an." },
+            { "question": "Gibt es eine Mindestanzahl an Sprüngen nach dem AFF?", "answer": "Um eine USPA A-Lizenz zu erhalten, benötigst du insgesamt mindestens 25 Sprünge. Das AFF bringt dir 7 ein, den Rest absolvierst du als Solo-Schülersprünge mit unserer Unterstützung." }
         ],
         "coursepage.cta.title": "Bereit, abzuheben und den Himmel mit eigenen Flügeln zu beherrschen?",
         "coursepage.cta.subtitle": "",

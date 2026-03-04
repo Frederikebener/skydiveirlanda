@@ -31,18 +31,7 @@ const Header = ({ isHidden }) => {
 
     const currentLang = languages.find(l => l.code === language) || languages[0];
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     useEffect(() => {
         if (isMobileMenuOpen) {
@@ -66,7 +55,7 @@ const Header = ({ isHidden }) => {
             if (element) {
                 const headerOffset = 150; // Increased offset for better spacing
                 const elementPosition = element.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                const offsetPosition = elementPosition
 
                 window.scrollTo({
                     top: offsetPosition,
@@ -91,7 +80,7 @@ const Header = ({ isHidden }) => {
                 const isMobile = window.innerWidth <= 720;
                 const headerOffset = isMobile ? 165 : 15;
                 const elementPosition = element.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                const offsetPosition = elementPosition
                 window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
             }
         } else {
@@ -170,7 +159,7 @@ const Header = ({ isHidden }) => {
                         <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a></li>
                         <li><a href="#video" onClick={(e) => handleNavClick(e, '#video')}>{t('footer.video')}</a></li>
                         <li className="has-dropdown">
-                            <a href="#packages" onClick={(e) => handleNavClick(e, '#packages')}>
+                            <a href="#package-0" onClick={(e) => handlePackageClick(e, 0)}>
                                 {t('footer.packages')}
                                 <svg className="dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
                                     <path d="M1 3 L5 7 L9 3" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />

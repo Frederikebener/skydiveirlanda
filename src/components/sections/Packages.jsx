@@ -100,7 +100,6 @@ export const Packages = () => {
 
                                 <div className="package-card-footer">
                                     <div className="package-pricing">
-                                        <span className="price-label">{card.price_label}</span>
                                         <span className="price-value">{card.price}</span>
                                         <span className="payment-info">{card.payment}</span>
                                     </div>

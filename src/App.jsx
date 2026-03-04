@@ -44,18 +44,6 @@ function AppContent() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const packagesSection = document.getElementById('packages');
-            if (packagesSection) {
-                const rect = packagesSection.getBoundingClientRect();
-                // Hide if the top of the packages section is near the top of the viewport
-                // Adjust threshold as needed (e.g., 100px)
-                if (rect.top <= 100) {
-                    setIsHeaderHidden(true);
-                } else {
-                    setIsHeaderHidden(false);
-                }
-            }
-
             if (window.scrollY > 50) {
                 document.body.classList.add('scrolled');
             } else {

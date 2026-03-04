@@ -13,6 +13,7 @@ import img5 from '../../assets/BIRR UNIC1- 1920X1080.png';
 import img6 from '../../assets/BIRR UNIC- 1920X1080.png';
 import img7 from '../../assets/BIRR UNIC1- 1920X1080.png';
 import img8 from '../../assets/BIRR UNIC- 1920X1080.png';
+import img9 from '../../assets/Imagem (4).png';
 import heroVideo from '../../assets/Video-2.mp4';
 import ctaVideo from '../../assets/Takes-32.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,7 +39,7 @@ export const CoursePage = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const galleryImages = [img1, img2, img3, img4, img5, img6];
+    const galleryImages = [img9, img1, img2, img3, img4, img5, img6];
 
     return (
         <>

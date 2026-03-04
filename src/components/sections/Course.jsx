@@ -9,6 +9,9 @@ import course3 from '../../assets/BIRR TRIO- 1920X1080.png';
 import course4 from '../../assets/BIRR DUO- 1920X1080.png';
 import course5 from '../../assets/BIRR UNIC1- 1920X1080.png';
 import course6 from '../../assets/BIRR UNIC- 1920X1080.png';
+import course7 from '../../assets/Imagem (4).png';
+
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
@@ -67,6 +70,7 @@ export const Course = () => {
         course4,
         course5,
         course6,
+        course7,
     ];
 
 

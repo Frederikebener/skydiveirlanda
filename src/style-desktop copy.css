@@ -1,0 +1,167 @@
+/* --- 1366x768 / Short Laptop Screen Optimizations --- */
+@media screen and (min-width: 1024px) and (max-height: 800px) {
+
+    .section-padding,
+    .section-padding-lg {
+        padding: 5px 0 !important;
+    }
+
+    .section-title {
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Ensure sections try to fit inside the screen */
+    .packages-section,
+    .about-section,
+    .dream-section,
+    .video-section,
+    .course-section,
+    .contact-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .packages-section{
+        padding-top: 50px !important;
+
+    }
+
+    /* Pull Experience section higher up instead of centering */
+    .experience-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px !important;
+        /* Clears sticky header */
+
+        overflow: hidden;
+    }
+
+    .container,
+    .experience-content-wrapper {
+        width: 100%;
+    }
+
+    /* Experience Section Specs */
+    .experience-content-wrapper {
+        gap: 1px !important;
+    }
+
+    .experience-title {
+        font-size: 30px !important;
+        margin-bottom: 20px !important;
+        margin-left: 5px !important;
+    }
+
+    .experience-main-image {
+        max-height: 52vh;
+        object-fit: cover;
+    }
+
+    .experience-step-item {
+        padding-bottom: 10px !important;
+        gap: 15px !important;
+    }
+
+    .experience-step-icon {
+        width: 40px !important;
+    }
+
+    .custom-step-icon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .custom-step-icon::after {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    /* Dream section */
+    .dream-layout {
+        gap: 30px !important;
+    }
+
+    .dream-title {
+        font-size: 2rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dream-subtitle {
+        font-size: 1rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dream-description {
+        margin-bottom: 20px !important;
+    }
+
+    .dream-image-wrapper {
+        max-height: 55vh;
+    }
+
+    .dream-image-wrapper img {
+        max-height: 55vh;
+        object-fit: contain;
+    }
+
+    /* About section */
+    .about-layout {
+        gap: 30px !important;
+    }
+
+    .about-main-image,
+    .about-video-wrapper {
+        max-height: 55vh;
+    }
+
+    /* Contact */
+    .contact-layout {
+        gap: 30px !important;
+    }
+
+    .contact-title {
+        font-size: 2rem !important;
+    }
+
+    .contact-form textarea {
+        height: 100px !important;
+    }
+
+    .form-group {
+        margin-bottom: 15px !important;
+    }
+
+    /* Packages */
+    .packages-grid {
+        gap: 15px !important;
+    }
+
+    .package-card {
+        padding: 20px !important;
+    }
+
+    .package-title {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .package-price {
+        font-size: 28px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .package-features {
+        margin-bottom: 15px !important;
+    }
+
+    .package-features li {
+        margin-bottom: 8px !important;
+        font-size: 13px !important;
+    }
+}
