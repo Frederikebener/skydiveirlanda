@@ -103,6 +103,8 @@ const Header = ({ isHidden }) => {
             {/* Mobile Navigation Overlay */}
             <div className={`mobile-menu-overlay ${isMobileMenuOpen ? 'active' : ''}`}>
                 <nav className="mobile-nav">
+                    <a href="/" onClick={handleLogoClick}>{t('footer.home')}</a>
+                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('footer.about')}</a>
                     <a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a>
                     <a href="#video" onClick={(e) => handleNavClick(e, '#video')}>{t('footer.video')}</a>
 
@@ -156,6 +158,8 @@ const Header = ({ isHidden }) => {
 
                 <nav className="header-nav">
                     <ul>
+                        <li><a href="/" onClick={handleLogoClick}>{t('footer.home')}</a></li>
+                        <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('footer.about')}</a></li>
                         <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a></li>
                         <li><a href="#video" onClick={(e) => handleNavClick(e, '#video')}>{t('footer.video')}</a></li>
                         <li className="has-dropdown">

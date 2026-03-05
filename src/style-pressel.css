@@ -308,7 +308,7 @@
     }
 }
 
-@media (max-width: 1300px) and (min-width: 769px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .pressel-title {
         font-size: 40px;
         max-width: 60%;

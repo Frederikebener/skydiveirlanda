@@ -107,35 +107,27 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Is it safe to jump?",
-                "answer": "Yes! Skydiving is an extremely regulated activity with strict safety protocols. All our instructors are internationally certified and our equipment is state-of-the-art with automatic backup systems."
+                "answer": "Yes. We work with experienced instructors and state-of-the-art equipment, following the strictest safety standards."
             },
             {
                 "question": "Who can jump?",
-                "answer": "Most people over 18 (or 16 with parental consent) can jump. There are weight limits (typically up to 100kg) and basic health requirements. Contact us if you have specific medical conditions."
+                "answer": "People over 18 years old, weighing up to 114kg (250 lbs), with no serious medical restrictions."
             },
             {
-                "question": "How does the 360° recording work?",
-                "answer": "We use specialized cameras mounted on the instructor's helmet or a special rig that captures everything around you. After the jump, the footage is processed so you can relive the experience from any angle."
+                "question": "How does the 360º recording work?",
+                "answer": "Throughout the entire jump, our technology records everything in 360º — you'll be able to relive every second as if you were jumping again."
             },
             {
-                "question": "Do I need to book in advance?",
-                "answer": "Yes, we highly recommend booking at least 1-2 weeks in advance, especially for weekends, as slots fill up quickly."
+                "question": "Is it necessary to book in advance?",
+                "answer": "Yes, spots are limited and booking is mandatory to ensure your safety and comfort."
             },
             {
-                "question": "What should I wear on the day?",
-                "answer": "Wear comfortable, athletic clothing and lace-up sneakers. Avoid boots, sandals, or loose jewelry. We will provide a jumpsuit to wear over your clothes."
-            },
-            {
-                "question": "What happens if the weather is bad?",
-                "answer": "If the weather is unsuitable for jumping, we will reschedule your jump for the next available date that works for you, at no extra cost."
-            },
-            {
-                "question": "Can my friends and family come to watch?",
-                "answer": "Absolutely! We have a dedicated spectator area where your friends and family can watch you take off and land. It's a great experience for everyone!"
+                "question": "What should I wear on the day of the jump?",
+                "answer": "Comfortable clothes and sneakers. Safety equipment is provided by us."
             }
         ],
         "contact.badge": "Skydive Center In Birr/Ireland",
-        "contact.title": "Book your <br class='tablet-br' /><strong style='color: var(--primary-color);'>360° jump with us now!</strong>",
+        "contact.title": "Book your <br class='tablet-br' /><strong style='color: var(--primary-color);'>360° jump <br/>with us now!</strong>",
         "contact.address.title": "Address",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Phone / Whatsapp",
@@ -350,43 +342,23 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "An bhfuil sé sábháilte léim?",
-                "answer": "Tá! Is gníomhaíocht an-rialaithe í an pharaisiútáil le prótacail sábháilteachta dian. Tá ár dteagascóirí go léir deimhnithe go hidirnáisiúnta agus tá ár dtrealamh den scoth le córais cúltaca uathoibríocha."
+                "answer": "Tá. Oibrímid le teagascóirí a bhfuil taithí acu agus le trealamh den scoth, ag leanúint na gcaighdeán sábháilteachta is déine."
             },
             {
                 "question": "Cé atá in ann léim?",
-                "answer": "Is féidir le formhór na ndaoine os cionn 18 mbliana d'aois (nó 16 le toil tuismitheoirí) léim. Tá teorainneacha meáchain ann (suas le 100kg de ghnáth) agus riachtanais sláinte bunúsacha. Déan teagmháil linn má tá coinníollacha leighis ar leith agat."
+                "answer": "Daoine os cionn 18 mbliana d'aois, a bhfuil meáchan suas le 114kg (250 lbs) acu, gan aon srianta tromchúiseacha leighis."
             },
             {
-                "question": "Conas a oibríonn an taifeadadh 360°?",
-                "answer": "Úsáidimid ceamaraí speisialaithe suite ar chlogad an teagascóra nó ar rig speisialta a ghlacann gach rud timpeall ort. Tar éis an léim, déantar an scannán a phróiseáil ionas gur féidir leat an t-eispéireas a athbheochan ó aon uillinn."
+                "question": "Conas a oibríonn an taifeadadh 360º?",
+                "answer": "Le linn na léime ar fad, taifeadann ár dteicneolaíocht gach rud i 360º — beidh tú in ann gach soicind a athbheochan amhail is dá mbeifeá ag léim arís."
             },
             {
                 "question": "An gá réamh-áirithint a dhéanamh?",
-                "answer": "Sea, molaimid go mór áirithint a dhéanamh 1-2 sheachtain roimh ré ar a laghad, go háirithe do dheireadh seachtaine, mar go líonann na sliotáin go tapa."
+                "answer": "Sea, tá líon na n-áiteanna teoranta agus tá sé éigeantach áirithint a dhéanamh chun do shábháilteacht agus do chompord a chinntiú."
             },
             {
-                "question": "Cad ba chóir dom a chaitheamh ar an lá?",
-                "answer": "Caith éadaí compordacha, lúthchleasacha agus bróga reatha le lásaí. Seachain buataisí, sandals, nó seodra scaoilte. Cuirfimid cultas léime ar fáil duit le caitheamh os cionn d'éadaí."
-            },
-            {
-                "question": "Cad a tharlaíonn má tá an aimsir go dona?",
-                "answer": "Mura bhfuil an aimsir oiriúnach don léim, déanfaimid do léim a atheagrú don chéad dáta eile atá ar fáil a oibríonn duit, gan aon chostas breise."
-            },
-            {
-                "question": "An bhfuil aon taithí roimhe seo de dhíth orm?",
-                "answer": "Níl aon taithí de dhíth le haghaidh léim tandem! Déanfaidh do theagascóir na codanna teicniúla go léir. Níl uait ach seisiún gairid traenála 15 nóiméad sula rachaimid ar an eitleán."
-            },
-            {
-                "question": "An féidir liom mo cheamara nó GoPro féin a thabhairt liom?",
-                "answer": "Ar chúiseanna sábháilteachta arna rialáil ag údaráis eitlíochta, níl cead ag mic léinn tandem aon cheamaraí a iompar. Ach ná bíodh imní ort, is saineolaithe iad ár dteagascóirí ar do léim a ghabháil i 360°!"
-            },
-            {
-                "question": "Cá fhad a thógann an taithí iomlán?",
-                "answer": "Ba chóir duit pleanáil chun thart ar 3 go 4 huaire an chloig a chaitheamh linn. Cuimsíonn sé seo clárú, traenáil, an eitilt, an léim, agus do mheáin dhigiteacha a fháil tar éis tuirlingthe."
-            },
-            {
-                "question": "An féidir le mo chairde agus mo mhuintir teacht chun féachaint air?",
-                "answer": "Cinnte! Tá limistéar tiomnaithe do lucht féachana againn inar féidir le do chairde agus do mhuintir féachaint ort ag éirí de thalamh agus ag tuirlingt. Taithí iontach do gach duine é!"
+                "question": "Cad ba chóir dom a chaitheamh ar lá na léime?",
+                "answer": "Éadaí compordacha agus bróga reatha. Soláthraímid trealamh sábháilteachta."
             }
         ],
         "contact.badge": "Ionad Scátháin i mBiorra/Éire",
@@ -606,43 +578,23 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "É seguro saltar?",
-                "answer": "Sim! O paraquedismo é uma atividade extremamente regulamentada e com protocolos de segurança rigorosos. Todos os nossos instrutores são certificados internacionalmente e nossos equipamentos são de última geração com sistemas de reserva automáticos."
+                "answer": "Sim. Trabalhamos com instrutores experientes e equipamentos de ponta, seguindo os mais rigorosos padrões de segurança."
             },
             {
                 "question": "Quem pode saltar?",
-                "answer": "A maioria das pessoas acima de 18 anos (ou 16 com consentimento dos pais) pode saltar. Existem limites de peso (geralmente até 100kg) e requisitos básicos de saúde. Entre em contato se tiver condições médicas específicas."
+                "answer": "Maiores de 18 anos, com peso até 114kg, sem restrições médicas graves."
             },
             {
-                "question": "Como funciona a gravação 360°?",
-                "answer": "Utilizamos câmeras especializadas montadas no capacete do instrutor ou em suportes especiais que capturam tudo ao seu redor. Após o salto, as imagens são processadas para que você possa reviver a experiência de qualquer ângulo."
+                "question": "Como funciona a gravação 360º?",
+                "answer": "Durante todo o salto, nossa tecnologia registra tudo em 360º — você vai poder reviver cada segundo como se estivesse saltando de novo."
             },
             {
                 "question": "É preciso agendar com antecedência?",
-                "answer": "Sim, recomendamos fortemente o agendamento com pelo menos 1 a 2 semanas de antecedência, especialmente para fins de semana, pois as vagas esgotam rapidamente."
+                "answer": "Sim, as vagas são limitadas e o agendamento é obrigatório para garantir sua segurança e conforto."
             },
             {
-                "question": "O que devo vestir no dia?",
-                "answer": "Use roupas esportivas confortáveis e tênis com cadarço. Evite botas, sandálias ou joias soltas. Forneceremos um macacão para usar sobre suas roupas."
-            },
-            {
-                "question": "O que acontece se o tempo estiver ruim?",
-                "answer": "Se o clima não estiver adequado para saltar, remarcaremos seu salto para a próxima data disponível que seja boa para você, sem custo adicional."
-            },
-            {
-                "question": "Preciso de alguma experiência prévia?",
-                "answer": "Nenhuma experiência é necessária para um salto duplo! Seu instrutor cuidará de todas as partes técnicas. Você só precisará de um breve treinamento de 15 minutos antes de embarcarmos."
-            },
-            {
-                "question": "Posso levar minha própria câmera ou GoPro?",
-                "answer": "Por motivos de segurança regulados pelas autoridades de aviação, os alunos de salto duplo não podem carregar câmeras. Mas não se preocupe, nossos instrutores são especialistas em capturar seu salto em 360°!"
-            },
-            {
-                "question": "Quanto tempo dura toda a experiência?",
-                "answer": "Você deve planejar passar de 3 a 4 horas conosco. Isso inclui o registro, treinamento, o voo, o salto e o recebimento de sua mídia digital após o pouso."
-            },
-            {
-                "question": "Meus amigos e familiares podem vir assistir?",
-                "answer": "Com certeza! Temos uma área dedicada para espectadores onde seus amigos e familiares podem ver você decolar e pousar. É uma ótima experiência para todos!"
+                "question": "O que devo vestir no dia do salto?",
+                "answer": "Roupas confortáveis e tênis. Equipamentos de segurança são fornecidos por nós."
             }
         ],
         "contact.badge": "Centro de Paraquedismo em Birr/Irlanda",
@@ -665,7 +617,7 @@ export const translations = {
         "footer.packagesTitle": "Pacotes",
         "footer.navigation": "Navegação",
         "footer.home": "Início",
-        "footer.about": "Sobre",
+        "footer.about": "Sobre nós",
         "footer.experience": "Como funciona?",
         "footer.packages": "Pacotes",
         "footer.course": "Curso AFF",
@@ -861,43 +813,23 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "¿Es seguro saltar?",
-                "answer": "¡Sí! El paracaidismo es una actividad extremadamente regulada y con protocolos de seguridad rigurosos. Todos nuestros instructores están certificados internacionalmente y nuestros equipos son de última generación con sistemas de reserva automáticos."
+                "answer": "Sí. Trabajamos con instructores experimentados y equipos de última generación, siguiendo los más rigurosos estándares de seguridad."
             },
             {
                 "question": "¿Quién puede saltar?",
-                "answer": "La mayoría de las personas mayores de 18 años (o 16 con consentimiento de los padres) pueden saltar. Existen límites de peso (normalmente hasta 100 kg) y requisitos básicos de salud. Póngase en contacto si tiene condiciones médicas específicas."
+                "answer": "Mayores de 18 años, con un peso de hasta 114 kg, sin restricciones médicas graves."
             },
             {
-                "question": "¿Cómo funciona la grabación 360°?",
-                "answer": "Utilizamos cámaras especializadas montadas en el casco del instructor o en soportes especiales que capturan todo a su alrededor. Después del salto, las imágenes se procesan para que puedas revivir la experiencia desde cualquier ángulo."
+                "question": "¿Cómo funciona la grabación 360º?",
+                "answer": "Durante todo el salto, nuestra tecnología graba todo en 360º — podrás revivir cada segundo como si estuvieras saltando de nuevo."
             },
             {
                 "question": "¿Es necesario reservar con antelación?",
-                "answer": "Sí, recomendamos encarecidamente reservar con al menos 1 o 2 semanas de antelación, especialmente para los fines de semana, ya que las plazas se agotan rápidamente."
+                "answer": "Sí, las plazas son limitadas y la reserva es obligatoria para garantizar tu seguridad y comodidad."
             },
             {
-                "question": "¿Qué ropa debo llevar para el salto?",
-                "answer": "Usa ropa deportiva cómoda y zapatillas con cordones. Evita botas, sandalias o joyas sueltas. Te proporcionaremos un mono para usar sobre tu ropa."
-            },
-            {
-                "question": "¿Qué pasa si hace mal tiempo?",
-                "answer": "Si el clima no es adecuado para saltar, reprogramaremos tu salto para la próxima fecha disponible que te convenga, sin costo adicional."
-            },
-            {
-                "question": "¿Necesito experiencia previa?",
-                "answer": "¡No se necesita experiencia para un salto tándem! Tu instructor se encargará de todas las partes técnicas. Solo necesitarás una breve formación de 15 minutos antes de subir al avión."
-            },
-            {
-                "question": "¿Puedo llevar mi propia cámara o GoPro?",
-                "answer": "Por motivos de seguridad regulados por las autoridades de aviación, los alumnos de tándem no pueden llevar cámaras. Pero no te preocupes, ¡nuestros instructores son expertos en capturar tu salto en 360°!"
-            },
-            {
-                "question": "¿Cuánto tiempo dura toda la experiencia?",
-                "answer": "Deberías planear pasar de 3 a 4 horas con nosotros. Esto incluye el registro, la formación, el vuelo, el salto y la entrega de tus archivos digitales tras el aterrizaje."
-            },
-            {
-                "question": "¿Pueden venir mis amigos y familiares a mirar?",
-                "answer": "¡Por supuesto! Tenemos un área dedicada para espectadores donde tus amigos y familiares pueden verte despegar y aterrizar. ¡Es una gran experiencia para todos!"
+                "question": "¿Qué debo llevar el día del salto?",
+                "answer": "Ropa cómoda y zapatillas. Nosotros proporcionaremos el equipo de seguridad."
             }
         ],
         "contact.badge": "Centro de Paracaidismo en Birr/Irlanda",
@@ -1116,43 +1048,23 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Est-ce sûr de sauter ?",
-                "answer": "Oui ! Le parachutisme est une activité extrêmement réglementée avec des protocoles de sécurité stricts. Tous nos instructeurs sont certifiés au niveau international et nos équipements sont à la pointe de la technologie avec des systèmes de secours automatiques."
+                "answer": "Oui. Nous travaillons avec des instructeurs expérimentés et des équipements de pointe, en respectant les normes de sécurité les plus strictes."
             },
             {
                 "question": "Qui peut sauter ?",
-                "answer": "La plupart des personnes de plus de 18 ans (ou 16 ans avec le consentement des parents) peuvent sauter. Il existe des limites de poids (généralement jusqu'à 100 kg) et des exigences de santé de base. Contactez-nous si vous avez des conditions médicales spécifiques."
+                "answer": "Les personnes de plus de 18 ans, pesant jusqu'à 114 kg, sans restrictions médicales graves."
             },
             {
-                "question": "Comment fonctionne l'enregistrement 360° ?",
-                "answer": "Nous utilisons des caméras spécialisées montées sur le casque de l'instructeur ou sur un support spécial qui capture tout ce qui vous entoure. Après le saut, les images sont traitées pour que vous puissiez revivre l'expérience sous n'importe quel angle."
+                "question": "Comment fonctionne l'enregistrement 360º ?",
+                "answer": "Pendant tout le saut, notre technologie enregistre tout à 360º — vous pourrez revivre chaque seconde comme si vous sautiez à nouveau."
             },
             {
                 "question": "Faut-il réserver à l'avance ?",
-                "answer": "Oui, nous recommandons vivement de réserver au moins 1 à 2 semaines à l'avance, surtout pour les week-ends, car les places se remplissent rapidement."
+                "answer": "Oui, les places sont limitées et la réservation est obligatoire pour garantir votre sécurité et votre confort."
             },
             {
-                "question": "Comment dois-je m'habiller le jour J ?",
-                "answer": "Portez des vêtements de sport confortables et des baskets à lacets. Évitez les bottes, les sandales ou les bijoux lâches. Nous vous fournirons une combinaison à porter par-dessus vos vêtements."
-            },
-            {
-                "question": "Que se passe-t-il si la météo est mauvaise ?",
-                "answer": "Si la météo ne permet pas de sauter, nous replanifierons votre saut à la prochaine date disponible qui vous convient, sans frais supplémentaires."
-            },
-            {
-                "question": "Ai-je besoin d'une expérience préalable ?",
-                "answer": "Aucune expérience n'est requise pour un saut en tandem ! Votre moniteur s'occupera de toutes les parties techniques. Vous aurez juste besoin d'une courte formation de 15 minutes avant d'embarquer."
-            },
-            {
-                "question": "Puis-je apporter ma propre caméra ou GoPro ?",
-                "answer": "Pour des raisons de sécurité réglementées par les autorités de l'aviation, les élèves en tandem ne sont pas autorisés à transporter des caméras. Mais ne vous inquiétez pas, nos moniteurs sont experts pour capturer votre saut à 360° !"
-            },
-            {
-                "question": "Combien de temps dure toute l'expérience ?",
-                "answer": "Prévoyez de passer environ 3 à 4 heures avec nous. Cela comprend l'enregistrement, la formation, le vol, le saut et la réception de vos médias numériques après l'atterrissage."
-            },
-            {
-                "question": "Mes amis et ma famille peuvent-ils venir regarder ?",
-                "answer": "Absolument ! Nous avons une zone dédiée aux spectateurs où vos amis et votre famille peuvent vous voir décoller et atterrir. C'est une excellente expérience pour tout le monde !"
+                "question": "Comment dois-je m'habiller le jour du saut ?",
+                "answer": "Des vêtements confortables et des baskets. L'équipement de sécurité est fourni par nos soins."
             }
         ],
         "contact.badge": "Centre de Paracaidismo à Birr/Irlande",
@@ -1370,43 +1282,23 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Ist es sicher zu springen?",
-                "answer": "Ja! Fallschirmspringen ist eine extrem regulierte Aktivität mit strengen Sicherheitsprotokollen. Alle unsere Lehrer sind international zertifiziert und unsere Ausrüstung ist auf dem neuesten Stand der Technik mit automatischen Reservesystemen."
+                "answer": "Ja. Wir arbeiten mit erfahrenen Lehrern und modernster Ausrüstung und befolgen die strengsten Sicherheitsstandards."
             },
             {
                 "question": "Wer kann springen?",
-                "answer": "Die meisten Personen über 18 (oder 16 mit Einverständnis der Eltern) können springen. Es gibt Gewichtsgrenzen (typischerweise bis zu 100kg) und grundlegende gesundheitliche Anforderungen. Kontaktieren Sie uns, wenn Sie spezielle medizinische Bedingungen haben."
+                "answer": "Personen über 18 Jahre mit einem Gewicht von bis zu 114 kg und ohne schwerwiegende medizinische Einschränkungen."
             },
             {
-                "question": "Wie funktioniert die 360°-Aufnahme?",
-                "answer": "Wir verwenden spezielle Kameras, die am Helm des Lehrers oder an einer speziellen Vorrichtung montiert sind und alles um Sie herum erfassen. Nach dem Sprung wird das Material bearbeitet, damit Sie das Erlebnis aus jedem Winkel wiedererleben können."
+                "question": "Wie funktioniert die 360º-Aufnahme?",
+                "answer": "Während des gesamten Sprungs zeichnet unsere Technologie alles in 360º auf – Sie können jede Sekunde so nacherleben, als würden Sie noch einmal springen."
             },
             {
                 "question": "Muss ich im Voraus buchen?",
-                "answer": "Ja, wir empfehlen dringend, mindestens 1-2 Wochen im Voraus zu buchen, besonders für Wochenenden, da die Plätze schnell ausgebucht sind."
+                "answer": "Ja, die Plätze sind begrenzt und eine Buchung ist obligatorisch, um Ihre Sicherheit und Ihren Komfort zu gewährleisten."
             },
             {
-                "question": "Was soll ich am Tag tragen?",
-                "answer": "Tragen Sie bequeme Sportkleidung und Schnürschuhe. Vermeiden Sie Stiefel, Sandalen oder losen Schmuck. Wir stellen Ihnen einen Overall zur Verfügung, den Sie über Ihrer Kleidung tragen können."
-            },
-            {
-                "question": "Was passiert bei schlechtem Wetter?",
-                "answer": "Wenn das Wetter für einen Sprung ungeeignet ist, verschieben wir Ihren Sprung auf das nächste verfügbare Datum, das Ihnen passt, ohne zusätzliche Kosten."
-            },
-            {
-                "question": "Brauche ich Vorerfahrung?",
-                "answer": "Für einen Tandemsprung ist keine Erfahrung erforderlich! Ihr Lehrer kümmert sich um alle technischen Teile. Sie benötigen nur eine kurze 15-minütige Einweisung, bevor wir ins Flugzeug steigen."
-            },
-            {
-                "question": "Kann ich meine eigene Kamera oder GoPro mitbringen?",
-                "answer": "Aus Sicherheitsgründen, die von den Luftfahrtbehörden geregelt werden, dürfen Tandemschüler keine Kameras mitführen. Aber keine Sorge, unsere Lehrer sind Experten darin, Ihren Sprung in 360° festzuhalten!"
-            },
-            {
-                "question": "Wie lange dauert das gesamte Erlebnis?",
-                "answer": "Sie sollten etwa 3 bis 4 Stunden bei uns einplanen. Dies beinhaltet Registrierung, Training, den Flug, den Sprung und den Erhalt Ihrer digitalen Medien nach der Landung."
-            },
-            {
-                "question": "Können meine Freunde und Familie zuschauen?",
-                "answer": "Absolut! Wir haben einen speziellen Zuschauerbereich, wo Ihre Freunde und Familie Sie starten und landen sehen können. Es ist ein tolles Erlebnis für alle!"
+                "question": "Was soll ich am Tag des Sprungs tragen?",
+                "answer": "Bequeme Kleidung und Turnschuhe. Die Sicherheitsausrüstung wird von uns gestellt."
             }
         ],
         "contact.badge": "Fallschirmspringerzentrum in Birr/Irland",
@@ -1634,39 +1526,24 @@ export const translations = {
             },
             {
                 "question": "Cosa succede se il tempo è brutto?",
-                "answer": "Il paracadutismo dipende dal tempo. Se le condizioni non sono sicure (pioggia, nuvole basse, vento forte), riprogrammeremo il tuo lancio senza costi aggiuntivi."
-            },
-            {
-                "question": "C'è un limite di peso?",
-                "answer": "Sì, per motivi di sicurezza ed equipaggiamento, c'è un limite di peso che varia generalmente intorno ai 100 kg. Si prega di contattarci per dettagli specifici se si è vicini a questo limite."
-            },
-            {
-                "question": "Posso portare la mia fotocamera?",
-                "answer": "Per motivi di sicurezza, non è consentito portare fotocamere o telefoni durante il lancio. Tuttavia, offriamo pacchetti foto e video professionali per catturare la tua esperienza."
+                "question": "È sicuro saltare?",
+                "answer": "Sì. Lavoriamo con istruttori esperti e attrezzature all'avanguardia, seguendo i più severi standard di sicurezza."
             },
             {
                 "question": "Chi può saltare?",
-                "answer": "La maggior parte delle persone sopra i 18 anni (o 16 con il consenso dei genitori) può saltare. Ci sono limiti di peso (tipicamente fino a 100 kg) e requisiti di salute di base. Contattaci se hai condizioni mediche specifiche."
+                "answer": "Persone di età superiore ai 18 anni, di peso fino a 114 kg, senza gravi restrizioni mediche."
             },
             {
-                "question": "Come funziona la registrazione a 360°?",
-                "answer": "Usiamo telecamere speciali montate sul casco dell'istruttore o su un supporto dedicato che catturano tutto intorno a te. Dopo il lancio, il materiale viene modificato in modo da poter rivivere l'esperienza da qualsiasi angolazione."
+                "question": "Come funziona la registrazione a 360º?",
+                "answer": "Durante l'intero salto, la nostra tecnologia registra tutto a 360º: potrai rivivere ogni secondo come se stessi saltando di nuovo."
             },
             {
-                "question": "Devo prenotare in anticipo?",
-                "answer": "Sì, consigliamo vivamente di prenotare almeno 1-2 settimane in anticipo, specialmente per i fine settimana, poiché i posti si esauriscono rapidamente."
+                "question": "È necessario prenotare in anticipo?",
+                "answer": "Sì, i posti sono limitati e la prenotazione è obbligatoria per garantire la tua sicurezza e il tuo comfort."
             },
             {
-                "question": "Cosa devo indossare il giorno del lancio?",
-                "answer": "Indossa abiti sportivi comodi e scarpe da ginnastica. Evita stivali, sandali o gioielli sciolti. Forniamo una tuta da indossare sopra i tuoi vestiti."
-            },
-            {
-                "question": "Quanto dura l'intera esperienza?",
-                "answer": "Dovresti pianificare di trascorrere circa 3-4 ore con noi. Questo include la registrazione, l'addestramento, il volo, il lancio e la ricezione dei tuoi media digitali dopo l'atterraggio."
-            },
-            {
-                "question": "Possono guardare i miei amici e la mia famiglia?",
-                "answer": "Assolutamente! Abbiamo un'area spettatori dedicata dove i tuoi amici e la tua famiglia possono vederti decollare e atterrare. È un'esperienza fantastica per tutti!"
+                "question": "Cosa devo indossare il giorno del salto?",
+                "answer": "Vestiti comodi e scarpe da ginnastica. Forniremo l'equipaggiamento di sicurezza."
             }
         ],
         "contact.badge": "Centro di Paracadutismo a Birr/Irlanda",

@@ -45,7 +45,7 @@
    HERO
 ───────────────────────────────────────── */
 .cp-hero {
-    min-height: 93vh;
+    min-height: 100vh;
     /* background-size: cover; */
     /* Removed as video will cover */
     /* background-position: center; */
@@ -232,6 +232,7 @@
 ───────────────────────────────────────── */
 .cp-what {
     padding: 100px 0;
+    padding-bottom:0;
     width: 100%;
 }
 
@@ -430,6 +431,7 @@
 .cp-card-content {
     flex: 1;
     padding: 40px;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
 
@@ -475,7 +477,7 @@
 
 .cp-card-subtitle {
     font-size: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     opacity: 0.9;
 }
 
@@ -488,7 +490,6 @@
 
 .cp-card-features li {
     font-size: 14px;
-    margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
 }
@@ -513,7 +514,7 @@
 .cp-card-desc {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     opacity: 0.9;
 }
 
@@ -551,7 +552,7 @@
 ───────────────────────────────────────── */
 .cp-safety {
     padding: 100px 20px;
-
+    padding-bottom: 0;
     background-color: #f4f5f8;
 }
 
@@ -808,6 +809,8 @@
 ───────────────────────────────────────── */
 .cp-faq {
     padding: 100px 5%;
+    padding-bottom:60px;
+    padding-top: 80px;
     background-color: var(--background-light);
 }
 
@@ -815,14 +818,14 @@
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    gap: 80px;
 }
 
 .cp-faq-header {
-    flex: 0 0 40%;
-    margin-left: 20px;
+    flex: 1;
+    max-width: 500px;
+    margin-left: 0;
 }
 
 .cp-faq-badge {
@@ -858,7 +861,7 @@
 }
 
 .cp-faq-content {
-    flex: 0 0 55%;
+    flex: 1;
 }
 
 .cp-faq-list {
@@ -866,7 +869,6 @@
     flex-direction: column;
     gap: 15px;
     margin-bottom: 25px;
-
 }
 
 .cp-faq-item {
@@ -949,6 +951,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0;
     box-sizing: border-box;
     padding: 18px 0;
     background-color: #F57C00;
@@ -972,7 +975,10 @@
       CTA SECTION
 ───────────────────────────────────────── */
 .cp-cta {
-    padding: 60px 20px;
+    padding-top:60px;
+    padding-bottom: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
     background-color: var(--background-light);
 }
 
@@ -983,7 +989,7 @@
     background-color: var(--primary-color);
     border-radius: 20px;
     overflow: hidden;
-    max-height: 550px;
+    max-height: 480px;
 }
 
 .cp-cta-video-wrapper {
@@ -1055,7 +1061,7 @@
         min-height: auto;
     }
 
-    
+
     .cp-cta-video-wrapper {
         flex: auto;
         width: 100%;
@@ -1082,6 +1088,7 @@
     .cp-faq-container {
         flex-direction: column;
         gap: 40px;
+        align-items: flex-start;
     }
 
     .cp-faq-header,
@@ -1128,6 +1135,7 @@
 
     .cp-faq-contact-btn {
         width: 100%;
+        margin: 0;
         justify-content: center;
         text-align: center;
         padding: 16px 20px;
@@ -1147,8 +1155,8 @@
     .cp-safety-container {
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 100px;
 
     }
 
@@ -1157,7 +1165,7 @@
     }
 
     .cp-hero-title {
-        font-size: clamp(26px, 3vw, 36px);
+        font-size: 40px;
         max-width: 720px;
     }
 
@@ -1170,6 +1178,10 @@
     .cp-safety-container,
     .cp-faq-container {
         gap: 40px;
+    }
+
+    .cp-faq-container {
+        align-items: center;
     }
 
     .cp-hero-box {
