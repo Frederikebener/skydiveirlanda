@@ -34,6 +34,16 @@ const Header = ({ isHidden }) => {
 
 
     useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        // Fire initially
+        handleScroll();
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -55,7 +65,7 @@ const Header = ({ isHidden }) => {
             if (element) {
                 const headerOffset = 150; // Increased offset for better spacing
                 const rect = element.getBoundingClientRect();
-                const elementPosition = rect.top 
+                const elementPosition = rect.top
                 const offsetPosition = elementPosition
 
                 window.scrollBy({
