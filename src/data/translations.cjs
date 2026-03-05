@@ -3,7 +3,7 @@ module.exports = {
         "404.title": "404",
         "404.subtitle": "Page Not Found",
         "404.description": "Sorry, we couldn't find the page you're looking for. It might have been moved or the address is incorrect.",
-        "404.button": "Back to Homes",
+        "404.button": "Back to Homesdadas",
         "hero.badge": "Skydive Center In Birr/Ireland",
         "hero.title": "Experience the thrill of your first skydive with <strong>exclusive 360° video</strong>",
         "hero.subtitle": "Your first jump captured forever in 360º. It's like travelling back in time and reliving the adrenaline every time you watch.",
