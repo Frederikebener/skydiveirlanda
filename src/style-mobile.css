@@ -13,6 +13,12 @@
         padding-top: 60px !important;
     }
 
+    .about-text-col {
+        width: 100%;
+        flex: 0 0 0px;
+        padding: 0;
+    }
+
     body {
         padding-top: 0 !important;
     }
@@ -320,7 +326,7 @@
 
     .experience-step-content p {
         font-family: 'Montserrat', sans-serif;
-        text-align: center;
+        text-align: left;
         font-size: 20px;
         /* Increased size */
         line-height: 1.2;
@@ -727,7 +733,7 @@
 /* Dream Section Mobile */
 @media (max-width: 720px) {
     .dream-section {
-        padding: 10px 0 10px 0;
+        padding: 10px 20px 10px 20px;
     }
 
     .dream-section .container,
@@ -962,7 +968,7 @@
     .contact-map {
         min-height: 450px;
         width: 100% !important;
-        margin-left:0;
+        margin-left: 0;
     }
 }
 
@@ -1035,11 +1041,6 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-}
-
-.about-text-col {
-    width: 400px;
-    flex: 0 0 0px;
 }
 
 .header-background.visible {
@@ -1116,7 +1117,7 @@
     }
 
     .site-header {
-        position: fixed !important;
+        position: absolute !important;
         top: 0;
         left: 0;
         right: 0;
@@ -1155,9 +1156,8 @@
     }
 
     header.site-header .header-container .header-logo img {
-        height: 80px;
+        height: 110px;
         width: auto;
-        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
         transition: all 0.3s ease;
     }
 
@@ -1388,8 +1388,232 @@
 
 .mobile-package-item::before {
     content: '›';
+
+    .header-actions .btn {
+        display: none;
+    }
+
+    /* Hamburger button on the left */
+    .mobile-menu-button {
+        order: 1;
+        /* Move to left */
+    }
+
+    /* Language selector stays in header-actions (right) */
+    .lang-selector {
+        order: 1;
+    }
+
+    .lang-code,
+    .dropdown-arrow {
+        display: none;
+    }
+
+    .current-lang {
+        padding: 8px;
+        background: rgba(0, 123, 255, 0.2);
+        /* Light blue background */
+        border: 2px solid var(--primary-color);
+        /* Blue border */
+        border-radius: 30px;
+    }
+
+    .lang-flag {
+        width: 24px;
+        height: 16px;
+        margin: 0;
+    }
+
+    /* Language dropdown aligned to right on mobile */
+    .lang-dropdown {
+        left: auto !important;
+        right: 0 !important;
+        transform: translateX(0) translateY(-10px) !important;
+    }
+
+    @keyframes fadeInDropdown {
+        to {
+            opacity: 1;
+            transform: translateX(0) translateY(0) !important;
+        }
+    }
+
+    /* When mobile menu is active */
+    body:has(.mobile-menu-overlay.active) .mobile-menu-button {
+        color: var(--primary-color) !important;
+        /* Blue X icon */
+    }
+
+    body:has(.mobile-menu-overlay.active) .current-lang {
+        border: 2px solid var(--primary-color);
+        /* Black border */
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-br {
+        display: block !important;
+    }
+
+    /* Video Section Mobile - Center Titles */
+    .video-header {
+        text-align: center;
+    }
+
+    .video-title {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .video-subtitle {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Tighten spacing between Dream and Contact on Mobile */
+.dream-section {
+    padding-bottom: 10px !important;
+}
+
+.contact-section {
+    padding-top: 10px !important;
+}
+
+/* ── Mobile Packages Accordion Submenu ── */
+.mobile-packages-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Added some vertical space */
+    margin: 5px 0;
+}
+
+.mobile-packages-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(0, 123, 255, 0.04);
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.mobile-packages-toggle:active {
+    transform: scale(0.98);
+}
+
+.mobile-chevron {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-color);
+    width: 18px;
+    height: 18px;
+}
+
+.mobile-chevron.open {
+    transform: rotate(180deg);
+}
+
+.mobile-packages-list {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 300px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0., 0, 0.2, 1),
+        opacity 0.4s ease,
+        margin-top 0.4s ease;
+    margin-top: 0;
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
+}
+
+
+.mobile-packages-list.open {
+    max-height: 400px;
+    opacity: 1;
+    color: #444 !important;
+
+}
+
+.mobile-package-item {
+
+    color: #444 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 12px 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    transition: all 0.2s ease;
+    text-transform: none !important;
+    letter-spacing: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.mobile-package-item:last-child {
+    border-bottom: none;
+}
+
+.mobile-package-item:active {
+    background: rgba(0, 123, 255, 0.05);
+    color: var(--primary-color) !important;
+}
+
+.mobile-package-item::before {
+    content: '›';
     font-size: 22px;
     line-height: 1;
     color: var(--primary-color);
     opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+    #faq .cp-faq-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    #faq .cp-faq-header {
+        margin-left: 0;
+        padding-right: 0;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #faq .cp-faq-header h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #faq .cp-faq-content {
+        padding-right: 0;
+        width: 100%;
+    }
 }

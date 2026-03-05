@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { MapPin, Phone, Instagram, Facebook, Clock } from 'lucide-react';
-import logo from '../../assets/logo1.webp';
+import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
 
 const Footer = () => {
     const { t } = useLanguage();

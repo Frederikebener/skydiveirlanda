@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Star, Loader2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { config } from '../../data/config';
-import logo from '../../assets/logo1.webp';
+import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
 import flagDe from '../../assets/flag-de.svg';
 import flagEn from '../../assets/flag-en.png';
 import flagEs from '../../assets/flag-es.png';

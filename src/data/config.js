@@ -7,7 +7,7 @@ export const config = {
         backgroundType: 'video', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
-        enableCountdown: false // Toggle to show or hide the countdown bar
+        enableCountdown: true // Toggle to show or hide the countdown bar
     },
     evaluation: {
         googleReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJFTJet6X3XEgRlDp9BaZEUZQ',

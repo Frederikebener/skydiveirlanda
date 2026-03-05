@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
-import logo from '../../assets/logo1.webp';
+import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
 import flagDe from '../../assets/flag-de.svg';
 import flagEn from '../../assets/flag-en.png';
 import flagEs from '../../assets/flag-es.png';
@@ -30,18 +30,6 @@ const Header = ({ isHidden }) => {
     ];
 
     const currentLang = languages.find(l => l.code === language) || languages[0];
-
-
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        // Fire initially
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     useEffect(() => {
         if (isMobileMenuOpen) {

@@ -45,7 +45,7 @@ body {
 
 .countdown-bar {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -1155,7 +1155,6 @@ img {
 }
 
 .footer-logo-img {
-    height: 110px;
     width: auto;
     filter: brightness(0) invert(1);
     display: block;
@@ -2625,7 +2624,7 @@ img {
 }
 
 .header-logo img {
-    width: auto;
+    width: 210px;
     filter: brightness(0) invert(1);
     /* White logo initially */
     transition: all 0.3s ease;
@@ -2963,8 +2962,7 @@ img {
     .package-card-footer {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding-top: 25px;
+        padding-top: 10px;
     }
 
     .package-features {
@@ -3274,7 +3272,7 @@ img {
     }
 
     .header-logo img {
-        height: 110px;
+        width: 180px;
     }
 
     .site-header.scrolled .header-logo img {
@@ -3308,7 +3306,6 @@ img {
 
     .course-content-wrapper {
         justify-content: left;
-        gap: 60px;
     }
 
 
@@ -3509,10 +3506,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
+    padding-left: 43px;
+    padding-right: 43px;
 }
-
 #faq .cp-faq-header {
-    margin-left: 20px;
+    margin-left: 45px;
     padding-left: 0;
     max-width: none;
     padding-right: 60px;
@@ -3520,14 +3518,15 @@ img {
 }
 
 #faq .cp-faq-content {
-    padding-right: 0;
+    padding-right: 20px;
     /* Reset */
     padding-left: 0;
 }
 
 #faq .cp-faq-container {
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-left: 0;
+    padding-right: 20px;
+    align-items: center;
 }
 
 .cp-faq-list {
