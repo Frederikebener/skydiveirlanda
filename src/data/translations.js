@@ -46,7 +46,7 @@ export const translations = {
                 "cta": "I want this one"
             },
             {
-                "title": "Basic Jump",
+                "title": "Tandem Basic",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
@@ -72,7 +72,7 @@ export const translations = {
                 "cta": "I want this one"
             },
             {
-                "title": "Vip Jump",
+                "title": "Tandem Vip",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
@@ -307,7 +307,7 @@ export const translations = {
                 "cta": "Léim anois!"
             },
             {
-                "title": "Vip Jump",
+                "title": "Tandem Vip",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
@@ -399,10 +399,10 @@ export const translations = {
         "coursepage.meta.title": "Cúrsa Scáthphléanála AFF – SkyDiveThru Éire",
         "coursepage.meta.description": "Foghlaim conas léim paraisúit a dhéanamh leat féin le cúrsa AFF ag SkyDiveThru Éire. Traenáil sábháilte, céimniúil, deimhnithe i mBiorra, Co. Uíbh Fhailí.",
         "coursepage.badge": "Cúrsa Scáthphléanála AFF",
-        "coursepage.hero.title": "Turn your passion for skydiving into total freedom",
-        "coursepage.hero.subtitle": "Learn to fly solo with the only flexible AFF course in Ireland. Pay only for the levels you complete, with no commitment to packages.",
-        "coursepage.hero.cta": "I want to start my AFF training now!",
-        "coursepage.hero.footer": "25 years accident-free | Certified instructors",
+        "coursepage.hero.title": "Déan do phaisean don tumadóireacht spéire a thiontú ina shaoirse iomlán",
+        "coursepage.hero.subtitle": "Foghlaim eitilt i d’aonar leis an aon chúrsa AFF solúbtha in Éirinn. Íoc as na leibhéil a dhéanann tú amháin, gan aon tiomantas do phacáistí.",
+        "coursepage.hero.cta": "Ba mhaith liom tús a chur le mo thraenáil AFF anois!",
+        "coursepage.hero.footer": "25 bliain gan timpiste | Teagascóirí deimhnithe",
         "coursepage.what.title": "An oiliúint a dhéanann <strong style='color: var(--primary-color)'>scáthphléanaithe</strong> de bhrionglóidigh",
         "coursepage.what.desc": "Is é do bhealach chun saoirse iomlán na spéartha é cúrsa AFF (Saorthitim Luathaithe). Foghlaimeoidh tú ní hamháin an teicníc, ach forbróidh tú meon fíor-scáthphléanaí freisin.",
         "coursepage.what.desc2": "Déanfaidh ár dteagascóirí deimhnithe atá ina sealbhóirí curiarrachta as an mBrasaíl tú a threorú ar gach léim go dtí go mbainfidh tú neamhspleáchas iomlán amach.",
@@ -517,7 +517,7 @@ export const translations = {
                 "cta": "Eu quero este"
             },
             {
-                "title": "Basic Jump",
+                "title": "Tandem Basic",
                 "features": [
                     "Salto realizado a 12.000ft",
                     "Acompanhado de um instrutor certificado pela USPA e CBPQ",
@@ -543,7 +543,7 @@ export const translations = {
                 "cta": "Eu quero este"
             },
             {
-                "title": "Vip Jump",
+                "title": "Tandem Vip",
                 "features": [
                     "Salto realizado a 12.000ft",
                     "Acompanhado de um instrutor certificado pela USPA e CBPQ",
@@ -778,7 +778,7 @@ export const translations = {
                 "cta": "Quiero este"
             },
             {
-                "title": "Vip Jump",
+                "title": "Tandem Vip",
                 "features": [
                     "Salto realizado a 12.000 pies",
                     "Acompañado por un instructor certificado por USPA y CBPQ",

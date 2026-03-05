@@ -20,13 +20,13 @@ const Header = ({ isHidden }) => {
     const [isPackagesOpen, setIsPackagesOpen] = useState(false);
 
     const languages = [
-        { code: 'de', name: 'Deutsch', flag: flagDe },
+        { code: 'ga', name: 'Gaeilge', flag: flagGa },
+        { code: 'pt', name: 'Português', flag: flagPt },
         { code: 'en', name: 'English', flag: flagEn },
+        { code: 'de', name: 'Deutsch', flag: flagDe },
         { code: 'es', name: 'Español', flag: flagEs },
         { code: 'fr', name: 'Français', flag: flagFr },
-        { code: 'ga', name: 'Gaeilge', flag: flagGa },
-        { code: 'it', name: 'Italiano', flag: flagIt },
-        { code: 'pt', name: 'Português', flag: flagPt }
+        { code: 'it', name: 'Italiano', flag: flagIt }
     ];
 
     const currentLang = languages.find(l => l.code === language) || languages[0];
@@ -54,10 +54,11 @@ const Header = ({ isHidden }) => {
             const element = document.querySelector(anchor);
             if (element) {
                 const headerOffset = 150; // Increased offset for better spacing
-                const elementPosition = element.getBoundingClientRect().top;
+                const rect = element.getBoundingClientRect();
+                const elementPosition = rect.top 
                 const offsetPosition = elementPosition
 
-                window.scrollTo({
+                window.scrollBy({
                     top: offsetPosition,
                     behavior: "smooth"
                 });
@@ -79,9 +80,10 @@ const Header = ({ isHidden }) => {
                 // Mobile has countdown bar (60px) + header (60px), desktop just needs minimal offset
                 const isMobile = window.innerWidth <= 720;
                 const headerOffset = isMobile ? 165 : 15;
-                const elementPosition = element.getBoundingClientRect().top;
+                const rect = element.getBoundingClientRect();
+                const elementPosition = rect.top
                 const offsetPosition = elementPosition
-                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
             }
         } else {
             navigate('/#package-' + index);

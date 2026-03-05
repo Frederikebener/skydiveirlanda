@@ -15,10 +15,10 @@ import ScrollToAnchor from './components/utilities/ScrollToAnchor';
 
 function AppContent() {
     const location = useLocation();
-    const isReviewPage = location.pathname === '/avaliar';
+    const isReviewPage = location.pathname === '/reviews';
     const isCoursePage = location.pathname === '/course';
     const [showPressel, setShowPressel] = React.useState(false);
-    const isNotFound = location.pathname !== '/' && location.pathname !== '/avaliar' && location.pathname !== '/course';
+    const isNotFound = location.pathname !== '/' && location.pathname !== '/reviews' && location.pathname !== '/course';
 
     useEffect(() => {
         if (config.hero.enableCountdown) {
@@ -68,7 +68,7 @@ function AppContent() {
                 )}
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/avaliar" element={<Review />} />
+                    <Route path="/reviews" element={<Review />} />
                     <Route path="/course" element={<CoursePage />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>

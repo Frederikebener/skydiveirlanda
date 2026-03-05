@@ -18,13 +18,13 @@ export const Pressel = ({ onEnter }) => {
     const [isLangOpen, setIsLangOpen] = useState(false);
 
     const languages = [
-        { code: 'de', name: 'Deutsch', flag: flagDe },
+        { code: 'ga', name: 'Gaeilge', flag: flagGa },
+        { code: 'pt', name: 'Português', flag: flagPt },
         { code: 'en', name: 'English', flag: flagEn },
+        { code: 'de', name: 'Deutsch', flag: flagDe },
         { code: 'es', name: 'Español', flag: flagEs },
         { code: 'fr', name: 'Français', flag: flagFr },
-        { code: 'ga', name: 'Gaeilge', flag: flagGa },
-        { code: 'it', name: 'Italiano', flag: flagIt },
-        { code: 'pt', name: 'Português', flag: flagPt }
+        { code: 'it', name: 'Italiano', flag: flagIt }
     ];
 
     const currentLang = languages.find(l => l.code === language) || languages[0];

@@ -89,6 +89,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     padding: 40px;
+    padding-bottom: 20px;
     max-width: 650px;
     color: #fff;
     backdrop-filter: blur(8px);
@@ -185,7 +186,7 @@
     border-radius: 50px;
     font-family: var(--font-main);
     font-weight: 900;
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
@@ -809,7 +810,7 @@
 ───────────────────────────────────────── */
 .cp-faq {
     padding: 100px 5%;
-    padding-bottom:60px;
+    padding-bottom:150px;
     padding-top: 80px;
     background-color: var(--background-light);
 }
@@ -1041,7 +1042,7 @@
     color: white;
     font-family: var(--font-main);
     font-weight: 900;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
     border-radius: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -1155,8 +1156,8 @@
     .cp-safety-container {
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 110px;
 
     }
 
@@ -1165,7 +1166,7 @@
     }
 
     .cp-hero-title {
-        font-size: 40px;
+        font-size: 35px;
         max-width: 720px;
     }
 

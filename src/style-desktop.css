@@ -1155,7 +1155,7 @@ img {
 }
 
 .footer-logo-img {
-    height: 90px;
+    height: 110px;
     width: auto;
     filter: brightness(0) invert(1);
     display: block;
@@ -3274,7 +3274,7 @@ img {
     }
 
     .header-logo img {
-        height: 100px;
+        height: 110px;
     }
 
     .site-header.scrolled .header-logo img {

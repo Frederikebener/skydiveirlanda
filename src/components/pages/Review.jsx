@@ -140,11 +140,19 @@ export const Review = () => {
                 {/* Language Selector */}
                 <div className="review-lang-switch">
                     <button
-                        onClick={() => setLanguage('de')}
-                        className={`review-lang-btn ${language === 'de' ? 'active' : ''}`}
-                        title="Deutsch"
+                        onClick={() => setLanguage('ga')}
+                        className={`review-lang-btn ${language === 'ga' ? 'active' : ''}`}
+                        title="Gaeilge"
                     >
-                        <img src={flagDe} alt="Deutsch" className="review-flag-icon" />
+                        <img src={flagGa} alt="Gaeilge" className="review-flag-icon" />
+                    </button>
+                    <span className="review-divider">|</span>
+                    <button
+                        onClick={() => setLanguage('pt')}
+                        className={`review-lang-btn ${language === 'pt' ? 'active' : ''}`}
+                        title="Português"
+                    >
+                        <img src={flagPt} alt="Português" className="review-flag-icon" />
                     </button>
                     <span className="review-divider">|</span>
                     <button
@@ -153,6 +161,14 @@ export const Review = () => {
                         title="English"
                     >
                         <img src={flagEn} alt="English" className="review-flag-icon" />
+                    </button>
+                    <span className="review-divider">|</span>
+                    <button
+                        onClick={() => setLanguage('de')}
+                        className={`review-lang-btn ${language === 'de' ? 'active' : ''}`}
+                        title="Deutsch"
+                    >
+                        <img src={flagDe} alt="Deutsch" className="review-flag-icon" />
                     </button>
                     <span className="review-divider">|</span>
                     <button
@@ -172,27 +188,11 @@ export const Review = () => {
                     </button>
                     <span className="review-divider">|</span>
                     <button
-                        onClick={() => setLanguage('ga')}
-                        className={`review-lang-btn ${language === 'ga' ? 'active' : ''}`}
-                        title="Gaeilge"
-                    >
-                        <img src={flagGa} alt="Gaeilge" className="review-flag-icon" />
-                    </button>
-                    <span className="review-divider">|</span>
-                    <button
                         onClick={() => setLanguage('it')}
                         className={`review-lang-btn ${language === 'it' ? 'active' : ''}`}
                         title="Italiano"
                     >
                         <img src={flagIt} alt="Italiano" className="review-flag-icon" />
-                    </button>
-                    <span className="review-divider">|</span>
-                    <button
-                        onClick={() => setLanguage('pt')}
-                        className={`review-lang-btn ${language === 'pt' ? 'active' : ''}`}
-                        title="Português"
-                    >
-                        <img src={flagPt} alt="Português" className="review-flag-icon" />
                     </button>
                 </div>
             </div>

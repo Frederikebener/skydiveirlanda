@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { MapPin, Phone, Instagram, Facebook, Clock } from 'lucide-react';
 import logo from '../../assets/logo1.webp';
@@ -23,9 +23,10 @@ const Footer = () => {
                     const isMobile = window.innerWidth <= 720;
                     const headerOffset = isPackage ? (isMobile ? 165 : 15) : 150;
 
-                    const elementPosition = element.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    const rect = element.getBoundingClientRect();
+                    const elementPosition = rect.top
+                    const offsetPosition = elementPosition
+                    window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
                 }
             }
         } else {
@@ -73,12 +74,12 @@ const Footer = () => {
                     <div className="footer-column nav-column">
                         <h3 className="footer-heading">{t('footer.navigation')}</h3>
                         <ul className="footer-links">
-                            <li><a href="/" className="footer-link" onClick={(e) => handleNavClick(e, '#')}><span className="link-dot"></span>{t('footer.home')}</a></li>
+                            <li><a href="/#" className="footer-link" onClick={(e) => handleNavClick(e, '#')}><span className="link-dot"></span>{t('footer.home')}</a></li>
                             <li><a href="#about" className="footer-link" onClick={(e) => handleNavClick(e, '#about')}><span className="link-dot"></span>{t('footer.about')}</a></li>
                             <li><a href="#experience" className="footer-link" onClick={(e) => handleNavClick(e, '#experience')}><span className="link-dot"></span>{t('footer.experience')}</a></li>
-                            {/* <li><a href="#testimonials" className="footer-link" onClick={(e) => handleNavClick(e, '#testimonials')}><span className="link-dot"></span>{t('footer.testimonials')}</a></li> */}
-                            <li><a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}><span className="link-dot"></span>{t('footer.packages')}</a></li>
                             <li><a href="#video" className="footer-link" onClick={(e) => handleNavClick(e, '#video')}><span className="link-dot"></span>{t('footer.video')}</a></li>
+                            <li><a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}><span className="link-dot"></span>{t('footer.packages')}</a></li>
+                            <li><Link to="/course" className="footer-link"><span className="link-dot"></span>{t('footer.course')}</Link></li>
                             <li><a href="#faq" className="footer-link" onClick={(e) => handleNavClick(e, '#faq')}><span className="link-dot"></span>{t('footer.faq')}</a></li>
                             <li><a href="#contact" className="footer-link" onClick={(e) => handleNavClick(e, '#contact')}><span className="link-dot"></span>{t('footer.contact')}</a></li>
                         </ul>
@@ -90,7 +91,7 @@ const Footer = () => {
                         <ul className="footer-links">
                             {packageCards.map((card, index) => (
                                 <li key={index}>
-                                    <a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}>
+                                    <a href={`#package-${index}`} className="footer-link" onClick={(e) => handleNavClick(e, `#package-${index}`)}>
                                         <span className="link-dot"></span>
                                         {card.title}
                                     </a>
