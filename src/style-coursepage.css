@@ -1088,7 +1088,8 @@
         font-family: var(--font-main);
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 20px;
+        line-height: 1;
         text-align: center;
         text-decoration: none;
         transition: background 0.3s ease, transform 0.2s ease;
@@ -1131,7 +1132,7 @@
     .cp-btn-primary {
         text-align: center;
         font-weight: 900;
-        font-size: 13px;
+        font-size: 18px;
         line-height: 20px;
         width: 100%;
         max-width: 400px;
@@ -1351,7 +1352,7 @@
     }
 
     .cp-btn-primary{
-                font-size: 12px;
+        font-size: 12px;
         padding: 14px 10px;
         min-width: unset;
         width: 100%;

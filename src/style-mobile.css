@@ -625,8 +625,9 @@
         color: var(--bg-color);
         font-size: 15px;
         width: 90%;
-        padding: 10px 20px;
+        padding: 22px 50px;
         border-radius: 50px;
+        line-height: 1.2;
         font-weight: 800;
         text-transform: uppercase;
         box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
