@@ -97,18 +97,6 @@
     animation: cpFadeUp 0.9s ease-out both;
 }
 
-@keyframes cpFadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .cp-hero-title {
     font-family: var(--font-main);
     font-size: 35px;
@@ -161,7 +149,7 @@
 /* Bottom Shape Divider */
 .cp-hero-shape-bottom {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -171,8 +159,10 @@
 
 .cp-hero-shape-bottom svg {
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 70px;
+    transform: translateY(2px) scale(1.01);
+    transform-origin: bottom;
 }
 
 /* ─────────────────────────────────────────
@@ -202,6 +192,7 @@
 .cp-btn-blue {
     display: inline-block;
     letter-spacing: 1px;
+    width: 100%;
     padding: 15px 30px;
     background: var(--primary-color);
     color: #fff;
@@ -233,7 +224,6 @@
 ───────────────────────────────────────── */
 .cp-what {
     padding: 100px 0;
-    padding-bottom:0;
     width: 100%;
 }
 
@@ -431,11 +421,38 @@
 
 .cp-card-content {
     flex: 1;
-    padding: 40px;
-    padding-left: 25px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
 
+}
+
+.cp-btn-primary-course {
+    max-width: 400px;
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 22px 50px;
+    border-radius: 50px;
+    font-family: var(--font-main);
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.35);
+    cursor: pointer;
+    border: none;
+    animation: pulse-blue 2s infinite;
+    min-width: 320px;
+
+}
+
+.cp-btn-primary-course:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.45);
 }
 
 .cp-card-blue {
@@ -470,7 +487,7 @@
 }
 
 .cp-price-card h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -552,9 +569,8 @@
    SAFETY SECTION
 ───────────────────────────────────────── */
 .cp-safety {
-    padding: 100px 20px;
-    padding-bottom: 0;
     background-color: #f4f5f8;
+    padding-top: 70px;
 }
 
 .cp-safety-container {
@@ -603,215 +619,15 @@
 /* ─────────────────────────────────────────
    RESPONSIVE – MOBILE
 ───────────────────────────────────────── */
-@media (max-width: 720px) {
-    .cp-hero {
-        min-height: 105svh;
-        align-items: center;
-        padding: 20px;
-    }
 
-    .cp-card-content {
-        text-align: center;
-    }
-
-    .cp-card-blue .cp-card-content {
-        padding-top: 60px;
-    }
-
-    .cp-card-white .cp-card-content {
-        padding-top: 60px;
-    }
-
-    .cp-hero-box {
-        padding: 10px 20px;
-        max-width: 100%;
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        text-align: center;
-    }
-
-    .cp-hero-container {
-        padding: 0 20px;
-    }
-
-    .cp-hero-title {
-        font-size: 25px !important;
-        line-height: 1.25;
-        margin-bottom: 15px;
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
-
-    .cp-hero-subtitle {
-        text-align: center;
-        font-size: 0.95rem !important;
-        margin-bottom: 25px;
-        line-height: 1.5;
-        width: 100%;
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .cp-hero-overlay {
-        background: linear-gradient(to top, rgba(0, 91, 234, 0.95) 0%, rgba(0, 91, 234, 0.1) 100%);
-    }
-
-    .cp-what-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .cp-what-media {
-        width: 100%;
-        max-width: 480px;
-    }
-
-    .cp-what-slide-img {
-        border-radius: 30px;
-    }
-
-    .cp-what-text {
-        text-align: center;
-    }
-
-    .cp-what-text h2 {
-        font-size: 30px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        padding: 0 10px;
-    }
-
-    .cp-what-features {
-        text-align: left;
-    }
-
-    .cp-what-features li {
-        width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .cp-btn-large {
-        padding: 18px 36px;
-        font-size: 15px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .cp-hero-shape-bottom {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        z-index: 2;
-    }
-
-    .cp-hero-shape-bottom svg {
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 70px;
-    }
-
-    .cp-btn-orange {
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    /* Pricing Section */
-    .cp-pricing {
-        padding: 60px 20px;
-    }
-
-    .cp-pricing-header h2 {
-        font-size: 30px;
-    }
-
-    .cp-pricing-header p {
-        font-size: 16px;
-    }
-
-    .cp-pricing-cards {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cp-price-card {
-        flex-direction: column;
-        border-radius: 30px;
-    }
-
-    .cp-card-img {
-        flex: 0 0 250px;
-    }
-
-    .cp-card-badge {
-        left: 0;
-    }
-
-    .cp-btn-primary {
-        text-align: center;
-        font-weight: 900;
-        font-size: 18px;
-        line-height: 20px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .cp-btn-white {
-        text-align: center;
-        font-weight: 900;
-        font-size: 18px;
-        line-height: 20px;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    /* Safety Section */
-    .cp-safety {
-        padding: 60px 20px;
-    }
-
-    .cp-safety-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .cp-safety-text {
-        text-align: center;
-        order: 2;
-    }
-
-    .cp-safety-media {
-        order: 1;
-        width: 100%;
-        max-width: 480px;
-        margin: 0 auto;
-    }
-
-    .cp-safety-img {
-        border-radius: 30px;
-    }
-
-    .cp-safety-text h2 {
-        font-size: 30px;
-    }
-}
 
 /* ─────────────────────────────────────────
       FAQ SECTION
 ───────────────────────────────────────── */
 .cp-faq {
     padding: 100px 5%;
-    padding-bottom:150px;
-    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-top: 20px;
     background-color: var(--background-light);
 }
 
@@ -819,7 +635,7 @@
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 80px;
 }
 
@@ -976,7 +792,7 @@
       CTA SECTION
 ───────────────────────────────────────── */
 .cp-cta {
-    padding-top:60px;
+    padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 150px;
     padding-right: 150px;
@@ -1056,97 +872,19 @@
 }
 
 /* Responsive CTA */
-@media (max-width: 720px) {
-    .cp-cta-container {
-        flex-direction: column;
-        min-height: auto;
-    }
 
-
-    .cp-cta-video-wrapper {
-        flex: auto;
-        width: 100%;
-        height: 350px;
-    }
-
-    .cp-cta-overlay {
-        background: linear-gradient(to bottom, transparent 40%, var(--primary-color) 100%);
-    }
-
-    .cp-cta-content {
-        flex: auto;
-        padding: 40px 30px;
-        text-align: center;
-    }
-
-    .cp-cta-content h2 {
-        font-size: 30px;
-    }
-}
 
 /* Responsive updates for FAQ */
-@media (max-width: 720px) {
-    .cp-faq-container {
-        flex-direction: column;
-        gap: 40px;
-        align-items: flex-start;
-    }
 
-    .cp-faq-header,
-    .cp-faq-content {
-        flex: 1 1 100%;
-        width: 100%;
-    }
 
-    .cp-faq-header {
-        text-align: center;
-    }
-}
 
-@media (max-width: 720px) {
-    .cp-faq {
-        padding: 60px 20px;
-    }
-
-    .cp-faq-header h2 {
-        font-size: 30px;
-        /* Reduced from 32px to ensure fit on smaller screens */
-    }
-
-    .cp-faq-header h2::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .cp-faq-question {
-        padding: 20px;
-    }
-
-    .cp-faq-question h3 {
-        font-size: 16px;
-    }
-
-    .cp-faq-answer {
-        padding: 0 20px;
-    }
-
-    .cp-faq-item.active .cp-faq-answer {
-        padding: 0 20px 20px 20px;
-    }
-
-    .cp-faq-contact-btn {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        text-align: center;
-        padding: 16px 20px;
-        height: auto;
-        min-height: 54px;
-    }
-}
 
 /* ─────────────────────────────────────────
    RESPONSIVE – NOTEBOOK (1366x768)
+───────────────────────────────────────── */
+
+/* ─────────────────────────────────────────
+   NOTEBOOK & DESKTOP MEDIA QUERIES
 ───────────────────────────────────────── */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
@@ -1191,6 +929,519 @@
 
     .cp-price-card {
         margin: 0 10px;
+    }
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE – MOBILE (max-width: 720px)
+───────────────────────────────────────── */
+@media (max-width: 720px) {
+    .cp-hero {
+        min-height: 100svh;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .cp-btn-primary-course {
+        text-align: center;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cp-what {
+        padding: 100px 20px;
+        width: 100%;
+    }
+
+    .cp-card-content {
+        text-align: center;
+    }
+
+    .cp-card-blue .cp-card-content {
+        padding-top: 30px;
+
+    }
+
+    .cp-card-white .cp-card-content {
+        padding-top: 30px;
+    }
+
+    .cp-hero-box {
+        padding: 20px 20px;
+        margin-top: 30px;
+        max-width: 100%;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        text-align: center;
+    }
+
+    .cp-hero-container {
+        padding: 0 0px;
+    }
+
+    .cp-hero-footer-text {
+        font-size: 13px !important;
+        text-align: center;
+        opacity: 0.9;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 12px !important;
+    }
+
+    .cp-hero-title {
+        font-size: 20px !important;
+        line-height: 1.25;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .cp-hero-subtitle {
+        text-align: center;
+        font-size: 14px !important;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cp-hero-overlay {
+        background: linear-gradient(to top, rgba(0, 91, 234, 0.95) 0%, rgba(0, 91, 234, 0.1) 100%);
+    }
+
+    .cp-what-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cp-what-media {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .cp-what-slide-img {
+        border-radius: 30px;
+    }
+
+    .cp-what-text {
+        text-align: center;
+    }
+
+    .cp-what-text h2 {
+        font-size: 30px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        padding: 0 10px;
+    }
+
+    .cp-what-features {
+        text-align: left;
+    }
+
+    .cp-what-features li {
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .cp-btn-large {
+        padding: 18px 36px;
+        font-size: 15px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cp-hero-shape-bottom {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        z-index: 2;
+    }
+
+    .cp-hero-shape-bottom svg {
+        display: block;
+        width: 100%;
+        height: 60px;
+        transform: translateY(2px) scale(1.02);
+        transform-origin: bottom;
+    }
+
+    .cp-btn-orange {
+        display: block;
+        width: 100%;
+        background: #FF9800;
+        color: #fff;
+        padding: 16px 20px;
+        border-radius: 50px;
+        font-family: var(--font-main);
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+        border: none;
+        margin-bottom: 24px;
+        animation: pulse-orange 2s infinite;
+    }
+
+    /* Pricing Section */
+    .cp-pricing {
+        padding: 60px 20px;
+    }
+
+    .cp-pricing-header h2 {
+        font-size: 30px;
+    }
+
+    .cp-pricing-header p {
+        font-size: 16px;
+    }
+
+    .cp-pricing-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cp-price-card {
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    .cp-card-img {
+        flex: 0 0 250px;
+    }
+
+    .cp-card-badge {
+        left: 0;
+    }
+
+    .cp-btn-primary {
+        text-align: center;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cp-btn-white {
+        text-align: center;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Safety Section */
+    .cp-safety {
+        padding: 60px 20px;
+    }
+
+    .cp-safety-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cp-safety-text {
+        text-align: center;
+        order: 2;
+    }
+
+    .cp-safety-media {
+        order: 1;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .cp-safety-img {
+        border-radius: 30px;
+    }
+
+    .cp-safety-text h2 {
+        font-size: 30px;
+    }
+
+    .cp-cta-container {
+        flex-direction: column;
+        min-height: auto;
+
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+    .cp-cta-video-wrapper {
+        flex: auto;
+        width: 100%;
+        height: 350px;
+    }
+
+    .cp-cta-overlay {
+        background: linear-gradient(to bottom, transparent 40%, var(--primary-color) 100%);
+    }
+
+    .cp-cta-content {
+        flex: auto;
+        padding: 40px 30px;
+        text-align: center;
+        margin-top:-10px;
+    }
+
+    .cp-cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cp-faq-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .cp-faq-header,
+    .cp-faq-content {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .cp-faq-header {
+        text-align: center;
+    }
+
+    .cp-faq {
+        padding: 60px 20px;
+    }
+
+    .cp-cta {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: var(--background-light);
+    }
+
+    .cp-faq-header h2 {
+        font-size: 30px;
+        /* Reduced from 32px to ensure fit on smaller screens */
+    }
+
+    .cp-faq-header h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cp-faq-question {
+        padding: 20px;
+    }
+
+    .cp-faq-question h3 {
+        font-size: 16px;
+    }
+
+    .cp-faq-answer {
+        padding: 0 20px;
+    }
+
+    .cp-faq-item.active .cp-faq-answer {
+        padding: 0 20px 20px 20px;
+    }
+
+    .cp-faq-contact-btn {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        padding: 16px 20px;
+        height: auto;
+        min-height: 54px;
+    }
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE – ULTRA SMALL MOBILE (max-width: 320px)
+───────────────────────────────────────── */
+@media (max-width: 320px) {
+    .cp-hero {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 80px;
+        align-items: flex-start;
+    }
+
+    .cp-card-content {
+    padding:13px
+    }
+
+    .cp-card-desc{
+        font-size:14px;
+    }
+
+    .cp-card-subtitle{
+        font-size:14px;
+    }
+    .cp-hero-box {
+        padding: 15px 15px;
+        margin: 0;
+        margin-top: 20px;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+    .cp-hero-title {
+        font-size: 15px !important;
+        margin-bottom: 12px;
+        line-height: 1.2;
+    }
+
+    .cp-hero-subtitle {
+        font-size: 12px !important;
+        margin-bottom: 15px;
+    }
+
+    .cp-btn-orange {
+        padding: 14px 10px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cp-hero-footer-text {
+        font-size: 11px !important;
+        padding-top: 10px !important;
+    }
+
+    .cp-what,
+    .cp-pricing,
+    .cp-safety,
+    .cp-cta,
+    .cp-faq {
+        padding: 40px 15px;
+    }
+
+    .cp-what-text h2,
+    .cp-pricing-header h2,
+    .cp-safety-text h2,
+    .cp-cta-content h2,
+    .cp-faq-header h2 {
+        font-size: 24px;
+    }
+
+    .cp-price-card h3 {
+        font-size: 18px;
+    }
+
+    .cp-btn-primary{
+                font-size: 12px;
+        padding: 14px 10px;
+        min-width: unset;
+        width: 100%;
+        align-self: center;
+    }
+    .cp-btn-white {
+                font-size: 12px;
+        padding: 14px 10px;
+        min-width: unset;
+        width: 90%;
+        align-self: center;
+    }
+
+    .cp-btn-blue{
+        width: 90%;
+        align-self: center;
+    }
+
+    .cp-faq-contact-btn {
+        font-size: 12px;
+    }
+    .cp-btn-primary-course {
+        font-size: 14px;
+        padding: 14px 10px;
+        min-width: unset;
+        width: 100%;
+        align-self: center;
+    }
+
+    .cp-cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 20px;
+    background-color: #F57C00;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--font-main);
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 15px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse-orange 2s infinite;
+}
+
+    .cp-cta-container {
+        flex-direction: column;
+        min-height: auto;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+        overflow: hidden;
+        max-height: 480px;
+    }
+
+    .cp-card-features li {
+        font-size: 14px
+    }
+
+    .cp-faq-question {
+        padding: 15px;
+    }
+
+    .cp-faq-question h3 {
+        font-size: 14px;
+    }
+
+    .cp-cta-content {
+        padding: 30px 15px;
+    }
+}
+
+/* ─────────────────────────────────────────
+   KEYFRAMES
+───────────────────────────────────────── */
+@keyframes cpFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

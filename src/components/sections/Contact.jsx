@@ -97,7 +97,6 @@ const Contact = () => {
                                 className="contact-cta"
                             >
                                 {t('contact.cta')}
-                                <WhatsAppIcon className="whatsapp-icon" size={24} />
                             </button>
                         </div>
 

@@ -52,16 +52,12 @@ export const Dream = () => {
 
     const galleryImages = [
         course1,
-        course2,
         course3,
-        course7,
-        course4,
-        course8,
         course5,
-        course6,
+        course7,
         course9,
-        course10,
     ];
+
 
     return (
         <section ref={sectionRef} className="dream-section section-padding-lg" id="dream">

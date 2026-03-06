@@ -34,11 +34,14 @@ const Header = ({ isHidden }) => {
     useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
         } else {
-            document.body.style.overflow = 'unset';
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         }
         return () => {
-            document.body.style.overflow = 'unset';
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         };
     }, [isMobileMenuOpen]);
 
@@ -77,7 +80,7 @@ const Header = ({ isHidden }) => {
             if (element) {
                 // Mobile has countdown bar (60px) + header (60px), desktop just needs minimal offset
                 const isMobile = window.innerWidth <= 720;
-                const headerOffset = isMobile ? 165 : 15;
+                const headerOffset = isMobile ? 165 : 25;
                 const rect = element.getBoundingClientRect();
                 const elementPosition = rect.top
                 const offsetPosition = elementPosition
@@ -149,7 +152,7 @@ const Header = ({ isHidden }) => {
             {/* Background Shield */}
             <div className={`header-background ${isScrolled || isMobileMenuOpen ? 'visible' : ''}`}></div>
 
-            <div className="container header-container">
+            <div className="header-container">
                 <div className="header-logo">
                     <a href="/" onClick={handleLogoClick}>
                         <img src={logo} alt="SkyDiveThru" />
