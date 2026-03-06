@@ -385,7 +385,7 @@
         text-align: center !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        font-size: 24px !important;
+        font-size: 25px !important;
     }
 
     .video-subtitle {
@@ -766,7 +766,7 @@
     }
 
     .packages-title {
-        font-size: 20px;
+        font-size: 25px;
         margin-top: -25px;
     }
 
@@ -917,7 +917,7 @@
 
     .course-title {
         order: 2;
-        font-size: 26px;
+        font-size: 25px;
         margin-bottom: 5px;
     }
 
@@ -1014,7 +1014,7 @@
     .video-title {
         margin-top: 50px;
         margin-bottom: -2px;
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .video-container {
@@ -1087,7 +1087,7 @@
     }
 
     .about-title {
-        font-size: 26px;
+        font-size: 25px;
         margin-bottom: 15px;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -1138,7 +1138,7 @@
         margin-top: 0 !important;
         margin-bottom: 10px !important;
         padding: 0 20px;
-        font-size: 26px;
+        font-size: 25px;
         text-align: center !important;
     }
 
@@ -1389,7 +1389,7 @@
 
         .course-title {
         order: 2;
-        font-size: 24px;
+        font-size: 25px;
         margin-bottom: 5px;
     }
 
