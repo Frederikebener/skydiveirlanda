@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Helmet } from 'react-helmet-async';
+import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { CountdownBar } from '../layout/CountdownBar';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
@@ -14,6 +15,7 @@ import img6 from '../../assets/BIRR UNIC- 1920X1080.png';
 import img7 from '../../assets/BIRR UNIC1- 1920X1080.png';
 import img8 from '../../assets/BIRR UNIC- 1920X1080.png';
 import img9 from '../../assets/Imagem (4).png';
+import img10 from '../../assets/Static-Line.jpg';
 import heroVideo from '../../assets/Video-2.mp4';
 import ctaVideo from '../../assets/Takes-32.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,11 +23,15 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import '../../style-coursepage.css';
+import '../../style-coursejourney.css';
+
 
 export const CoursePage = () => {
     const { t } = useLanguage();
     const [faqOpen, setFaqOpen] = useState(null);
+    const [activeTab, setActiveTab] = useState('AFF'); // 'AFF' or 'ASL'
 
     const toggleFaq = (index) => {
         if (faqOpen === index) {
@@ -130,65 +136,157 @@ export const CoursePage = () => {
                 </div>
             </section>
 
-            {/* PRICING JOURNEY SECTION */}
-            <section className="cp-pricing">
-                <div className="cp-pricing-header">
-                    <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.title') }} />
-                    <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.subtitle') }} />
-                </div>
-
-                <div className="cp-pricing-cards">
-                    {/* CARD 1 */}
-                    <div className="cp-price-card cp-card-blue">
-                        <div className="cp-card-img">
-                            <img src={img7} alt="AFF Progressive" />
-                        </div>
-                        <div className="cp-card-content">
-                            <h3 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.title') }} />
-                            <p className="cp-card-subtitle" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.subtitle') }} />
-
-                            <ul className="cp-card-features">
-                                {(t('coursepage.pricing.card1.items') || []).map((item, i) => (
-                                    <li key={i}>
-                                        <span dangerouslySetInnerHTML={{ __html: item }} />
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <p className="cp-card-desc" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.desc') }} />
-
-                            <a href="#cp-contact" className="cp-btn-white">
-                                {t('coursepage.pricing.card1.cta')}
-                            </a>
-                        </div>
+            {/* PRICING JOURNEY SECTION - same as CourseJourney */}
+            <section className="cj-section" id="cp-pricing">
+                <div className="cj-container">
+                    <div className="cj-header">
+                        <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.title') }} />
+                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.subtitle') }} />
                     </div>
 
-                    {/* CARD 2 */}
-                    <div className="cp-price-card cp-card-white">
-                        <div className="cp-card-img">
-                            <img src={img8} alt="AFF Complete" />
-                        </div>
-                        <div className="cp-card-content">
-                            <div className="cp-card-badge">
-                                ⭐ {t('coursepage.pricing.card2.badge')} ⭐
+                    <div className="cj-tabs-container">
+                        <button
+                            className={`cj-tab-btn ${activeTab === 'AFF' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('AFF')}
+                        >
+                            AFF COURSE
+                        </button>
+                        <button
+                            className={`cj-tab-btn ${activeTab === 'ASL' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('ASL')}
+                        >
+                            ASL COURSE
+                        </button>
+                    </div>
+
+                    <div className="cj-cards-wrapper">
+                        {activeTab === 'AFF' ? (
+                            /* CARD 1 - AFF */
+                            <div className="cj-card animate-fade-in">
+                                <div className="cj-card-top">
+                                    <div className="cj-card-image">
+                                        <img src={img3} alt="AFF Complete" />
+                                    </div>
+                                    <div className="cj-card-content">
+                                        <h3 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.title') }} />
+                                        <p className="cj-card-subtitle" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.subtitle') }} />
+                                        <div className="cj-pricing-table">
+                                            <div className="cj-pricing-col cj-pricing-complete">
+                                                <div className="cj-pricing-col-header">
+                                                    <span className="cj-pricing-badge">⭐ {t('pricing.badge.best')}</span>
+                                                    <h4>{t('pricing.complete.title')}</h4>
+                                                    <div className="cj-pricing-total">
+                                                        <span className="cj-price-from">{t('pricing.complete.label')}</span>
+                                                        <span className="cj-price-value">€1.577,00</span>
+                                                    </div>
+                                                </div>
+                                                <ul className="cj-pricing-items">
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.1')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.2')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.3')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.4')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.5')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.6')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.7')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.aff.8')}</li>
+                                                </ul>
+                                            </div>
+                                            <div className="cj-pricing-col cj-pricing-modular">
+                                                <div className="cj-pricing-col-header">
+                                                    <span className="cj-pricing-badge-blue">⭐ {t('pricing.badge.flexible')}</span>
+                                                    <h4>{t('pricing.modular.title')}</h4>
+                                                    <div className="cj-pricing-total">
+                                                        <span className="cj-price-from">{t('pricing.modular.label.total')}</span>
+                                                        <span className="cj-price-value">€1.719,00</span>
+                                                    </div>
+                                                </div>
+                                                <ul className="cj-pricing-levels">
+                                                    <li><span>{t('pricing.aff.level1')}</span><strong>€497</strong></li>
+                                                    <li><span>{t('pricing.level')} 2</span><strong>€257</strong></li>
+                                                    <li><span>{t('pricing.level')} 3</span><strong>€257</strong></li>
+                                                    <li><span>{t('pricing.level')} 4</span><strong>€177</strong></li>
+                                                    <li><span>{t('pricing.level')} 5</span><strong>€177</strong></li>
+                                                    <li><span>{t('pricing.level')} 6</span><strong>€177</strong></li>
+                                                    <li><span>{t('pricing.level')} 7</span><strong>€177</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="cj-card-bottom">
+                                    <div className="cj-bottom-info">
+                                        <h4 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card.add-info') }} />
+                                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.add-inf-desc') }} />
+                                    </div>
+                                    <a href="#cp-contact" className="cj-btn">
+                                        {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.title') }} />
-                            <p className="cp-card-subtitle" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.subtitle') }} />
-
-                            <ul className="cp-card-features">
-                                {(t('coursepage.pricing.card2.items') || []).map((item, i) => (
-                                    <li key={i}>
-                                        <span dangerouslySetInnerHTML={{ __html: item }} />
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <p className="cp-card-desc" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card2.desc') }} />
-
-                            <a href="#cp-contact" className="cp-btn-blue">
-                                {t('coursepage.pricing.card2.cta')}
-                            </a>
-                        </div>
+                        ) : (
+                            /* CARD 2 - ASL */
+                            <div className="cj-card animate-fade-in">
+                                <div className="cj-card-top">
+                                    <div className="cj-card-image">
+                                        <img src={img10} alt="ASL Progressive" />
+                                    </div>
+                                    <div className="cj-card-content">
+                                        <h3 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.title') }} />
+                                        <p className="cj-card-subtitle" dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.subtitle') }} />
+                                        <div className="cj-pricing-table">
+                                            <div className="cj-pricing-col cj-pricing-complete">
+                                                <div className="cj-pricing-col-header">
+                                                    <span className="cj-pricing-badge">⭐ {t('pricing.badge.best')}</span>
+                                                    <h4>{t('pricing.complete.title')}</h4>
+                                                    <div className="cj-pricing-total">
+                                                        <span className="cj-price-from">{t('pricing.complete.label')}</span>
+                                                        <span className="cj-price-value">€1.607,00</span>
+                                                    </div>
+                                                </div>
+                                                <ul className="cj-pricing-items">
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.1')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.2')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.3')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.4')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.5')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.6')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.7')}</li>
+                                                    <li><span className="cj-check">✓</span> {t('pricing.feature.asl.8')}</li>
+                                                </ul>
+                                            </div>
+                                            <div className="cj-pricing-col cj-pricing-modular">
+                                                <div className="cj-pricing-col-header">
+                                                    <span className="cj-pricing-badge-blue">⭐ {t('pricing.badge.flexible')}</span>
+                                                    <h4>{t('pricing.modular.title')}</h4>
+                                                    <div className="cj-pricing-total">
+                                                        <span className="cj-price-from">{t('pricing.modular.label.total')}</span>
+                                                        <span className="cj-price-value">€1.772,00</span>
+                                                    </div>
+                                                </div>
+                                                <ul className="cj-pricing-levels">
+                                                    <li><span>{t('pricing.asl.level1')}</span><strong>€434</strong></li>
+                                                    <li><span>{t('pricing.level')} 2 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')}</strong></li>
+                                                    <li><span>{t('pricing.level')} 3 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')}</strong></li>
+                                                    <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')}</strong></li>
+                                                    <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
+                                                    <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
+                                                    <li><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="cj-card-bottom">
+                                    <div className="cj-bottom-info">
+                                        <h4 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card.add-info') }} />
+                                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.add-inf-desc1') }} />
+                                    </div>
+                                    <a href="#cp-contact" className="cj-btn">
+                                        {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
+                                    </a>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>

@@ -203,13 +203,6 @@ img {
     color: var(--white);
 }
 
-.btn-primary:hover {
-    border: 2px solid var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    background-color: var(--bg-color) !important;
-    transform: scale(1.05);
-}
-
 .btn-outline {
     border-color: var(--primary-color);
     color: var(--primary-color);
@@ -1333,7 +1326,6 @@ img {
 
     .footer-bottom {
         flex-direction: column;
-        gap: 15px;
         text-align: center;
     }
 
@@ -1400,9 +1392,10 @@ img {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background: var(--primary-color);
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     color: #fff;
-    border: 2px solid var(--primary-color);
+    border: none;
     border-radius: 40px;
     padding: 12px 18px;
     font-family: var(--font-main);
@@ -1440,11 +1433,8 @@ img {
 }
 
 .package-cta:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.04);
-    border: 2px solid var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    background-color: var(--bg-color) !important;
+    transform: translateY(-2px) scale(1.04);
+    color: #ffffff !important;
 }
 
 /* =========================================
@@ -1452,7 +1442,8 @@ img {
    ========================================= */
 .course-section {
     background-color: #fff;
-    padding: 100px 0;
+    padding: 250px 0;
+    padding-bottom: 150px;
     overflow: hidden;
 }
 
@@ -1529,17 +1520,16 @@ img {
 
 .course-cta {
     padding: 22px 50px !important;
-    border: 2px solid transparent !important;
     font-size: 22px !important;
     min-width: 320px;
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%) !important;
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     border-radius: 50px !important;
     transition: all 0.3s ease !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background: var(--primary-color);
     color: #fff;
     font-family: var(--font-main);
     font-weight: 900;
@@ -1551,14 +1541,13 @@ img {
     white-space: normal;
     position: relative;
     overflow: hidden;
+    border: none !important;
 }
 
 .course-cta:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.04);
-    border: 2px solid var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    background-color: var(--bg-color) !important;
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.4);
+    transform: translateY(-2px) scale(1.04);
+    color: #ffffff !important;
 }
 
 .course-cta.animate {
@@ -1823,10 +1812,11 @@ img {
 
     /* Specific Video CTA matching Course CTA properties */
     padding: 22px 50px !important;
-    border: 2px solid transparent !important;
+    border: none !important;
     font-size: 22px;
     min-width: 320px;
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%) !important;
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     border-radius: 50px !important;
     transition: all 0.3s ease !important;
     opacity: 0;
@@ -1841,9 +1831,9 @@ img {
 }
 
 .video-cta:hover {
-    border: 2px solid var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    background-color: var(--bg-color) !important;
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.4);
+    transform: translateY(-2px) scale(1.04);
+    color: #ffffff !important;
 }
 
 .video-cta::after {
@@ -1870,6 +1860,7 @@ img {
     width: 100%;
     overflow: hidden;
     padding: 50px 0;
+    padding-top: 200px;
 }
 
 .about-container {
@@ -2096,13 +2087,20 @@ img {
     font-size: 24px !important;
     border-radius: 60px !important;
     margin-top: -30px;
-    box-shadow: 0 15px 35px rgba(0, 130, 201, 0.2);
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     opacity: 0;
     position: relative;
     overflow: hidden;
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%) !important;
     color: #fff !important;
     border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.dream-cta:hover {
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.4);
+    transform: translateY(-2px) scale(1.04);
+    color: #ffffff !important;
 }
 
 .dream-cta.animate {
@@ -2433,23 +2431,41 @@ img {
     border-radius: 30px;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: var(--primary-color);
-    box-shadow: 0 5px 30px rgba(0, 123, 255, 0.3);
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%) !important;
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     /* Blue background */
     color: var(--bg-color);
+    border: none !important;
     /* White text */
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     z-index: 10;
+    overflow: hidden;
+}
+
+.contact-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shineEffect 4s infinite linear;
+    animation-delay: 1.4s;
+    z-index: -1;
 }
 
 .contact-cta:hover {
-    color: var(--primary-color) !important;
-    border: 2px solid var(--primary-color) !important;
-    transform: scale(1.05);
-    box-shadow: 0 5px 30px rgba(0, 130, 201, 0.3);
-    background-color: var(--bg-color);
+    color: #ffffff !important;
+    border: none !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.4);
 }
 
 .contact-map {
@@ -3454,7 +3470,6 @@ img {
 
     .course-cta {
         padding: 18px 30px !important;
-        border: 2px solid transparent !important;
         font-size: 18px !important;
         min-width: 320px;
         background-color: var(--primary-color) !important;

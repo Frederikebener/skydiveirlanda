@@ -170,7 +170,7 @@
 ───────────────────────────────────────── */
 .cp-btn-primary {
     display: inline-block;
-    background: var(--primary-color);
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
     color: #fff;
     padding: 22px 50px;
     border-radius: 50px;
@@ -186,7 +186,24 @@
     border: none;
     animation: pulse-blue 2s infinite;
     min-width: 320px;
+    position: relative;
+    overflow: hidden;
+}
 
+.cp-btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shineEffect 4s infinite linear;
+    animation-delay: 1.4s;
 }
 
 .cp-btn-blue {
@@ -209,9 +226,9 @@
 }
 
 .cp-btn-primary:hover {
-    background: #0056b3;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.45);
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.4);
 }
 
 .cp-btn-large {
@@ -429,30 +446,53 @@
 
 .cp-btn-primary-course {
     max-width: 400px;
+    min-width: 320px;
     display: inline-block;
-    background: var(--primary-color);
+
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
     color: #fff;
+
     padding: 22px 50px;
     border-radius: 50px;
+
     font-family: var(--font-main);
     font-weight: 900;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.35);
+
     cursor: pointer;
     border: none;
-    animation: pulse-blue 2s infinite;
-    min-width: 320px;
 
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.35);
+
+    animation: pulse-blue 2s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.cp-btn-primary-course::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shineEffect 4s infinite linear;
+    animation-delay: 1.4s;
 }
 
 .cp-btn-primary-course:hover {
-    background: #0056b3;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.45);
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.4);
 }
 
 .cp-card-blue {
@@ -570,7 +610,8 @@
 ───────────────────────────────────────── */
 .cp-safety {
     background-color: #f4f5f8;
-    padding-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .cp-safety-container {
@@ -613,7 +654,6 @@
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* ─────────────────────────────────────────
@@ -626,8 +666,8 @@
 ───────────────────────────────────────── */
 .cp-faq {
     padding: 100px 5%;
-    padding-bottom: 80px;
-    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     background-color: var(--background-light);
 }
 
@@ -850,7 +890,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
     margin: 0 auto;
     padding: 18px 20px;
     background-color: #F57C00;
@@ -858,7 +897,7 @@
     color: white;
     font-family: var(--font-main);
     font-weight: 900;
-    font-size: 12px;
+    font-size: 18px;
     text-decoration: none;
     border-radius: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -1088,7 +1127,7 @@
         font-family: var(--font-main);
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 13px;
         line-height: 1;
         text-align: center;
         text-decoration: none;
@@ -1132,7 +1171,7 @@
     .cp-btn-primary {
         text-align: center;
         font-weight: 900;
-        font-size: 18px;
+        font-size: 13px;
         line-height: 20px;
         width: 100%;
         max-width: 400px;
@@ -1145,6 +1184,26 @@
         line-height: 20px;
         width: 100%;
         max-width: 400px;
+    }
+
+    .cp-cta-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 18px 20px;
+        background-color: #F57C00;
+        text-transform: uppercase;
+        color: white;
+        font-family: var(--font-main);
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        animation: pulse-orange 2s infinite;
     }
 
     /* Safety Section */
@@ -1204,7 +1263,7 @@
         flex: auto;
         padding: 40px 30px;
         text-align: center;
-        margin-top:-10px;
+        margin-top: -10px;
     }
 
     .cp-cta-content h2 {
@@ -1240,7 +1299,7 @@
     }
 
     .cp-faq-header h2 {
-        font-size: 30px;
+        font-size: 25px;
         /* Reduced from 32px to ensure fit on smaller screens */
     }
 
@@ -1289,23 +1348,24 @@
     }
 
     .cp-card-content {
-    padding:13px
+        padding: 13px
     }
 
-    .cp-card-desc{
-        font-size:14px;
+    .cp-card-desc {
+        font-size: 14px;
     }
 
-    .cp-card-subtitle{
-        font-size:14px;
+    .cp-card-subtitle {
+        font-size: 14px;
     }
+
     .cp-hero-box {
         padding: 15px 15px;
         margin: 0;
         margin-top: 20px;
         max-width: 100%;
         width: 100%;
-        margin-bottom:30px;
+        margin-bottom: 30px;
     }
 
     .cp-hero-title {
@@ -1321,7 +1381,7 @@
 
     .cp-btn-orange {
         padding: 14px 10px;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 15px;
         margin-bottom: 15px;
     }
@@ -1351,22 +1411,23 @@
         font-size: 18px;
     }
 
-    .cp-btn-primary{
+    .cp-btn-primary {
         font-size: 12px;
         padding: 14px 10px;
         min-width: unset;
         width: 100%;
         align-self: center;
     }
+
     .cp-btn-white {
-                font-size: 12px;
+        font-size: 12px;
         padding: 14px 10px;
         min-width: unset;
         width: 90%;
         align-self: center;
     }
 
-    .cp-btn-blue{
+    .cp-btn-blue {
         width: 90%;
         align-self: center;
     }
@@ -1374,6 +1435,7 @@
     .cp-faq-contact-btn {
         font-size: 12px;
     }
+
     .cp-btn-primary-course {
         font-size: 14px;
         padding: 14px 10px;
@@ -1383,24 +1445,24 @@
     }
 
     .cp-cta-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 18px 20px;
-    background-color: #F57C00;
-    text-transform: uppercase;
-    color: white;
-    font-family: var(--font-main);
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 15px;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    animation: pulse-orange 2s infinite;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 18px 20px;
+        background-color: #F57C00;
+        text-transform: uppercase;
+        color: white;
+        font-family: var(--font-main);
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 15px;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        animation: pulse-orange 2s infinite;
+    }
 
     .cp-cta-container {
         flex-direction: column;

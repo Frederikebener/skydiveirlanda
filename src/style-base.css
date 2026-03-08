@@ -73,7 +73,7 @@ img {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    border-radius: var(--max-width);
+    border-radius: 50px;
     font-weight: 800;
     font-family: var(--font-main);
     cursor: pointer;
@@ -83,15 +83,36 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
     color: var(--white);
+    border: 0 !important;
+    outline: none !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shineEffect 4s infinite linear;
+    animation-delay: 1.4s;
 }
 
 .btn-primary:hover {
-    transform: scale(1.05);
-    background-color: var(--primary-color);
-    box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.4);
+    color: var(--white);
 }
 
 .btn-lg {
@@ -248,8 +269,28 @@ img {
     padding: 16px 32px !important;
     font-size: 16px !important;
     text-align: center;
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%) !important;
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.3);
+    border: none;
     color: #fff !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shineEffect 4s infinite linear;
+    animation-delay: 1.4s;
 }
 
 /* Enable Hamburger on Tablets & Mobile */
