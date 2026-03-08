@@ -1512,6 +1512,15 @@
         animation-delay: 0.1s;
     }
 
+    .header-container {
+        justify-content: space-between;
+        padding: 30px 10px;
+        position: relative;
+        z-index: 10001;
+        display: flex;
+        align-items: center;
+    }
+
     .packages-subtitle.animate {
         animation-delay: 0.2s;
     }
@@ -2014,6 +2023,15 @@
         box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
         margin-bottom: 20px;
         transition: all 0.3s ease;
+    }
+
+        .header-container {
+        justify-content: space-between;
+        padding: 20px 10px;
+        position: relative;
+        z-index: 10001;
+        display: flex;
+        align-items: center;
     }
 
     .hero-content {

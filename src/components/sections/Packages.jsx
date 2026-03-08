@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import sky360Img from '../../assets/package-sky360.jpg';
-import classicImg from '../../assets/BIRR DUPLO3 - 1024 x 768.png';
-import eliteImg from '../../assets/package-record.jpg';
+import classicImg from '../../assets/package-record.jpg';
+import eliteImg from '../../assets/BIRR DUPLO3 - 1024 x 768.png';
 import recordImg from '../../assets/BIRR DUO9- 1920X1080.png';
 
 export const Packages = () => {
@@ -99,11 +99,6 @@ export const Packages = () => {
                                 <p className="package-description">{card.description}</p>
 
                                 <div className="package-card-footer">
-                                    <div className="package-pricing">
-                                        <span className="price-value">{card.price}</span>
-                                        <span className="payment-info">{card.payment}</span>
-                                    </div>
-
                                     <button className="package-cta">
                                         {card.cta}
                                     </button>

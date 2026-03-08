@@ -2978,7 +2978,7 @@ img {
     .package-card-footer {
         display: flex;
         flex-direction: column;
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     .package-features {
@@ -3095,8 +3095,7 @@ img {
 
     .packages-header {
         padding: 40px;
-
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         margin-left: 27px;
         margin-right: -15px;
         gap: 30;
@@ -3384,7 +3383,7 @@ img {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        margin-top: -15px !important;
+        margin-top: -35px !important;
     }
 
     .package-card-footer {
@@ -3392,13 +3391,13 @@ img {
     }
 
     .package-features {
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
         min-height: 0;
     }
 
     .package-features li {
-        margin-bottom: 5px !important;
+        margin-bottom: 0px !important;
         font-size: 12px !important;
     }
 

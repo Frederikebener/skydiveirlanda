@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, AlertCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -16,7 +16,13 @@ import flagPt from '../../assets/flag-pt.png';
 export const NotFound = () => {
     const { t, language, setLanguage } = useLanguage();
     const [isHovered, setIsHovered] = useState(false);
-    const [isLangOpen, setIsLangOpen] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const languages = [
         { code: 'ga', name: 'Gaeilge', flag: flagGa },
@@ -28,7 +34,8 @@ export const NotFound = () => {
         { code: 'it', name: 'Italiano', flag: flagIt }
     ];
 
-    const currentLang = languages.find(l => l.code === language) || languages[0];
+    const isSmallMobile = windowWidth <= 375;
+    const isVerySmall = windowWidth <= 320;
 
     const styles = {
         container: {
@@ -41,7 +48,7 @@ export const NotFound = () => {
             left: 0,
             width: '100%',
             height: '100%',
-            padding: '20px',
+            padding: isVerySmall ? '10px' : '20px',
             textAlign: 'center',
             backgroundImage: `url(${heroBg})`,
             backgroundSize: 'cover',
@@ -62,23 +69,25 @@ export const NotFound = () => {
         },
         langSwitch: {
             display: 'flex',
+            flexWrap: 'wrap',
             alignItems: 'center',
             justifyContent: 'center',
             background: 'rgba(255, 255, 255, 0.05)',
             backdropFilter: 'blur(5px)',
-            padding: '8px 24px',
+            padding: isVerySmall ? '6px 12px' : '8px 24px',
             borderRadius: '50px',
             border: '1px solid rgba(255, 255, 255, 0.15)',
-            marginBottom: '2rem',
+            marginBottom: isVerySmall ? '1rem' : '2rem',
             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
             position: 'relative',
-            zIndex: 10
+            zIndex: 10,
+            maxWidth: '100%'
         },
         langBtn: {
             background: 'none',
             border: 'none',
             cursor: 'pointer',
-            padding: '0 8px',
+            padding: isVerySmall ? '0 4px' : '0 8px',
             transition: 'all 0.3s ease',
             display: 'flex',
             alignItems: 'center',
@@ -90,8 +99,8 @@ export const NotFound = () => {
             transform: 'scale(1.1)'
         },
         langFlag: {
-            width: '28px',
-            height: '20px',
+            width: isVerySmall ? '24px' : '28px',
+            height: isVerySmall ? '16px' : '20px',
             objectFit: 'cover',
             borderRadius: '3px',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
@@ -107,7 +116,7 @@ export const NotFound = () => {
             zIndex: 10,
             backgroundColor: 'rgba(255, 255, 255, 0.95)',
             backdropFilter: 'blur(10px)',
-            padding: '40px',
+            padding: isVerySmall ? '24px 16px' : isSmallMobile ? '30px 20px' : '40px',
             borderRadius: '24px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
             maxWidth: '500px',
@@ -117,7 +126,7 @@ export const NotFound = () => {
         iconWrapper: {
             display: 'flex',
             justifyContent: 'center',
-            marginBottom: '24px'
+            marginBottom: isVerySmall ? '16px' : '24px'
         },
         iconCircle: {
             backgroundColor: '#fee2e2',
@@ -126,11 +135,11 @@ export const NotFound = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: '80px',
-            height: '80px'
+            width: isVerySmall ? '60px' : '80px',
+            height: isVerySmall ? '60px' : '80px'
         },
         title: {
-            fontSize: '48px',
+            fontSize: isVerySmall ? '32px' : isSmallMobile ? '40px' : '48px',
             fontWeight: '800',
             color: '#1f2937',
             marginBottom: '8px',
@@ -138,17 +147,17 @@ export const NotFound = () => {
             marginTop: 0
         },
         subtitle: {
-            fontSize: '24px',
+            fontSize: isVerySmall ? '18px' : isSmallMobile ? '20px' : '24px',
             fontWeight: '600',
             color: '#4b5563',
-            marginBottom: '24px',
+            marginBottom: isVerySmall ? '16px' : '24px',
             marginTop: 0
         },
         description: {
-            fontSize: '16px',
+            fontSize: isVerySmall ? '14px' : '16px',
             fontFamily: "'Open Sans', sans-serif",
             color: '#6b7280',
-            marginBottom: '32px',
+            marginBottom: isVerySmall ? '24px' : '32px',
             lineHeight: 1.6
         },
         button: {
@@ -159,10 +168,10 @@ export const NotFound = () => {
             backgroundColor: isHovered ? '#0056b3' : '#0082C9',
             color: 'white',
             fontWeight: 'bold',
-            padding: '12px 32px',
+            padding: isVerySmall ? '10px 24px' : '12px 32px',
             borderRadius: '50px',
             textDecoration: 'none',
-            fontSize: '16px',
+            fontSize: isVerySmall ? '14px' : '16px',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
             transition: 'all 0.2s ease',
             transform: isHovered ? 'scale(1.05)' : 'scale(1)',
