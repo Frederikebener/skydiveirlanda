@@ -16,6 +16,7 @@ import img7 from '../../assets/BIRR UNIC1- 1920X1080.png';
 import img8 from '../../assets/BIRR UNIC- 1920X1080.png';
 import img9 from '../../assets/Imagem (4).png';
 import img10 from '../../assets/Static-Line.jpg';
+import img11 from '../../assets/BIRR TRIO1- 1920X1080.png'
 import heroVideo from '../../assets/Video-2.mp4';
 import ctaVideo from '../../assets/Takes-32.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -307,7 +308,7 @@ export const CoursePage = () => {
                         </div>
                     </div>
                     <div className="cp-safety-media">
-                        <img src={img3} alt="Safety in Skydiving" className="cp-safety-img" />
+                        <img src={img11} alt="Safety in Skydiving" className="cp-safety-img" />
                     </div>
                 </div>
             </section>
