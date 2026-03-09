@@ -1088,22 +1088,25 @@
 
     .about-text-col {
         flex: 0 0 0;
-        padding: 25px;
+        padding: 0px;
         position: relative;
-        width: 590px;
+        width: 100%;
     }
 
     .about-title {
         SIZE: B4;
         font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
         font-weight: 500;
         color: #151515;
         margin-bottom: 30px;
         line-height: 1.2;
         opacity: 0;
+        font-size: 25px !important;
+        margin-bottom: 15px;
+        margin-left: 0 !important;
+        text-align: center;
+        line-height: 1.2;
     }
-
 
     .countdown-container {
         flex-direction: column;
@@ -1642,6 +1645,16 @@
         text-transform: uppercase;
     }
 
+    /* ── Course Journey ── */
+    .cj-pricing-table {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .cj-pricing-col {
+        width: 100% !important;
+    }
+
     /* ── Video Section ── */
     .video-section {
         padding: 0px 0 40px !important;
@@ -1747,7 +1760,7 @@
     }
 
     .about-title {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 15px;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -1798,7 +1811,7 @@
         margin-top: 0 !important;
         margin-bottom: 10px !important;
         padding: 0 20px;
-        font-size: 25px;
+        font-size: 25px !important;
         text-align: center !important;
     }
 
@@ -1918,77 +1931,108 @@
     }
 
     /* ── Contact Section ── */
+    .contact-section {
+        background-color: #fff !important;
+        padding: 50px 15px !important;
+    }
+
     .contact-card {
-        grid-template-columns: 1fr;
-        border-radius: 10px;
-        min-height: auto;
-        margin: 0;
-        overflow: hidden;
+        grid-template-columns: 1fr !important;
+        border-radius: 10px !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        background-color: #fff !important;
+        gap: 0px !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 
     .contact-info {
-        padding: 0px 0px;
-        display: flex;
-        width: auto;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 0px 0px !important;
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        flex: none !important;
     }
 
     .contact-badge {
-        display: inline-flex;
-        margin: 0 auto 20px;
-        background-color: var(--primary-color);
-        color: #fff;
-        padding: 6px 14px;
-        border-radius: 100px;
-        font-size: 10px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        display: inline-flex !important;
+        margin: 0 auto 20px !important;
+        background-color: var(--primary-color) !important;
+        color: #fff !important;
+        padding: 6px 14px !important;
+        border-radius: 100px !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
     }
 
     .contact-title {
-        font-size: 24px;
-        margin-bottom: 30px;
-        text-align: center;
-        color: #1a1a1a;
-        line-height: 1.25;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 24px !important;
+        margin-bottom: 30px !important;
+        text-align: center !important;
+        color: #1a1a1a !important;
+        line-height: 1.25 !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .contact-items {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 25px !important;
+        margin: 0 auto 40px !important;
+        padding: 0 20px !important;
     }
 
     .contact-item {
-        text-align: left;
+        text-align: left !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    .contact-item-text h3 {
+        font-size: 18px !important;
+        margin-bottom: 2px !important;
+        font-weight: 700 !important;
+    }
+
+    .contact-item-text p {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
     }
 
     .contact-cta {
-        margin: 0 auto;
-        font-size: 14px;
-        max-width: 300px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
+        margin: 0 auto !important;
+        font-size: 14px !important;
+        max-width: 300px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        white-space: nowrap !important;
         padding: 16px 20px !important;
-        margin-bottom: 50px;
+        margin-bottom: 50px !important;
+        width: 100% !important;
+        border-radius: 100px !important;
     }
 
     .contact-map {
-        min-height: 450px;
+        min-height: 350px !important;
         width: 100% !important;
-        margin-left: 0;
-        border-radius: 10px;
+        margin-left: 0 !important;
+        border-radius: 20px !important;
     }
 
     /* ── Footer ── */
@@ -2025,7 +2069,7 @@
         transition: all 0.3s ease;
     }
 
-        .header-container {
+    .header-container {
         justify-content: space-between;
         padding: 20px 10px;
         position: relative;
@@ -2065,10 +2109,10 @@
     }
 
     .contact-map {
-        min-height: 400px;
+        min-height: 300px !important;
         width: 100% !important;
-        margin-left: 0;
-        border-radius: 10px;
+        margin-left: 0 !important;
+        border-radius: 15px !important;
     }
 
     .course-title {
@@ -2109,27 +2153,50 @@
     }
 
     .contact-cta {
-        margin: 0 auto;
-        font-size: 14px;
-        max-width: 250px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        padding: 16px 20px !important;
-        margin-bottom: 50px;
+        margin: 0 auto !important;
+        font-size: 13px !important;
+        max-width: 240px !important;
+        padding: 14px 15px !important;
+        margin-bottom: 40px !important;
+        white-space: normal !important;
+        text-align: center !important;
+        width: 100% !important;
     }
 
     .contact-title {
-        font-size: 25px;
-        margin-bottom: 30px;
-        text-align: center;
-        color: #1a1a1a;
-        line-height: 1.25;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+    }
+
+    .contact-items {
+        gap: 20px !important;
+        margin-bottom: 30px !important;
+        padding: 0 10px !important;
+    }
+
+    .contact-item {
+        gap: 10px !important;
+    }
+
+    .icon-wrapper {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .icon-wrapper svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .contact-item-text h3 {
+        font-size: 16px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .contact-item-text p {
+        font-size: 13px !important;
     }
 
     .package-content {
