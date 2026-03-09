@@ -3,13 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { useLanguage } from '../../context/LanguageContext';
 import { useNavigate } from 'react-router-dom';
-import course1 from '../../assets/BIRR TRIO2- 1920X1080.png';
-import course2 from '../../assets/BIRR TRIO3- 1920X1080.png';
-import course3 from '../../assets/BIRR TRIO- 1920X1080.png';
-import course4 from '../../assets/BIRR DUO- 1920X1080.png';
-import course5 from '../../assets/BIRR UNIC1- 1920X1080.png';
-import course6 from '../../assets/BIRR UNIC- 1920X1080.png';
-import course7 from '../../assets/Imagem (4).png';
+import course1 from '../../assets/BIRR TRIO3- 1920X1080.png';
+import course2 from '../../assets/BIRR TRIO- 1920X1080.png';
+import course3 from '../../assets/BIRR DUO- 1920X1080.png';
 
 
 import 'swiper/css';
@@ -67,10 +63,6 @@ export const Course = () => {
         course1,
         course2,
         course3,
-        course4,
-        course5,
-        course6,
-        course7,
     ];
 
 

@@ -6,15 +6,10 @@ import { CountdownBar } from '../layout/CountdownBar';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { config } from '../../data/config';
-import img1 from '../../assets/BIRR TRIO2- 1920X1080.png';
-import img2 from '../../assets/BIRR TRIO3- 1920X1080.png';
-import img3 from '../../assets/BIRR TRIO- 1920X1080.png';
-import img4 from '../../assets/BIRR DUO- 1920X1080.png';
-import img5 from '../../assets/BIRR UNIC1- 1920X1080.png';
-import img6 from '../../assets/BIRR UNIC- 1920X1080.png';
-import img7 from '../../assets/BIRR UNIC1- 1920X1080.png';
-import img8 from '../../assets/BIRR UNIC- 1920X1080.png';
-import img9 from '../../assets/Imagem (4).png';
+
+import img1 from '../../assets/BIRR TRIO3- 1920X1080.png';
+import img2 from '../../assets/BIRR TRIO- 1920X1080.png';
+import img3 from '../../assets/BIRR DUO- 1920X1080.png';
 import img10 from '../../assets/Static-Line.jpg';
 import img11 from '../../assets/BIRR TRIO1- 1920X1080.png'
 import heroVideo from '../../assets/Video-2.mp4';
@@ -46,7 +41,7 @@ export const CoursePage = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const galleryImages = [img9, img1, img2, img3, img4, img5, img6];
+    const galleryImages = [img1, img2, img3];
 
     return (
         <>
