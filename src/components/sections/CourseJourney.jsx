@@ -23,13 +23,13 @@ export const CourseJourney = () => {
                         className={`cj-tab-btn ${activeTab === 'AFF' ? 'active' : ''}`}
                         onClick={() => setActiveTab('AFF')}
                     >
-                        AFF COURSE
+                        A.F.F
                     </button>
                     <button
                         className={`cj-tab-btn ${activeTab === 'ASL' ? 'active' : ''}`}
                         onClick={() => setActiveTab('ASL')}
                     >
-                        ASL COURSE
+                        A.S.L
                     </button>
                 </div>
 

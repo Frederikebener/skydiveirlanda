@@ -394,8 +394,21 @@
     }
 
     /* ── Video Section: Center Titles on Tablet ── */
-    .video-header {
-        text-align: center;
+    .experience-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .experience-right-title {
+        text-align: center !important;
+        margin: 15px auto !important;
+        font-size: 25px !important;
+        color: #151515 !important;
+        width: 100%;
+        max-width: 600px;
+        flex: none !important;
     }
 
     .video-title {
@@ -717,8 +730,8 @@
     .cp-safety-container {
         flex-direction: column !important;
         text-align: center !important;
-        gap: 50px !important;
-        padding: 80px 20px !important;
+        gap: 20px !important;
+        padding: 0px 20px !important;
     }
 
     .cp-what-media,
@@ -757,7 +770,7 @@
 
     .cj-card-content {
         width: 100% !important;
-        padding: 40px 20px !important;
+        padding: 40px 20px;
         /* Reduced padding to give more room to tables */
     }
 
@@ -866,11 +879,6 @@
         max-height: none !important;
     }
 
-    .cp-cta-video-wrapper {
-        flex: none !important;
-        width: 100% !important;
-        height: 450px !important;
-    }
 
     .cp-cta-content {
         flex: none !important;
@@ -1296,26 +1304,24 @@
     }
 
     /* ── Experience Section ── */
-    .experience-content-wrapper {
+    .experience-grid {
+        display: flex;
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .experience-left-col,
-    .experience-right-col {
-        flex: 0 0 100%;
-        max-width: 100%;
+        align-items: center;
+        gap: 20px;
     }
 
     .experience-title {
-        font-size: 25px;
+        font-size: 22px !important;
         text-align: center !important;
-        margin: 0 auto 25px auto !important;
+        margin: 0 auto 10px auto !important;
         padding: 0 10px;
         line-height: 1.25;
         width: 100%;
         max-width: 100%;
         display: block;
+        flex: none !important;
+        color: #151515 !important;
     }
 
     .experience-left-col {
@@ -1326,14 +1332,18 @@
         margin-bottom: 20px;
     }
 
-    .experience-image-wrapper {
+    .experience-video-wrapper {
         border-radius: 30px;
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
         position: relative;
-        aspect-ratio: auto;
         overflow: hidden;
+    }
+
+    .experience-video-container {
+        aspect-ratio: 16 / 9;
+        border-radius: 30px !important;
     }
 
     .experience-main-image {
@@ -1359,6 +1369,16 @@
     .experience-right-col {
         padding-top: 0;
         width: 100%;
+    }
+
+    .experience-right-title {
+        text-align: center !important;
+        margin: 20px auto 10px auto !important;
+        font-size: 22px !important;
+        color: #151515 !important;
+        width: 100%;
+        max-width: 400px;
+        flex: none !important;
     }
 
     .experience-timeline {
@@ -2089,15 +2109,20 @@
         margin-top: 0;
     }
 
+    .experience-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
     .experience-title {
-        font-size: 20px;
+        font-size: 18px !important;
         text-align: center !important;
-        margin: 0 auto 25px auto !important;
+        margin: 0 auto 5px auto !important;
         padding: 0 10px;
-        line-height: 1.25;
-        width: 100%;
-        max-width: 100%;
-        display: block;
+        line-height: 1.2;
+        flex: none !important;
+        color: #151515 !important;
     }
 
     .experience-section {
@@ -2421,7 +2446,15 @@
         text-align: center !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        font-size: 22px !important;
+        font-size: 18px !important;
+    }
+
+    .experience-right-title {
+        text-align: center !important;
+        font-size: 18px !important;
+        margin: 15px auto 5px auto !important;
+        color: #151515 !important;
+        flex: none !important;
     }
 
     .video-subtitle {

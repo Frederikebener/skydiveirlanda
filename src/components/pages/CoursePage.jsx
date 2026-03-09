@@ -86,54 +86,8 @@ export const CoursePage = () => {
                 </div>
             </section>
 
-            {/* ── WHAT IS AFF ── */}
-            <section className="cp-what cp-what-split">
-                <div className="cp-container cp-what-container">
-
-                    <div className="cp-what-media">
-                        <Swiper
-                            modules={[Navigation, Pagination, Autoplay]}
-                            navigation
-                            pagination={{ clickable: true }}
-                            autoplay={{ delay: 3000, disableOnInteraction: false }}
-                            loop={true}
-                            spaceBetween={30}
-                            className="cp-what-swiper"
-                        >
-                            {galleryImages.map((src, i) => (
-                                <SwiperSlide key={i}>
-                                    <img src={src} alt="AFF Action" className="cp-what-slide-img" />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
-
-                    <div className="cp-what-text">
-                        <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.what.title') }} />
-                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.what.desc') }} />
-                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.what.desc2') }} />
-
-                        <ul className="cp-what-features">
-                            {(t('coursepage.what.items') || []).map((item, i) => (
-                                <li key={i}>
-                                    <span className="cp-what-check">✔</span>
-                                    <span dangerouslySetInnerHTML={{ __html: item }} />
-                                </li>
-                            ))}
-                        </ul>
-
-                        <div className="cp-what-cta">
-                            <a href="#cp-contact" className="cp-btn-primary">
-                                {t('coursepage.what.cta') || 'Start My Journey'}
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
             {/* PRICING JOURNEY SECTION - same as CourseJourney */}
-            <section className="cj-section" id="cp-pricing">
+            <section className="cj-section cj-white-bg" id="cp-pricing">
                 <div className="cj-container">
                     <div className="cj-header">
                         <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.title') }} />
@@ -276,6 +230,51 @@ export const CoursePage = () => {
                             </div>
                         )}
                     </div>
+                </div>
+            </section>
+            {/* ── WHAT IS AFF ── */}
+            <section className="cp-what cp-what-split cp-what-blue">
+                <div className="cp-container cp-what-container">
+
+                    <div className="cp-what-media">
+                        <Swiper
+                            modules={[Navigation, Pagination, Autoplay]}
+                            navigation
+                            pagination={{ clickable: true }}
+                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                            loop={true}
+                            spaceBetween={30}
+                            className="cp-what-swiper"
+                        >
+                            {galleryImages.map((src, i) => (
+                                <SwiperSlide key={i}>
+                                    <img src={src} alt="AFF Action" className="cp-what-slide-img" />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+
+                    <div className="cp-what-text">
+                        <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.what.title') }} />
+                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.what.desc') }} />
+                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.what.desc2') }} />
+
+                        <ul className="cp-what-features">
+                            {(t('coursepage.what.items') || []).map((item, i) => (
+                                <li key={i}>
+                                    <span className="cp-what-check">✔</span>
+                                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                                </li>
+                            ))}
+                        </ul>
+
+                        <div className="cp-what-cta">
+                            <a href="#cp-contact" className="cp-btn-orange">
+                                {t('coursepage.what.cta') || 'Start My Journey'}
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 

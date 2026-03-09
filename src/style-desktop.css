@@ -584,28 +584,25 @@ img {
     will-change: transform, opacity;
 }
 
-.experience-content-wrapper {
-    display: flex;
-    align-items: center;
-    /* Center align vertically as per image */
+.experience-grid {
+    display: grid;
+    grid-template-columns: 50% 45%;
     justify-content: space-between;
-    /* Increased from 40px */
-}
-
-.experience-left-col {
-    flex: 0 0 50%;
-    /* Adjusted to fit gap */
-    max-width: 50%;
-
+    align-items: flex-start;
+    row-gap: 50px;
+    width: 100%;
 }
 
 .experience-title {
+    grid-column: 1;
+    grid-row: 1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 35px;
     line-height: 1.2;
     color: #151515;
     opacity: 0;
+    margin-bottom: 0;
 }
 
 .experience-title.animate {
@@ -614,11 +611,28 @@ img {
     animation-fill-mode: both;
 }
 
-.experience-image-wrapper {
+.experience-left-col {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100%;
+}
+
+.experience-video-wrapper {
     overflow: hidden;
-    border-radius: 60px;
+    border-radius: 30px;
     position: relative;
-    aspect-ratio: auto;
+    opacity: 0;
+}
+
+.experience-video-wrapper.animate {
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.experience-video-container {
+    aspect-ratio: 16 / 9;
+    border-radius: 30px !important;
 }
 
 .experience-main-image {
@@ -626,8 +640,7 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 60px;
-    opacity: 0;
+    border-radius: 30px;
 }
 
 .experience-main-image.animate {
@@ -639,17 +652,14 @@ img {
 /* Pannellum Customizations */
 .pnlm-container {
     border-radius: 40px;
-    /* Ensure the viewer respects the border radius */
 }
 
 .pnlm-ui .pnlm-controls-container .pnlm-zoom-controls {
     margin: 15px;
-    /* Increase margin from corner */
 }
 
 .pnlm-ui .pnlm-controls-container .pnlm-fullscreen-toggle-button {
     margin: 15px;
-    /* Increase margin from corner */
 }
 
 .experience-loader {
@@ -675,16 +685,30 @@ img {
     }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                               Experience Styles                            */
-/* -------------------------------------------------------------------------- */
-
-
 .experience-right-col {
-    flex: 0 0 40%;
-    /* Increased width */
-    max-width: 50%;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
     padding-top: 0;
+}
+
+.experience-right-title {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #151515;
+    text-align: right;
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.experience-right-title.animate {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 }
 
 .experience-timeline {
@@ -697,7 +721,7 @@ img {
     display: flex;
     gap: 25px;
     position: relative;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
     opacity: 0;
 }
 
@@ -1779,8 +1803,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3082,18 +3106,26 @@ img {
         margin-top: 10px;
     }
 
-    .packages-subtitle {
-    flex: 1;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #555;
-    max-width: 570px;
-    opacity: 0;
-    text-align: right;
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 
-    /* Aligns with button */
-}
+    .packages-subtitle {
+        flex: 1;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+        max-width: 570px;
+        opacity: 0;
+        text-align: right;
+
+        /* Aligns with button */
+    }
 
     .container,
     .experience-content-wrapper {
@@ -3107,7 +3139,7 @@ img {
     }
 
     .experience-title {
-        font-size: 30px !important;
+        font-size: 35px !important;
         margin-bottom: 10px !important;
     }
 
@@ -3165,7 +3197,7 @@ img {
     }
 
     .experience-step-content p {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .step-connector {
@@ -3224,6 +3256,7 @@ img {
     .video-player-container {
         margin: 0 auto;
         max-width: 720px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
 
     /* 4. Packages — 4 columns for smaller desktops to match full width */

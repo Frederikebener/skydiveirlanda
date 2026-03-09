@@ -244,10 +244,27 @@
     width: 100%;
 }
 
+.cp-what.cp-what-blue {
+    background: radial-gradient(circle at center, #1e88e5 0%, #0d47a1 100%)
+}
+
+.cp-what-blue .cp-what-text h2 {
+    color: #fff;
+}
+
+.cp-what-blue .cp-what-text p,
+.cp-what-blue .cp-what-features li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cp-what-blue .cp-what-check {
+    color: #fff;
+}
+
 .cp-what-container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
 }
 
 /* ── Media Side (Swiper) ── */
@@ -983,14 +1000,14 @@
     .cp-btn-primary-course {
         text-align: center;
         font-weight: 900;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         width: 100%;
         max-width: 400px;
     }
 
     .cp-what {
-        padding: 100px 20px;
+        padding: 50px 20px;
         width: 100%;
     }
 
@@ -1007,8 +1024,16 @@
         padding-top: 30px;
     }
 
+    .cp-what-container,
+    .cp-safety-container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+        padding: 0px 0px !important;
+    }
+
     .cp-hero-box {
-        padding: 20px 20px;
+        padding: 20px 20px !important;
         margin-top: 30px;
         max-width: 100%;
         backdrop-filter: blur(4px);
@@ -1115,6 +1140,39 @@
         transform: translateY(2px) scale(1.02);
         transform-origin: bottom;
     }
+
+    /* Reduzindo margens e padding das tabelas na página COURSE */
+    .cj-section.cj-white-bg .cj-pricing-table {
+        gap: 10px !important;
+        margin-top: 5px !important;
+    }
+
+    .cj-section.cj-white-bg .cj-card-content {
+        padding: 15px 10px !important;
+    }
+
+    .cj-section.cj-white-bg .cj-pricing-col {
+        padding: 12px !important;
+    }
+
+    .cj-section.cj-white-bg .cj-pricing-title-row {
+        margin-bottom: 10px !important;
+    }
+
+
+    .cj-card-cta-only {
+        padding: 20px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end !important;
+    }
+
+    .cj-card-cta-only .cj-btn {
+        width: auto !important;
+        min-width: 100%;
+        justify-content: center;
+    }
+
 
     .cp-btn-orange {
         display: block;
@@ -1232,7 +1290,15 @@
     }
 
     .cp-safety-text h2 {
-        font-size: 30px;
+        color: var(--primary-color);
+        font-size: 34px !important;
+        font-weight: 800 !important;
+        margin-bottom: 30px !important;
+        line-height: 1 !important;
+        max-width: 600px !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .cp-cta-container {
@@ -1298,7 +1364,7 @@
     }
 
     .cp-faq-header h2 {
-        font-size: 25px;
+        font-size: 30px;
         /* Reduced from 32px to ensure fit on smaller screens */
     }
 

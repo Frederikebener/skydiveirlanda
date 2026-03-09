@@ -40,10 +40,10 @@ const Footer = () => {
 
     // Social links
     const LINKS = {
-        instagram: "https://www.instagram.com/skydivethru_ireland/",
-        facebook: "https://www.facebook.com/share/183pUGD8aa/?mibextid=wwXIfr",
-        tiktok: "https://www.tiktok.com",
-        youtube: "https://youtube.com/@skydivethruireland?si=NRf9Eph1DT9Dbd46 ",
+        instagram: "https://www.instagram.com/skydivethru_ireland",
+        facebook: "https://www.facebook.com/skydivethruireland",
+        tiktok: "https://www.tiktok.com/@skydivethru_ireland",
+        youtube: "https://www.youtube.com/@skydivethruireland",
     };
 
     return (
@@ -93,7 +93,6 @@ const Footer = () => {
                             <li><a href="/#" className="footer-link" onClick={(e) => handleNavClick(e, '#')}><span className="link-dot"></span>{t('footer.home')}</a></li>
                             <li><a href="#about" className="footer-link" onClick={(e) => handleNavClick(e, '#about')}><span className="link-dot"></span>{t('footer.about')}</a></li>
                             <li><a href="#experience" className="footer-link" onClick={(e) => handleNavClick(e, '#experience')}><span className="link-dot"></span>{t('footer.experience')}</a></li>
-                            <li><a href="#video" className="footer-link" onClick={(e) => handleNavClick(e, '#video')}><span className="link-dot"></span>{t('footer.video')}</a></li>
                             <li><a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}><span className="link-dot"></span>{t('footer.packages')}</a></li>
                             <li><Link to="/course" className="footer-link"><span className="link-dot"></span>{t('footer.course')}</Link></li>
                             <li><a href="#faq" className="footer-link" onClick={(e) => handleNavClick(e, '#faq')}><span className="link-dot"></span>{t('footer.faq')}</a></li>

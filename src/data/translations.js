@@ -165,7 +165,7 @@ export const translations = {
         "coursepage.hero.subtitle": "Learn to fly solo with the most flexible skydiving courses in Ireland. Progress at your own pace with our AFF or ASL programs.",
         "coursepage.hero.cta": "I want to start my training now!",
         "coursepage.hero.footer": "25 years accident-free | Certified instructors",
-        "coursepage.what.title": "The training that turns dreamers into <strong style='color: var(--primary-color)'>skydivers</strong>",
+        "coursepage.what.title": "The training that turns dreamers into skydivers",
         "coursepage.what.desc": "Our Accelerated Free Fall (AFF) and Accelerated Static Line (ASL) courses are your gateway to the absolute freedom of the skies. Here you will learn not only the technique, but develop the mindset of a true skydiver.",
         "coursepage.what.desc2": "Our Brazilian record-holding instructors guide you on every jump until you achieve total independence.",
         "coursepage.what.items": [
