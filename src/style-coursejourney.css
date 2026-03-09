@@ -126,6 +126,8 @@
 .cj-cards-wrapper {
     width: 100%;
     position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
 }
 
 /* Floating Card Base */

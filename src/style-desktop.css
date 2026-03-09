@@ -577,7 +577,7 @@ img {
 }
 
 .experience-section {
-    padding-top: 110px;
+    padding-top: 80px;
     padding-bottom: 45px;
     background-color: #fff;
     overflow: hidden;
@@ -1038,8 +1038,8 @@ img {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     display: flex;
@@ -1050,8 +1050,8 @@ img {
 }
 
 .no-media-circle svg {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     color: #ff4d4d;
     /* Modern red for 'no/forbidden' */
 }

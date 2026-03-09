@@ -619,7 +619,7 @@ export const translations = {
                 "cta": "Eu quero este"
             }
         ],
-        "video.title": "Sinta a Adrenalina de um <strong style='color: var(--primary-color);'>Salto em 360°!</strong>",
+        "video.title": "Sinta a Adrenalina de um <br /><strong style='color: var(--primary-color);'>Salto em 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Aperte o play, mova sua tela e mergulhe</strong> na experiência completa de queda livre em 360° acima da deslumbrante linha do horizonte de Birr.",
         "video.cta": "Reserve seu salto agora",
         "about.title": "<strong style='color: var(--primary-color);'>Quem Somos</strong>",

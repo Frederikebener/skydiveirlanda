@@ -91,7 +91,6 @@ export const CoursePage = () => {
                 <div className="cj-container">
                     <div className="cj-header">
                         <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.title') }} />
-                        <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.subtitle') }} />
                     </div>
 
                     <div className="cj-tabs-container">
