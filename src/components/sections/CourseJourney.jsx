@@ -48,31 +48,31 @@ export const CourseJourney = () => {
                                     <div className="cj-pricing-table">
                                         <div className="cj-pricing-col cj-pricing-complete">
                                             <div className="cj-pricing-col-header">
-                                                <span className="cj-pricing-badge">⭐ {t('pricing.badge.best')}</span>
-                                                <h4>{t('pricing.complete.title')}</h4>
-                                                <div className="cj-pricing-total">
-                                                    <span className="cj-price-from">{t('pricing.complete.label')}</span>
-                                                    <span className="cj-price-value">€1.577,00</span>
+                                                <div className="cj-pricing-title-row">
+                                                    <h4>{t('pricing.complete.title')}</h4>
+                                                    <div className="cj-price-container">
+                                                        <span className="cj-price-label">{t('pricing.complete.label')}</span>
+                                                        <span className="cj-price-value">€1.577,00</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul className="cj-pricing-items">
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.aff.1')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.aff.2')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.aff.3')}</li>
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.aff.4')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.aff.5')}</li>
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.aff.6')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.aff.7')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.aff.8')}</li>
+                                                <li><span className="cj-check">✓</span> {t('pricing.feature.aff.9')}</li>
                                             </ul>
                                         </div>
                                         <div className="cj-pricing-col cj-pricing-modular">
                                             <div className="cj-pricing-col-header">
-                                                <span className="cj-pricing-badge-blue">⭐ {t('pricing.badge.flexible')}</span>
-                                                <h4>{t('pricing.modular.title')}</h4>
-                                                <div className="cj-pricing-total">
-                                                    <span className="cj-price-from">{t('pricing.modular.label.total')}</span>
-                                                    <span className="cj-price-value">€1.719,00</span>
+                                                <div className="cj-pricing-title-row">
+                                                    <h4>{t('pricing.modular.title')}</h4>
+                                                    <div className="cj-price-container">
+                                                        <span className="cj-price-label">{t('pricing.modular.label.total')}</span>
+                                                        <span className="cj-price-value">€1.719,00</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul className="cj-pricing-levels">
@@ -82,20 +82,16 @@ export const CourseJourney = () => {
                                                 <li><span>{t('pricing.level')} 4</span><strong>€177</strong></li>
                                                 <li><span>{t('pricing.level')} 5</span><strong>€177</strong></li>
                                                 <li><span>{t('pricing.level')} 6</span><strong>€177</strong></li>
-                                                <li><span>{t('pricing.level')} 7</span><strong>€177</strong></li>
+                                                <li className="cj-last-level"><span>{t('pricing.level')} 7</span><strong>€177</strong></li>
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="cj-card-cta-only">
+                                        <a href="#contact" className="cj-btn">
+                                            {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="cj-card-bottom">
-                                <div className="cj-bottom-info">
-                                    <h4 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card.add-info') }} />
-                                    <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.add-inf-desc') }} />
-                                </div>
-                                <a href="#contact" className="cj-btn">
-                                    {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
-                                </a>
                             </div>
                         </div>
                     ) : (
@@ -112,31 +108,31 @@ export const CourseJourney = () => {
                                     <div className="cj-pricing-table">
                                         <div className="cj-pricing-col cj-pricing-complete">
                                             <div className="cj-pricing-col-header">
-                                                <span className="cj-pricing-badge">⭐ {t('pricing.badge.best')}</span>
-                                                <h4>{t('pricing.complete.title')}</h4>
-                                                <div className="cj-pricing-total">
-                                                    <span className="cj-price-from">{t('pricing.complete.label')}</span>
-                                                    <span className="cj-price-value">€1.607,00</span>
+                                                <div className="cj-pricing-title-row">
+                                                    <h4>{t('pricing.complete.title')}</h4>
+                                                    <div className="cj-price-container">
+                                                        <span className="cj-price-label">{t('pricing.complete.label')}</span>
+                                                        <span className="cj-price-value">€1.607,00</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul className="cj-pricing-items">
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.asl.1')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.asl.2')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.asl.3')}</li>
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.asl.4')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.asl.5')}</li>
-                                                <li><span className="cj-check">✓</span> {t('pricing.feature.asl.6')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.asl.7')}</li>
                                                 <li><span className="cj-check">✓</span> {t('pricing.feature.asl.8')}</li>
+                                                <li><span className="cj-check">✓</span> {t('pricing.feature.asl.9')}</li>
                                             </ul>
                                         </div>
                                         <div className="cj-pricing-col cj-pricing-modular">
                                             <div className="cj-pricing-col-header">
-                                                <span className="cj-pricing-badge-blue">⭐ {t('pricing.badge.flexible')}</span>
-                                                <h4>{t('pricing.modular.title')}</h4>
-                                                <div className="cj-pricing-total">
-                                                    <span className="cj-price-from">{t('pricing.modular.label.total')}</span>
-                                                    <span className="cj-price-value">€1.772,00</span>
+                                                <div className="cj-pricing-title-row">
+                                                    <h4>{t('pricing.modular.title')}</h4>
+                                                    <div className="cj-price-container">
+                                                        <span className="cj-price-label">{t('pricing.modular.label.total')}</span>
+                                                        <span className="cj-price-value">€1.772,00</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul className="cj-pricing-levels">
@@ -146,26 +142,22 @@ export const CourseJourney = () => {
                                                 <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')}</strong></li>
                                                 <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
                                                 <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
-                                                <li><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
+                                                <li className="cj-last-level"><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="cj-card-cta-only">
+                                        <a href="#contact" className="cj-btn">
+                                            {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="cj-card-bottom">
-                                <div className="cj-bottom-info">
-                                    <h4 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card.add-info') }} />
-                                    <p dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.card1.add-inf-desc1') }} />
-                                </div>
-                                <a href="#contact" className="cj-btn">
-                                    {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
-                                </a>
                             </div>
                         </div>
                     )}
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 };
 

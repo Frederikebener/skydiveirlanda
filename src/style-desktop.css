@@ -899,11 +899,10 @@ img {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px !important;
     align-items: center;
-    padding: 50px;
     padding-bottom: 0px;
-    margin-top: 50px;
+
 
 
     /* Ensure cards stretch to same height */
@@ -1001,9 +1000,42 @@ img {
     font-weight: 500;
 }
 
+.package-no-media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.no-media-circle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+}
+
+.no-media-circle svg {
+    width: 28px;
+    height: 28px;
+    color: #ff4d4d;
+    /* Modern red for 'no/forbidden' */
+}
+
+
 .package-content {
-    padding: 30px 25px;
-    padding-top: 20px;
+    padding: 10px 25px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1015,7 +1047,6 @@ img {
     font-weight: 700;
     margin-top: -10px;
     color: #151515;
-    min-height: 60px;
     /* Standardize height for 1 or 2 lines */
     display: flex;
     align-items: flex-start;
@@ -1034,9 +1065,10 @@ img {
 .package-features {
     list-style: none;
     padding: 0;
-    min-height: 220px;
-    margin-top: -25px
-        /* Standardize height to align description */
+    margin-top: -5px;
+    margin-bottom: 15px;
+    min-height: 130px;
+    /* Standardize height to align description */
 }
 
 .package-description {
@@ -1044,10 +1076,8 @@ img {
     font-size: 16px;
     line-height: 1.4;
     color: #555;
-    margin-top: -20px;
     /* Changed from auto to keep it following features */
     text-align: left;
-    min-height: 70px;
     /* Standardize height to align pricing */
 }
 
@@ -1055,7 +1085,7 @@ img {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1;
@@ -1442,7 +1472,7 @@ img {
    ========================================= */
 .course-section {
     background-color: #fff;
-    padding: 250px 0;
+    padding: 130px 0;
     padding-bottom: 150px;
     overflow: hidden;
 }
@@ -2975,6 +3005,15 @@ img {
         padding-right: 40px;
     }
 
+    .feature-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #0082C9;
+        border-radius: 50%;
+        margin-top: 3px;
+        flex-shrink: 0;
+    }
+
     .package-card-footer {
         display: flex;
         flex-direction: column;
@@ -3184,7 +3223,8 @@ img {
     .package-description {
         font-size: 12px !important;
         line-height: 1.4 !important;
-        margin-top: 5px !important;
+        margin-top: 3px !important;
+        margin-bottom: 5px !important;
         min-height: 0;
     }
 
@@ -3341,6 +3381,60 @@ img {
     }
 }
 
+/* =========================================
+   1920x1080 Resolution Specific Adjustments
+   ========================================= */
+@media screen and (min-width: 1919px) and (min-height: 900px) {
+    .packages-section {
+        padding: 120px 10px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .packages-header {
+        margin-bottom: 15px !important;
+    }
+
+    .packages-grid {
+        align-items: stretch !important;
+        /* Makes all cards same height */
+        margin-top: 10px !important;
+        gap: 10px !important;
+    }
+
+    .package-card {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .package-content {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-grow: 1 !important;
+        padding: 15px 25px !important;
+    }
+
+    .package-card-footer {
+        margin-top: auto !important;
+        /* Pushes the button to the bottom */
+        padding-top: 20px !important;
+        width: 100% !important;
+    }
+
+    .package-image-wrapper {
+        aspect-ratio: 4 / 3 !important;
+        /* More horizontal space for 1080p */
+        margin-bottom: 5px !important;
+    }
+
+    .package-features {
+        margin-bottom: 10px !important;
+    }
+
+    .package-title {
+        margin-bottom: 8px !important;
+    }
+}
+
 /* --- 1025px to 1440px Laptop Screen Optimizations --- */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .packages-section {
@@ -3397,7 +3491,7 @@ img {
     }
 
     .package-features li {
-        margin-bottom: 0px !important;
+        margin-bottom: 1px !important;
         font-size: 12px !important;
     }
 

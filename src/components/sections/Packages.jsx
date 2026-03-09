@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import sky360Img from '../../assets/package-sky360.jpg';
+import sky360Img from '../../assets/360.jpeg';
 import classicImg from '../../assets/package-record.jpg';
 import eliteImg from '../../assets/BIRR DUPLO3 - 1024 x 768.png';
 import recordImg from '../../assets/BIRR DUO9- 1920X1080.png';
@@ -68,9 +68,9 @@ export const Packages = () => {
                                 <img
                                     src={
                                         index === 0 ? sky360Img :
-                                            index === 1 ? classicImg :
+                                            index === 1 ? recordImg :
                                                 index === 2 ? eliteImg :
-                                                    recordImg
+                                                    classicImg
                                     }
                                     alt={card.title}
                                     className="package-image"
@@ -82,6 +82,17 @@ export const Packages = () => {
                                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                         </svg>
                                         <span className="badge-text">{card.badge}</span>
+                                    </div>
+                                )}
+                                {index === 3 && (
+                                    <div className="package-no-media-overlay">
+                                        <div className="no-media-circle">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                                                <circle cx="12" cy="13" r="3" />
+                                                <line x1="2" y1="2" x2="22" y2="22" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 )}
                             </div>
