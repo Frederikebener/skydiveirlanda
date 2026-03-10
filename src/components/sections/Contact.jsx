@@ -93,6 +93,7 @@ const Contact = () => {
                             </div>
 
                             <a
+                                id="wa-btn-contact-main"
                                 href={`https://wa.me/353894098150?text=${encodeURIComponent(t('contact.wa_message', 'en') || 'Hi! I have some questions.')}`}
                                 target="_blank"
                                 rel="noopener noreferrer"

@@ -112,6 +112,7 @@ export const Packages = () => {
 
                                 <div className="package-card-footer">
                                     <a
+                                        id={index === 0 ? 'wa-btn-package-premium' : index === 1 ? 'wa-btn-package-vip' : index === 2 ? 'wa-btn-package-plus' : 'wa-btn-package-basic'}
                                         href={`https://wa.me/353894098150?text=${encodeURIComponent(
                                             (Array.isArray(englishCards) && englishCards[index]?.wa_message) ||
                                             card.wa_message ||

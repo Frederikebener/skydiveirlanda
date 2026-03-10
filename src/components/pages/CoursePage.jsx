@@ -172,6 +172,7 @@ export const CoursePage = () => {
                                         </div>
                                         <div className="cj-card-cta-only">
                                             <a
+                                                id="wa-btn-course-aff"
                                                 href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_aff', 'en') || 'Hi! I am interested in starting the AFF course.')}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -236,6 +237,7 @@ export const CoursePage = () => {
                                         </div>
                                         <div className="cj-card-cta-only">
                                             <a
+                                                id="wa-btn-course-asl"
                                                 href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_asl', 'en') || 'Hi! I am interested in starting the ASL course.')}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -346,6 +348,7 @@ export const CoursePage = () => {
                             ))}
                         </div>
                         <a
+                            id="wa-btn-course-faq"
                             href={`https://wa.me/353894098150?text=${encodeURIComponent(t('contact.wa_message', 'en') || 'Hi! I have some questions and I would like to talk with someone from SkyDiveThru Ireland.')}`}
                             target="_blank"
                             rel="noopener noreferrer"
