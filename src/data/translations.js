@@ -561,7 +561,7 @@ export const translations = {
         "hero.badge": "Centro de Paraquedismo em Birr/Co. Offaly",
         "hero.title": "Experimente a emoção do seu primeiro salto de paraquedas com <strong>vídeo 360° exclusivo</strong>",
         "hero.subtitle": "Seu primeiro salto capturado para sempre em 360º. É como viajar no tempo e reviver a adrenalina toda vez que você assiste.",
-        "hero.cta": "Reserve seu salto agora",
+        "hero.cta": "Agende seu salto agora",
         "pressel.title": "INAUGURAÇÃO DA SKYDIVETHRU IRELAND",
         "pressel.date": "DIA 26/05/26 ÀS 09:00",
         "pressel.countdown.prefix": "Faltam",
@@ -647,7 +647,7 @@ export const translations = {
         "menu.course_asl": "Curso ASL",
         "video.title": "Sinta a Adrenalina de um <br /><strong style='color: var(--primary-color);'>Salto em 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Aperte o play, mova sua tela e mergulhe</strong> na experiência completa de queda livre em 360° acima da deslumbrante linha do horizonte de Birr.",
-        "video.cta": "Reserve seu salto agora",
+        "video.cta": "Agende seu salto agora",
         "about.title": "<strong style='color: var(--primary-color);'>Quem Somos</strong>",
         "about.p1": "Somos a <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> uma das escolas de paraquedismo mais tradicionais do Brasil, com mais de duas décadas de experiência treinando alunos, atletas e instrutores. Nossa Equipe são formadas por profissionais certificados e reconhecidos internacionalmente, e utilizamos equipamentos certificados.",
         "about.p2": "Detemos o recorde de treinamento e formação de alunos, o recorde de grandes formações, com nossos próprios atletas, o recorde de saltos sem acidentes e sempre utilizamos equipamentos certificados com garantia do fabricante.",
@@ -711,7 +711,7 @@ export const translations = {
         "footer.course": "Cursos",
         "footer.faq": "Dúvidas",
         "footer.video": "Sinta a Experiência",
-        "footer.contact": "Reserve seu salto agora",
+        "footer.contact": "Agende seu salto agora",
         "footer.rights": "Todos os direitos reservados.",
         "footer.developed": "Desenvolvido com tecnologia de ponta",
         "footer.legal": "Política de Privacidade",
@@ -725,7 +725,7 @@ export const translations = {
         "coursepage.badge": "Cursos de Paraquedismo Solo",
         "coursepage.hero.title": "Transforme sua paixão pelo paraquedismo em liberdade total",
         "coursepage.hero.subtitle": "Aprenda a voar sozinho com os cursos de paraquedismo mais flexíveis da Irlanda. Progrida no seu próprio ritmo com nossos programas AFF ou ASL.",
-        "coursepage.hero.cta": "Reserve meu curso agora!",
+        "coursepage.hero.cta": "Agende seu curso agora!",
         "coursepage.hero.footer": "25 anos sem acidentes | Instrutores certificados",
         "coursepage.what.title": "Nossas formações transformam sonhadores em paraquedistas",
         "coursepage.what.desc": "Nossos cursos Accelerated Free Fall (AFF) e Accelerated Static Line (ASL) são sua porta de entrada para a liberdade absoluta dos céus. Aqui você aprende não apenas a técnica, mas desenvolve a mentalidade de um verdadeiro paraquedista com as tecnicas internacionais.",
@@ -736,7 +736,7 @@ export const translations = {
             "Voce tem menor tempo de formação.",
             "Flexibilidade total para sua jornada."
         ],
-        "coursepage.what.cta": "Reserve meu curso agora",
+        "coursepage.what.cta": "Agende seu curso agora",
         "coursepage.steps.title": "Níveis <strong style='color: var(--primary-color)'>do Curso</strong>",
         "coursepage.steps": [
             { "title": "Escola em Terra", "desc": "Treinamento intensivo em sala de aula cobrindo visão geral do equipamento, posição corporal, procedimentos de saída, protocolos de emergência e padrões de pouso. Você está totalmente preparado antes de embarcar no avião." },
@@ -806,7 +806,7 @@ export const translations = {
         "coursepage.safety.p1": "Os cursos são baseados nos Manuais SIM da USPA com tecnicas de seguranças mundialmente reconhecidas.",
         "coursepage.safety.p2": "Nossa missão não é só ensinar voce a saltar de um avião, é te tornar tão competente que você mesmo se torna a sua maior proteção a pratica desse esporte.",
         "coursepage.safety.p3": "Aqui, a segurança e confiança se torna seu principal equipamento aliada a pratica de boas técnicas.",
-        "coursepage.safety.cta": "Reserve seu curso",
+        "coursepage.safety.cta": "Agende seu curso agora",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>em Ação</strong>",
         "coursepage.req.title": "Quem pode <strong style='color: var(--primary-color)'>fazer o AFF?</strong>",
         "coursepage.req.items": [
@@ -826,7 +826,7 @@ export const translations = {
         "coursepage.faqs.contact": "Ainda tem dúvidas? Fale conosco agora no WhatsApp",
         "coursepage.cta.title": "Pronto para sair do chão e dominar o céu com as próprias asas?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Reserve seu curso",
+        "coursepage.cta.button": "Agende seu curso",
         "coursepage.cta.wa_message_aff": "Hi! I'm interested in starting the AFF Skydiving Course at SkyDiveThru Ireland.",
         "coursepage.cta.wa_message_asl": "Hi! I'm interested in starting the ASL Skydiving Course at SkyDiveThru Ireland.",
         "coursepage.cta.wa_message": "Olá! Tenho interesse em iniciar o Curso de Paraquedismo AFF na SkyDiveThru Irlanda.",
@@ -1423,7 +1423,7 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 567,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "RESERVIEREN SIE JETZT"
+                "cta": "Buchen Sie jetzt",  
             },
             {
                 "title": "Tandem Vip € 537,00",
@@ -1438,7 +1438,7 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 537,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "RESERVIEREN SIE JETZT"
+                "cta": "Buchen Sie jetzt",
             },
             {
                 "title": "Tandem Plus € 467,00",
@@ -1451,7 +1451,7 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 467,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "RESERVIEREN SIE JETZT"
+                "cta": "Buchen Sie jetzt",
             },
             {
                 "title": "Tandem Basic € 357,00",
@@ -1464,7 +1464,7 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 357,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "RESERVIEREN SIE JETZT"
+                "cta": "Buchen Sie jetzt",
             }
         ],
         "packages.nav_titles": ["Premium 360º Sprung", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
