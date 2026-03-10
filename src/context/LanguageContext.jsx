@@ -6,8 +6,10 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState('en');
 
-    const t = (key, forcedLang) => {
-        const targetLang = forcedLang || language;
+    const t = (key, options) => {
+        // If options is a string, it's a forced language.
+        // Otherwise, use the current language.
+        const targetLang = typeof options === 'string' ? options : language;
         // Try requested language, then fallback to English if not found
         return (translations[targetLang] && translations[targetLang][key]) || (translations['en'] && translations['en'][key]) || key;
     };
