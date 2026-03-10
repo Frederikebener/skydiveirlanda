@@ -145,6 +145,18 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <p>&copy; {currentYear} SkyDiveThru. {t('footer.rights')}</p>
+                    <div className="footer-bottom-links">
+                        <Link to="/privacy" className="footer-bottom-link">{t('footer.legal') || 'Privacy Policy'}</Link>
+                        <span className="footer-divider">|</span>
+                        <Link to="/cookie-policy" className="footer-bottom-link">Cookie Policy</Link>
+                        <span className="footer-divider">|</span>
+                        <button
+                            onClick={() => window.dispatchEvent(new CustomEvent('openCookieSettings'))}
+                            className="footer-bottom-link-btn"
+                        >
+                            Manage Cookies
+                        </button>
+                    </div>
                     <p>{t('footer.developed')}</p>
                 </div>
             </div>

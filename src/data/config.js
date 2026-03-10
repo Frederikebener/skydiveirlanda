@@ -21,5 +21,10 @@ export const config = {
     map: {
         zoom: 7 // 7=all Ireland, 12=county, 14=neighborhood, 15=street level
     },
-    showPressel: true // Set to false to disable the pressel page
+    showPressel: true, // Set to false to disable the pressel page
+    tracking: {
+        gtmId: 'GTM-XXXXXXX', // Replace with your GTM ID
+        gaId: 'G-XXXXXXXXXX', // Replace with your GA4 ID
+        fbPixelId: 'XXXXXXXXXXXXXXX' // Replace with your FB Pixel ID
+    }
 };

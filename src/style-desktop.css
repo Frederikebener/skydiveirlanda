@@ -1334,8 +1334,40 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-bottom-link,
+.footer-bottom-link-btn {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.footer-bottom-link:hover,
+.footer-bottom-link-btn:hover {
+    color: #fff;
+}
+
+.footer-divider {
+    color: rgba(255, 255, 255, 0.2);
 }
 
 /* Tablet Responsive */

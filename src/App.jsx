@@ -10,6 +10,10 @@ import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
 import { CountdownBar } from './components/layout/CountdownBar';
 import { Pressel } from './components/Pressel';
+import { PrivacyPolicy } from './components/pages/PrivacyPolicy';
+import { CookiePolicy } from './components/pages/CookiePolicy';
+import CookieConsent from './components/layout/CookieConsent';
+import TrackingManager from './components/utilities/TrackingManager';
 import { NotFound } from './components/pages/NotFound';
 import ScrollToAnchor from './components/utilities/ScrollToAnchor';
 
@@ -17,8 +21,11 @@ function AppContent() {
     const location = useLocation();
     const isReviewPage = location.pathname === '/reviews';
     const isCoursePage = location.pathname === '/course';
+    const isPrivacyPage = location.pathname === '/privacy';
+    const isCookiePage = location.pathname === '/cookie-policy';
     const [showPressel, setShowPressel] = React.useState(false);
-    const isNotFound = location.pathname !== '/' && location.pathname !== '/reviews' && location.pathname !== '/course';
+    const validPaths = ['/', '/reviews', '/course', '/privacy', '/cookie-policy'];
+    const isNotFound = !validPaths.includes(location.pathname);
 
     useEffect(() => {
         if (config.hero.enableCountdown) {
@@ -59,7 +66,7 @@ function AppContent() {
         <div className="flex flex-col min-h-screen">
             {showPressel && <Pressel onEnter={handlePresselEnter} />}
             <div style={{ display: showPressel ? 'none' : 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-                {!isReviewPage && !isNotFound && !isCoursePage && (
+                {!isReviewPage && !isNotFound && !isCoursePage && !isPrivacyPage && !isCookiePage && (
                     <>
                         <ScrollToAnchor />
                         {config.hero.enableCountdown && <CountdownBar isHidden={isHeaderHidden} />}
@@ -70,9 +77,13 @@ function AppContent() {
                     <Route path="/" element={<Home />} />
                     <Route path="/reviews" element={<Review />} />
                     <Route path="/course" element={<CoursePage />} />
+                    <Route path="/privacy" element={<PrivacyPolicy />} />
+                    <Route path="/cookie-policy" element={<CookiePolicy />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-                {!isReviewPage && !isNotFound && !isCoursePage && <Footer />}
+                {!isReviewPage && !isNotFound && !isCoursePage && !isPrivacyPage && !isCookiePage && <Footer />}
+                <CookieConsent />
+                <TrackingManager />
             </div>
         </div>
     );
