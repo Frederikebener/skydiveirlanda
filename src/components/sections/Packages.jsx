@@ -8,6 +8,7 @@ import recordImg from '../../assets/BIRR DUO9- 1920X1080.png';
 export const Packages = () => {
     const { t } = useLanguage();
     const cards = t('packages.cards');
+    const englishCards = t('packages.cards', 'en');
     const items = Array.isArray(cards) ? cards : [];
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
@@ -110,9 +111,20 @@ export const Packages = () => {
                                 <p className="package-description">{card.description}</p>
 
                                 <div className="package-card-footer">
-                                    <button className="package-cta">
+                                    <a
+                                        href={`https://wa.me/353894098150?text=${encodeURIComponent(
+                                            (Array.isArray(englishCards) && englishCards[index]?.wa_message) ||
+                                            card.wa_message ||
+                                            t('packages.cta_wa_message', 'en') ||
+                                            'Hi! I would like to book a tandem jump.'
+                                        )}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="package-cta"
+                                        style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                    >
                                         {card.cta}
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

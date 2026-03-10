@@ -11,7 +11,7 @@ export const CourseJourney = () => {
     const [activeTab, setActiveTab] = useState('AFF'); // 'AFF' or 'ASL'
 
     return (
-        <section className="cj-section" id="course-journey">
+        <section className="cj-section" id="coursejourney">
             <div className="cj-container">
                 <div className="cj-header">
                     <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.pricing.title') }} />
@@ -22,13 +22,14 @@ export const CourseJourney = () => {
                         className={`cj-tab-btn ${activeTab === 'AFF' ? 'active' : ''}`}
                         onClick={() => setActiveTab('AFF')}
                     >
-                        A.F.F
+                        {t('menu.course_aff')}
                     </button>
+                    <span className="cj-tabs-or">{t('coursepage.pricing.or')}</span>
                     <button
                         className={`cj-tab-btn ${activeTab === 'ASL' ? 'active' : ''}`}
                         onClick={() => setActiveTab('ASL')}
                     >
-                        A.S.L
+                        {t('menu.course_asl')}
                     </button>
                 </div>
 
@@ -86,7 +87,12 @@ export const CourseJourney = () => {
                                         </div>
                                     </div>
                                     <div className="cj-card-cta-only">
-                                        <a href="#contact" className="cj-btn">
+                                        <a
+                                            href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_aff', 'en') || 'Hi! I am interested in starting the AFF course.')}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="cj-btn"
+                                        >
                                             {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
                                         </a>
                                     </div>
@@ -146,7 +152,12 @@ export const CourseJourney = () => {
                                         </div>
                                     </div>
                                     <div className="cj-card-cta-only">
-                                        <a href="#contact" className="cj-btn">
+                                        <a
+                                            href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_asl', 'en') || 'Hi! I am interested in starting the ASL course.')}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="cj-btn"
+                                        >
                                             {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
                                         </a>
                                     </div>

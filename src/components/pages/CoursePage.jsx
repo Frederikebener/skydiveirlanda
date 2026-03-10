@@ -39,7 +39,16 @@ export const CoursePage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+
+        // Handle query parameter to switch tabs
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get('type');
+        if (type === 'asl') {
+            setActiveTab('ASL');
+        } else if (type === 'aff') {
+            setActiveTab('AFF');
+        }
+    }, [window.location.search]);
 
     const galleryImages = [img1, img2, img3];
 
@@ -69,7 +78,7 @@ export const CoursePage = () => {
                     <div className="cp-hero-box">
                         <h1 className="cp-hero-title" dangerouslySetInnerHTML={{ __html: t('coursepage.hero.title') }} />
                         <p className="cp-hero-subtitle" dangerouslySetInnerHTML={{ __html: t('coursepage.hero.subtitle') }} />
-                        <a href="#cp-contact" className="cp-btn-orange">
+                        <a href="#cp-pricing" className="cp-btn-orange">
                             {t('coursepage.hero.cta')}
                         </a>
                         <div className="cp-hero-footer-text">
@@ -98,13 +107,14 @@ export const CoursePage = () => {
                             className={`cj-tab-btn ${activeTab === 'AFF' ? 'active' : ''}`}
                             onClick={() => setActiveTab('AFF')}
                         >
-                            AFF COURSE
+                            {t('menu.course_aff')}
                         </button>
+                        <span className="cj-tabs-or">{t('coursepage.pricing.or')}</span>
                         <button
                             className={`cj-tab-btn ${activeTab === 'ASL' ? 'active' : ''}`}
                             onClick={() => setActiveTab('ASL')}
                         >
-                            ASL COURSE
+                            {t('menu.course_asl')}
                         </button>
                     </div>
 
@@ -161,7 +171,12 @@ export const CoursePage = () => {
                                             </div>
                                         </div>
                                         <div className="cj-card-cta-only">
-                                            <a href="#cp-contact" className="cj-btn">
+                                            <a
+                                                href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_aff', 'en') || 'Hi! I am interested in starting the AFF course.')}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="cj-btn"
+                                            >
                                                 {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
                                             </a>
                                         </div>
@@ -220,7 +235,12 @@ export const CoursePage = () => {
                                             </div>
                                         </div>
                                         <div className="cj-card-cta-only">
-                                            <a href="#cp-contact" className="cj-btn">
+                                            <a
+                                                href={`https://wa.me/353894098150?text=${encodeURIComponent(t('coursepage.cta.wa_message_asl', 'en') || 'Hi! I am interested in starting the ASL course.')}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="cj-btn"
+                                            >
                                                 {t('coursepage.pricing.card1.cta')} <ArrowRight size={16} />
                                             </a>
                                         </div>
@@ -268,7 +288,7 @@ export const CoursePage = () => {
                         </ul>
 
                         <div className="cp-what-cta">
-                            <a href="#cp-contact" className="cp-btn-orange">
+                            <a href="#cp-pricing" className="cp-btn-orange">
                                 {t('coursepage.what.cta') || 'Start My Journey'}
                             </a>
                         </div>
@@ -287,7 +307,7 @@ export const CoursePage = () => {
                         <p dangerouslySetInnerHTML={{ __html: t('coursepage.safety.p3') }} />
 
                         <div className="cp-what-cta">
-                            <a href="#cp-contact" className="cp-btn-primary-course">
+                            <a href="#cp-pricing" className="cp-btn-primary-course">
                                 {t('coursepage.safety.cta')}
                             </a>
                         </div>
@@ -325,7 +345,12 @@ export const CoursePage = () => {
                                 </div>
                             ))}
                         </div>
-                        <a href="#cp-contact" className="cp-faq-contact-btn">
+                        <a
+                            href={`https://wa.me/353894098150?text=${encodeURIComponent(t('contact.wa_message', 'en') || 'Hi! I have some questions and I would like to talk with someone from SkyDiveThru Ireland.')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cp-faq-contact-btn"
+                        >
                             {t('coursepage.faqs.contact')}
                         </a>
                     </div>
@@ -348,12 +373,7 @@ export const CoursePage = () => {
                     </div>
                     <div className="cp-cta-content">
                         <h2 dangerouslySetInnerHTML={{ __html: t('coursepage.cta.title') }} />
-                        <a
-                            href={`https://wa.me/353833446070?text=${encodeURIComponent(t('coursepage.cta.wa_message', { defaultValue: 'Hello' }))}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cp-cta-btn"
-                        >
+                        <a href="#cp-pricing" className="cp-cta-btn">
                             {t('coursepage.cta.button')}
                         </a>
                     </div>

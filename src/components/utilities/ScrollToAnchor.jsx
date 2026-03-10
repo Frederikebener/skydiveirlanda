@@ -13,13 +13,11 @@ const ScrollToAnchor = () => {
                 const element = document.getElementById(id);
                 if (element) {
                     const isPackage = id.startsWith('package-');
+                    const isCourseJourney = id === 'coursejourney';
+                    const isPackages = id === 'packages';
                     const isMobile = window.innerWidth <= 720;
 
-                    // Match Header.jsx specialized offsets
-                    let headerOffset = 150; // Default for general sections
-                    if (isPackage) {
-                        headerOffset = isMobile ? 165 : 15;
-                    }
+                    let headerOffset = 0;
 
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;

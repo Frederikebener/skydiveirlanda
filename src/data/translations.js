@@ -4,7 +4,7 @@ export const translations = {
         "404.subtitle": "Page Not Found",
         "404.description": "Sorry, we couldn't find the page you're looking for. It might have been moved or the address is incorrect.",
         "404.button": "Back to Homes",
-        "hero.badge": "Skydive Center In Birr/Ireland",
+        "hero.badge": "Skydive Center In Birr/Co. Offaly",
         "hero.title": "Experience the thrill of your first skydive with <strong>exclusive 360° video</strong>",
         "hero.subtitle": "Your first jump captured forever in 360º. It's like travelling back in time and reliving the adrenaline every time you watch.",
         "hero.cta": "Book your jump now",
@@ -19,17 +19,17 @@ export const translations = {
         "pressel.button": "BOOK NOW",
         "experience.title": "What is it like to live <br />this <strong style='color: var(--primary-color)'>experience</strong> with us?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color)'>Organized excursions leaving from several cities in Ireland:</strong> comfort and safety for you to make your jump in Birr.",
-            "<strong style='color: var(--primary-color)'>Arrive at our base with all the structure prepared:</strong> complete safety guidelines with experienced professionals.",
-            "<strong style='color: var(--primary-color)'>Feel the thrill of flying over Birr</strong> and perform the jump with total safety.",
-            "<strong style='color: var(--primary-color)'>Have every second recorded</strong> with the immersive 360º video.",
-            "<strong style='color: var(--primary-color)'>Relive your overcoming whenever you want,</strong> eternalizing your first time."
+            "<strong style='color: var(--primary-color);'>Arrive at our School and find:</strong> A complete and prepared structure, full safety guidelines with experienced professionals.",
+            "<strong style='color: var(--primary-color);'>Feel the thrill of flying over the Emerald Isle</strong> and perform the jump with total safety.",
+            "<strong style='color: var(--primary-color);'>Relive your overcoming whenever you want,</strong> with the immersive 360º video.",
+            "<strong style='color: var(--primary-color);'>Have every second recorded</strong> with an immersive 360° video.",
+            "<strong style='color: var(--primary-color);'>Organized excursions leaving from several cities in Ireland:</strong> comfort and safety for you to make your jump in Birr."
         ],
         "packages.title": "Make your first tandem skydive <strong style='color: var(--primary-color)'>unforgettable!</strong> Choose how you want to immortalize it forever.",
         "packages.subtitle": "All our packages includes <strong style='color: var(--primary-color);'>safety and thrill</strong>, but only one delivers the complete experience with the immersive 360º video, the true trophy of your overcoming.",
         "packages.cards": [
             {
-                "title": "Tandem Premium €567,00",
+                "title": "Tandem Premium €567.00",
                 "badge": "Most Chosen Package",
                 "features": [
                     "Performed at 12,000ft",
@@ -43,10 +43,11 @@ export const translations = {
                 "price_label": "Starting from",
                 "price": "€567.00",
                 "payment": "cash or card payment",
-                "cta": "Book now"
+                "cta": "BOOK NOW",
+                "wa_message": "Hi! I'm interested in booking the Tandem Premium package with SkyDiveThru Ireland."
             },
             {
-                "title": "Tandem Vip €537,00",
+                "title": "Tandem Vip €537.00",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
@@ -58,20 +59,23 @@ export const translations = {
                 "price_label": "Starting from",
                 "price": "€537.00",
                 "payment": "cash or card payment",
-                "cta": "Book now"
+                "cta": "BOOK NOW",
+                "wa_message": "Hi! I'm interested in booking the Tandem Vip package with SkyDiveThru Ireland."
             },
             {
-                "title": "Tandem Plus €467,00",
+                "title": "Tandem Plus €467.00",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
                     "Over 200 photos and edited video"
                 ],
                 "description": "Ideal for those who want to keep the memory in images and videos.",
-                "cta": "Book now"
+                "price": "€467.00",
+                "cta": "BOOK NOW",
+                "wa_message": "Hi! I'm interested in booking the Tandem Plus package with SkyDiveThru Ireland."
             },
             {
-                "title": "Tandem Basic €357,00",
+                "title": "Tandem Basic €357.00",
                 "features": [
                     "Performed at 12,000ft",
                     "Accompanied by a USPA and CBPQ certified instructor",
@@ -81,22 +85,29 @@ export const translations = {
                 "price_label": "Starting from",
                 "price": "€357.00",
                 "payment": "cash or card payment",
-                "cta": "Book now"
+                "cta": "BOOK NOW",
+                "wa_message": "Hi! I'm interested in booking the Tandem Basic package with SkyDiveThru Ireland."
             }
         ],
+        "packages.nav_titles": ["Tandem Premium", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "coursepage.cta.wa_message_aff": "Hi! I'm interested in starting the AFF Skydiving Course at SkyDiveThru Ireland.",
+        "coursepage.cta.wa_message_asl": "Hi! I'm interested in starting the ASL Skydiving Course at SkyDiveThru Ireland.",
+        "packages.cta_wa_message": "Hi! I'm interested in booking a tandem skydive jump with SkyDiveThru Ireland.",
+        "contact.wa_message": "Hi! I have some questions and I would like to talk with someone from SkyDiveThru Ireland.",
+        "menu.course_aff": "Course AFF",
+        "menu.course_asl": "Course ASL",
         "video.title": "Feel the Adrenaline of a <br/><strong style='color: var(--primary-color);'>Real 360° Skydive!</strong>",
-        "video.subtitle": "<strong style='color: var(--primary-color);'> Press play and immerse yourself</strong> in the complete 360° freefall experience above Birr’s breathtaking skyline.",
-        "video.cta": "Book your jump now",
         "about.title": "<strong style='color: var(--primary-color);'>About Us</strong>",
-        "about.p1": "We are <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, one of the most traditional skydiving schools in Ireland, with over two decades of training students, athletes and instructors.",
-        "about.p2": "Our team consists of internationally certified professionals specialized in transforming your first jump into an exciting, safe and unforgettable experience, now with immersive 360° video technology.",
+        "about.p1": "We are <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> one of the most traditional skydiving schools in Brazil, with over two decades of experience training students, athletes and instructors. Our team is made up of internationally certified and recognized professionals, and we use certified equipment.",
+        "about.p2": "We hold the record for training and qualifying students, the record for large formations with our own athletes, the record for jumps without accidents and we always use certified equipment with manufacturer's warranty.",
+        "about.p3": "We will arrive in Ireland on May 26, 2026 to bring the full experience of 27 years of quality, safety and lots of fun.",
         "dream.title": "Are you ready to make your <strong style='color: var(--primary-color);'>skydiving dream come true?</strong>",
         "dream.desc1": "Be one of the brave who turned their overcoming into an immersive memory.",
-        "dream.desc2": "<strong style='color: var(--primary-color);'>Sky360</strong> is the choice for those who want to relive their overcoming in every detail, whenever they want.",
+        "dream.desc2": "We are specialized in transforming <strong style='color: var(--primary-color);'>your first jump</strong> into an exciting, safe and unforgettable experience, now with 360° video technology",
         "dream.button": "I want my jump <span class='mobile-br'>with 360° video now!</span>",
         "course.badge": "Skydiving Courses",
         "course.title": "Ready to jump alone? <br /><strong style='color: var(--primary-color);'>The sky is your training ground</strong>",
-        "course.description": "For those who want more than just a jump, we offer two certified solo skydiving courses: the <strong>AFF (Accelerated Free Fall)</strong>, where you experience real freefall from your very first jump, and the <strong>ASL (Accelerated Static Line)</strong>, a progressive step-by-step progression to full freefall. Both courses are guided by internationally certified instructors.",
+        "course.description": "For those who want to go beyond a simple jump, we offer two certified solo skydiving courses: The <strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> where you experience freefall from your very first jump, or the <strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> where you have a gradual progression starting with the automatic opening system and evolving to freefall. Both courses are taught and accompanied by internationally certified instructors.",
         "course.cta": "Discover Our Courses",
         "faq.badge": "HAVE QUESTIONS?",
         "faq.description": "We've separated the main questions from our customers to help you understand how we can transform your experience.",
@@ -104,15 +115,11 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Is it safe to jump?",
-                "answer": "Yes. We work with experienced instructors and state-of-the-art equipment, following the strictest safety standards."
+                "answer": "Yes. We work with experienced instructors and certified equipment and follow the strictest safety standards."
             },
             {
                 "question": "Who can jump?",
-                "answer": "People over 18 years old, weighing up to 114kg (250 lbs), with no serious medical restrictions."
-            },
-            {
-                "question": "How does the 360º recording work?",
-                "answer": "Throughout the entire jump, our technology records everything in 360º — you'll be able to relive every second as if you were jumping again."
+                "answer": "People over 17 years old, weighing up to 115kg/250lbs and with no serious medical restrictions."
             },
             {
                 "question": "Is it necessary to book in advance?",
@@ -120,18 +127,22 @@ export const translations = {
             },
             {
                 "question": "What should I wear on the day of the jump?",
-                "answer": "Comfortable clothes and sneakers. Safety equipment is provided by us."
+                "answer": "Comfortable sports clothes and sneakers. All safety equipment will be provided by our school."
+            },
+            {
+                "question": "How does the 360º recording work?",
+                "answer": "Throughout the entire jump, our technology will record everything in 360° and you will be able to relive every second as if you were jumping again."
             }
         ],
-        "contact.badge": "Skydive Center In Birr/Ireland",
+        "contact.badge": "Skydive Center In Birr/Co. Offaly",
         "contact.title": "Book your <strong style='color: var(--primary-color);'>360° jump <br/>with us now!</strong>",
         "contact.address.title": "Address",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Phone / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Opening Hours",
-        "contact.hours.value": "Tue - Sun: 09:00 - 19:00 (Monday closed)",
-        "contact.cta": "Talk to an instructor",
+        "contact.hours.value": "Tuesday to Sunday from 8am until sunset.",
+        "contact.cta": "Talk with Us",
         "contact.map_aria": "Open location on Google Maps",
         "contact.map_button": "Get Directions",
         "review.title": "How do you rate our service?",
@@ -163,17 +174,18 @@ export const translations = {
         "coursepage.badge": "Solo Skydiving Courses",
         "coursepage.hero.title": "Turn your passion for skydiving into total freedom",
         "coursepage.hero.subtitle": "Learn to fly solo with the most flexible skydiving courses in Ireland. Progress at your own pace with our AFF or ASL programs.",
-        "coursepage.hero.cta": "I want to start my training now!",
+        "coursepage.hero.cta": "Book your course now!",
         "coursepage.hero.footer": "25 years accident-free | Certified instructors",
-        "coursepage.what.title": "The training that turns dreamers into skydivers",
-        "coursepage.what.desc": "Our Accelerated Free Fall (AFF) and Accelerated Static Line (ASL) courses are your gateway to the absolute freedom of the skies. Here you will learn not only the technique, but develop the mindset of a true skydiver.",
-        "coursepage.what.desc2": "Our Brazilian record-holding instructors guide you on every jump until you achieve total independence.",
+        "coursepage.what.title": "Our training programs transform dreamers into skydivers",
+        "coursepage.what.desc": "Our Accelerated Free Fall (AFF) and Accelerated Static Line (ASL) courses are your gateway to absolute freedom in the skies. Here you learn not only the technique but also develop the mindset of a true skydiver with international techniques.",
+        "coursepage.what.desc2": "Our instructors hold international certifications and guide you on every jump until you achieve total independence.",
         "coursepage.what.items": [
-            "We are the only school in Ireland with a fractional model.",
-            "You only pay for the levels you complete, with no commitment to fixed packages.",
+            "You have options for full payment or by levels.",
+            "You have the flexibility to jump during weekdays or weekends.",
+            "You have shorter training time.",
             "Total flexibility for your journey."
         ],
-        "coursepage.what.cta": "I want to start my journey!",
+        "coursepage.what.cta": "Book Your Course now",
         "coursepage.steps.title": "Course <strong style='color: var(--primary-color)'>Levels</strong>",
         "coursepage.steps": [
             { "title": "Ground School", "desc": "Intensive classroom training covering gear overview, body position, exit procedures, emergency protocols, and landing patterns. You're fully prepared before you board the plane." },
@@ -182,10 +194,11 @@ export const translations = {
             { "title": "Level 8", "desc": "Your final hop-and-pop from a lower altitude (5,000 ft) to simulate an emergency exit. Master quick stabilization and canopy deployment." }
         ],
         "coursepage.pricing.title": "Choose your journey to freedom",
+        "coursepage.pricing.or": "OR",
         "coursepage.pricing.subtitle": "While more than 200 people experience their first jump with us every month, some decide to go further and master the sky with their own wings.",
-        "coursepage.pricing.card1.title": "Accelerated Static Line (A.S.L) Course",
+        "coursepage.pricing.card1.title": "ASL Course - Accelerated Static Line",
         "coursepage.pricing.card1.add-inf-desc": "International training following USPA and CBPQ standards, including professional equipment, radio-assisted landing guidance and continuous instructor supervision throughout all training levels.",
-        "coursepage.pricing.card1.subtitle": "Gradual introduction to solo skydiving. Your parachute opens automatically after exit, allowing you to focus on body position, canopy control, and safe landings, progressing step by step to freefall and independent skydiving.",
+        "coursepage.pricing.card1.subtitle": "The ASL Course – Accelerated Static Line is a gradual introduction to solo skydiving. Your parachute opens automatically after exit, allowing you to focus on body position, canopy control, and safe landings, progressing step by step to freefall in all phases while being accompanied by the instructor.",
         "coursepage.pricing.card1.items": [
             "8 progressive levels",
             "Payment per individual level",
@@ -193,12 +206,12 @@ export const translations = {
             "Dedicated record-holding instructors"
         ],
         "coursepage.pricing.card1.desc": "Ideal for those who want to start without the commitment of a closed package and progress at their own pace.",
-        "coursepage.pricing.card1.cta": "Choose your package",
+        "coursepage.pricing.card1.cta": "Book Your Course Now",
         "coursepage.pricing.card1.add-inf-desc1": "International training following USPA and CBPQ standards, including professional equipment, radio-assisted landing guidance and continuous instructor supervision throughout all training levels.",
         "coursepage.pricing.card2.badge": "The most chosen by our adventurers",
-        "coursepage.pricing.card2.title": "Accelerated Free Fall (A.F.F) Course",
+        "coursepage.pricing.card2.title": "AFF Course - Accelerated Free Fall",
         "coursepage.pricing.card.add-info": "Additional information",
-        "coursepage.pricing.card2.subtitle": "The fastest way to become a licensed skydiver. From your very first jump, you experience real freefall while instructors guide you through each level, helping you develop control, confidence, and the skills needed to skydive independently.",
+        "coursepage.pricing.card2.subtitle": "The AFF - Accelerated Free Fall is the fastest way to become a licensed skydiver. From your very first jump, you experience real freefall while instructors guide you through each level, helping you develop control, confidence, and the skills needed to skydive independently.",
         "coursepage.pricing.card2.items": [
             "Complete package",
             "Priority scheduling",
@@ -240,11 +253,11 @@ export const translations = {
         "pricing.jump": "jump",
         "pricing.aff.level1": "Theory (8 to 10 hours) + Level 1",
         "pricing.asl.level1": "Theory (8 to 10 hours) + 2 jumps",
-        "coursepage.safety.title": "Courses that prepare you to live the sport safely",
-        "coursepage.safety.p1": "Our courses are so rigorous that the goal is for you to never need to activate the automatic activation device (AAD).",
-        "coursepage.safety.p2": "Our mission is not just to teach the use of the safety net, it's to make you so competent that you become your own greatest protection.",
-        "coursepage.safety.p3": "Here, confidence becomes your main equipment.",
-        "coursepage.safety.cta": "Choose my journey!",
+        "coursepage.safety.title": "Courses that prepare you to experience the sport safely",
+        "coursepage.safety.p1": "The courses are based on the USPA SIM Manuals with world-renowned safety techniques.",
+        "coursepage.safety.p2": "Our mission is not just to teach you to jump from a plane, it is to make you so competent that you yourself become your own best protection in the practice of this sport.",
+        "coursepage.safety.p3": "Here, safety and confidence become your main equipment combined with the practice of good techniques.",
+        "coursepage.safety.cta": "Book your course now",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>in Action</strong>",
         "coursepage.req.title": "Who can <strong style='color: var(--primary-color)'>do the AFF?</strong>",
         "coursepage.req.items": [
@@ -257,14 +270,14 @@ export const translations = {
         "coursepage.faq.title": "Got doubts?<br/>We answer.",
         "coursepage.faqs": [
             { "question": "What is the minimum age to jump?", "answer": "The minimum age is 18, and there is no maximum age limit, provided you are in good health." },
-            { "question": "Is it required to have done a tandem jump before?", "answer": "No! Our AFF course is designed for absolute beginners to progress directly to jumping on their own." },
-            { "question": "Can I pause between levels in the fractional model?", "answer": "Yes. However, to maintain safety skills, if you pause for too long you may require a brief retraining jump." },
-            { "question": "Is it possible to pay in installments?", "answer": "Yes, we offer flexible payment plans directly during checkout or with our team." }
+            { "question": "Is it necessary to have done a tandem jump before?", "answer": "No! Our courses are designed so that absolute beginners can go straight to the jump, without the need for a tandem jump." },
+            { "question": "Can I pause between levels in the fractional model?", "answer": "Yes, however, to keep safety skills active, if the break is too long, you may need to perform a retraining jump or a refresher." },
+            { "question": "Do I receive a certification after completing the course?", "answer": "Yes. You will be certified by the USPA and will have international recognition." }
         ],
-        "coursepage.faqs.contact": "Still have doubts? Talk to an instructor now on WhatsApp",
+        "coursepage.faqs.contact": "Still have doubts? Talk to us now on WhatsApp",
         "coursepage.cta.title": "Ready to get off the ground and master the sky with your own wings?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "I want to be a skydiver!",
+        "coursepage.cta.button": "Book your course",
         "coursepage.cta.wa_message": "Hi! I'm interested in starting the AFF Skydiving Course at SkyDiveThru Ireland."
     },
     ga: {
@@ -272,7 +285,7 @@ export const translations = {
         "404.subtitle": "Leathanach gan aimsiú",
         "404.description": "Tá brón orainn, níorbh fhéidir linn an leathanach atá uait a aimsiú. B'fhéidir gur bogadh é nó go bhfuil an seoladh mícheart.",
         "404.button": "Ar ais go dtí an Baile",
-        "hero.badge": "Ionad Scátháin i mBiorra/Éire",
+        "hero.badge": "Ionad Scátháin i mBiorra/Co. Offaly",
         "hero.title": "Bain sult as an gcéad léim paraisúit le <strong>físeán 360° eisiach</strong>",
         "hero.subtitle": "Do chéad léim taifeadta go deo i 360º. Is cosúil le taisteal siar in am agus an t-adrenaline a mhothú gach uair a fhéachann tú air.",
         "hero.cta": "Sceideal do léim anois",
@@ -287,17 +300,17 @@ export const translations = {
         "pressel.button": "SCEIDEAL ANOIS",
         "experience.title": "Cén chaoi a bhfuil sé <br />an <strong style='color: var(--primary-color);'>taithí</strong> seo a chaitheamh linn?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color);'>Turais eagraithe ag imeacht ó chathracha éagsúla in Éirinn:</strong> compord agus sábháilteacht chun do léim a dhéanamh i Biorra.",
-            "<strong style='color: var(--primary-color);'>Teacht ar ár mbunáit leis an struchtúr ar fad ullmhaithe:</strong> treoirlínte sábháilteachta iomlána le gairmithe a bhfuil taithí acu.",
-            "<strong style='color: var(--primary-color);'>Mothaigh an sult as eitilt thar Biorra</strong> agus déan an léim le sábháilteacht iomlán.",
-            "<strong style='color: var(--primary-color);'>Bíodh gach soicind taifeadta</strong> leis an bhfíseán tumtha 360º.",
-            "<strong style='color: var(--primary-color);'>Déan athbheochan ar do shárú aon uair is mian leat,</strong> ag déanamh do chéad uair síoraí."
+            "<strong style='color: var(--primary-color);'>Teacht ar ár Scoil agus faigh:</strong> Struchtúr iomlán ullmhaithe, treoirlínte sábháilteachta iomlána le gairmithe a bhfuil taithí acu.",
+            "<strong style='color: var(--primary-color);'>Mothaigh an sult as eitilt thar Inis Ealga</strong> agus déan an léim le sábháilteacht iomlán.",
+            "<strong style='color: var(--primary-color);'>Athbheoigh do shárú aon uair is mian leat,</strong> leis an bhfíseán tumtha 360°.",
+            "<strong style='color: var(--primary-color);'>Bíodh gach soicind taifeadta</strong> le físeán tumtha 360°.",
+            "<strong style='color: var(--primary-color);'>Turais eagraithe ag imeacht ó chathracha éagsúla in Éirinn:</strong> compord agus sábháilteacht chun do léim a dhéanamh i mBiorra."
         ],
         "packages.title": "Déan do chéad léim tandem <strong style='color: var(--primary-color);'>do-dhearmadta!</strong> Roghnaigh conas is mian leat é a dhéanamh síoraí go deo.",
         "packages.subtitle": "Cuireann ár bpacáistí go léir <strong style='color: var(--primary-color);'>sábháilteacht agus sult</strong> ar fáil, ach ní sheachadann ach ceann amháin an t-eispéireas iomlán leis an bhfíseán tumtha 360º, trófaí fíor do shárú.",
         "packages.cards": [
             {
-                "title": "Tandem Premium €567,00",
+                "title": "Tandem Premium € 567.00",
                 "badge": "Is iomláine",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
@@ -311,10 +324,10 @@ export const translations = {
                 "price_label": "Ag tosú ó",
                 "price": "€ 567.00",
                 "payment": "Airgead nó cárta",
-                "cta": "Léim anois!"
+                "cta": "RESERVAR ANOIS"
             },
             {
-                "title": "Tandem Vip €537,00",
+                "title": "Tandem Vip € 537.00",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
@@ -326,10 +339,10 @@ export const translations = {
                 "price_label": "Ag tosú ó",
                 "price": "€ 537.00",
                 "payment": "Airgead nó cárta",
-                "cta": "Léim anois!"
+                "cta": "RESERVAR ANOIS"
             },
             {
-                "title": "Tandem Plus €467,00",
+                "title": "Tandem Plus € 467.00",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
@@ -339,32 +352,36 @@ export const translations = {
                 "price_label": "Ag tosú ó",
                 "price": "€ 467.00",
                 "payment": "Airgead nó cárta",
-                "cta": "Léim anois!"
+                "cta": "RESERVAR ANOIS"
             },
             {
-                "title": "Tandem Basic €357,00",
+                "title": "Tandem Basic € 357.00",
                 "features": [
                     "Léim déanta ag 12,000 troigh",
                     "In éineacht le teagascóir deimhnithe USPA agus CBPQ",
                     "Gan grianghraif ná físeáin"
                 ],
                 "description": "Ideal dóibh siúd ar mian leo díriú 100% ar an mothú eitilte íon, gan a bheith buartha faoi thaifid.",
-                "cta": "Léim anois!"
+                "cta": "RESERVAR ANOIS"
             }
         ],
-        "video.title": "Mothaigh Aidréanailín de <strong style='color: var(--primary-color);'>Fhíor-Scáthléim 360°!</strong>",
+        "packages.nav_titles": ["Tandem Premium", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Cúrsa AFF",
+        "menu.course_asl": "Cúrsa ASL",
+        "video.title": "Mothaigh Aidréanailín de <br /><strong style='color: var(--primary-color);'>Fhíor-Scáthléim 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Brúigh seinn, bog do scáileán, agus tum tú féin</strong> san eispéireas saorthitim 360° iomlán os cionn spéirlíne iontach Biorra.",
         "video.cta": "Sceideal do léim anois",
         "about.title": "<strong style='color: var(--primary-color);'>Fúinn</strong>",
-        "about.p1": "Is muid <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, ceann de na scoileanna paraisiútála is traidisiúnta in Éirinn, le níos mó na fiche bliain ag traenáil mac léinn, lúthchleasaithe agus teagascóirí.",
-        "about.p2": "Tá ár bhfoireann comhdhéanta de ghairmithe deimhnithe go hidirnáisiúnta atá speisialaithe i do chéad léim a athrú go heispéireas spreagúil, sábháilte agus do-dhearmadta, anois le teicneolaicíoíocht físeáin thumtha 360°.",
+        "about.p1": "Is muid <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> ceann de na scoileanna paraisiútála is traidisiúnta sa Bhrasaíl, a bhfuil níos mó ná fiche bliain de thaithí aige ag traenáil mac léinn, lúthchleasaithe agus teagascóirí. Tá ár bhfoireann comhdhéanta de ghairmithe deimhnithe agus aitheanta go hidirnáisiúnta, agus úsáidimid trealamh deimhnithe.",
+        "about.p2": "Tá an curiarracht againn maidir le hoiliúint agus cáiliú mac léinn, an curiarracht do mhórfoirmíochtaí lenár lúthchleasaithe féin, an curiarracht do léimeanna gan timpistí agus úsáidimid trealamh deimhnithe i gcónaí le baránta déantúsóra.",
+        "about.p3": "Tiocfaimid go hÉirinn an 26 Bealtaine 2026 chun an taithí iomlán de 27 bliain de cháilíocht, sábháilteacht agus go leor spraoi a thabhairt linn.",
         "dream.title": "An bhfuil tú réidh le <strong style='color: var(--primary-color);'>d'aisling léim a fhíorú?</strong>",
         "dream.desc1": "Bí ar dhuine de na misniúla a d'athraigh a sárú ina chuimhne thumtha.",
-        "dream.desc2": "<strong style='color: var(--primary-color);'>Sky360</strong> is é an rogha dóibh siúd ar mian leo a sárú a athmhaireachtáil i ngach mion, gach uair is mian leo.",
+        "dream.desc2": "Táimid speisialaithe i do <strong style='color: var(--primary-color);'>chéad léim</strong> a athrú go heispéireas spreagúil, sábháilte agus do-dhearmadta, anois le teicneolaíocht físeáin 360°",
         "dream.button": "Ba mhaith liom mo léim <span class='mobile-br'>le físeán 360° anois!</span>",
         "course.badge": "Cúrsaí Scáthphléanála",
         "course.title": "Réidh le léim i d'aonar? <br /><strong style='color: var(--primary-color);'>Is é an spéir do pháirc traenála</strong>",
-        "course.description": "Dóibh siúd ar mian leo níos mó ná léim amháin, cuirimid dhá chúrsa scáthphléanaílachta dheimhnithe ar fáil: an <strong>AFF (Saorthitim Luaithre)</strong>, ina bhfaigheann tú taithí ar shaorthitim fíor ó do chéad léim, agus an <strong>ASL (Líne Statach Luaithre)</strong>, athrú céim ar chéim go saorthitim iomlán. Tá an dá chúrsa faoi stiúir teagascóirí deimhnithe go hidirnáisiúnta.",
+        "course.description": "Dóibh siúd ar mian leo dul níos faide ná léim shimplí, cuirimid dhá chúrsa scáthphléanála aonair dheimhnithe ar fáil: An <strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> ina bhfaigheann tú taithí ar shaorthitim ón gcéad léim, nó an <strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> ina mbíonn dul chun cinn céim ar chéim agat ag tosú leis an gcóras oscailte uathoibríoch agus ag dul ar aghaidh go saorthitim iomlán. Tá an dá chúrsa á dteagasc agus á dtionlacan ag teagascóirí atá deimhnithe go hidirnáisiúnta.",
         "course.cta": "Faigh Amach Faoi Ár gCúrsaí",
         "faq.badge": "AN BHFUIL CEISTEANNA AGAT?",
         "faq.description": "D'fhágamar na príomhcheisteanna ónár gcustaiméirí ar leith chun cabhrú leat tuiscint a fháil ar conas is féidir linn do thaithí a athrú.",
@@ -372,34 +389,34 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "An bhfuil sé sábháilte léim?",
-                "answer": "Tá. Oibrímid le teagascóirí a bhfuil taithí acu agus le trealamh den scoth, ag leanúint na gcaighdeán sábháilteachta is déine."
+                "answer": "Tá. Oibrímid le teagascóirí a bhfuil taithí acu agus le trealamh deimhnithe agus leanaimid na caighdeáin sábháilteachta is déine."
             },
             {
                 "question": "Cé atá in ann léim?",
-                "answer": "Daoine os cionn 18 mbliana d'aois, a bhfuil meáchan suas le 114kg (250 lbs) acu, gan aon srianta tromchúiseacha leighis."
-            },
-            {
-                "question": "Conas a oibríonn an taifeadadh 360º?",
-                "answer": "Le linn na léime ar fad, taifeadann ár dteicneolaíocht gach rud i 360º — beidh tú in ann gach soicind a athbheochan amhail is dá mbeifeá ag léim arís."
+                "answer": "Daoine os cionn 17 mbliana d'aois, a bhfuil meáchan acu suas le 115kg/250lbs agus gan aon srianta tromchúiseacha leighis."
             },
             {
                 "question": "An gá réamh-áirithint a dhéanamh?",
-                "answer": "Sea, tá líon na n-áiteanna teoranta agus tá sé éigeantach áirithint a dhéanamh chun do shábháilteacht agus do chompord a chinntiú."
+                "answer": "Is gá, tá na spásanna teoranta agus tá áirithint éigeantach chun do shábháilteacht agus do chompord a chinntiú."
             },
             {
                 "question": "Cad ba chóir dom a chaitheamh ar lá na léime?",
-                "answer": "Éadaí compordacha agus bróga reatha. Soláthraímid trealamh sábháilteachta."
+                "answer": "Éadaí spóirt compordacha agus bróga reatha. Soláthróidh ár scoil an trealamh sábháilteachta ar fad."
+            },
+            {
+                "question": "Conas a oibríonn an taifeadadh 360º?",
+                "answer": "Le linn na léime ar fad, taifeadfaidh ár dteicneolaíocht gach rud i 360° agus beidh tú in ann gach soicind a athbheochan amhail is dá mbeifeá ag léim arís."
             }
         ],
-        "contact.badge": "Ionad Scátháin i mBiorra/Éire",
+        "contact.badge": "Ionad Scátháin i mBiorra/Co. Offaly",
         "contact.title": "Sceideal do <br class='tablet-br' /><strong style='color: var(--primary-color);'>léim linn anois!</strong>",
         "contact.address.title": "Seoladh",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Fón / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Uaireanta Oscailte",
-        "contact.hours.value": "Máirt - Domh: 09:00 - 19:00 (Luan dúnta)",
-        "contact.cta": "Labhair le teagascóir",
+        "contact.hours.value": "Dé Máirt go Domhnach ó 8am go luí na gréine.",
+        "contact.cta": "Labhair Linn",
         "contact.map_aria": "Oscail suíomh ar Google Maps",
         "contact.map_button": "Faigh Treoracha",
         "review.title": "Conas a mheasann tú ár seirbhís?",
@@ -431,17 +448,18 @@ export const translations = {
         "coursepage.badge": "Cúrsaí Scáthphléanála Aonair",
         "coursepage.hero.title": "Déan do phaisean don tumadóireacht spéire a thiontú ina shaoirse iomlán",
         "coursepage.hero.subtitle": "Foghlaim eitilt i d'aonar leis na cúrsaí tumadóireachta spéire is solúbtha in Éirinn. Téigh ar aghaidh ar do luas féin lenár gcláir AFF nó ASL.",
-        "coursepage.hero.cta": "Ba mhaith liom tús a chur le mo thraenáil anois!",
+        "coursepage.hero.cta": "Cuir mo chúrsa in áirithe anois!",
         "coursepage.hero.footer": "25 bliain gan timpiste | Teagascóirí deimhnithe",
-        "coursepage.what.title": "An oiliúint a dhéanann <strong style='color: var(--primary-color)'>scáthphléanaithe</strong> de bhrionglóidigh",
-        "coursepage.what.desc": "Is iad ár gcúrsaí Accelerated Free Fall (AFF) agus Accelerated Static Line (ASL) do thairseach chun saoirse iomlán na spéartha. Ní hamháin go bhfoghlaimeoidh tú an teicníc anseo, ach forbróidh tú meon fíor-scáthphléanaí chomh maith.",
-        "coursepage.what.desc2": "Déanfaidh ár dteagascóirí deimhnithe atá ina sealbhóirí curiarrachta as an mBrasaíl tú a threorú ar gach léim go dtí go mbainfidh tú neamhspleáchas iomlán amach.",
+        "coursepage.what.title": "Claochlaíonn ár gcuid oiliúna brionglóidigh ina scáthphléanaithe",
+        "coursepage.what.desc": "Is iad ár gcúrsaí Accelerated Free Fall (AFF) agus Accelerated Static Line (ASL) do thairseach chun saoirse iomlán na spéartha. Ní hamháin go bhfoghlaimeoidh tú an teicníc anseo, ach forbróidh tú meon fíor-scáthphléanaí le teicnící idirnáisiúnta.",
+        "coursepage.what.desc2": "Tá deimhnithe idirnáisiúnta ag ár dteagascóirí agus treoróidh siad thú ar gach léim go dtí go mbainfidh tú neamhspleáchas iomlán amach.",
         "coursepage.what.items": [
-            "Is muidne an t-aon scoil in Éirinn le samhail chodánach.",
-            "Ní íocann tú ach as na leibhéil a dhéanann tú, gan aon tiomantas do phacáistí dúnta.",
+            "Tá roghanna íocaíochta iomlána nó de réir leibhéil agat.",
+            "Tá solúbthacht agat léim i rith na seachtaine nó ag an deireadh seachtaine.",
+            "Tá am oiliúna níos giorra agat.",
             "Solúbthacht iomlán do do thuras."
         ],
-        "coursepage.what.cta": "Ba mhaith liom mo thuras a thosú!",
+        "coursepage.what.cta": "Cuir mo chúrsa in áirithe anois",
         "coursepage.steps.title": "Leibhéil <strong style='color: var(--primary-color)'>an Chúrsa</strong>",
         "coursepage.steps": [
             { "title": "Scoil Talún", "desc": "Traenáil seomra ranga déine ag clúdach forbhreathnú ar ghléasra, seasamh coirp, nósanna imeachta imeachta, prótacail éigeandála, agus patrúin tuirlingthe." },
@@ -450,9 +468,10 @@ export const translations = {
             { "title": "Leibhéal 8", "desc": "Do léim theacht amach deiridh ó airde níos ísle le theacht slán go tapa." }
         ],
         "coursepage.pricing.title": "Roghnaigh do thuras chun na saoirse",
+        "coursepage.pricing.or": "NÓ",
         "coursepage.pricing.subtitle": "Cé go ndéanann níos mó ná 200 duine a gcéad léim linn gach mí, socraíonn roinnt acu dul níos faide agus spéir a mháistriú lena sciatháin féin.",
-        "coursepage.pricing.card1.title": "Cúrsa Líne Statach Luathaithe (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Réamhrá de réir a chéile ar léim paraisiúit aonair. Osclaíonn do pharaisiút go huathoibríoch tar éis duit an t-eitleán a fhágáil, rud a ligeann duit díriú ar staidiúir an choirp, rialú an cheannbhrait agus tuirlingt shábháilte, ag dul chun cinn céim ar chéim go dtí an saorthitim agus léim paraisiúit neamhspleách.",
+        "coursepage.pricing.card1.title": "Cúrsa ASL - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "Is réamhrá de réir a chéile é an Cúrsa ASL – Accelerated Static Line don scáthphléanáil aonair. Osclaíonn do scáthphléan go huathoibríoch tar éis an amach agat, rud a ligeann duit díriú ar shuíomh an choirp, rialú na canóipe agus tuirlingtí sábháilte, ag dul ar aghaidh céim ar chéim go saorthitim sna céimeanna go léir agus tú á thionlacan ag an teagascóir.",
         "coursepage.pricing.card1.items": [
             "8 leibhéal forásacha",
             "Íocaíocht de réir an leibhéil aonair",
@@ -460,10 +479,10 @@ export const translations = {
             "Teagascóirí sárimreoir tacaíochta"
         ],
         "coursepage.pricing.card1.desc": "Ideal dóibh siúd a dteastaíonn tús a chur gan tiomantas agus dul chun cinn ar a luas féin.",
-        "coursepage.pricing.card1.cta": "Roghnaigh mo phacáiste",
+        "coursepage.pricing.card1.cta": "Sceideal Do Chúrsa",
         "coursepage.pricing.card2.badge": "An rogha is coitianta dár n-eachtránaithe",
-        "coursepage.pricing.card2.title": "Cúrsa Luathaithe Saorthite (A.F.F)",
-        "coursepage.pricing.card2.subtitle": "An bealach is tapúla le bheith i do scáthphléannaí deimhnithe. Ó do chéad léim féin, beidh taithí agat ar fhíor-shaorthitim agus teagascóirí á do threorú trí gach leibhéal, ag cabhrú leat smacht, muinín agus na scileanna is gá a fhorbairt chun léim go neamhspleách.",
+        "coursepage.pricing.card2.title": "AFF Cúrsa - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "Is é an AFF - Accelerated Free Fall an bealach is tapúla le bheith i do scáthphléannaí ceadúnaithe. Ó do chéad léim féin, gheobhaidh tú taithí ar fhíor-shaorthitim agus teagascóirí á do threorú trí gach leibhéal, ag cabhrú leat smacht, muinín agus na scileanna is gá a fhorbairt chun léim go neamhspleách.",
         "coursepage.pricing.card2.items": [
             "Pacáiste iomlán",
             "Tús áite ar an sceideal",
@@ -507,10 +526,10 @@ export const translations = {
         "pricing.asl.level1": "Teoiric (8 go 10 n-uair) + 2 léim",
         "coursepage.pricing.card2.cta": "Tosaigh m'oiliúint!",
         "coursepage.safety.title": "Cúrsaí a ullmhaíonn tú chun an spórt a chleachtadh go sábháilte",
-        "coursepage.safety.p1": "Tá na cúrsaí chomh dian sin gurb é an sprioc nach mbeadh ort an gléas sábháilteachta uathoibríoch (AAD) a úsáid riamh.",
-        "coursepage.safety.p2": "Ní hé ár misean ach úsáid an línte sábháilteachta a mhúineadh, tá sé ann chun tú a dhéanamh chomh hinniúil sin go mbeidh tú mar chosaint is mó agat féin.",
-        "coursepage.safety.p3": "Anseo, is é do mhuinín do phríomhthrealamh.",
-        "coursepage.safety.cta": "Roghnaigh mo thuras!",
+        "coursepage.safety.p1": "Tá na cúrsaí bunaithe ar Lámhleabhair USPA SIM le teicnící sábháilteachta a bhfuil cáil dhomhanda orthu.",
+        "coursepage.safety.p2": "Ní hamháin go bhfuil ár misean chun tú a mhúineadh conas léim as eitleán, tá sé chun thú a dhéanamh chomh hinniúil sin go mbeidh tú mar chosaint is mó agat féin i gcleachtas an spóirt seo.",
+        "coursepage.safety.p3": "Anseo, éiríonn sábháilteacht agus muinín mar do phríomhthrealamh mar aon le tarchur dea-theicnící.",
+        "coursepage.safety.cta": "Cuir do chúrsa in áirithe",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>i nGníomh</strong>",
         "coursepage.req.title": "Cé is féidir <strong style='color: var(--primary-color)'>AFF a dhéanamh?</strong>",
         "coursepage.req.items": [
@@ -522,15 +541,15 @@ export const translations = {
         ],
         "coursepage.faq.title": "An bhfuil amhras ort?<br/>Freagraímid.",
         "coursepage.faqs": [
-            { "question": "Cad í an aois íosta chun léim a dhéanamh?", "answer": "Is í 18 an aois íosta, agus níl aon uasteorainn aoise ann, chomh fada agus atá do shláinte go maith." },
-            { "question": "An gá léim tandem a dhéanamh ar dtús?", "answer": "Ní gá! Tá ár gcúrsa AFF deartha do dhaoine gan taithí le tosú ag léim leo féin." },
-            { "question": "An féidir liom sos a ghlacadh idir na leibhéil sa tsamhail chodánach?", "answer": "Is féidir. Mar sin féin, d'fhonn do lúthchleasaíocht a choinneáil, má ghlacann tú sos fada, seans go mbeidh gearrchúrsa athoiliúna uait." },
-            { "question": "An féidir íoc i dtráthchodanna?", "answer": "Is féidir, cuirimid pleananna íocaíochta solúbtha ar fáil le linn íocaíochta nó lenár bhfoireann." }
+            { "question": "Cad é an t-aois íosta chun léim?", "answer": "Is é 18 an t-aois íosta, agus níl aon teorainn aoise uasta ann, ar choinníoll go bhfuil sláinte mhaith agat." },
+            { "question": "An gá léim tandem a dhéanamh roimhe seo?", "answer": "Ní hea! Tá ár gcuid cúrsaí deartha ionas gur féidir le tosaitheoirí iomlána dul go díreach chuig an léim, gan gá le léim tandem." },
+            { "question": "An féidir liom sos a thógáil idir leibhéil sa mhúnla chodánach?", "answer": "Is féidir, ach chun scileanna sábháilteachta a choinneáil gníomhach, má tá an sos rófhada, seans go mbeidh ort léim athoiriúnaithe nó athnuachan a dhéanamh." },
+            { "question": "An bhfaighidh mé deimhniú tar éis an cúrsa a chríochnú?", "answer": "Gheobhaidh. Beidh tú deimhnithe ag an USPA agus beidh aitheantas idirnáisiúnta agat." }
         ],
-        "coursepage.faqs.contact": "An bhfuil amhras ort fós? Labhair le teagascóir anois ar WhatsApp",
+        "coursepage.faqs.contact": "An bhfuil amhras ort fós? Labhair linn anois ar WhatsApp",
         "coursepage.cta.title": "Réidh le héirí den talamh agus an spéir a mháistriú le do sciatháin féin?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Ba mhaith liom a bheith i mo scáthphléannaí!",
+        "coursepage.cta.button": "Cuir do chúrsa in áirithe",
         "coursepage.cta.wa_message": "Dia duit! Tá spéis agam tosú ar Chúrsa Scáthphléanála AFF ag SkyDiveThru Éire."
     },
     pt: {
@@ -539,7 +558,7 @@ export const translations = {
         "404.subtitle": "Página não encontrada",
         "404.description": "Desculpe, não conseguimos encontrar a página que você está procurando. Ela pode ter sido movida ou o endereço está incorreto.",
         "404.button": "Voltar ao Início",
-        "hero.badge": "Centro de Paraquedismo em Birr/Irlanda",
+        "hero.badge": "Centro de Paraquedismo em Birr/Co. Offaly",
         "hero.title": "Experimente a emoção do seu primeiro salto de paraquedas com <strong>vídeo 360° exclusivo</strong>",
         "hero.subtitle": "Seu primeiro salto capturado para sempre em 360º. É como viajar no tempo e reviver a adrenalina toda vez que você assiste.",
         "hero.cta": "Reserve seu salto agora",
@@ -551,14 +570,14 @@ export const translations = {
         "pressel.countdown.minutes": "minutos",
         "pressel.countdown.seconds": "segundos",
         "pressel.cta": "Quer garantir sua vaga numa área totalmente nova e com grande qualidade e estilo?",
-        "pressel.button": "RESERVAR AGORA",
+        "pressel.button": "AGENDAR AGORA",
         "experience.title": "Como é viver esta <br /><strong style='color: var(--primary-color);'>experiência</strong> conosco?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color);'>Excursões organizadas saindo de várias cidades da Irlanda:</strong> conforto e segurança para você realizar seu salto em Birr.",
-            "<strong style='color: var(--primary-color);'>Chegue em nossa base com toda a estrutura preparada:</strong> orientações completas de segurança com profissionais experientes.",
-            "<strong style='color: var(--primary-color);'>Sinta a emoção de sobrevoar Birr</strong> e realize o salto com total segurança.",
-            "<strong style='color: var(--primary-color);'>Tenha cada segundo registrado</strong> com o vídeo 360º imersivo.",
-            "<strong style='color: var(--primary-color);'>Reviva sua superação sempre que quiser,</strong> eternizando sua primeira vez."
+            "<strong style='color: var(--primary-color);'>Chegue em nossa Escola e encontre:</strong> Toda estrutura completa e preparada, orientações completas de segurança com profissionais experientes.",
+            "<strong style='color: var(--primary-color);'>Sinta a emoção de sobrevoar a Ilha da Esmeralda</strong> e realize o salto com total segurança.",
+            "<strong style='color: var(--primary-color);'>Reviva sua superação sempre que quiser, </strong> com o vídeo 360º imersivo.",
+            "<strong style='color: var(--primary-color);'>Tenha cada segundo registrado</strong> com um vídeo 360° imersivo.",
+            "<strong style='color: var(--primary-color);'>Excursões organizadas saindo de várias cidades da Irlanda:</strong> conforto e segurança para você realizar seu salto em Birr."
         ],
         "packages.title": "Faça seu primeiro salto tandem <strong style='color: var(--primary-color);'>inesquecível!</strong> Escolha como você quer eternizá-lo para sempre.",
         "packages.subtitle": "Todos os nossos pacotes oferecem <strong style='color: var(--primary-color);'>segurança e emoção</strong>, mas apenas um entrega a experiência completa com o vídeo 360º imersivo, o verdadeiro troféu da sua superação.",
@@ -575,7 +594,8 @@ export const translations = {
                     "Vídeo 360º para imersão completa"
                 ],
                 "description": "Perfeito para você transformar sua superação em uma memória cinematográfica.",
-                "cta": "Eu quero este"
+                "cta": "Agendar Agora",
+                "wa_message": "Hi! I'm interested in booking the Tandem Premium package with SkyDiveThru Ireland."
             },
             {
                 "title": "Tandem Vip €537,00",
@@ -590,7 +610,8 @@ export const translations = {
                 "price_label": "A partir de",
                 "price": "€ 537,00",
                 "payment": "pagamento em dinheiro ou cartão",
-                "cta": "Eu quero este"
+                "cta": "Agendar Agora",
+                "wa_message": "Hi! I'm interested in booking the Tandem Vip package with SkyDiveThru Ireland."
             },
             {
                 "title": "Tandem Plus €467,00",
@@ -603,7 +624,8 @@ export const translations = {
                 "price_label": "A partir de",
                 "price": "€ 467,00",
                 "payment": "pagamento em dinheiro ou cartão",
-                "cta": "Eu quero este"
+                "cta": "Agendar Agora",
+                "wa_message": "Hi! I'm interested in booking the Tandem Plus package with SkyDiveThru Ireland."
             },
             {
                 "title": "Tandem Basic €357,00",
@@ -616,22 +638,27 @@ export const translations = {
                 "price_label": "A partir de",
                 "price": "€ 357,00",
                 "payment": "pagamento em dinheiro ou cartão",
-                "cta": "Eu quero este"
+                "cta": "Agendar Agora",
+                "wa_message": "Hi! I'm interested in booking the Tandem Basic package with SkyDiveThru Ireland."
             }
         ],
+        "packages.nav_titles": ["Tandem Premium", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Curso AFF",
+        "menu.course_asl": "Curso ASL",
         "video.title": "Sinta a Adrenalina de um <br /><strong style='color: var(--primary-color);'>Salto em 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Aperte o play, mova sua tela e mergulhe</strong> na experiência completa de queda livre em 360° acima da deslumbrante linha do horizonte de Birr.",
         "video.cta": "Reserve seu salto agora",
         "about.title": "<strong style='color: var(--primary-color);'>Quem Somos</strong>",
-        "about.p1": "Somos a <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, uma das escolas de paraquedismo mais tradicionais da Irlanda, com mais de duas décadas treinando alunos, atletas e instrutores.",
-        "about.p2": "Nossa equipe é formada por profissionais certificados internacionalmente, especializados em transformar seu primeiro salto em uma experiência emocionante, segura e inesquecível, agora com tecnologia de vídeo 360° imersiva.",
+        "about.p1": "Somos a <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> uma das escolas de paraquedismo mais tradicionais do Brasil, com mais de duas décadas de experiência treinando alunos, atletas e instrutores. Nossa Equipe são formadas por profissionais certificados e reconhecidos internacionalmente, e utilizamos equipamentos certificados.",
+        "about.p2": "Detemos o recorde de treinamento e formação de alunos, o recorde de grandes formações, com nossos próprios atletas, o recorde de saltos sem acidentes e sempre utilizamos equipamentos certificados com garantia do fabricante.",
+        "about.p3": "Chegaremos à Irlanda em 26 de maio de 2026 para trazer toda a experiência de 27 anos de qualidade, segurança e muita diversão.",
         "dream.title": "Você está pronto para realizar seu <strong style='color: var(--primary-color);'>sonho de saltar de paraquedas?</strong>",
         "dream.desc1": "Seja um dos corajosos que transformaram sua superação em uma memória imersiva.",
-        "dream.desc2": "A <strong style='color: var(--primary-color);'>Sky360</strong> é a escolha para quem quer reviver sua superação em cada detalhe, sempre que quiser.",
+        "dream.desc2": "Nós somos, especializados em transformar <strong style='color: var(--primary-color);'>seu primeiro salto</strong> em uma experiência emocionante, segura e inesquecível, agora com tecnologia de vídeo 360°",
         "dream.button": "Quero meu salto <span class='mobile-br'>com vídeo 360° agora!</span>",
         "course.badge": "Cursos de Paraquedismo",
         "course.title": "Pronto para saltar sozinho? <br /><strong style='color: var(--primary-color);'>O céu é o seu campo de treino</strong>",
-        "course.description": "Para quem quer ir além de um simples salto, oferecemos dois cursos certificados de paraquedismo solo: o <strong>AFF (Queda Livre Acelerada)</strong>, onde você experencia a queda livre de verdade desde o primeiro salto, e o <strong>ASL (Linha Estática Acelerada)</strong>, uma progressão gradual até a queda livre completa. Ambos os cursos são ministrados por instrutores certificados internacionalmente.",
+        "course.description": "Para quem quer ir além de um simples salto, oferecemos dois cursos certificados de paraquedismo solo: O <strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> onde voce experimenta a queda livre desde o primeiro salto ou o <strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> onde voce tem uma progressão gradual começando pelo sistema de abertura automático e evoluindo até a queda livre. Ambos os cursos são ministrados e acompanhados por instrutores certificados internacionalmente.",
         "course.cta": "Conheça Nossos Cursos",
         "faq.badge": "TIRE SUAS DÚVIDAS",
         "faq.description": "Separamos as principais dúvidas de nossos clientes para ajudar você a entender como podemos transformar sua experiência.",
@@ -639,15 +666,11 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "É seguro saltar?",
-                "answer": "Sim. Trabalhamos com instrutores experientes e equipamentos de ponta, seguindo os mais rigorosos padrões de segurança."
+                "answer": "Sim. Trabalhamos com instrutores experientes e com equipamentos certificados e seguimos os mais rigorosos padrões de segurança."
             },
             {
                 "question": "Quem pode saltar?",
-                "answer": "Maiores de 18 anos, com peso até 114kg, sem restrições médicas graves."
-            },
-            {
-                "question": "Como funciona a gravação 360º?",
-                "answer": "Durante todo o salto, nossa tecnologia registra tudo em 360º — você vai poder reviver cada segundo como se estivesse saltando de novo."
+                "answer": "Maiores de 17 anos, com peso de ate 115 kilos e sem restrições médicas graves."
             },
             {
                 "question": "É preciso agendar com antecedência?",
@@ -655,18 +678,22 @@ export const translations = {
             },
             {
                 "question": "O que devo vestir no dia do salto?",
-                "answer": "Roupas confortáveis e tênis. Equipamentos de segurança são fornecidos por nós."
+                "answer": "Roupas confortáveis esportivas e tênis. Todos os equipamentos de segurança serão fornecidos por nossa escola."
+            },
+            {
+                "question": "Como funciona a gravação 360º?",
+                "answer": "Durante todo o salto, nossa tecnologia registrará tudo em 360° e voce vai poder reviver cada segundo como e estivesse no saltando de novo."
             }
         ],
-        "contact.badge": "Centro de Paraquedismo em Birr/Irlanda",
+        "contact.badge": "Centro de Paraquedismo em Birr/Co. Offaly",
         "contact.title": "Reserve seu <br class='tablet-br' /><strong style='color: var(--primary-color);'>salto conosco agora!</strong>",
         "contact.address.title": "Endereço",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Telefone / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Horário de Atendimento",
-        "contact.hours.value": "Ter - Dom: 09h às 19h (Segunda fechado)",
-        "contact.cta": "Fale com um instrutor",
+        "contact.hours.value": "Terça a Domingo das 8h até o pôr do sol.",
+        "contact.cta": "Fale Conosco",
         "contact.map_aria": "Abrir localização no Google Maps",
         "contact.map_button": "Gerar Rota",
         "review.title": "Como você avalia nosso atendimento?",
@@ -698,17 +725,18 @@ export const translations = {
         "coursepage.badge": "Cursos de Paraquedismo Solo",
         "coursepage.hero.title": "Transforme sua paixão pelo paraquedismo em liberdade total",
         "coursepage.hero.subtitle": "Aprenda a voar sozinho com os cursos de paraquedismo mais flexíveis da Irlanda. Progrida no seu próprio ritmo com nossos programas AFF ou ASL.",
-        "coursepage.hero.cta": "Quero começar minha formação agora!",
+        "coursepage.hero.cta": "Reserve meu curso agora!",
         "coursepage.hero.footer": "25 anos sem acidentes | Instrutores certificados",
-        "coursepage.what.title": "A formação que transforma sonhadores em <strong style='color: var(--primary-color)'>paraquedistas</strong>",
-        "coursepage.what.desc": "Nossos cursos Accelerated Free Fall (AFF) e Accelerated Static Line (ASL) são sua porta de entrada para a liberdade absoluta dos céus. Aqui você aprende não apenas a técnica, mas desenvolve a mentalidade de um verdadeiro paraquedista.",
-        "coursepage.what.desc2": "Nossos instrutores recordistas brasileiros te guiam em cada salto até você conquistar sua independência total.",
+        "coursepage.what.title": "Nossas formações transformam sonhadores em paraquedistas",
+        "coursepage.what.desc": "Nossos cursos Accelerated Free Fall (AFF) e Accelerated Static Line (ASL) são sua porta de entrada para a liberdade absoluta dos céus. Aqui você aprende não apenas a técnica, mas desenvolve a mentalidade de um verdadeiro paraquedista com as tecnicas internacionais.",
+        "coursepage.what.desc2": "Nossos instrutores tem certificações internacionais e te guiam em cada salto até você conquistar sua independência total.",
         "coursepage.what.items": [
-            "Somos a única escola na Irlanda com modelo fracionado.",
-            "Você paga apenas pelos níveis que fizer, sem compromisso com pacotes fechados.",
+            "Voce tem opções de pagamento integral ou por Niveis.",
+            "Você tem flexibilidade de saltar durante os dias de semana ou finais de semana.",
+            "Voce tem menor tempo de formação.",
             "Flexibilidade total para sua jornada."
         ],
-        "coursepage.what.cta": "Quero iniciar minha jornada!",
+        "coursepage.what.cta": "Reserve meu curso agora",
         "coursepage.steps.title": "Níveis <strong style='color: var(--primary-color)'>do Curso</strong>",
         "coursepage.steps": [
             { "title": "Escola em Terra", "desc": "Treinamento intensivo em sala de aula cobrindo visão geral do equipamento, posição corporal, procedimentos de saída, protocolos de emergência e padrões de pouso. Você está totalmente preparado antes de embarcar no avião." },
@@ -717,9 +745,10 @@ export const translations = {
             { "title": "Nível 8", "desc": "Seu salto final de uma altitude mais baixa (5.000 pés) para simular uma saída de emergência. Domine a estabilização rápida e a abertura do velame." }
         ],
         "coursepage.pricing.title": "Escolha sua jornada rumo à liberdade",
+        "coursepage.pricing.or": "OU",
         "coursepage.pricing.subtitle": "Enquanto mais de 200 pessoas vivem seu primeiro salto conosco todo mês, alguns decidem ir além e dominar o céu com as próprias asas.",
-        "coursepage.pricing.card1.title": "Curso de Linha Estática Acelerada (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Introdução gradual ao paraquedismo solo. Seu paraquedas abre automaticamente após a saída, permitindo que você foque na posição do corpo, controle do velame e pousos seguros, progredindo passo a passo até a queda livre e o paraquedismo independente.",
+        "coursepage.pricing.card1.title": "Curso ASL - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "O Curso ASL – Accelerated Static Line é uma introdução gradual ao paraquedismo solo. Seu paraquedas abre automaticamente após a saída, permitindo que você foque na posição do corpo, controle do velame e pousos seguros, progredindo passo a passo até a queda livre em todas as fases sendo acompanhado pelo instrutor.",
         "coursepage.pricing.card1.items": [
             "8 níveis progressivos",
             "Pagamento por nível individual",
@@ -727,10 +756,10 @@ export const translations = {
             "Instrutores recordistas dedicados"
         ],
         "coursepage.pricing.card1.desc": "Ideal para quem quer começar sem compromisso com pacote fechado e progredir no seu ritmo.",
-        "coursepage.pricing.card1.cta": "Escolher pacote de salto",
+        "coursepage.pricing.card1.cta": "Agende Seu Curso",
         "coursepage.pricing.card2.badge": "O mais escolhido por nossos aventureiros",
-        "coursepage.pricing.card2.title": "Curso de Queda Livre Acelerada (A.F.F)",
-        "coursepage.pricing.card2.subtitle": "A maneira mais rápida de se tornar um paraquedista licenciado. Desde o seu primeiro salto, você experimenta a verdadeira queda livre enquanto os instrutores o orientam em cada nível, ajudando a desenvolver controle, confiança e as habilidades necessárias para saltar de forma independente.",
+        "coursepage.pricing.card2.title": "Curso AFF - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "O AFF - Accelerated Free Fall é a maneira mais rápida de se tornar um paraquedista licenciado. Desde o seu primeiro salto, você experimenta a verdadeira queda livre enquanto os instrutores o orientam em cada nível, ajudando a desenvolver controle, confiança e as habilidades necessárias para saltar de forma independente.",
         "coursepage.pricing.card2.items": [
             "Pacote completo",
             "Prioridade no agendamento",
@@ -774,10 +803,10 @@ export const translations = {
         "pricing.asl.level1": "Teoria (8 a 10 horas) + 2 saltos",
         "coursepage.pricing.card2.cta": "Começar minha formação!",
         "coursepage.safety.title": "Cursos que preparam você para viver o esporte de forma segura",
-        "coursepage.safety.p1": "Os cursos são tão rigorosos que o objetivo é que você nunca precise acionar o dispositivo de segurança automático (DAA).",
-        "coursepage.safety.p2": "Nossa missão não é só ensinar o uso da rede de segurança, é te tornar tão competente que você mesmo se torna a sua maior proteção.",
-        "coursepage.safety.p3": "Aqui, a confiança se torna seu principal equipamento.",
-        "coursepage.safety.cta": "Escolher a minha jornada!",
+        "coursepage.safety.p1": "Os cursos são baseados nos Manuais SIM da USPA com tecnicas de seguranças mundialmente reconhecidas.",
+        "coursepage.safety.p2": "Nossa missão não é só ensinar voce a saltar de um avião, é te tornar tão competente que você mesmo se torna a sua maior proteção a pratica desse esporte.",
+        "coursepage.safety.p3": "Aqui, a segurança e confiança se torna seu principal equipamento aliada a pratica de boas técnicas.",
+        "coursepage.safety.cta": "Reserve seu curso",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>em Ação</strong>",
         "coursepage.req.title": "Quem pode <strong style='color: var(--primary-color)'>fazer o AFF?</strong>",
         "coursepage.req.items": [
@@ -790,22 +819,25 @@ export const translations = {
         "coursepage.faq.title": "Tem dúvidas?<br/>A gente responde.",
         "coursepage.faqs": [
             { "question": "Qual a idade mínima para saltar?", "answer": "A idade mínima é de 18 anos e não há limite máximo de idade, desde que você esteja com boa saúde." },
-            { "question": "É necessário ter feito salto duplo antes?", "answer": "Não! O nosso curso AFF é elaborado para que iniciantes absolutos possam ir direto para o salto por conta própria." },
-            { "question": "Posso pausar entre os níveis no modelo fracionado?", "answer": "Sim. Porém, para manter as habilidades de segurança frescas, se a pausa for muito longa você pode precisar de um salto de readaptação rápido." },
-            { "question": "É possível parcelar o pagamento?", "answer": "Sim, oferecemos opções de parcelamento flexíveis diretamente na compra ou com nossa equipe de agendamento." }
+            { "question": "É necessário ter feito salto duplo antes?", "answer": "Não! Os nossos cursos são elaborados para que iniciantes absolutos possam ir direto para o salto, sem necessidade de um salto tandem." },
+            { "question": "Posso pausar entre os níveis no modelo fracionado?", "answer": "Sim, porém, para manter as habilidades de segurança ativas, se a pausa for muito longa pode ser necessário realizar um salto de readaptação ou uma reciclagem." },
+            { "question": "Eu recebo uma certificação depois de concluir o curso?", "answer": "Sim. Você será certificado pela USPA e terá reconhecimento internacional." }
         ],
-        "coursepage.faqs.contact": "Ainda tem dúvidas? Fale com um instrutor agora no WhatsApp",
+        "coursepage.faqs.contact": "Ainda tem dúvidas? Fale conosco agora no WhatsApp",
         "coursepage.cta.title": "Pronto para sair do chão e dominar o céu com as próprias asas?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Quero ser paraquedista!",
-        "coursepage.cta.wa_message": "Olá! Tenho interesse em iniciar o Curso de Paraquedismo AFF na SkyDiveThru Irlanda."
+        "coursepage.cta.button": "Reserve seu curso",
+        "coursepage.cta.wa_message_aff": "Hi! I'm interested in starting the AFF Skydiving Course at SkyDiveThru Ireland.",
+        "coursepage.cta.wa_message_asl": "Hi! I'm interested in starting the ASL Skydiving Course at SkyDiveThru Ireland.",
+        "coursepage.cta.wa_message": "Olá! Tenho interesse em iniciar o Curso de Paraquedismo AFF na SkyDiveThru Irlanda.",
+        "contact.wa_message": "Hi! I have some questions and I would like to talk with someone from SkyDiveThru Ireland."
     },
     es: {
         "404.title": "404",
         "404.subtitle": "Página no encontrada",
         "404.description": "Lo sentimos, no pudimos encontrar la página que buscas. Puede haber sido movida o la dirección es incorrecta.",
         "404.button": "Volver al Inicio",
-        "hero.badge": "Centro de Paracaidismo en Birr/Irlanda",
+        "hero.badge": "Centro de Paracaidismo en Birr/Co. Offaly",
         "hero.title": "Vive la emoción de tu primer salto en paracaídas con <strong>video 360° exclusivo</strong>",
         "hero.subtitle": "Tu primer salto capturado para siempre en 360º. Es como viajar en el tiempo y revivir la adrenalina cada vez que lo ves.",
         "hero.cta": "¡Reserva tu salto ahora!",
@@ -820,11 +852,11 @@ export const translations = {
         "pressel.button": "RESERVAR AHORA",
         "experience.title": "¿Cómo es vivir esta <br /><strong style='color: var(--primary-color);'>experiencia</strong> con nosotros?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color);'>Excursiones organizadas desde varias ciudades de Irlanda:</strong> comodidad y seguridad para realizar tu salto en Birr.",
-            "<strong style='color: var(--primary-color);'>Llegue a nuestra base con toda la estructura preparada:</strong> pautas de seguridad completas con profesionales experimentados.",
-            "<strong style='color: var(--primary-color);'>Siente la emoción de sobrevolar Birr</strong> y realiza el salto con total seguridad.",
-            "<strong style='color: var(--primary-color);'>Ten cada segundo registrado</strong> con el video 360º inmersivo.",
-            "<strong style='color: var(--primary-color);'>Revive tu superación siempre que quieras,</strong> eternizando tu primera vez."
+            "<strong style='color: var(--primary-color);'>Llega a nuestra Escuela y encuentra:</strong> Toda la estructura completa y preparada, pautas de seguridad completas con profesionales experimentados.",
+            "<strong style='color: var(--primary-color);'>Siente la emoción de sobrevolar la Isla Esmeralda</strong> y realiza el salto con total seguridad.",
+            "<strong style='color: var(--primary-color);'>Revive tu superación siempre que quieras,</strong> con el video 360º inmersivo.",
+            "<strong style='color: var(--primary-color);'>Ten cada segundo registrado</strong> con un video 360° inmersivo.",
+            "<strong style='color: var(--primary-color);'>Excursiones organizadas desde varias ciudades de Irlanda:</strong> comodidad y seguridad para realizar tu salto en Birr."
         ],
         "packages.title": "¡Haz que tu primer salto tándem sea <strong style='color: var(--primary-color);'>inolvidable!</strong> Elige cómo quieres inmortalizarlo para siempre.",
         "packages.subtitle": "Todos nuestros paquetes ofrecen <strong style='color: var(--primary-color);'>seguridad y emoción</strong>, pero solo uno entrega la experiencia completa con el video 360º imersivo, el verdadero trofeo de tu superación.",
@@ -844,7 +876,7 @@ export const translations = {
                 "price_label": "Desde",
                 "price": "€ 567,00",
                 "payment": "pago en efectivo o tarjeta",
-                "cta": "Quiero este"
+                "cta": "¡RESERVAR AHORA!"
             },
             {
                 "title": "Tandem Vip €537,00",
@@ -859,7 +891,7 @@ export const translations = {
                 "price_label": "Desde",
                 "price": "€ 537,00",
                 "payment": "pago en efectivo o tarjeta",
-                "cta": "Quiero este"
+                "cta": "¡RESERVAR AHORA!"
             },
             {
                 "title": "Tandem Plus €467,00",
@@ -872,7 +904,7 @@ export const translations = {
                 "price_label": "Desde",
                 "price": "€ 467,00",
                 "payment": "pago en efectivo o tarjeta",
-                "cta": "Quiero este"
+                "cta": "¡RESERVAR AHORA!"
             },
             {
                 "title": "Tandem Basic €357,00",
@@ -885,22 +917,26 @@ export const translations = {
                 "price_label": "Desde",
                 "price": "€ 357,00",
                 "payment": "pago en efectivo o tarjeta",
-                "cta": "Quiero este"
+                "cta": "RESERVAR AHORA"
             }
         ],
-        "video.title": "Siente la Adrenalina de un <strong style='color: var(--primary-color);'>Salto Real en 360°!</strong>",
+        "packages.nav_titles": ["Tandem Premium", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Curso AFF",
+        "menu.course_asl": "Curso ASL",
+        "video.title": "Siente la Adrenalina de un <br /><strong style='color: var(--primary-color);'>Salto Real en 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Pulsa play, mueve tu pantalla y sumérgete</strong> en la experiencia completa de caída libre en 360° sobre el impresionante horizonte de Birr.",
         "video.cta": "Reserva tu salto ahora",
         "about.title": "<strong style='color: var(--primary-color);'>Sobre Nosotros</strong>",
-        "about.p1": "Somos <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, una de las escuelas de paracaidismo más tradicionales de Irlanda, con más de dos décadas entrenando alumnos, atletas e instructores.",
-        "about.p2": "Nuestro equipo está formado por profesionales certificados internacionalmente, especializados en transformar tu primer salto en una experiencia emocionante, segura e inolvidable, ahora con tecnología de video 360° inmersiva.",
+        "about.p1": "Somos <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> una de las escuelas de paracaidismo más tradicionales de Brasil, con más de dos décadas de experiencia entrenando alumnos, atletas e instructores. Nuestro equipo está formado por profesionales certificados y reconocidos internacionalmente, y utilizamos equipos certificados.",
+        "about.p2": "Poseemos el récord de entrenamiento y formación de alumnos, el récord de grandes formaciones con nuestros propios atletas, el récord de saltos sin accidentes y siempre utilizamos equipos certificados con garantía del fabricante.",
+        "about.p3": "Llegaremos a Irlanda el 26 de mayo de 2026 para traer toda la experiencia de 27 años de calidad, seguridad y mucha diversión.",
         "dream.title": "¿Estás listo para cumplir tu <strong style='color: var(--primary-color);'>sueño de saltar en paracaídas?</strong>",
         "dream.desc1": "Sé uno de los valientes que transformaron su superación en un recuerdo inmersivo.",
-        "dream.desc2": " <strong style='color: var(--primary-color);'>Sky360</strong> es la elección para quienes quieren revivir su superación en cada detalle, siempre que quieran.",
+        "dream.desc2": "Somos especialistas en transformar <strong style='color: var(--primary-color);'>tu primer salto</strong> en una experiencia emocionante, segura e inolvidable, ahora con tecnología de video 360°",
         "dream.button": "¡Quiero mi salto <span class='mobile-br'>con video 360° ahora!</span>",
         "course.badge": "Cursos de Paracaidismo",
         "course.title": "¿Listo para saltar solo? <br /><strong style='color: var(--primary-color);'>El cielo es tu campo de entrenamiento</strong>",
-        "course.description": "Para quienes quieren ir más allá de un simple salto, ofrecemos dos cursos certificados de paracaidismo en solitario: el <strong>AFF (Caída Libre Acelerada)</strong>, donde experimentas la caída libre real desde tu primer salto, y el <strong>ASL (Línea Estática Acelerada)</strong>, una progresíon gradual hasta la caída libre completa. Ambos cursos están guiados por instructores certificados internacionalmente.",
+        "course.description": "Para quienes quieren ir más allá de un simple salto, ofrecemos dos cursos certificados de paracaidismo en solitario: El <strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> donde experimentas la caída libre desde el primer salto o el <strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> donde tienes una progresión gradual comenzando por el sistema de apertura automático y evolucionando hasta la caída libre. Ambos cursos son impartidos y acompañados por instructores certificados internacionalmente.",
         "course.cta": "Descubre Nuestros Cursos",
         "faq.badge": "¿TIENES DUDAS?",
         "faq.description": "Hemos separado las principales dudas de nuestros clientes para ayudarte a entender cómo podemos transformar tu experiencia.",
@@ -908,15 +944,11 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "¿Es seguro saltar?",
-                "answer": "Sí. Trabajamos con instructores experimentados y equipos de última generación, siguiendo los más rigurosos estándares de seguridad."
+                "answer": "Sí. Trabajamos con instructores experimentados y con equipos certificados y seguimos los más rigurosos estándares de seguridad."
             },
             {
                 "question": "¿Quién puede saltar?",
-                "answer": "Mayores de 18 años, con un peso de hasta 114 kg, sin restricciones médicas graves."
-            },
-            {
-                "question": "¿Cómo funciona la grabación 360º?",
-                "answer": "Durante todo el salto, nuestra tecnología graba todo en 360º — podrás revivir cada segundo como si estuvieras saltando de nuevo."
+                "answer": "Mayores de 17 años, con un peso de hasta 115kg/250lbs y sin restricciones médicas graves."
             },
             {
                 "question": "¿Es necesario reservar con antelación?",
@@ -924,18 +956,22 @@ export const translations = {
             },
             {
                 "question": "¿Qué debo llevar el día del salto?",
-                "answer": "Ropa cómoda y zapatillas. Nosotros proporcionaremos el equipo de seguridad."
+                "answer": "Ropa deportiva cómoda y zapatillas. Todo el equipo de seguridad será proporcionado por nuestra escuela."
+            },
+            {
+                "question": "¿Cómo funciona la grabación 360º?",
+                "answer": "Durante todo el salto, nuestra tecnología registrará todo en 360° y podrás revivir cada segundo como si estuvieras saltando de nuevo."
             }
         ],
-        "contact.badge": "Centro de Paracaidismo en Birr/Irlanda",
+        "contact.badge": "Centro de Paracaidismo en Birr/Co. Offaly",
         "contact.title": "Reserva tu <br class='tablet-br' /><strong style='color: var(--primary-color);'>salto con nosotros ahora!</strong>",
         "contact.address.title": "Dirección",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Teléfono / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Horario de Atención",
-        "contact.hours.value": "Mar - Dom: 09:00 - 19:00 (Lunes cerrado)",
-        "contact.cta": "Habla con un instructor",
+        "contact.hours.value": "Martes a Domingo de 8h hasta la puesta del sol.",
+        "contact.cta": "Habla con Nosotros",
         "contact.map_aria": "Abrir ubicación en Google Maps",
         "contact.map_button": "Cómo llegar",
         "review.title": "¿Cómo calificas nuestro servicio?",
@@ -967,17 +1003,18 @@ export const translations = {
         "coursepage.badge": "Cursos de Paracaidismo en Solitario",
         "coursepage.hero.title": "Transforma tu pasión por el paracaidismo en libertad total",
         "coursepage.hero.subtitle": "Aprende a volar solo con los cursos de paracaidismo más flexibles de Irlanda. Progresa a tu propio ritmo con nuestros programas AFF o ASL.",
-        "coursepage.hero.cta": "¡Quiero comenzar mi formación ahora!",
+        "coursepage.hero.cta": "¡Reserva mi curso ahora!",
         "coursepage.hero.footer": "25 años sin accidentes | Instructores certificados",
-        "coursepage.what.title": "La formación que transforma soñadores en <strong style='color: var(--primary-color)'>paracaidistas</strong>",
-        "coursepage.what.desc": "Nuestros cursos Accelerated Free Fall (AFF) y Accelerated Static Line (ASL) son tu puerta de entrada a la libertad absoluta de los cielos. Aquí aprendes no solo la técnica, sino que desarrollas la mentalidad de un verdadero paracaidista.",
-        "coursepage.what.desc2": "Nuestros instructores poseedores de récords brasileños te guían en cada salto hasta alcanzar la independencia total.",
+        "coursepage.what.title": "Nuestras formaciones transforman soñadores en paracaidistas",
+        "coursepage.what.desc": "Nuestros cursos Accelerated Free Fall (AFF) y Accelerated Static Line (ASL) son tu puerta de entrada a la libertad absoluta de los cielos. Aquí aprendes no solo la técnica, sino que desarrollas la mentalidad de un verdadero paracaidista con técnicas internacionales.",
+        "coursepage.what.desc2": "Nuestros instructores cuentan con certificaciones internacionales y te guían en cada salto hasta que logres tu independencia total.",
         "coursepage.what.items": [
-            "Somos la única escuela en Irlanda con un modelo fraccionado.",
-            "Pagas solo por los niveles que completas, sin compromiso con paquetes cerrados.",
+            "Tienes opciones de pago completo o por niveles.",
+            "Tienes flexibilidad para saltar durante los días de semana o fines de semana.",
+            "Tienes menor tiempo de formación.",
             "Flexibilidad total para tu viaje."
         ],
-        "coursepage.what.cta": "¡Quiero iniciar mi viaje!",
+        "coursepage.what.cta": "Reserva mi curso ahora",
         "coursepage.steps.title": "Niveles <strong style='color: var(--primary-color)'>del Curso</strong>",
         "coursepage.steps": [
             { "title": "Escuela en Tierra", "desc": "Formación intensiva en aula cubriendo visión general del equipo, posición corporal, procedimientos de salida, protocolos de emergencia y patrones de aterrizaje." },
@@ -986,9 +1023,10 @@ export const translations = {
             { "title": "Nivel 8", "desc": "Tu salto final desde una altitud más baja para simular una salida de emergencia." }
         ],
         "coursepage.pricing.title": "Elige tu viaje a la libertad",
+        "coursepage.pricing.or": "O",
         "coursepage.pricing.subtitle": "Mientras más de 200 personas viven su primer salto con nosotros cada mes, algunos deciden ir más allá y dominar el cielo con sus propias alas.",
-        "coursepage.pricing.card1.title": "Curso de Línea Estática Acelerada (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Introducción gradual al paracaidismo en solitario. Tu paracaídas se abre automáticamente tras la salida, permitiéndote centrarte en la posición del cuerpo, el control del paracaídas y aterrizajes seguros, progresando paso a paso hasta la caída libre y el paracaidismo independiente.",
+        "coursepage.pricing.card1.title": "Curso ASL - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "El Curso ASL – Accelerated Static Line es una introducción gradual al paracaidismo en solitario. Tu paracaídas se abre automáticamente tras la salida, permitiéndote concentrarte en la posición del cuerpo, el control de la campana y aterrizajes seguros, progresando paso a paso hasta la caída libre en todas las fases bajo la supervisión del instructor.",
         "coursepage.pricing.card1.items": [
             "8 niveles progresivos",
             "Pago por nivel individual",
@@ -996,10 +1034,10 @@ export const translations = {
             "Instructores con récords dedicados"
         ],
         "coursepage.pricing.card1.desc": "Ideal para aquellos que desean comenzar sin el compromiso de un paquete cerrado.",
-        "coursepage.pricing.card1.cta": "Elegir mi paquete",
+        "coursepage.pricing.card1.cta": "Programar Tu Curso",
         "coursepage.pricing.card2.badge": "El más elegido por nuestros aventureros",
-        "coursepage.pricing.card2.title": "Curso de Caída Libre Acelerada (A.F.F)",
-        "coursepage.pricing.card2.subtitle": "La forma más rápida de convertirse en un paracaidista con licencia. Desde tu primer salto, experimentas una caída libre real mientras los instructores te guían a través de cada nivel, ayudándote a desarrollar el control, la confianza y las habilidades necesarias para saltar de forma independiente.",
+        "coursepage.pricing.card2.title": "Curso AFF - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "El AFF - Accelerated Free Fall es la forma más rápida de convertirse en un paracaidista con licencia. Desde tu primer salto, experimentas una caída libre real mientras los instructores te guían a través de cada nivel, ayudándote a desarrollar el control, la confianza y las habilidades necesarias para saltar de forma independiente.",
         "coursepage.pricing.card2.items": [
             "Paquete completo",
             "Prioridad en la programación",
@@ -1043,10 +1081,10 @@ export const translations = {
         "pricing.asl.level1": "Teoría (8 a 10 horas) + 2 saltos",
         "coursepage.pricing.card2.cta": "¡Empezar mi formación!",
         "coursepage.safety.title": "Cursos que te preparan para vivir el deporte de forma segura",
-        "coursepage.safety.p1": "Los cursos son tan rigurosos que el objetivo es que nunca necesites activar el dispositivo de apertura automática (AAD).",
-        "coursepage.safety.p2": "Nuestra misión no es solo enseñar el uso de la red de seguridad, es hacerte tan competente que tú mismo te conviertas en tu mayor protección.",
-        "coursepage.safety.p3": "Aquí, la confianza se convierte en tu equipo principal.",
-        "coursepage.safety.cta": "¡Elegir mi viaje!",
+        "coursepage.safety.p1": "Los cursos se basan en los Manuales SIM de la USPA con técnicas de seguridad mundialmente reconocidas.",
+        "coursepage.safety.p2": "Nuestra misión no es solo enseñarte a saltar de un avión, es hacerte tan competente que tú mismo te conviertas en tu mayor protección en la práctica de este deporte.",
+        "coursepage.safety.p3": "Aquí, la seguridad y la confianza se convierten en tu principal equipo aliadas con la práctica de buenas técnicas.",
+        "coursepage.safety.cta": "Reserva tu curso",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>en Acción</strong>",
         "coursepage.req.title": "¿Quién puede <strong style='color: var(--primary-color)'>hacer el AFF?</strong>",
         "coursepage.req.items": [
@@ -1057,16 +1095,16 @@ export const translations = {
             "Debe poder comprometerse con varios días de formación y saltos"
         ],
         "coursepage.faq.title": "Preguntas <strong style='color: var(--primary-color)'>Frecuentes</strong>",
-        "coursepage.faqs.contact": "¿Todavía tienes dudas? Habla ahora con un instructor en WhatsApp",
+        "coursepage.faqs.contact": "¿Todavía tienes dudas? Habla con nosotros ahora por WhatsApp",
         "coursepage.faqs": [
             { "question": "¿Cuál es la edad mínima para saltar?", "answer": "La edad mínima es de 18 años y no hay límite máximo de edad, siempre que tengas buena salud." },
-            { "question": "¿Es necesario haber hecho un salto en tándem antes?", "answer": "¡No! Nuestro curso AFF está diseñado para que los principiantes absolutos progresen directamente a saltar por su cuenta." },
-            { "question": "¿Puedo hacer una pausa entre niveles en el modelo fraccionado?", "answer": "Sí. Sin embargo, para mantener las habilidades de seguridad, si haces una pausa demasiado larga es posible que necesites un breve salto de reentrenamiento." },
-            { "question": "¿Es posible pagar a plazos?", "answer": "Sí, ofrecemos planes de pago flexibles directamente durante el proceso de pago o con nuestro equipo." }
+            { "question": "¿Es necesario haber hecho un salto tándem antes?", "answer": "¡No! Nuestros cursos están diseñados para que los principiantes absolutos puedan ir directamente al salto, sin necesidad de un salto tándem." },
+            { "question": "¿Puedo hacer una pausa entre niveles en el modelo fraccionado?", "answer": "Sí, sin embargo, para mantener las habilidades de seguridad activas, si la pausa es muy larga puede ser necesario realizar un salto de readaptación o un reentrenamiento." },
+            { "question": "¿Recibo una certificación después de completar el curso?", "answer": "Sí. Estarás certificado por la USPA y tendrás reconocimiento internacional." }
         ],
         "coursepage.cta.title": "¿Listo para despegar del suelo y dominar el cielo con tus propias alas?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "¡Quiero ser paracaidista!",
+        "coursepage.cta.button": "Reserva tu curso",
         "coursepage.cta.wa_message": "¡Hola! Estoy interesado en comenzar el Curso de Paracaidismo AFF en SkyDiveThru Irlanda."
     },
     fr: {
@@ -1074,7 +1112,7 @@ export const translations = {
         "404.subtitle": "Page non trouvée",
         "404.description": "Désolé, nous n'avons pas pu trouver la page que vous recherchez. Elle a peut-être été déplacée ou l'adresse est incorrecte.",
         "404.button": "Retour à l'accueil",
-        "hero.badge": "Centre de Parachutisme à Birr/Irlande",
+        "hero.badge": "Centre de Parachutisme à Birr/Co. Offaly",
         "hero.title": "Vivez l'émotion de votre premier saut en parachute avec <strong>video 360° exclusive</strong>",
         "hero.subtitle": "Votre premier saut capturé à jamais en 360º. C'est comme voyager dans le temps et revivre l'adrénaline à chaque fois que vous regardez.",
         "hero.cta": "Réservez votre saut",
@@ -1082,24 +1120,23 @@ export const translations = {
         "pressel.date": "LE 26/05/26 À 09:00",
         "pressel.countdown.prefix": "Il reste",
         "pressel.countdown.days": "jours",
-        "pressel.countdown.hours": "heures",
         "pressel.countdown.minutes": "minutos",
         "pressel.countdown.seconds": "secondes",
         "pressel.cta": "Voulez-vous garantir votre place dans une toute nouvelle zone avec une grande qualité et du style ?",
         "pressel.button": "RÉSERVER MAINTENANT",
         "experience.title": "Comment est-ce de vivre <br /><strong style='color: var(--primary-color);'>cette expérience</strong> avec nous ?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color);'>Excursions organisées au départ de plusieurs villes d'Irlande:</strong> confort et sécurité pour réaliser votre saut à Birr.",
-            "<strong style='color: var(--primary-color);'>Arrivez à notre base avec toute la structure préparée:</strong> consignes de sécurité complètes avec des professionnels expérimentés.",
-            "<strong style='color: var(--primary-color);'>Ressentez l'émotion de survoler Birr</strong> et réalisez le saut en toute sécurité.",
-            "<strong style='color: var(--primary-color);'>Gardez chaque seconde enregistrée</strong> avec la vidéo 360º immersive.",
-            "<strong style='color: var(--primary-color);'>Rivivez votre dépassement quand vous voulez,</strong> éternisant votre première fois."
+            "<strong style='color: var(--primary-color);'>Arrivez à notre École et trouvez :</strong> Une structure complète et préparée, des consignes de sécurité complètes avec des professionnels expérimentés.",
+            "<strong style='color: var(--primary-color);'>Ressentez l'émotion de survoler l'île d'Émeraude</strong> et réalisez le saut en toute sécurité.",
+            "<strong style='color: var(--primary-color);'>Revivez votre dépassement quand vous voulez,</strong> avec la vidéo 360º immersive.",
+            "<strong style='color: var(--primary-color);'>Gardez chaque seconde enregistrée</strong> avec une vidéo 360° immersive.",
+            "<strong style='color: var(--primary-color);'>Excursions organisées au départ de plusieurs villes d'Irlande :</strong> confort et sécurité pour réaliser votre saut à Birr."
         ],
         "packages.title": "Rendez votre premier saut tandem <strong style='color: var(--primary-color);'>inoubliable !</strong> Choisissez how vous voulez l'immortaliser à jamais.",
         "packages.subtitle": "Tous nos forfaits offrent <strong style='color: var(--primary-color);'>sécurité et émotion</strong>, mais un seul offre l'expérience complète avec la vidéo 360º immersive, le vrai trophée de votre dépassement.",
         "packages.cards": [
             {
-                "title": "Tandem Premium €567,00",
+                "title": "Tandem Premium € 567,00",
                 "badge": "Le Plus Choisi",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
@@ -1113,10 +1150,10 @@ export const translations = {
                 "price_label": "À partir de",
                 "price": "€ 567,00",
                 "payment": "paiement en espèces ou par carte",
-                "cta": "Je veux celui-ci"
+                "cta": "RÉSERVER MAINTENANT"
             },
             {
-                "title": "Tandem Vip €537,00",
+                "title": "Tandem Vip € 537,00",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1128,10 +1165,10 @@ export const translations = {
                 "price_label": "À partir de",
                 "price": "€ 537,00",
                 "payment": "paiement en espèces ou par carte",
-                "cta": "Je veux celui-ci"
+                "cta": "RÉSERVER MAINTENANT"
             },
             {
-                "title": "Tandem Plus €467,00",
+                "title": "Tandem Plus € 467,00",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1141,10 +1178,10 @@ export const translations = {
                 "price_label": "À partir de",
                 "price": "€ 467,00",
                 "payment": "paiement en espèces ou par carte",
-                "cta": "Je veux celui-ci"
+                "cta": "RÉSERVER MAINTENANT"
             },
             {
-                "title": "Tandem Basic €357,00",
+                "title": "Tandem Basic € 357,00",
                 "features": [
                     "Saut réalisé à 12 000 pieds",
                     "Accompagné d'un instructeur certifié USPA et CBPQ",
@@ -1154,22 +1191,26 @@ export const translations = {
                 "price_label": "À partir de",
                 "price": "€ 357,00",
                 "payment": "paiement en espèces ou par carte",
-                "cta": "Je veux celui-ci"
+                "cta": "RÉSERVER MAINTENANT"
             }
         ],
-        "video.title": "Ressentez l'Adrénaline d'un <strong style='color: var(--primary-color);'>Vrai Saut à 360°!</strong>",
+        "packages.nav_titles": ["Tandem Premium", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Cours AFF",
+        "menu.course_asl": "Cours ASL",
+        "video.title": "Ressentez l'Adrénaline d'un <br /><strong style='color: var(--primary-color);'>Vrai Saut à 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Appuyez sur lecture, bougez votre écran et immergez-vous</strong> dans l'expérience complète de chute libre à 360° au-dessus de l'horizon époustouflant de Dublin.",
         "video.cta": "Réservez votre saut",
         "about.title": "<strong style='color: var(--primary-color);'>À Propos de Nous</strong>",
-        "about.p1": "Nous sommes <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, l'une des écoles de parachutisme les plus traditionnelles d'Irlande, avec plus de deux décennies de formation d'étudiens, d'athlètes et d'instructeurs.",
-        "about.p2": "Notre équipe est composée de professionnels certifiés au niveau international, spécialisés dans la transformation de votre premier saut en une expérience passionnante, sûre et inoubliable, maintenant avec la technologie vidéo 360° immersive.",
+        "about.p1": "Nous sommes <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> l'une des écoles de parachutisme les plus traditionnelles du Brésil, avec plus de deux décennies d'expérience dans la formation d'étudiants, d'athlètes et d'instructeurs. Notre équipe est composée de professionnels certifiés et reconnus internationalement, et nous utilisons des équipements certifiés.",
+        "about.p2": "Nous détenons le record de formation et de qualification des étudiants, le record des grandes formations avec nos propres athlètes, le record des sauts sans accident et nous utilisons toujours des équipements certifiés avec garantie du fabricant.",
+        "about.p3": "Nous arriverons en Irlande le 26 mai 2026 pour apporter toute l'expérience de 27 ans de qualité, de sécurité et de beaucoup de plaisir.",
         "dream.title": "Êtes-vous prêt à réaliser votre <strong style='color: var(--primary-color);'>rêve de saut en parachute ?</strong>",
         "dream.desc1": "Soyez l'un des courageux qui ont transformé leur dépassement en un souvenir immersif.",
-        "dream.desc2": " <strong style='color: var(--primary-color);'>Sky360</strong> est le choix de ceux qui veulent revivre leur dépassement dans les moindres détails, quand ils le souhaitent.",
+        "dream.desc2": "Nous sommes spécialisés dans la transformation de <strong style='color: var(--primary-color);'>votre premier saut</strong> en une expérience passionnante, sûre et inoubliable, désormais dotée de la technologie vidéo 360°",
         "dream.button": "Je veux mon saut <span class='mobile-br'>avec vidéo 360° maintenant !</span>",
         "course.badge": "Cours de Parachutisme",
         "course.title": "Prêt à sauter seul? <br /><strong style='color: var(--primary-color);'>Le ciel est votre terrain d'entraînement</strong>",
-        "course.description": "Pour ceux qui veulent aller plus loin qu'un simple saut, nous proposons deux cours certifiés de parachutisme en solo : l'<strong>AFF (Chute Libre Accélérée)</strong>, où vous expérimentez la vraie chute libre dès votre premier saut, et l'<strong>ASL (Ligne Statique Accélérée)</strong>, une progression graduelle jusqu'à la chute libre complète. Les deux cours sont encadrés par des instructeurs certifiés internationalement.",
+        "course.description": "Pour ceux qui veulent aller au-delà d'un simple saut, nous proposons deux cours certifiés de parachutisme en solo : L'<strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> où vous expérimentez la chute libre dès le premier saut ou l'<strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> où vous avez une progression graduelle commençant par le système d'ouverture automatique et évoluant vers la chute libre. Les deux cours sont dispensés et accompagnés par des instructeurs certifiés internationalement.",
         "course.cta": "Découvrez Nos Cours",
         "faq.badge": "DES QUESTIONS ?",
         "faq.description": "Nous avons séparé les principales questions de nos clients pour vous aider à comprendre comment nous pouvons transformer votre expérience.",
@@ -1177,15 +1218,11 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Est-ce sûr de sauter ?",
-                "answer": "Oui. Nous travaillons avec des instructeurs expérimentés et des équipements de pointe, en respectant les normes de sécurité les plus strictes."
+                "answer": "Oui. Nous travaillons avec des instructeurs expérimentés et des équipements certifiés et nous suivons les normes de sécurité les plus strictes."
             },
             {
                 "question": "Qui peut sauter ?",
-                "answer": "Les personnes de plus de 18 ans, pesant jusqu'à 114 kg, sans restrictions médicales graves."
-            },
-            {
-                "question": "Comment fonctionne l'enregistrement 360º ?",
-                "answer": "Pendant tout le saut, notre technologie enregistre tout à 360º — vous pourrez revivre chaque seconde comme si vous sautiez à nouveau."
+                "answer": "Les personnes de plus de 17 ans, pesant jusqu'à 115kg/250lbs et sans restrictions médicales graves."
             },
             {
                 "question": "Faut-il réserver à l'avance ?",
@@ -1193,18 +1230,22 @@ export const translations = {
             },
             {
                 "question": "Comment dois-je m'habiller le jour du saut ?",
-                "answer": "Des vêtements confortables et des baskets. L'équipement de sécurité est fourni par nos soins."
+                "answer": "Des vêtements de sport confortables et des baskets. Tous les équipements de sécurité seront fournis par notre école."
+            },
+            {
+                "question": "Comment fonctionne l'enregistrement 360º ?",
+                "answer": "Pendant tout le saut, notre technologie enregistrera tout à 360° et vous pourrez revivre chaque seconde comme si vous sautiez à nouveau."
             }
         ],
-        "contact.badge": "Centre de Paracaidismo à Birr/Irlande",
+        "contact.badge": "Centre de Parachutisme à Birr/Co. Offaly",
         "contact.title": "Réservez votre <br class='tablet-br' /><strong style='color: var(--primary-color);'>saut avec nous maintenant !</strong>",
         "contact.address.title": "Adresse",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Téléphone / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Heures d'ouverture",
-        "contact.hours.value": "Mar - Dim : 09:00 - 19:00 (Lundi fermé)",
-        "contact.cta": "Parlez à un instructeur",
+        "contact.hours.value": "Du mardi au dimanche de 8h jusqu'au coucher du soleil.",
+        "contact.cta": "Parlez-nous",
         "contact.map_button": "Obtenir l'itinéraire",
         "review.title": "Comment évaluez-vous notre service ?",
         "review.subtitle": "Aidez-nous à nous améliorer. Remplissez le formulaire ci-dessous avec vos commentaires.",
@@ -1213,7 +1254,7 @@ export const translations = {
         "review.back": "Retour à l'évaluation",
         "footer.description": "Votre premier saut capturé à jamais en 360º. Revivez l'adrénaline à chaque fois que vous regardez.",
         "footer.packagesTitle": "Forfaits",
-        "footer.navigation": "Navigation",
+        "footer.navigation": "Navegación",
         "footer.home": "Accueil",
         "footer.about": "À Propos",
         "footer.experience": "Comment ça marche?",
@@ -1235,17 +1276,18 @@ export const translations = {
         "coursepage.badge": "Cours de Parachutisme en Solo",
         "coursepage.hero.title": "Transformez votre passion pour le parachutisme en liberté totale",
         "coursepage.hero.subtitle": "Apprenez à voler seul avec les cours de parachutisme les plus flexibles d'Irlande. Progressez à votre propre rythme avec nos programmes AFF ou ASL.",
-        "coursepage.hero.cta": "Je veux commencer ma formation maintenant !",
+        "coursepage.hero.cta": "Réservez mon cours maintenant !",
         "coursepage.hero.footer": "25 ans sans accident | Instructeurs certifiés",
-        "coursepage.what.title": "La formation qui transforme les rêveurs en <strong style='color: var(--primary-color)'>parachutistes</strong>",
-        "coursepage.what.desc": "Nos cours Accelerated Free Fall (AFF) et Accelerated Static Line (ASL) sont votre porte d'entrée vers la liberté absolue des cieux. Ici, vous apprenez non seulement la technique, mais développez la mentalité d'un véritable parachutiste.",
-        "coursepage.what.desc2": "Nos instructeurs, détenteurs de records brésiliens, vous guident à chaque saut jusqu'à une indépendance totale.",
+        "coursepage.what.title": "Nos formations transforment les rêveurs en parachutistes",
+        "coursepage.what.desc": "Nos cours Accelerated Free Fall (AFF) et Accelerated Static Line (ASL) sont votre porte d'entrée vers la liberté absolue des cieux. Ici, vous apprenez non seulement la technique, mais vous développez aussi la mentalité d'un véritable parachutiste avec des techniques internationales.",
+        "coursepage.what.desc2": "Nos instructeurs détiennent des certifications internationales et vous guident à chaque saut jusqu'à ce que vous atteigniez une indépendance totale.",
         "coursepage.what.items": [
-            "Nous sommes la seule école en Irlande avec un modèle fractionné.",
-            "Vous ne payez que pour les niveaux complétés, sans engagement.",
+            "Vous avez des options de paiement intégral ou par niveaux.",
+            "Vous avez la flexibilité de sauter en semaine ou le week-end.",
+            "Vous bénéficiez d'un temps de formation réduit.",
             "Flexibilité totale pour votre voyage."
         ],
-        "coursepage.what.cta": "Je veux commencer mon aventure !",
+        "coursepage.what.cta": "Réservez mon cours maintenant",
         "coursepage.steps.title": "Niveles <strong style='color: var(--primary-color)'>du Cours</strong>",
         "coursepage.steps": [
             { "title": "École au Sol", "desc": "Formation intensive en classe sur la présentation du matériel, la position du corps, les procédures de sortie, les protocoles d'urgence et les circuits d'atterrissage." },
@@ -1254,9 +1296,10 @@ export const translations = {
             { "title": "Niveau 8", "desc": "Votre dernier saut à basse altitude pour simuler une sortie d'urgence." }
         ],
         "coursepage.pricing.title": "Choisissez votre voyage vers la liberté",
+        "coursepage.pricing.or": "OU",
         "coursepage.pricing.subtitle": "Alors que plus de 200 personnes vivent leur premier saut avec nous chaque mois, certains décident d'aller plus loin et de maîtriser le ciel avec leurs propres ailes.",
-        "coursepage.pricing.card1.title": "Cours de Ligne Statique Accélérée (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Introduction graduelle au parachutisme en solo. Votre parachute s'ouvre automatiquement après la sortie, vous permettant de vous concentrer sur la position du corps, le contrôle de la voile et les atterrissages en toute sécurité, en progressant étape par étape jusqu'à la chute libre et au parachutisme indépendant.",
+        "coursepage.pricing.card1.title": "Cours ASL - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "Le Cours ASL – Accelerated Static Line est une introduction graduelle au parachutisme en solo. Votre parachute s'ouvre automatiquement après la sortie, vous permettant de vous concentrer sur la position du corps, le contrôle de la voile et des atterrissages sûrs, en progressant étape par étape jusqu'à la chute libre dans toutes les phases en étant accompagné par l'instructeur.",
         "coursepage.pricing.card1.items": [
             "8 niveaux progressifs",
             "Paiement par niveau individuel",
@@ -1264,15 +1307,15 @@ export const translations = {
             "Instructeurs dédiés et expérimentés"
         ],
         "coursepage.pricing.card1.desc": "Idéal pour ceux qui veulent commencer sans engagement à long terme.",
-        "coursepage.pricing.card1.cta": "Choisir mon forfait",
+        "coursepage.pricing.card1.cta": "Programmer Votre Cours",
         "coursepage.pricing.card2.badge": "Le choix numéro un de nos aventuriers",
-        "coursepage.pricing.card2.title": "Cours de Chute Libre Accélérée (A.F.F)",
-        "coursepage.pricing.card2.subtitle": "Le moyen le plus rapide de devenir un parachutiste licencié. Dès votre premier saut, vous faites l'expérience d'une véritable chute libre alors que les instructeurs vous guident à travers chaque niveau, vous aidant à développer le contrôle, la confiance et les compétences nécessaires pour sauter de manière indépendante.",
+        "coursepage.pricing.card2.title": "Cours AFF - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "L'AFF - Accelerated Free Fall est le moyen le plus rapide de devenir un parachutiste licencié. Dès votre premier saut, vous faites l'expérience d'une véritable chute libre alors que les instructeurs vous guident à travers chaque niveau, vous aidant à développer le contrôle, la confiance et les compétences nécessaires pour sauter de manière indépendante.",
         "coursepage.pricing.card2.items": [
             "Forfait complet",
             "Priorité dans la planification",
             "Suivi personnalisé",
-            "Certification internationale"
+            "Certificación internationale"
         ],
         "coursepage.pricing.card2.desc": "Programme de formation complet respectant les normes USPA et CBPQ, incluant un équipement professionnel, un guidage radio depuis le sol et une formation progressive aux sauts jusqu'à la chute libre.",
         "coursepage.pricing.card.add-info": "Informations supplémentaires",
@@ -1309,11 +1352,11 @@ export const translations = {
         "pricing.jump": "saut",
         "pricing.aff.level1": "Théorie (8 à 10 heures) + Niveau 1",
         "pricing.asl.level1": "Théorie (8 à 10 heures) + 2 sauts",
-        "coursepage.safety.title": "Des cours qui vous préparent à vivre le sport en toute sécurité",
-        "coursepage.safety.p1": "Les cours sont si rigoureux que l'objectif est que vous n'ayez jamais besoin d'activer le déclencheur de sécurité automatique (AAD).",
-        "coursepage.safety.p2": "Notre mission n'est pas seulement de vous apprendre à utiliser le filet de sécurité, mais de vous rendre si compétent que vous devenez votre propre protection.",
-        "coursepage.safety.p3": "Ici, la confiance devient votre équipement principal.",
-        "coursepage.safety.cta": "Choisir mon voyage !",
+        "coursepage.safety.title": "Des cours qui vous préparent à vivre ce sport en toute sécurité",
+        "coursepage.safety.p1": "Les cours sont basés sur les manuels SIM de l'USPA avec des techniques de sécurité mondialement reconnues.",
+        "coursepage.safety.p2": "Notre mission n'est pas seulement de vous apprendre à sauter d'un avion, c'est de vous rendre si compétent que vous devenez vous-même votre plus grande protection dans la pratique de ce sport.",
+        "coursepage.safety.p3": "Ici, la sécurité et la confiance deviennent votre équipement principal, alliées à la pratique de bonnes techniques.",
+        "coursepage.safety.cta": "Réservez votre cours",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>en Action</strong>",
         "coursepage.req.title": "Qui peut <strong style='color: var(--primary-color)'>faire l'AFF ?</strong>",
         "coursepage.req.items": [
@@ -1325,14 +1368,15 @@ export const translations = {
         ],
         "coursepage.faq.title": "Questions <strong style='color: var(--primary-color)'>Fréquentes</strong>",
         "coursepage.faqs": [
-            { "question": "Quel est l'âge minimum pour sauter ?", "answer": "L'âge minimum est de 18 ans et il n'y a pas de limite d'âge supérieure, à condition que vous soyez en bonne santé." },
-            { "question": "Est-il nécessaire d'avoir fait un saut en tandem avant ?", "answer": "Non ! Notre cours AFF est conçu pour que les débutants absolus progressent directement vers le saut en solo." },
-            { "question": "Puis-je faire une pause entre les niveaux dans le modèle fractionné ?", "answer": "Oui. Cependant, pour maintenir les compétences de sécurité, si vous faites une pause trop longue, vous pourriez avoir besoin d'un court saut de réentraînement." },
-            { "question": "Est-il possible de payer en plusieurs fois ?", "answer": "Oui, nous proposons des plans de paiement flexibles directement lors du paiement ou avec notre équipe." }
+            { "question": "Quel est l'âge minimum pour sauter ?", "answer": "L'âge minimum est de 18 ans et il n'y a pas de limite d'âge maximum, à condition d'être en bonne santé." },
+            { "question": "Est-il nécessaire d'avoir fait un saut tandem auparavant ?", "answer": "Non ! Nos cours sont conçus pour que les débutants absolus puissent passer directement au saut, sans avoir besoin d'un saut tandem." },
+            { "question": "Puis-je faire une pause entre les niveaux dans le modèle fractionné ?", "answer": "Oui, cependant, pour maintenir les compétences de sécurité actives, si la pause est trop longue, il peut être nécessaire de faire un saut de réadaptation ou un recyclage." },
+            { "question": "Est-ce que je reçois une certification après avoir terminé le cours ?", "answer": "Oui. Vous serez certifié par l'USPA et bénéficierez d'une reconnaissance internationale." }
         ],
+        "coursepage.faqs.contact": "Vous avez encore des doutes ? Contactez-nous maintenant sur WhatsApp",
         "coursepage.cta.title": "Prêt à décoller et à maîtriser le ciel de vos propres ailes ?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Je veux être parachutiste !",
+        "coursepage.cta.button": "Réservez votre cours",
         "coursepage.cta.wa_message": "Salut ! Je suis intéressé pour commencer le cours de parachutisme AFF à SkyDiveThru Ireland."
     },
     de: {
@@ -1340,7 +1384,7 @@ export const translations = {
         "404.subtitle": "Seite nicht gefunden",
         "404.description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden. Möglicherweise wurde sie verschoben oder die Adresse ist falsch.",
         "404.button": "Zurück zur Startseite",
-        "hero.badge": "Fallschirmspringerzentrum in Birr/Irland",
+        "hero.badge": "Fallschirmspringerzentrum in Birr/Co. Offaly",
         "hero.title": "Erleben Sie den Nervenkitzel Ihres ersten Fallschirmsprungs mit <strong>exklusivem 360° Video</strong>",
         "hero.subtitle": "Ihr erster Sprung für immer in 360º festgehalten. Es ist wie eine Zeitreise, bei der Sie das Adrenalin jedes Mal neu erleben, wenn Sie es ansehen.",
         "hero.cta": "Buchen Sie Ihren Sprung",
@@ -1355,17 +1399,17 @@ export const translations = {
         "pressel.button": "JETZT BUCHEN",
         "experience.title": "Wie ist es, diese <br /><strong style='color: var(--primary-color)'>Erfahrung</strong> mit uns zu erleben?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color)'>Organisierte Ausflüge ab verschiedenen Städten in Irland:</strong> Komfort und Sicherheit für Ihren Sprung in Dublin.",
-            "<strong style='color: var(--primary-color)'>Ankunft an unserer Basis mit vorbereiteter Struktur:</strong> vollständige Sicherheitseinweisungen mit erfahrenen Profis.",
-            "<strong style='color: var(--primary-color)'>Spüren Sie den Nervenkitzel, über Dublin zu fliegen</strong> und führen Sie den Sprung mit absoluter Sicherheit durch.",
-            "<strong style='color: var(--primary-color)'>Lassen Sie jede Sekunde aufnehmen</strong> mit dem immersiven 360º-Video.",
-            "<strong style='color: var(--primary-color)'>Erleben Sie Ihre Überwindung, wann immer Sie wollen,</strong> und verewigen Sie Ihr erstes Mal."
+            "<strong style='color: var(--primary-color);'>Kommen Sie in unsere Schule und finden Sie:</strong> Eine komplette und vorbereitete Struktur, vollständige Sicherheitseinweisungen mit erfahrenen Profis.",
+            "<strong style='color: var(--primary-color);'>Spüren Sie den Nervenkitzel, über die Grüne Insel zu fliegen</strong> und führen Sie den Sprung mit absoluter Sicherheit durch.",
+            "<strong style='color: var(--primary-color);'>Erleben Sie Ihre Überwindung, wann immer Sie wollen,</strong> mit dem immersiven 360º-Video.",
+            "<strong style='color: var(--primary-color);'>Lassen Sie jede Sekunde aufnehmen</strong> mit einem immersiven 360°-Video.",
+            "<strong style='color: var(--primary-color);'>Organisierte Ausflüge ab verschiedenen Städten in Irland:</strong> Komfort und Sicherheit für Ihren Sprung in Birr."
         ],
         "packages.title": "Machen Sie Ihren ersten Tandemsprung <strong style='color: var(--primary-color)'>unvergesslich!</strong> Wählen Sie, wie Sie ihn für immer verewigen möchten.",
         "packages.subtitle": "Alle unsere Pakete beinhalten <strong style='color: var(--primary-color);'>Sicherheit und Nervenkitzel</strong>, aber nur eines liefert das komplette Erlebnis mit dem immersiven 360º-Video, der wahren Trophäe Ihrer Überwindung.",
         "packages.cards": [
             {
-                "title": "Premium 360º Sprung",
+                "title": "Premium 360º Sprung € 567,00",
                 "badge": "Meistgewählt",
                 "features": [
                     "Sprung aus 12.000 Fuß",
@@ -1379,10 +1423,10 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 567,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "Buchen Sie jetzt"
+                "cta": "RESERVIEREN SIE JETZT"
             },
             {
-                "title": "Tandem Vip €537,00",
+                "title": "Tandem Vip € 537,00",
                 "features": [
                     "Sprung aus 12.000 Fuß",
                     "Begleitet von einem USPA und CBPQ zertifizierten Lehrer",
@@ -1394,10 +1438,10 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 537,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "Buchen Sie jetzt"
+                "cta": "RESERVIEREN SIE JETZT"
             },
             {
-                "title": "Tandem Plus €467,00",
+                "title": "Tandem Plus € 467,00",
                 "features": [
                     "Sprung aus 12.000 Fuß",
                     "Begleitet von einem USPA und CBPQ zertifizierten Lehrer",
@@ -1407,10 +1451,10 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 467,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "Buchen Sie jetzt"
+                "cta": "RESERVIEREN SIE JETZT"
             },
             {
-                "title": "Tandem Basic €357,00",
+                "title": "Tandem Basic € 357,00",
                 "features": [
                     "Sprung aus 12.000 Fuß",
                     "Begleitet von einem USPA und CBPQ zertifizierten Lehrer",
@@ -1420,22 +1464,26 @@ export const translations = {
                 "price_label": "Ab",
                 "price": "€ 357,00",
                 "payment": "Bar- oder Kartenzahlung",
-                "cta": "Buchen Sie jetzt"
+                "cta": "RESERVIEREN SIE JETZT"
             }
         ],
+        "packages.nav_titles": ["Premium 360º Sprung", "Tandem Vip", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Kurs AFF",
+        "menu.course_asl": "Kurs ASL",
         "video.title": "Spüren Sie das Adrenalin eines <strong style='color: var(--primary-color);'>echten 360° Fallschirmsprungs!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'> Drücken Sie Play, bewegen Sie Ihren Bildschirm und tauchen Sie ein</strong> in das komplette 360°-Freifallerlebnis über der atemberaubenden Skyline von Dublin.",
         "video.cta": "Buchen Sie Ihren Sprung",
         "about.title": "<strong style='color: var(--primary-color);'>Über uns</strong>",
-        "about.p1": "Wir sind <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, eine der traditionellsten Fallschirmsprungschulen in Irland, mit über zwei Jahrzehnten Erfahrung in der Ausbildung von Schülern, Athleten und Lehrern.",
-        "about.p2": "Unser Team besteht aus international zertifizierten Profis, die darauf spezialisiert sind, Ihren ersten Sprung in ein aufregendes, sicheres und unvergessliches Erlebnis zu verwandeln, jetzt mit immersiver 360°-Videotechnologie.",
+        "about.p1": "Wir sind <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> eine der traditionellsten Fallschirmsprungschulen Brasiliens, mit über zwei Jahrzehnten Erfahrung in der Ausbildung von Schülern, Athleten und Lehrern. Unser Team besteht aus international zertifizierten und anerkannten Profis, und wir verwenden zertifizierte Ausrüstung.",
+        "about.p2": "Wir halten den Rekord für das Training und die Qualifizierung von Schülern, den Rekord für Großformationen mit unseren eigenen Athleten, den Rekord für Sprünge ohne Unfälle und verwenden immer zertifizierte Ausrüstung mit Herstellergarantie.",
+        "about.p3": "Wir werden am 26. Mai 2026 in Irland ankommen, um die volle Erfahrung von 27 Jahren Qualität, Sicherheit und viel Spaß mitzubringen.",
         "dream.title": "Sind Sie bereit, Ihren <strong style='color: var(--primary-color);'>Traum vom Fallschirmspringen wahr zu machen?</strong>",
         "dream.desc1": "Seien Sie einer der Mutigen, die ihre Überwindung in eine immersive Erinnerung verwandelt haben.",
-        "dream.desc2": "<strong style='color: var(--primary-color);'>Sky360</strong> ist die Wahl für diejenigen, die ihre Überwindung in jedem Detail wiedererleben möchten, wann immer sie wollen.",
+        "dream.desc2": "Wir sind darauf spezialisiert, <strong style='color: var(--primary-color);'>Ihren ersten Sprung</strong> in ein aufregendes, sicheres und unvergessliches Erlebnis zu verwandeln, jetzt mit 360°-Videotechnologie",
         "dream.button": "Ich möchte meinen Sprung <span class='mobile-br'>mit 360°-Video jetzt!</span>",
         "course.badge": "Fallschirmsprungkurse",
         "course.title": "Bereit, alleine zu springen? <br /><strong style='color: var(--primary-color);'>Der Himmel ist Ihr Trainingsplatz</strong>",
-        "course.description": "Für alle, die mehr als nur einen Sprung wollen, bieten wir zwei zertifizierte Einzelfallschirmsprung-Kurse an: den <strong>AFF (Beschleunigter Freifall)</strong>, bei dem Sie von Ihrem ersten Sprung an echten Freifall erleben, und den <strong>ASL (Beschleunigte Stationäre Leine)</strong>, eine schrittweise Progression bis zum vollständigen Freifall. Beide Kurse werden von international zertifizierten Ausbildern geleitet.",
+        "course.description": "Für alle, die mehr als nur einen Sprung wollen, bieten wir zwei zertifizierte Einzelfallschirmsprung-Kurse an: Den <strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong>, bei dem Sie vom ersten Sprung an den freien Fall erleben, oder den <strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong>, bei dem Sie eine schrittweise Progression haben, beginnend mit dem automatischen Öffnungssystem bis hin zum freien Fall. Beide Kurse werden von international zertifizierten Ausbildern geleitet und begleitet.",
         "course.cta": "Unsere Kurse Entdecken",
         "faq.badge": "HABEN SIE FRAGEN?",
         "faq.description": "Wir haben die wichtigsten Fragen unserer Kunden zusammengestellt, um Ihnen zu helfen zu verstehen, wie wir Ihr Erlebnis verwandeln können.",
@@ -1443,15 +1491,11 @@ export const translations = {
         "faq.questions": [
             {
                 "question": "Ist es sicher zu springen?",
-                "answer": "Ja. Wir arbeiten mit erfahrenen Lehrern und modernster Ausrüstung und befolgen die strengsten Sicherheitsstandards."
+                "answer": "Ja. Wir arbeiten mit erfahrenen Lehrern und mit zertifizierter Ausrüstung und befolgen die strengsten Sicherheitsstandards."
             },
             {
                 "question": "Wer kann springen?",
-                "answer": "Personen über 18 Jahre mit einem Gewicht von bis zu 114 kg und ohne schwerwiegende medizinische Einschränkungen."
-            },
-            {
-                "question": "Wie funktioniert die 360º-Aufnahme?",
-                "answer": "Während des gesamten Sprungs zeichnet unsere Technologie alles in 360º auf – Sie können jede Sekunde so nacherleben, als würden Sie noch einmal springen."
+                "answer": "Personen ab 17 Jahren mit einem Gewicht von bis zu 115kg/250lbs und ohne schwerwiegende medizinische Einschränkungen."
             },
             {
                 "question": "Muss ich im Voraus buchen?",
@@ -1459,18 +1503,22 @@ export const translations = {
             },
             {
                 "question": "Was soll ich am Tag des Sprungs tragen?",
-                "answer": "Bequeme Kleidung und Turnschuhe. Die Sicherheitsausrüstung wird von uns gestellt."
+                "answer": "Bequeme Sportkleidung und Turnschuhe. Die gesamte Sicherheitsausrüstung wird von unserer Schule gestellt."
+            },
+            {
+                "question": "Wie funktioniert die 360º-Aufnahme?",
+                "answer": "Während des gesamten Sprungs wird unsere Technologie alles in 360° aufzeichnen, und Sie können jede Sekunde so nacherleben, als würden Sie noch einmal springen."
             }
         ],
-        "contact.badge": "Fallschirmspringerzentrum in Birr/Irland",
+        "contact.badge": "Fallschirmspringerzentrum in Birr/Co. Offaly",
         "contact.title": "Buchen Sie Ihren <br class='tablet-br' /><strong style='color: var(--primary-color);'>360° Sprung jetzt bei uns!</strong>",
         "contact.address.title": "Adresse",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Telefon / Whatsapp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Öffnungszeiten",
-        "contact.hours.value": "Di - So: 09:00 - 19:00 (Montag geschlossen)",
-        "contact.cta": "Sprechen Sie mit einem Lehrer",
+        "contact.hours.value": "Dienstag bis Sonntag von 8 Uhr bis Sonnenuntergang.",
+        "contact.cta": "Kontaktieren Sie Uns",
         "contact.map_aria": "Standort auf Google Maps öffnen",
         "contact.map_button": "Route planen",
         "review.title": "Wie war Ihr Sprung?",
@@ -1498,22 +1546,23 @@ export const translations = {
         "countdown.minutes": "m",
         "countdown.seconds": "s",
         "coursepage.meta.title": "Solo Fallschirmsprung Kurse – SkyDiveThru Irland",
-        "coursepage.faqs.contact": "Noch Zweifel? Sprechen Sie jetzt mit einem Ausbilder über WhatsApp.",
+        "coursepage.faqs.contact": "Noch Zweifel? Sprechen Sie jetzt mit uns über WhatsApp.",
         "coursepage.meta.description": "Lerne alleine Fallschirm zu springen mit unseren AFF- und ASL-Kursen bei SkyDiveThru Irland. Sicheres, progressives und zertifiziertes Training in Birr, Co. Offaly.",
         "coursepage.badge": "Solo Fallschirmsprung Kurse",
         "coursepage.hero.title": "Verwandle deine Leidenschaft für das Fallschirmspringen in totale Freiheit",
         "coursepage.hero.subtitle": "Lerne alleine zu fliegen mit den flexibelsten Fallschirmsprung-Kursen in Irland. Mache in deinem eigenen Tempo Fortschritte mit unseren AFF- oder ASL-Programmen.",
-        "coursepage.hero.cta": "Ich möchte jetzt mein Training beginnen!",
+        "coursepage.hero.cta": "Buchen Sie jetzt meinen Kurs!",
         "coursepage.hero.footer": "25 Jahre unfallfrei | Zertifizierte Ausbilder",
-        "coursepage.what.title": "Das Training, das Träumer zu <strong style='color: var(--primary-color)'>Fallschirmspringern</strong> macht",
-        "coursepage.what.desc": "Unsere Kurse Accelerated Free Fall (AFF) und Accelerated Static Line (ASL) sind Ihr Tor zur absoluten Freiheit am Himmel. Hier lernen Sie nicht nur die Technik, sondern entwickeln auch die Mentalität eines echten Fallschirmspringers.",
-        "coursepage.what.desc2": "Unsere brasilianischen Rekordhalter-Ausbilder begleiten dich bei jedem Sprung bis zu deiner völligen Unabhängigkeit.",
+        "coursepage.what.title": "Unsere Ausbildungen verwandeln Träumer in Fallschirmspringer",
+        "coursepage.what.desc": "Unsere Kurse Accelerated Free Fall (AFF) und Accelerated Static Line (ASL) sind Ihr Tor zur absoluten Freiheit am Himmel. Hier lernen Sie nicht nur die Technik, sondern entwickeln auch die Mentalität eines echten Fallschirmspringers mit internationalen Techniken.",
+        "coursepage.what.desc2": "Unsere Ausbilder verfügen über internationale Zertifizierungen und begleiten dich bei jedem Sprung, bis du deine völlige Unabhängigkeit erreichst.",
         "coursepage.what.items": [
-            "Wir sind die einzige Schule in Irland mit einem flexiblen Modell.",
-            "Du zahlst nur für die absolvierten Level, ohne feste Pakete.",
+            "Du hast die Wahl zwischen Komplettzahlung oder Zahlung nach Levels.",
+            "Du bist flexibel und kannst an Wochentagen oder am Wochenende springen.",
+            "Du hast eine kürzere Ausbildungszeit.",
             "Volle Flexibilität für deine Reise."
         ],
-        "coursepage.what.cta": "Ich möchte meine Reise beginnen!",
+        "coursepage.what.cta": "Buchen Sie jetzt meinen Kurs",
         "coursepage.steps.title": "Kurs <strong style='color: var(--primary-color)'>Level</strong>",
         "coursepage.steps": [
             { "title": "Bodenschule", "desc": "Intensives Klassenzimmer-Training mit Geräteübersicht, Körperhaltung, Ausstiegsverfahren, Notfallprotokollen und Landemustern." },
@@ -1522,9 +1571,10 @@ export const translations = {
             { "title": "Level 8", "desc": "Dein letzter Sprung aus geringerer Höhe zur Simulation eines Notausstiegs." }
         ],
         "coursepage.pricing.title": "Wähle deine reise in die freiheit",
+        "coursepage.pricing.or": "ODER",
         "coursepage.pricing.subtitle": "Während jeden Monat mehr als 200 Menschen ihren ersten Sprung bei uns erleben, entscheiden sich einige dafür, noch weiter zu gehen.",
-        "coursepage.pricing.card1.title": "Beschleunigter Static-Line-Kurs (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Schrittweise Einführung in das Solo-Fallschirmspringen. Ihr Fallschirm öffnet sich nach dem Absprung automatisch, sodass Sie sich auf die Körperposition, die Schirmkontrolle und sichere Landungen konzentrieren können, während Sie sich Schritt für Schritt zum freien Fall und zum unabhängigen Fallschirmspringen vorarbeiten.",
+        "coursepage.pricing.card1.title": "ASL Kurs - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "Der ASL Kurs – Accelerated Static Line ist eine schrittweise Einführung in das Solo-Fallschirmspringen. Ihr Fallschirm öffnet sich nach dem Absprung automatisch, sodass Sie sich auf die Körperposition, die Schirmkontrolle und sichere Landungen konzentrieren können, während Sie in allen Phasen unter Begleitung des Ausbilders Schritt für Schritt zum freien Fall voranschreiten.",
         "coursepage.pricing.card1.items": [
             "8 progressive Stufen",
             "Zahlung pro Einzelstufe",
@@ -1532,10 +1582,10 @@ export const translations = {
             "Engagierte Lehrer"
         ],
         "coursepage.pricing.card1.desc": "Ideal für diejenigen, die ohne langfristige Verpflichtung beginnen und in ihrem eigenen Tempo vorankommen möchten.",
-        "coursepage.pricing.card1.cta": "Sprungpaket wählen",
+        "coursepage.pricing.card1.cta": "Planen Sie Ihren Kurs",
         "coursepage.pricing.card2.badge": "Am meisten von unseren Abenteurern gewählt",
-        "coursepage.pricing.card2.title": "Accelerated Free Fall (A.F.F) Kurs",
-        "coursepage.pricing.card2.subtitle": "Der schnellste Weg zum zertifizierten Fallschirmspringer. Schon bei Ihrem ersten Sprung erleben Sie den echten freien Fall, während Instruktoren Sie durch jede Stufe führen und Ihnen helfen, Kontrolle, Vertrauen und die Fähigkeiten zu entwickeln, die für eigenständiges Fallschirmspringen erforderlich sind.",
+        "coursepage.pricing.card2.title": "AFF Kurs - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "Der AFF - Accelerated Free Fall ist der schnellste Weg, ein zertifizierter Fallschirmspringer zu werden. Schon bei Ihrem ersten Sprung erleben Sie den echten freien Fall, während Instruktoren Sie durch jede Stufe führen und Ihnen helfen, Kontrolle, Vertrauen und die Fähigkeiten zu entwickeln, die für eigenständiges Fallschirmspringen erforderlich sind.",
         "coursepage.pricing.card2.items": [
             "Komplettpaket",
             "Priorität bei der Terminplanung",
@@ -1578,11 +1628,11 @@ export const translations = {
         "pricing.aff.level1": "Theorie (8 bis 10 Stunden) + Level 1",
         "pricing.asl.level1": "Theorie (8 bis 10 Stunden) + 2 Sprünge",
         "coursepage.pricing.card2.cta": "Ausbildug beginnenn!",
-        "coursepage.safety.title": "Kurse, die Sie darauf vorbereiten, den Sport sicher auszuüben",
-        "coursepage.safety.p1": "Die Kurse sind so rigoros, dass unser Ziel ist, dass Sie den automatischen Öffnungsautomaten (AAD) niemals aktivieren müssen.",
-        "coursepage.safety.p2": "Unsere Mission ist nicht nur, das Sicherheitsnetz zu lehren, sondern dich so kompetent zu machen, dass du dein größter Schutz wirst.",
-        "coursepage.safety.p3": "Hier wird Vertrauen zu deiner wichtigsten Ausrüstung.",
-        "coursepage.safety.cta": "Meine Reise wählen!",
+        "coursepage.safety.title": "Kurse, die dich darauf vorbereiten, den Sport sicher zu erleben",
+        "coursepage.safety.p1": "Die Kurse basieren auf den USPA SIM Handbüchern mit weltweit anerkannten Sicherheitstechniken.",
+        "coursepage.safety.p2": "Unsere Mission ist es nicht nur, dir das Springen aus einem Flugzeug beizubringen, sondern dich so kompetent zu machen, dass du selbst zu deinem größten Schutz bei der Ausübung dieses Sports wirst.",
+        "coursepage.safety.p3": "Hier werden Sicherheit und Vertrauen zu deiner wichtigsten Ausrüstung, kombiniert mit der Anwendung guter Techniken.",
+        "coursepage.safety.cta": "Buchen Sie Ihren Kurs",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>in Aktion</strong>",
         "coursepage.req.title": "Wer kann <strong style='color: var(--primary-color)'>den AFF machen?</strong>",
         "coursepage.req.items": [
@@ -1594,14 +1644,14 @@ export const translations = {
         ],
         "coursepage.faq.title": "Häufig <strong style='color: var(--primary-color)'>Gestellte Fragen</strong>",
         "coursepage.faqs": [
-            { "question": "Was ist das Mindestalter für einen Sprung?", "answer": "Das Mindestalter beträgt 18 Jahre und es gibt kein Höchstalter, vorausgesetzt, Sie sind bei guter Gesundheit." },
-            { "question": "Ist es erforderlich, vorher einen Tandemsprung gemacht zu haben?", "answer": "Nein! Unser AFF-Kurs ist so konzipiert, dass absolute Anfänger direkt zu eigenen Sprüngen übergehen können." },
-            { "question": "Kann ich im fraktionierten Modell zwischen den Levels pausieren?", "answer": "Ja. Wenn Sie jedoch zu lange pausieren, benötigen Sie möglicherweise einen kurzen Auffrischungssprung, um Ihre Sicherheitsfähigkeiten aufrechtzuerhalten." },
-            { "question": "Ist Ratenzahlung möglich?", "answer": "Ja, wir bieten flexible Zahlungspläne direkt beim Checkout oder mit unserem Team an." }
+            { "question": "Was ist das Mindestalter für einen Sprung?", "answer": "Das Mindestalter beträgt 18 Jahre, und es gibt keine Altersobergrenze, sofern du bei guter Gesundheit bist." },
+            { "question": "Ist ein Tandemsprung vorher erforderlich?", "answer": "Nein! Unsere Kurse sind so konzipiert, dass absolute Anfänger direkt zum Sprung übergehen können, ohne dass ein Tandemsprung erforderlich ist." },
+            { "question": "Kann ich beim fraktionierten Modell zwischen den Levels pausieren?", "answer": "Ja, um jedoch die Sicherheitskenntnisse aktiv zu halten, kann bei einer zu langen Pause ein Wiederholungssprung oder eine Auffrischung erforderlich sein." },
+            { "question": "Erhalte ich nach Abschluss des Kurses ein Zertifikat?", "answer": "Ja. Du wirst von der USPA zertifiziert und erhältst internationale Anerkennung." }
         ],
         "coursepage.cta.title": "Bereit, abzuheben und den Himmel mit eigenen Flügeln zu beherrschen?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Ich möchte Fallschirmspringer werden!",
+        "coursepage.cta.button": "Buchen Sie Ihren Kurs",
         "coursepage.cta.wa_message": "Hallo! Ich interessiere mich dafür, den AFF Fallschirmsprungkurs bei SkyDiveThru Irland zu beginnen."
     },
     it: {
@@ -1609,7 +1659,7 @@ export const translations = {
         "404.subtitle": "Pagina non trovata",
         "404.description": "Ci dispiace, non siamo riusciti a trovare la pagina che stai cercando. Potrebbe essere stata spostata o l'indirizzo non è corretto.",
         "404.button": "Torna alla Home",
-        "hero.badge": "Centro di Paracadutismo a Birr, Co. Offaly/Irlanda",
+        "hero.badge": "Centro di Paracadutismo a Birr/Co. Offaly",
         "hero.title": "Vivi l'emozione del tuo primo lancio con <strong>video 360° esclusivo</strong>",
         "hero.subtitle": "Il tuo primo lancio catturato per sempre in 360º. È come viaggiare nel tempo e rivivere l'adrenalina ogni volta che guardi.",
         "hero.cta": "Prenota il tuo lancio",
@@ -1625,17 +1675,17 @@ export const translations = {
         "pressel.button": "PRENOTA ORA",
         "experience.title": "Com'è vivere questa <br /><strong style='color: var(--primary-color)'>esperienza</strong> con noi?",
         "experience.steps": [
-            "<strong style='color: var(--primary-color)'>Escursioni organizzate da diverse città in Irlanda:</strong> Comfort e sicurezza per il tuo lancio a Dublino.",
-            "<strong style='color: var(--primary-color)'>Arrivo alla nostra base con struttura preparata:</strong> briefing completo sulla sicurezza con professionisti esperti.",
-            "<strong style='color: var(--primary-color)'>Senti l'emozione di volare sopra Dublino</strong> ed esegui il lancio in totale sicurezza.",
-            "<strong style='color: var(--primary-color)'>Lascia che ogni secondo venga registrato</strong> con il video immersivo a 360º.",
-            "<strong style='color: var(--primary-color)'>Rivivi il tuo superamento ogni volta che vuoi,</strong> immortalando la tua prima volta."
+            "<strong style='color: var(--primary-color);'>Vieni nella nostra Scuola e trova:</strong> Tutta la struttura completa e preparata, briefing completo sulla sicurezza con professionisti esperti.",
+            "<strong style='color: var(--primary-color);'>Senti l'emozione di volare sopra l'Isola di Smeraldo</strong> ed esegui il lancio in totale sicurezza.",
+            "<strong style='color: var(--primary-color);'>Rivivi il tuo superamento ogni volta che vuoi,</strong> con il video immersivo a 360º.",
+            "<strong style='color: var(--primary-color);'>Lascia che ogni secondo venga registrato</strong> con un video immersivo a 360°.",
+            "<strong style='color: var(--primary-color);'>Escursioni organizzate da diverse città in Irlanda:</strong> comfort e sicurezza per il tuo lancio a Birr."
         ],
         "packages.title": "Rendi il tuo primo lancio tandem <strong style='color: var(--primary-color)'>indimenticabile!</strong> Scegli come vuoi immortalarlo per sempre.",
         "packages.subtitle": "Tutti i nostri pacchetti includono <strong style='color: var(--primary-color);'>sicurezza ed emozione</strong>, ma solo uno offre l'esperienza completa con il video immersivo a 360º, il vero trofeo del tuo superamento.",
         "packages.cards": [
             {
-                "title": "Lancio Premium 360°",
+                "title": "Lancio Premium 360° € 567,00",
                 "badge": "Più Scelto",
                 "features": [
                     "Lancio da 12.000 piedi",
@@ -1649,7 +1699,7 @@ export const translations = {
                 "price_label": "Da",
                 "price": "€ 567,00",
                 "payment": "Pagamento in contanti o carta",
-                "cta": "Seleziona"
+                "cta": "PRENOTA ORA"
             },
             {
                 "title": "Tandem VIP €537,00",
@@ -1665,7 +1715,7 @@ export const translations = {
                 "price_label": "Da",
                 "price": "€ 537,00",
                 "payment": "Pagamento in contanti o carta",
-                "cta": "Seleziona"
+                "cta": "PRENOTA ORA"
             },
             {
                 "title": "Tandem Plus €467,00",
@@ -1679,7 +1729,7 @@ export const translations = {
                 "price_label": "Da",
                 "price": "€ 467,00",
                 "payment": "Pagamento in contanti o carta",
-                "cta": "Seleziona"
+                "cta": "PRENOTA ORA"
             },
             {
                 "title": "Tandem Basic €357,00",
@@ -1693,44 +1743,38 @@ export const translations = {
                 "price_label": "Da",
                 "price": "€ 357,00",
                 "payment": "Pagamento in contanti o carta",
-                "cta": "Seleziona"
+                "cta": "PRENOTA ORA"
             }
         ],
+        "packages.nav_titles": ["Lancio Premium 360°", "Tandem VIP", "Tandem Plus", "Tandem Basic"],
+        "menu.course_aff": "Corso AFF",
+        "menu.course_asl": "Corso ASL",
         "video.title": "Senti l'Adrenalina di un <br/><strong style='color: var(--primary-color);'>Vero Lancio a 360°!</strong>",
         "video.subtitle": "<strong style='color: var(--primary-color);'>Premi play, muovi lo schermo e immergiti</strong> nell'esperienza completa di caduta libera a 360° sopra lo skyline mozzafiato di Dublino.",
         "video.cta": "Prenota il tuo lancio",
         "about.title": "<strong style='color: var(--primary-color);'>Chi Siamo</strong>",
-        "about.p1": "Siamo <strong style='color: var(--primary-color);'>SkyDiveThru</strong>, una delle scuole di paracadutismo più tradizionali d'Irlanda, con oltre due decenni di formazione di studenti, atleti e istruttori.",
-        "about.p2": "Il nostro team è composto da professionisti certificati a livello internazionale, specializzati nel trasformare il tuo primo lancio in un'esperienza emozionante, sicura e indimenticabile, ora con la tecnologia video immersiva a 360°.",
-        "about.p3": "Più che un lancio, offriamo un nuovo modo di vedere il mondo e te stesso. Vieni a volare con chi capisce la passione per il cielo.",
+        "about.p1": "Siamo <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> una delle scuole di paracadutismo più tradizionali del Brasile, con oltre due decenni di esperienza nella formazione di studenti, atleti e istruttori. Il nostro team è composto da professionisti certificati e riconosciuti a livello internazionale e utilizziamo attrezzature certificate.",
+        "about.p2": "Deteniamo il record per l'addestramento e la qualificazione degli studenti, il record per le grandi formazioni con i nostri atleti, il record per i lanci senza incidenti e utilizziamo sempre attrezzature certificate con garanzia del produttore.",
+        "about.p3": "Arriveremo in Irlanda il 26 maggio 2026 per portare tutta l'esperienza di 27 anni di qualità, sicurezza e tanto divertimento.",
         "dream.title": "Sei pronto a realizzare il tuo <strong style='color: var(--primary-color);'>sogno di paracadutismo?</strong>",
         "dream.desc1": "Sii uno dei coraggiosi che hanno trasformato il loro superamento in un ricordo immersivo.",
-        "dream.desc2": "<strong style='color: var(--primary-color);'>Sky360</strong> è la scelta per chi vuole rivivere il proprio superamento in ogni dettaglio, in qualsiasi momento.",
+        "dream.desc2": "Siamo specializzati nel trasformare <strong style='color: var(--primary-color);'>il tuo primo lancio</strong> in un'esperienza emozionante, sicura e indimenticabile, ora con la tecnologia video 360°",
         "dream.button": "Voglio il mio lancio <span class='mobile-br'>con video 360° ora!</span>",
         "course.badge": "Corsi di Paracadutismo",
         "course.title": "Pronto a saltare da solo? <br /><strong style='color: var(--primary-color);'>Il cielo è il tuo campo di allenamento</strong>",
-        "course.description": "Per chi vuole andare oltre un semplice lancio, offriamo due corsi certificati di paracadutismo in solitaria: l'<strong>AFF (Caduta Libera Accelerata)</strong>, dove si vive la vera caduta libera dal primo lancio, e l'<strong>ASL (Linea Statica Accelerata)</strong>, una progressione graduale fino alla caduta libera completa. Entrambi i corsi sono guidati da istruttori certificati internazionalmente.",
+        "course.description": "Per chi vuole andare oltre un semplice lancio, offriamo due corsi certificati di paracadutismo in solitaria: L'<strong style='color: var(--primary-color);'>AFF – Accelerated Free Fall</strong> dove si vive la caduta libera fin dal primo lancio o l'<strong style='color: var(--primary-color);'>ASL – Accelerated Static Line</strong> dove si ha una progressione graduale partendo dal sistema di apertura automatico ed evolvendo verso la caduta libera. Entrambi i corsi sono tenuti e accompagnati da istruttori certificati internazionalmente.",
         "course.cta": "Scopri i Nostri Corsi",
         "faq.badge": "DOMANDE?",
         "faq.description": "Abbiamo separato le principali domande dei nostri clienti per aiutarti a capire come possiamo trasformare la tua esperienza.",
         "faq.title": "Domande <br /><strong style='color: var(--primary-color);'>Frequenti</strong>",
         "faq.questions": [
             {
-                "question": "È sicuro saltare con il paracadute?",
-                "answer": "Assolutamente. La sicurezza è la nostra priorità numero uno. Utilizziamo attrezzature all'avanguardia, rigorosamente manutenute, e i nostri istruttori sono certificati da organizzazioni internazionali."
-            },
-            {
-                "question": "Cosa succede se il tempo è brutto?",
                 "question": "È sicuro saltare?",
-                "answer": "Sì. Lavoriamo con istruttori esperti e attrezzature all'avanguardia, seguendo i più severi standard di sicurezza."
+                "answer": "Sì. Lavoriamo con istruttori esperti e con attrezzature certificate e seguiamo i più severi standard di sicurezza."
             },
             {
                 "question": "Chi può saltare?",
-                "answer": "Persone di età superiore ai 18 anni, di peso fino a 114 kg, senza gravi restrizioni mediche."
-            },
-            {
-                "question": "Come funziona la registrazione a 360º?",
-                "answer": "Durante l'intero salto, la nostra tecnologia registra tutto a 360º: potrai rivivere ogni secondo come se stessi saltando di nuovo."
+                "answer": "Persone di età superiore ai 17 anni, con peso fino a 115kg/250lbs e senza gravi restrizioni mediche."
             },
             {
                 "question": "È necessario prenotare in anticipo?",
@@ -1738,18 +1782,22 @@ export const translations = {
             },
             {
                 "question": "Cosa devo indossare il giorno del salto?",
-                "answer": "Vestiti comodi e scarpe da ginnastica. Forniremo l'equipaggiamento di sicurezza."
+                "answer": "Vestiti sportivi comodi e scarpe da ginnastica. Tutta l'attrezzatura di sicurezza sarà fornita dalla nostra scuola."
+            },
+            {
+                "question": "Come funziona la registrazione a 360º?",
+                "answer": "Durante l'intero salto, la nostra tecnologia registrerà tutto a 360° e potrai rivivere ogni secondo come se stessi saltando di nuovo."
             }
         ],
-        "contact.badge": "Centro di Paracadutismo a Birr/Irlanda",
+        "contact.badge": "Centro di Paracadutismo a Birr/Co. Offaly",
         "contact.title": "Prenota il tuo <br class='tablet-br' /><strong style='color: var(--primary-color);'>Lancio 360° con noi ora!</strong>",
         "contact.address.title": "Indirizzo",
         "contact.address.value": "Birr Airfield, Roscrea Road, Crinkle, Birr, Co. Offaly R42V380",
         "contact.phone.title": "Telefono / WhatsApp",
         "contact.phone.value": "+353 89 409 8150",
         "contact.hours.title": "Orari",
-        "contact.hours.value": "Mar - Dom: 09:00 - 19:00 (Lunedì chiuso)",
-        "contact.cta": "Parla con un istruttore",
+        "contact.hours.value": "Da martedì a domenica dalle 8:00 al tramonto.",
+        "contact.cta": "Parla con Noi",
         "contact.map_aria": "Apri posizione su Google Maps",
         "contact.map_button": "Pianifica percorso",
         "review.title": "Com'è stato il tuo lancio?",
@@ -1781,17 +1829,18 @@ export const translations = {
         "coursepage.badge": "Corsi di Paracadutismo in Solitaria",
         "coursepage.hero.title": "Trasforma la tua passione per il paracadutismo in libertà totale",
         "coursepage.hero.subtitle": "Impara a volare da solo con i corsi di paracadutismo più flessibili in Irlanda. Progredisci al tuo ritmo con i nostri programmi AFF o ASL.",
-        "coursepage.hero.cta": "Voglio iniziare la mia formazione ora!",
+        "coursepage.hero.cta": "Prenota il mio corso ora!",
         "coursepage.hero.footer": "25 anni senza incidenti | Istruttori certificati",
-        "coursepage.what.title": "L'addestramento che trasforma i sognatori in <strong style='color: var(--primary-color)'>paracadutisti</strong>",
-        "coursepage.what.desc": "I nostri corsi Accelerated Free Fall (AFF) e Accelerated Static Line (ASL) sono la tua porta d'ingresso verso l'assoluta libertà dei cieli. Qui impari non solo la tecnica, ma sviluppi la mentalità di un vero paracadutista.",
-        "coursepage.what.desc2": "I nostri istruttori da record brasiliani ti faranno da guida in ogni salto fino a raggiungere la completa indipendenza.",
+        "coursepage.what.title": "Le nostre formazioni trasformano i sognatori in paracadutisti",
+        "coursepage.what.desc": "I nostri corsi Accelerated Free Fall (AFF) e Accelerated Static Line (ASL) sono la tua porta d'ingresso verso l'assoluta libertà dei cieli. Qui impari non solo la tecnica, ma sviluppi anche la mentalità di un vero paracadutista con tecniche internazionali.",
+        "coursepage.what.desc2": "I nostri istruttori hanno certificazioni internazionali e ti guidano in ogni salto fino a quando non raggiungerai la completa indipendenza.",
         "coursepage.what.items": [
-            "Siamo l'unica scuola in Irlanda con un modello flessibile.",
-            "Paghi solo per i livelli conseguiti, senza obblighi sui pacchetti fissi.",
+            "Hai opzioni di pagamento integrale o per livelli.",
+            "Hai la flessibilità di saltare durante i giorni feriali o nei fine settimana.",
+            "Hai tempi di formazione ridotti.",
             "Flessibilità totale per il tuo viaggio."
         ],
-        "coursepage.what.cta": "Voglio iniziare il mio viaggio!",
+        "coursepage.what.cta": "Prenota il mio corso ora",
         "coursepage.steps.title": "Livelli <strong style='color: var(--primary-color)'>del Corso</strong>",
         "coursepage.steps": [
             { "title": "Scuola a Terra", "desc": "Addestramento intensivo in aula che copre la panoramica dell'attrezzatura, la posizione del corpo, le procedure di uscita, i protocolli di emergenza e i modelli di atterraggio." },
@@ -1800,9 +1849,10 @@ export const translations = {
             { "title": "Livello 8", "desc": "Il tuo salto finale da un'altitudine inferiore per simulare un'uscita d'emergenza." }
         ],
         "coursepage.pricing.title": "Scegli il tuo viaggio verso la libertà",
+        "coursepage.pricing.or": "O",
         "coursepage.pricing.subtitle": "Mentre oltre 200 persone vivono il loro primo lancio con noi ogni mese, alcune decidono di andare oltre e padroneggiare il cielo.",
-        "coursepage.pricing.card1.title": "Corso di Linea Statica Accelerata (A.S.L)",
-        "coursepage.pricing.card1.subtitle": "Introduzione graduale al paracaidismo in solitaria. Il tuo paracadute si apre automaticamente dopo l'uscita, permettendoti di concentrarti sulla posizione del corpo, sul controllo della vela e su atterraggi sicuri, procedendo passo dopo passo verso la caduta libera e il paracadutismo indipendente.",
+        "coursepage.pricing.card1.title": "Corso ASL - Accelerated Static Line",
+        "coursepage.pricing.card1.subtitle": "Il Corso ASL – Accelerated Static Line è un'introduzione graduale al paracaidismo in solitaria. Il tuo paracadute si apre automaticamente dopo l'uscita, permettendoti di concentrarti sulla posizione del corpo, sul controllo della vela e su atterraggi sicuri, procedendo passo dopo passo verso la caduta libera in tutte le fasi sotto la supervisione dell'istruttore.",
         "coursepage.pricing.card1.items": [
             "8 livelli progressivi",
             "Pagamento per singolo livello",
@@ -1810,10 +1860,10 @@ export const translations = {
             "Istruttori dedicati"
         ],
         "coursepage.pricing.card1.desc": "Ideale per coloro che desiderano iniziare senza un impegno a lungo termine.",
-        "coursepage.pricing.card1.cta": "Scegliere il mio pacchetto",
+        "coursepage.pricing.card1.cta": "Programma Il Tuo Corso",
         "coursepage.pricing.card2.badge": "Il più scelto dai nostri avventurieri",
-        "coursepage.pricing.card2.title": "Corso di Caduta Libera Accelerata (A.F.F)",
-        "coursepage.pricing.card2.subtitle": "Il modo più veloce per diventare un paracadutista certificato. Fin dal tuo primo lancio, vivrai la vera caduta libera mentre gli istruttori ti guideranno attraverso ogni livello, aiutandoti a sviluppare controllo, sicurezza e le abilità necessarie per paracadutare in autonomia.",
+        "coursepage.pricing.card2.title": "Corso AFF - Accelerated Free Fall",
+        "coursepage.pricing.card2.subtitle": "L'AFF - Accelerated Free Fall è il modo più veloce per diventare un paracadutista certificato. Fin dal tuo primo lancio, vivrai la vera caduta libera mentre gli istruttori ti guideranno attraverso ogni livello, aiutandoti a sviluppare controllo, sicurezza e le abilità necessarie per paracadutare in autonomia.",
         "coursepage.pricing.card2.items": [
             "Pacchetto completo",
             "Priorità nella programmazione",
@@ -1857,10 +1907,10 @@ export const translations = {
         "pricing.asl.level1": "Teoria (da 8 a 10 ore) + 2 lanci",
         "coursepage.pricing.card2.cta": "Registrati ora!",
         "coursepage.safety.title": "Corsi che ti preparano a vivere lo sport in modo sicuro",
-        "coursepage.safety.p1": "I corsi sono così rigorosi che l'obiettivo è di non dover mai attivare il dispositivo di apertura automatica (AAD)",
-        "coursepage.safety.p2": "La nostra missione non è solo insegnare l'uso della rete di sicurezza, ma renderti così competente che tu stesso diventi la tua più grande protezione.",
-        "coursepage.safety.p3": "Qui, la fiducia diventa il tuo equipaggiamento principale.",
-        "coursepage.safety.cta": "Scegliere il mio viaggio!",
+        "coursepage.safety.p1": "I corsi si basano sui Manuali SIM dell'USPA con tecniche di sicurezza consolidate a livello mondiale.",
+        "coursepage.safety.p2": "La nostra missione non è solo insegnarti a saltare da un aereo, è renderti così competente che tu stesso diventi la tua più grande protezione nella pratica di questo sport.",
+        "coursepage.safety.p3": "Qui, la sicurezza e la fiducia diventano il tuo equipaggiamento principale unito alla pratica di buone tecniche.",
+        "coursepage.safety.cta": "Prenota il tuo corso",
         "coursepage.gallery.title": "AFF <strong style='color: var(--primary-color)'>in Azione</strong>",
         "coursepage.req.title": "Chi può <strong style='color: var(--primary-color)'>fare l'AFF?</strong>",
         "coursepage.req.items": [
@@ -1872,15 +1922,15 @@ export const translations = {
         ],
         "coursepage.faq.title": "Hai dei dubbi?<br/>Noi rispondiamo.",
         "coursepage.faqs": [
-            { "question": "Qual è l'età minima per lanciarsi?", "answer": "L'età minima è 18 anni e non c'è limite massimo di età, a patto che tu sia in buona salute." },
-            { "question": "È necessario aver fatto un salto in tandem prima?", "answer": "No! Il nostro corso AFF è progettato in modo che i principianti assoluti possano progredire direttamente per lanciarsi da soli." },
-            { "question": "Posso mettere in pausa tra i livelli nel modello frazionato?", "answer": "Sì. Se metti in pausa troppo a lungo, potresti aver bisogno di una rinfrescata." },
-            { "question": "È possibile pagare a rate?", "answer": "Sì, offriamo piani di pagamento flessibili direttamente nel nostro checkout o con il nostro staff." }
+            { "question": "Qual è l'età minima per saltare?", "answer": "L'età minima è di 18 anni e non c'è un limite di età massimo, purché tu sia in buona salute." },
+            { "question": "È necessario aver fatto un salto tandem prima?", "answer": "No! I nostri corsi sono progettati in modo che i principianti assoluti possano passare direttamente al salto, senza necessità di un salto tandem." },
+            { "question": "Posso fare una pausa tra i livelli nel modelo frazionato?", "answer": "Sì, tuttavia, per mantenere attive le abilità di sicurezza, se la pausa è troppo lunga potrebbe essere necessario eseguire un salto di riadattamento o un aggiornamento." },
+            { "question": "Ricevo una certificazione dopo aver completato il corso?", "answer": "Sì. Sarai certificato dalla USPA e avrai un riconoscimento internazionale." }
         ],
-        "coursepage.faqs.contact": "Hai ancora dubbi? Parla subito con un istruttore su WhatsApp",
+        "coursepage.faqs.contact": "Hai ancora dubbi? Parla subito con noi su WhatsApp",
         "coursepage.cta.title": "Pronto a decollare e dominare il cielo con le tue ali?",
         "coursepage.cta.subtitle": "",
-        "coursepage.cta.button": "Voglio diventare un paracadutista!",
+        "coursepage.cta.button": "Prenota il tuo corso",
         "coursepage.cta.wa_message": "Ciao! Sono interessato a iniziare il Corso di Paracadutismo AFF presso SkyDiveThru Irlanda."
     }
 };

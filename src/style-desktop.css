@@ -28,7 +28,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 160px;
+    scroll-padding-top: 0;
     /* Increased for fixed header + countdown bar */
     overflow-x: hidden;
 }
@@ -589,7 +589,7 @@ img {
     grid-template-columns: 50% 45%;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 50px;
+    row-gap: 35px;
     width: 100%;
 }
 
@@ -622,6 +622,7 @@ img {
     border-radius: 30px;
     position: relative;
     opacity: 0;
+    margin-top: 15px;
 }
 
 .experience-video-wrapper.animate {
@@ -1913,7 +1914,7 @@ img {
     width: 100%;
     overflow: hidden;
     padding: 50px 0;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .about-container {
@@ -1968,7 +1969,7 @@ img {
     font-size: 35px;
     font-weight: 500;
     color: #151515;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: 1.2;
     opacity: 0;
 }
@@ -1982,9 +1983,9 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #555;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     max-width: 570px;
     margin-left: 10px;
     opacity: 0;
@@ -2000,6 +2001,10 @@ img {
 
 .about-description p.animate:nth-child(2) {
     animation-delay: 0.8s;
+}
+
+.about-description p.animate:nth-child(3) {
+    animation-delay: 1s;
 }
 
 .about-description p:last-child {
@@ -2055,7 +2060,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #555;
     opacity: 0;
 }
@@ -2110,7 +2115,7 @@ img {
 /* Swiper Pagination Customization */
 .dream-swiper .swiper-pagination {
     position: relative;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .dream-swiper .swiper-pagination-bullet {
@@ -2381,7 +2386,6 @@ img {
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 20px;
-    text-transform: uppercase;
     letter-spacing: 2px;
     width: fit-content;
 
@@ -2471,7 +2475,7 @@ img {
 }
 
 .contact-cta {
-    width: 100%;
+    width: 80%;
     height: 50px;
     padding: 30px 50px !important;
     border: 2px solid transparent !important;
@@ -3011,7 +3015,7 @@ img {
 }
 
 .contact-section {
-    padding-top: 20px !important;
+    padding-top: 50px !important;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -3569,13 +3573,18 @@ img {
         flex: 1;
         margin-left: 4px;
         padding-left: 0;
-        max-width: 620px;
+        max-width: 610px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500;
         line-height: 1.2;
         color: #151515;
         opacity: 0;
+    }
+
+    .dream-header {
+        margin-bottom: 20px !important;
+        gap: 40px !important;
     }
 
     .about-image-col {
@@ -3604,6 +3613,14 @@ img {
     .dream-description {
         padding-right: 9px;
         padding-left: 9px;
+    }
+
+    .dream-image-card {
+        aspect-ratio: 1 / 1 !important;
+    }
+
+    .dream-gallery-wrapper {
+        margin-bottom: 20px !important;
     }
 
     .course-cta {
@@ -3635,12 +3652,12 @@ img {
         background-color: #fff;
         width: 100%;
         overflow: hidden;
-        padding: 100px 0;
+        padding: 60px 0 !important;
     }
 
     .dream-section {
         background-color: #fff;
-        padding: 50px 0;
+        padding: 40px 0 !important;
     }
 
 }

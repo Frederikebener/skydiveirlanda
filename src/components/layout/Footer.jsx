@@ -94,7 +94,6 @@ const Footer = () => {
                             <li><a href="#about" className="footer-link" onClick={(e) => handleNavClick(e, '#about')}><span className="link-dot"></span>{t('footer.about')}</a></li>
                             <li><a href="#experience" className="footer-link" onClick={(e) => handleNavClick(e, '#experience')}><span className="link-dot"></span>{t('footer.experience')}</a></li>
                             <li><a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}><span className="link-dot"></span>{t('footer.packages')}</a></li>
-                            <li><Link to="/course" className="footer-link"><span className="link-dot"></span>{t('footer.course')}</Link></li>
                             <li><a href="#faq" className="footer-link" onClick={(e) => handleNavClick(e, '#faq')}><span className="link-dot"></span>{t('footer.faq')}</a></li>
                             <li><a href="#contact" className="footer-link" onClick={(e) => handleNavClick(e, '#contact')}><span className="link-dot"></span>{t('footer.contact')}</a></li>
                         </ul>
@@ -104,14 +103,16 @@ const Footer = () => {
                     <div className="footer-column resources-column">
                         <h3 className="footer-heading">{t('footer.packagesTitle')}</h3>
                         <ul className="footer-links">
-                            {packageCards.map((card, index) => (
+                            {(t('packages.nav_titles') || []).map((navTitle, index) => (
                                 <li key={index}>
                                     <a href={`#package-${index}`} className="footer-link" onClick={(e) => handleNavClick(e, `#package-${index}`)}>
                                         <span className="link-dot"></span>
-                                        {card.title}
+                                        {navTitle}
                                     </a>
                                 </li>
                             ))}
+                            <li><Link to="/course?type=aff#cp-pricing" className="footer-link"><span className="link-dot"></span>{t('menu.course_aff')}</Link></li>
+                            <li><Link to="/course?type=asl#cp-pricing" className="footer-link"><span className="link-dot"></span>{t('menu.course_asl')}</Link></li>
                         </ul>
                     </div>
 

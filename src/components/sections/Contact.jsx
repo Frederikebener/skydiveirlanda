@@ -92,12 +92,15 @@ const Contact = () => {
                                 ))}
                             </div>
 
-                            <button
-                                onClick={handleWhatsAppClick}
+                            <a
+                                href={`https://wa.me/353894098150?text=${encodeURIComponent(t('contact.wa_message', 'en') || 'Hi! I have some questions.')}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="contact-cta"
+                                style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                             >
                                 {t('contact.cta')}
-                            </button>
+                            </a>
                         </div>
 
                         {/* Decorative Circle */}

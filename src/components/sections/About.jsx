@@ -65,6 +65,10 @@ export const About = () => {
                                 ref={(el) => (pRefs.current[1] = el)}
                                 dangerouslySetInnerHTML={{ __html: t('about.p2') }}
                             />
+                            <p
+                                ref={(el) => (pRefs.current[2] = el)}
+                                dangerouslySetInnerHTML={{ __html: t('about.p3') }}
+                            />
                         </div>
                     </div>
                 </div>

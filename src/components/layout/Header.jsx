@@ -112,39 +112,39 @@ const Header = ({ isHidden }) => {
 
                     {/* Mobile Packages Accordion */}
                     <div className="mobile-packages-menu">
-                        <button
-                            className="mobile-packages-toggle"
-                            onClick={() => setIsPackagesOpen(!isPackagesOpen)}
-                        >
-                            {t('footer.packages')}
-                            <svg
-                                className={`mobile-chevron ${isPackagesOpen ? 'open' : ''}`}
-                                width="16" height="16" viewBox="0 0 10 10"
-                                fill="none" stroke="currentColor" strokeWidth="1.5"
-                                strokeLinecap="round" strokeLinejoin="round"
+                        <div className="mobile-packages-toggle">
+                            <a href="#packages" onClick={(e) => handleNavClick(e, '#packages')}>
+                                {t('footer.packages')}
+                            </a>
+                            <button
+                                style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', padding: '10px' }}
+                                onClick={() => setIsPackagesOpen(!isPackagesOpen)}
                             >
-                                <path d="M1 3 L5 7 L9 3" />
-                            </svg>
-                        </button>
+                                <svg
+                                    className={`mobile-chevron ${isPackagesOpen ? 'open' : ''}`}
+                                    width="16" height="16" viewBox="0 0 10 10"
+                                    fill="none" stroke="currentColor" strokeWidth="1.5"
+                                    strokeLinecap="round" strokeLinejoin="round"
+                                >
+                                    <path d="M1 3 L5 7 L9 3" />
+                                </svg>
+                            </button>
+                        </div>
                         <div className={`mobile-packages-list ${isPackagesOpen ? 'open' : ''}`}>
-                            {(t('packages.cards') || []).map((card, index) => (
+                            {(t('packages.nav_titles') || []).map((navTitle, index) => (
                                 <a
                                     key={index}
                                     href={`#package-${index}`}
                                     className="mobile-package-item"
                                     onClick={(e) => handlePackageClick(e, index)}
                                 >
-                                    {card.title}
+                                    {navTitle}
                                 </a>
                             ))}
                         </div>
                     </div>
 
                     <Link to="/course" onClick={() => setIsMobileMenuOpen(false)}>{t('footer.course')}</Link>
-
-                    <a href="#contact" className="btn btn-primary mobile-cta" onClick={(e) => handleNavClick(e, '#contact')}>
-                        {t('footer.contact')}
-                    </a>
                 </nav>
             </div>
 
@@ -164,22 +164,21 @@ const Header = ({ isHidden }) => {
                         <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('footer.about')}</a></li>
                         <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a></li>
                         <li className="has-dropdown">
-                            <a href="#package-0" onClick={(e) => handlePackageClick(e, 0)}>
+                            <a href="#packages" onClick={(e) => handleNavClick(e, '#packages')}>
                                 {t('footer.packages')}
                                 <svg className="dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
                                     <path d="M1 3 L5 7 L9 3" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </a>
-                            {/* Invisible bridge prevents dropdown from closing when moving mouse */}
                             <div className="nav-dropdown-bridge" />
                             <ul className="nav-dropdown">
-                                {(t('packages.cards') || []).map((card, index) => (
+                                {(t('packages.nav_titles') || []).map((navTitle, index) => (
                                     <li key={index}>
                                         <a
                                             href={`#package-${index}`}
                                             onClick={(e) => handlePackageClick(e, index)}
                                         >
-                                            {card.title}
+                                            {navTitle}
                                         </a>
                                     </li>
                                 ))}
@@ -207,12 +206,6 @@ const Header = ({ isHidden }) => {
                             </ul>
                         )}
                     </div>
-
-                    {isScrolled && (
-                        <a href="#packages" className="btn btn-primary header-cta" onClick={(e) => handleNavClick(e, '#packages')}>
-                            {t('footer.contact')}
-                        </a>
-                    )}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -241,4 +234,3 @@ const Header = ({ isHidden }) => {
 };
 
 export default Header;
-
