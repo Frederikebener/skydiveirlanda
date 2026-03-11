@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
+import { useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import img7 from '../../assets/Static-Line.jpg';
 import img8 from '../../assets/BIRR TRIO- 1920X1080.png';
@@ -8,7 +9,18 @@ import '../../style-coursejourney.css';
 
 export const CourseJourney = () => {
     const { t } = useLanguage();
+    const location = useLocation();
     const [activeTab, setActiveTab] = useState('AFF'); // 'AFF' or 'ASL'
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const type = params.get('type');
+        if (type === 'asl') {
+            setActiveTab('ASL');
+        } else if (type === 'aff') {
+            setActiveTab('AFF');
+        }
+    }, [location.search]);
 
     return (
         <section className="cj-section" id="coursejourney">
@@ -142,12 +154,12 @@ export const CourseJourney = () => {
                                             </div>
                                             <ul className="cj-pricing-levels">
                                                 <li><span>{t('pricing.asl.level1')}</span><strong>€434</strong></li>
-                                                <li><span>{t('pricing.level')} 2 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')}</strong></li>
-                                                <li><span>{t('pricing.level')} 3 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')}</strong></li>
-                                                <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')}</strong></li>
-                                                <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
-                                                <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
-                                                <li className="cj-last-level"><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')}</strong></li>
+                                                <li><span>{t('pricing.level')} 2 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')} (€201 total)</strong></li>
+                                                <li><span>{t('pricing.level')} 3 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')} (€201 total)</strong></li>
+                                                <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')} (€261 total)</strong></li>
+                                                <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
+                                                <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
+                                                <li className="cj-last-level"><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
                                             </ul>
                                         </div>
                                     </div>

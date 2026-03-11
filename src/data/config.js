@@ -4,10 +4,11 @@ import heroVideo from '../assets/Video-1.mp4';
 
 export const config = {
     hero: {
-        backgroundType: 'video', // 'image' or 'video'
+        backgroundType: 'image', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
-        enableCountdown: false // Toggle to show or hide the countdown bar
+        enableCountdown: false, // Toggle to show or hide the countdown bar
+        enableAudio: true // Toggle to show the audio play button in the hero
     },
     evaluation: {
         googleReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJFTJet6X3XEgRlDp9BaZEUZQ',
@@ -23,7 +24,7 @@ export const config = {
     },
     showPressel: true, // Set to false to disable the pressel page
     tracking: {
-        gtmId: 'GTM-XXXXXXX', // Replace with your GTM ID
+        gtmId: 'GTM-NQKBHD9K', // Updated GTM ID
         gaId: 'G-XXXXXXXXXX', // Replace with your GA4 ID
         fbPixelId: 'XXXXXXXXXXXXXXX' // Replace with your FB Pixel ID
     }

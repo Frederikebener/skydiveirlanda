@@ -5,15 +5,10 @@ import { useLanguage } from '../../context/LanguageContext';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import course1 from '../../assets/BIRR UNIC1- 1920X1080.png';
-import course2 from '../../assets/BIRR UNIC- 1920X1080.png';
 import course3 from '../../assets/BIRR TRIO1- 1920X1080.png';
-import course4 from '../../assets/BIRR DUO8- 1920X1080.png';
 import course5 from '../../assets/BIRR UNIC2- 1920X1080.png';
-import course6 from '../../assets/BIRR TRIO- 1920X1080.png';
 import course7 from '../../assets/BIRR DUO- 1920X1080.png';
-import course8 from '../../assets/Imagem (17).png';
 import course9 from '../../assets/julius - breno.JPG';
-import course10 from '../../assets/Imagem (4).png';
 
 
 export const Dream = () => {

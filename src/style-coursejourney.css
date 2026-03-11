@@ -529,11 +529,11 @@
 
 .cj-pricing-levels li:last-child {
     border-bottom: none;
-    font-weight: 700;
 }
 
 .cj-pricing-levels li span {
     color: #444;
+    font-weight: 700;
 }
 
 .cj-pricing-levels li strong {

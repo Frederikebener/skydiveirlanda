@@ -39,7 +39,9 @@ export const CoursePage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+    }, []);
 
+    useEffect(() => {
         // Handle query parameter to switch tabs
         const params = new URLSearchParams(window.location.search);
         const type = params.get('type');

@@ -18,6 +18,7 @@ const Header = ({ isHidden }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isPackagesOpen, setIsPackagesOpen] = useState(false);
+    const [isCourseOpen, setIsCourseOpen] = useState(false);
 
     const languages = [
         { code: 'ga', name: 'Gaeilge', flag: flagGa },
@@ -54,10 +55,11 @@ const Header = ({ isHidden }) => {
         if (location.pathname === '/') {
             const element = document.querySelector(anchor);
             if (element) {
-                const headerOffset = 150; // Increased offset for better spacing
+                const isMobile = window.innerWidth <= 720;
+                const headerOffset = isMobile ? 100 : 80;
                 const rect = element.getBoundingClientRect();
                 const elementPosition = rect.top
-                const offsetPosition = elementPosition
+                const offsetPosition = elementPosition - headerOffset
 
                 window.scrollBy({
                     top: offsetPosition,
@@ -83,11 +85,34 @@ const Header = ({ isHidden }) => {
                 const headerOffset = isMobile ? 165 : 25;
                 const rect = element.getBoundingClientRect();
                 const elementPosition = rect.top
-                const offsetPosition = elementPosition
+                const offsetPosition = elementPosition - headerOffset
                 window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
             }
         } else {
             navigate('/#package-' + index);
+        }
+    };
+
+    const handleCourseClick = (e, type) => {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+        setIsCourseOpen(false);
+
+        if (location.pathname === '/' || location.pathname === '/course') {
+            const anchor = location.pathname === '/' ? '#coursejourney' : '#cp-pricing';
+            const element = document.querySelector(anchor);
+            if (element) {
+                const isMobile = window.innerWidth <= 720;
+                const headerOffset = isMobile ? 165 : 25;
+                const rect = element.getBoundingClientRect();
+                const elementPosition = rect.top;
+                window.scrollBy({ top: elementPosition - headerOffset, behavior: 'smooth' });
+
+                // Navigate with query param to trigger tab switch
+                navigate(`${location.pathname}?type=${type}`, { replace: true });
+            }
+        } else {
+            navigate(`/course?type=${type}`);
         }
     };
 
@@ -144,7 +169,42 @@ const Header = ({ isHidden }) => {
                         </div>
                     </div>
 
-                    <Link to="/course" onClick={() => setIsMobileMenuOpen(false)}>{t('footer.course')}</Link>
+                    <div className="mobile-packages-menu">
+                        <div className="mobile-packages-toggle">
+                            <Link to="/course" onClick={() => setIsMobileMenuOpen(false)}>
+                                {t('footer.course')}
+                            </Link>
+                            <button
+                                style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', padding: '10px' }}
+                                onClick={() => setIsCourseOpen(!isCourseOpen)}
+                            >
+                                <svg
+                                    className={`mobile-chevron ${isCourseOpen ? 'open' : ''}`}
+                                    width="16" height="16" viewBox="0 0 10 10"
+                                    fill="none" stroke="currentColor" strokeWidth="1.5"
+                                    strokeLinecap="round" strokeLinejoin="round"
+                                >
+                                    <path d="M1 3 L5 7 L9 3" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div className={`mobile-packages-list ${isCourseOpen ? 'open' : ''}`}>
+                            <a
+                                href="/course?type=aff"
+                                className="mobile-package-item"
+                                onClick={(e) => handleCourseClick(e, 'aff')}
+                            >
+                                {t('menu.course_aff')}
+                            </a>
+                            <a
+                                href="/course?type=asl"
+                                className="mobile-package-item"
+                                onClick={(e) => handleCourseClick(e, 'asl')}
+                            >
+                                {t('menu.course_asl')}
+                            </a>
+                        </div>
+                    </div>
                 </nav>
             </div>
 
@@ -184,7 +244,27 @@ const Header = ({ isHidden }) => {
                                 ))}
                             </ul>
                         </li>
-                        <li><Link to="/course">{t('footer.course')}</Link></li>
+                        <li className="has-dropdown">
+                            <Link to="/course">
+                                {t('footer.course')}
+                                <svg className="dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
+                                    <path d="M1 3 L5 7 L9 3" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </Link>
+                            <div className="nav-dropdown-bridge" />
+                            <ul className="nav-dropdown">
+                                <li>
+                                    <Link to="/course?type=aff" onClick={(e) => handleCourseClick(e, 'aff')}>
+                                        {t('menu.course_aff')}
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/course?type=asl" onClick={(e) => handleCourseClick(e, 'asl')}>
+                                        {t('menu.course_asl')}
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 

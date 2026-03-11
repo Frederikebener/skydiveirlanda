@@ -1,8 +1,10 @@
 import React from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
-import { MapPin, Phone, Instagram, Facebook, Clock } from 'lucide-react';
+import { MapPin, Phone, Instagram, Facebook, Clock, Mail, Building2, Hash } from 'lucide-react';
 import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
+import cbpLogo from '../../assets/19.png';
+import iadzLogo from '../../assets/Logo_Borda_2.png';
 
 const Footer = () => {
     const { t } = useLanguage();
@@ -84,6 +86,10 @@ const Footer = () => {
                                 </a>
                             )}
                         </div>
+                        <div className="footer-seals">
+                            <img src={cbpLogo} alt="CBP" className="footer-seal-img" />
+                            <img src={iadzLogo} alt="IADZ" className="footer-seal-img" />
+                        </div>
                     </div>
 
                     {/* Navigation */}
@@ -93,7 +99,6 @@ const Footer = () => {
                             <li><a href="/#" className="footer-link" onClick={(e) => handleNavClick(e, '#')}><span className="link-dot"></span>{t('footer.home')}</a></li>
                             <li><a href="#about" className="footer-link" onClick={(e) => handleNavClick(e, '#about')}><span className="link-dot"></span>{t('footer.about')}</a></li>
                             <li><a href="#experience" className="footer-link" onClick={(e) => handleNavClick(e, '#experience')}><span className="link-dot"></span>{t('footer.experience')}</a></li>
-                            <li><a href="#packages" className="footer-link" onClick={(e) => handleNavClick(e, '#packages')}><span className="link-dot"></span>{t('footer.packages')}</a></li>
                             <li><a href="#faq" className="footer-link" onClick={(e) => handleNavClick(e, '#faq')}><span className="link-dot"></span>{t('footer.faq')}</a></li>
                             <li><a href="#contact" className="footer-link" onClick={(e) => handleNavClick(e, '#contact')}><span className="link-dot"></span>{t('footer.contact')}</a></li>
                         </ul>
@@ -121,6 +126,10 @@ const Footer = () => {
                         <h3 className="footer-heading">CONTACT</h3>
                         <ul className="footer-contact-list">
                             <li className="footer-contact-item">
+                                <Building2 className="footer-contact-icon" />
+                                <span>{t('contact.legal_name.value')}</span>
+                            </li>
+                            <li className="footer-contact-item">
                                 <MapPin className="footer-contact-icon" />
                                 <a
                                     href="https://share.google/RAJgk83OpbYMH9uvG"
@@ -136,8 +145,16 @@ const Footer = () => {
                                 <a href={`tel:${t('contact.phone.value')}`} className="footer-contact-link">{t('contact.phone.value')}</a>
                             </li>
                             <li className="footer-contact-item">
+                                <Mail className="footer-contact-icon" />
+                                <a href={`mailto:${t('contact.email.value')}`} className="footer-contact-link">{t('contact.email.value')}</a>
+                            </li>
+                            <li className="footer-contact-item">
                                 <Clock className="footer-contact-icon" />
                                 <span>{t('contact.hours.value')}</span>
+                            </li>
+                            <li className="footer-contact-item">
+                                <Hash className="footer-contact-icon" />
+                                <span>{t('contact.reg.title')}: {t('contact.reg.value')}</span>
                             </li>
                         </ul>
                     </div>

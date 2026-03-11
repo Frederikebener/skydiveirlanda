@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import experienceImg from '../../assets/Banner03-2.jpg';
 
 export const Experience = () => {
     const { t } = useLanguage();
@@ -25,9 +24,10 @@ export const Experience = () => {
                         if (rightTitleRef.current) {
                             rightTitleRef.current.classList.add('animate');
                         }
-                        // Animate image
+                        // Animate image and play video
                         if (imageRef.current) {
                             imageRef.current.classList.add('animate');
+                            setIsPlaying(true);
                         }
                         // Animate steps
                         stepRefs.current.forEach((step) => {
@@ -59,25 +59,12 @@ export const Experience = () => {
 
                 <div className="experience-left-col">
                     <div ref={imageRef} className="experience-video-wrapper">
-                        <div className="video-player-container experience-video-container" onClick={() => setIsPlaying(true)}>
-                            {!isPlaying ? (
-                                <>
-                                    <img
-                                        src={experienceImg}
-                                        alt="Experience Skydive"
-                                        className="experience-main-image"
-                                    />
-                                    <div className="video-play-button">
-                                        <svg viewBox="0 0 512 512" fill="currentColor">
-                                            <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z" />
-                                        </svg>
-                                    </div>
-                                </>
-                            ) : (
+                        <div className="video-player-container experience-video-container">
+                            {isPlaying ? (
                                 <iframe
                                     width="100%"
                                     height="100%"
-                                    src="https://www.youtube.com/embed/GTjnfAMOw6g?si=1EIr7ueCodyoweAp&autoplay=1"
+                                    src="https://www.youtube.com/embed/GTjnfAMOw6g?si=1EIr7ueCodyoweAp&autoplay=1&mute=1"
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -85,7 +72,7 @@ export const Experience = () => {
                                     allowFullScreen
                                     className="youtube-iframe"
                                 ></iframe>
-                            )}
+                            ) : null}
                         </div>
                     </div>
                 </div>

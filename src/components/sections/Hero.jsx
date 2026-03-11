@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { config } from '../../data/config';
+import { Play, Pause } from 'lucide-react';
 import logo from '../../assets/LOGO 2 SKYDIVE THRU IRELAND.svg';
+import audioFile from '../../assets/audio-skydive.mp3';
 
 export const Hero = () => {
     const { language, setLanguage, t } = useLanguage();
-    const { backgroundType, videoUrl, imageUrl } = config.hero;
+    const { backgroundType, videoUrl, imageUrl, enableAudio } = config.hero;
+    const [isPlayingTheme, setIsPlayingTheme] = useState(false);
+    const audioRef = useRef(null);
+
+    const toggleTheme = (e) => {
+        e.preventDefault();
+        if (audioRef.current) {
+            if (isPlayingTheme) {
+                audioRef.current.pause();
+            } else {
+                audioRef.current.play();
+            }
+            setIsPlayingTheme(!isPlayingTheme);
+        }
+    };
 
     const sectionStyle = backgroundType === 'image' ? {
         backgroundImage: `url(${imageUrl})`
@@ -33,6 +49,11 @@ export const Hero = () => {
                 </div>
             ) : null}
 
+            {/* Hidden Audio Element */}
+            {enableAudio && (
+                <audio ref={audioRef} src={audioFile} loop />
+            )}
+
             <div className="hero-overlay"></div>
 
             <div className="container hero-content">
@@ -50,12 +71,25 @@ export const Hero = () => {
                     dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
                 ></p>
 
-                <a
-                    href="#packages"
-                    className="btn btn-primary btn-lg"
-                >
-                    {t('hero.cta')}
-                </a>
+                <div className="hero-cta-group">
+                    <a
+                        href="#packages"
+                        className="btn btn-primary btn-lg"
+                    >
+                        {t('hero.cta')}
+                    </a>
+
+                    {enableAudio && (
+                        <button
+                            onClick={toggleTheme}
+                            className="btn btn-outline hero-audio-btn"
+                        >
+                            {isPlayingTheme ? <Pause size={18} strokeWidth={1.5} className="audio-icon" /> : <Play size={18} strokeWidth={1.5} className="audio-icon" />}
+                            {t('hero.audio_btn') || 'Play Official Theme'}
+                            {isPlayingTheme && <span className="music-waves"></span>}
+                        </button>
+                    )}
+                </div>
             </div>
 
             <div className="hero-clouds"></div>

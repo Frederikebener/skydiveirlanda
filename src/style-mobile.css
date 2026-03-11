@@ -1282,6 +1282,10 @@
         max-width: 280px;
     }
 
+    .hero-cta-group {
+        justify-content: center;
+    }
+
     .btn-primary {
         background-color: var(--primary-color);
         color: var(--bg-color);
@@ -1293,7 +1297,6 @@
         font-weight: 800;
         text-transform: uppercase;
         box-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
-        margin-bottom: 20px;
         transition: all 0.3s ease;
     }
 
