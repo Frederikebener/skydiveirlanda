@@ -7,7 +7,7 @@ export const config = {
         backgroundType: 'video', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
-        enableCountdown: false, // Toggle to show or hide the countdown bar
+        enableCountdown: true, // Toggle to show or hide the countdown bar
         enableAudio: true // Toggle to show the audio play button in the hero
     },
     evaluation: {
