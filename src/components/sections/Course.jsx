@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { useLanguage } from '../../context/LanguageContext';
 import { useNavigate } from 'react-router-dom';
-import course1 from '../../assets/BIRR TRIO3- 1920X1080.png';
-import course2 from '../../assets/BIRR TRIO- 1920X1080.png';
-import course3 from '../../assets/BIRR DUO- 1920X1080.png';
+import course1 from '../../assets/group-skydive-birr-ireland-3.webp';
+import course2 from '../../assets/group-skydive-birr-ireland.webp';
+import course3 from '../../assets/tandem-skydive-birr-ireland.webp';
 
 
 import 'swiper/css';
@@ -99,7 +99,7 @@ export const Course = () => {
                                 {courseImages.map((img, index) => (
                                     <SwiperSlide key={index}>
                                         <div className="course-image-card">
-                                            <img src={img} alt="" className="course-slider-img" />
+                                            <img src={img} alt="" className="course-slider-img" loading="lazy" />
                                         </div>
                                     </SwiperSlide>
                                 ))}

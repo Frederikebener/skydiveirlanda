@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import teamImg from '../../assets/Imagem atletas.PNG';
+import teamImg from '../../assets/skydive-athletes-ireland.webp';
 
 export const About = () => {
     const { t } = useLanguage();

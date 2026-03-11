@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
-import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
+import logo from '../../assets/skydive-ireland-icon.webp';
 import flagDe from '../../assets/flag-de.svg';
-import flagEn from '../../assets/flag-en.png';
-import flagEs from '../../assets/flag-es.png';
-import flagFr from '../../assets/flag-fr.png';
-import flagGa from '../../assets/flag-ga.png';
+import flagEn from '../../assets/flag-english.webp';
+import flagEs from '../../assets/flag-spanish.webp';
+import flagFr from '../../assets/flag-french.webp';
+import flagGa from '../../assets/flag-irish.webp';
 import flagIt from '../../assets/flag-it.svg';
-import flagPt from '../../assets/flag-pt.png';
+import flagPt from '../../assets/flag-portuguese.webp';
 
 const Header = ({ isHidden }) => {
     const { t, language, setLanguage } = useLanguage();

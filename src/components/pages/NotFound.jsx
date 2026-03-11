@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import { Home, AlertCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../../context/LanguageContext';
-import heroBg from '../../assets/Banner03-2.jpg';
+import heroBg from '../../assets/skydive-ireland-hero-banner.webp';
 
 import flagDe from '../../assets/flag-de.svg';
-import flagEn from '../../assets/flag-en.png';
-import flagEs from '../../assets/flag-es.png';
-import flagFr from '../../assets/flag-fr.png';
-import flagGa from '../../assets/flag-ga.png';
+import flagEn from '../../assets/flag-english.webp';
+import flagEs from '../../assets/flag-spanish.webp';
+import flagFr from '../../assets/flag-french.webp';
+import flagGa from '../../assets/flag-irish.webp';
 import flagIt from '../../assets/flag-it.svg';
-import flagPt from '../../assets/flag-pt.png';
+import flagPt from '../../assets/flag-portuguese.webp';
 
 export const NotFound = () => {
     const { t, language, setLanguage } = useLanguage();

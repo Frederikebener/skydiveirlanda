@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skydivethru.com/sitemap.xml
+Sitemap: https://skydivethru.ie/sitemap.xml

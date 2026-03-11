@@ -4,11 +4,11 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import { useLanguage } from '../../context/LanguageContext';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import course1 from '../../assets/BIRR UNIC1- 1920X1080.png';
-import course3 from '../../assets/BIRR TRIO1- 1920X1080.png';
-import course5 from '../../assets/BIRR UNIC2- 1920X1080.png';
-import course7 from '../../assets/BIRR DUO- 1920X1080.png';
-import course9 from '../../assets/julius - breno.JPG';
+import course1 from '../../assets/solo-skydive-birr-ireland.webp';
+import course3 from '../../assets/group-skydive-birr-ireland-2.webp';
+import course5 from '../../assets/solo-skydive-birr-ireland-2.webp';
+import course7 from '../../assets/tandem-skydive-birr-ireland.webp';
+import course9 from '../../assets/skydive-instructors-julius-breno.webp';
 
 
 export const Dream = () => {

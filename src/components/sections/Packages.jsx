@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import sky360Img from '../../assets/360.jpeg';
-import classicImg from '../../assets/package-record.jpg';
-import eliteImg from '../../assets/salto tandem.png';
-import recordImg from '../../assets/BIRR DUO9- 1920X1080.png';
+import sky360Img from '../../assets/skydive-360-view.webp';
+import classicImg from '../../assets/skydive-video-photo-package.webp';
+import eliteImg from '../../assets/tandem-skydive-ireland-main.webp';
+import recordImg from '../../assets/tandem-skydive-birr-ireland-2.webp';
 
 export const Packages = () => {
     const { t } = useLanguage();

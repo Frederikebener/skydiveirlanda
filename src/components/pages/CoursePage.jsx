@@ -7,11 +7,11 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import { config } from '../../data/config';
 
-import img1 from '../../assets/BIRR TRIO3- 1920X1080.png';
-import img2 from '../../assets/BIRR TRIO- 1920X1080.png';
-import img3 from '../../assets/BIRR DUO- 1920X1080.png';
-import img10 from '../../assets/Static-Line.jpg';
-import img11 from '../../assets/BIRR TRIO1- 1920X1080.png'
+import img1 from '../../assets/group-skydive-birr-ireland-3.webp';
+import img2 from '../../assets/group-skydive-birr-ireland.webp';
+import img3 from '../../assets/tandem-skydive-birr-ireland.webp';
+import img10 from '../../assets/static-line-skydiving-course.webp';
+import img11 from '../../assets/group-skydive-birr-ireland-2.webp'
 import heroVideo from '../../assets/Video-2.mp4';
 import ctaVideo from '../../assets/Takes-32.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -84,7 +84,7 @@ export const CoursePage = () => {
                             {t('coursepage.hero.cta')}
                         </a>
                         <div className="cp-hero-footer-text">
-                            {t('coursepage.hero.footer') || '25 anos sem acidentes | Instrutores certificados'}
+                            {t('coursepage.hero.footer') || '25 years without accidents | Certified instructors'}
                         </div>
                     </div>
                 </div>

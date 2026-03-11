@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useLocation } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import img7 from '../../assets/Static-Line.jpg';
-import img8 from '../../assets/BIRR TRIO- 1920X1080.png';
+import img7 from '../../assets/static-line-skydiving-course.webp';
+import img8 from '../../assets/group-skydive-birr-ireland.webp';
 
 import '../../style-coursejourney.css';
 

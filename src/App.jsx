@@ -19,7 +19,7 @@ import ScrollToAnchor from './components/utilities/ScrollToAnchor';
 
 function AppContent() {
     const location = useLocation();
-    const isReviewPage = location.pathname === '/reviews';
+    const isReviewPage = location.pathname.toLowerCase().includes('review');
     const isCoursePage = location.pathname === '/course';
     const isPrivacyPage = location.pathname === '/privacy';
     const isCookiePage = location.pathname === '/cookie-policy';
@@ -48,6 +48,38 @@ function AppContent() {
     };
 
     const [isHeaderHidden, setIsHeaderHidden] = React.useState(false);
+
+    useEffect(() => {
+        const isAllowedPath = location.pathname === '/' || location.pathname === '/course';
+        const widgetId = '69b0bf430eb1990a70a38e1f';
+        const scriptId = 'lc-widget-loader';
+
+        if (isAllowedPath && !showPressel) {
+            if (!document.getElementById(scriptId)) {
+                const script = document.createElement('script');
+                script.id = scriptId;
+                script.src = "https://widgets.leadconnectorhq.com/loader.js";
+                script.setAttribute('data-resources-url', "https://widgets.leadconnectorhq.com/chat-widget/loader.js");
+                script.setAttribute('data-widget-id', widgetId);
+                document.body.appendChild(script);
+            }
+        } else {
+            // Remove script
+            const script = document.getElementById(scriptId);
+            if (script) script.remove();
+
+            // Cleanup injected DOM elements
+            const widgetElements = document.querySelectorAll('[id^="lc_text-widget"], [class^="lc_text-widget"], #chat-widget-container, .chat-widget-container, #lc-chat-widget');
+            widgetElements.forEach(el => el.remove());
+
+            // Remove global styles or objects if any (some widgets leave trace)
+            if (window.lc_widget) delete window.lc_widget;
+        }
+
+        return () => {
+            // Optional: clean up on unmount if needed, but the effect handles route changes
+        };
+    }, [location.pathname, showPressel]);
 
     useEffect(() => {
         const handleScroll = () => {

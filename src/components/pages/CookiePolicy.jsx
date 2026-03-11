@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import Header from '../layout/Header';
@@ -50,6 +51,10 @@ export const CookiePolicy = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t('cookie.meta.title')}</title>
+                <meta name="description" content={t('cookie.meta.description')} />
+            </Helmet>
             {config.hero.enableCountdown && <CountdownBar />}
             <Header />
             <div className="privacy-page">

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Star, Loader2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { config } from '../../data/config';
-import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
+import logo from '../../assets/skydive-ireland-icon.webp';
 import flagDe from '../../assets/flag-de.svg';
-import flagEn from '../../assets/flag-en.png';
-import flagEs from '../../assets/flag-es.png';
-import flagFr from '../../assets/flag-fr.png';
-import flagGa from '../../assets/flag-ga.png';
+import flagEn from '../../assets/flag-english.webp';
+import flagEs from '../../assets/flag-spanish.webp';
+import flagFr from '../../assets/flag-french.webp';
+import flagGa from '../../assets/flag-irish.webp';
 import flagIt from '../../assets/flag-it.svg';
-import flagPt from '../../assets/flag-pt.png';
-import '../../reveiw.css';
+import flagPt from '../../assets/flag-portuguese.webp';
+import '../../review.css';
 
 export const Review = () => {
     const { language, setLanguage, t } = useLanguage();
@@ -33,6 +34,10 @@ export const Review = () => {
 
     return (
         <div className="review-page-wrapper">
+            <Helmet>
+                <title>{t('review.meta.title')}</title>
+                <meta name="description" content={t('review.meta.description')} />
+            </Helmet>
             {/* Image Background */}
             <div className="review-bg-container">
                 <img
@@ -62,80 +67,45 @@ export const Review = () => {
                         <h2 className="review-card-title">
                             {showForm ? t('review.subtitle') : t('review.title')}
                         </h2>
-                        {showForm && (
-                            <p className="review-card-subtitle">
-                                {t('review.subtitle')}
-                            </p>
-                        )}
                     </div>
 
                     {/* Content Section */}
                     <div className="review-card-body">
                         {/* Stars Selection Section */}
-                        {!showForm ? (
-                            <div className="stars-selection-group">
-                                <div className="stars-row">
-                                    {[1, 2, 3, 4, 5].map((star) => (
-                                        <button
-                                            key={star}
-                                            type="button"
-                                            className="star-btn"
-                                            onMouseEnter={() => setHoveredRating(star)}
-                                            onMouseLeave={() => setHoveredRating(0)}
-                                            onClick={() => handleRatingClick(star)}
-                                            aria-label={`Avaliar com ${star} estrela${star > 1 ? 's' : ''}`}
-                                        >
-                                            <Star
-                                                className={`star-icon ${star <= (hoveredRating || rating)
-                                                    ? "filled"
-                                                    : ""
-                                                    }`}
-                                            />
-                                        </button>
-                                    ))}
-                                </div>
-                                <div className="stars-label">
-                                    <span>{t('review.select_rating')}</span>
-                                </div>
-                            </div>
-                        ) : (
-                            /* Form Section */
-                            <div className="iframe-form-wrapper">
-                                {isFormLoading && (
-                                    <div className="iframe-loader">
-                                        <Loader2 className="spinner-icon" />
-                                        <span>{t('review.loading')}</span>
-                                    </div>
-                                )}
-
-                                <iframe
-                                    src={config.evaluation.formUrl}
-                                    className={`review-iframe ${isFormLoading ? 'loading' : 'loaded'}`}
-                                    title="Formulário de Feedback"
-                                    onLoad={() => setIsFormLoading(false)}
-                                />
-
-                                <div className="iframe-footer">
+                        <div className="stars-selection-group">
+                            <div className="stars-row">
+                                {[1, 2, 3, 4, 5].map((star) => (
                                     <button
-                                        onClick={() => setShowForm(false)}
-                                        className="back-btn"
+                                        key={star}
+                                        type="button"
+                                        className="star-btn"
+                                        onMouseEnter={() => setHoveredRating(star)}
+                                        onMouseLeave={() => setHoveredRating(0)}
+                                        onClick={() => handleRatingClick(star)}
+                                        aria-label={`Avaliar com ${star} estrela${star > 1 ? 's' : ''}`}
                                     >
-                                        {t('review.back')}
+                                        <Star
+                                            className={`star-icon ${star <= (hoveredRating || rating)
+                                                ? "filled"
+                                                : ""
+                                                }`}
+                                        />
                                     </button>
-                                </div>
+                                ))}
                             </div>
-                        )}
+                            <div className="stars-label">
+                                <span>{t('review.select_rating')}</span>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Progress Bar Decoration */}
-                    {!showForm && (
-                        <div className="review-progress-bar">
-                            <div
-                                className="progress-fill"
-                                style={{ width: rating > 0 ? `${(rating / 5) * 100}%` : '0%' }}
-                            />
-                        </div>
-                    )}
+                    <div className="review-progress-bar">
+                        <div
+                            className="progress-fill"
+                            style={{ width: rating > 0 ? `${(rating / 5) * 100}%` : '0%' }}
+                        />
+                    </div>
                 </div>
 
                 {/* Language Selector */}
@@ -197,6 +167,60 @@ export const Review = () => {
                     </button>
                 </div>
             </div>
+
+            {/* Modal Popup for the Form */}
+            {showForm && (
+                <div className="review-modal-overlay">
+                    <div className="review-modal-content">
+                        <button
+                            className="review-modal-close"
+                            onClick={() => setShowForm(false)}
+                            aria-label="Close"
+                        >
+                            &times;
+                        </button>
+
+                        <div className="iframe-form-wrapper">
+                            {isFormLoading && (
+                                <div className="iframe-loader">
+                                    <Loader2 className="spinner-icon" />
+                                    <span>{t('review.loading')}</span>
+                                </div>
+                            )}
+
+                            <iframe
+                                src="https://link.15dmarketingdigital.com.br/widget/form/8FCz9ZMazpwyCu5h8Fo3"
+                                style={{
+                                    backgroundColor: '#FFFFFFFF',
+                                    border: '1px solid #FFFFFF00',
+                                    borderRadius: '3px',
+                                    maxWidth: '650px',
+                                    width: '100%',
+                                    borderColor: '#FFFFFF00',
+                                    paddingTop: '20px',
+                                    boxShadow: '0px 4px 4px 0px #57647E00',
+                                    height: '100%' // Retain height to prevent collapse
+                                }}
+                                id="inline-8FCz9ZMazpwyCu5h8Fo3"
+                                data-layout="{'id':'INLINE'}"
+                                data-trigger-type="alwaysShow"
+                                data-trigger-value=""
+                                data-activation-type="alwaysActivated"
+                                data-activation-value=""
+                                data-deactivation-type="neverDeactivate"
+                                data-deactivation-value=""
+                                data-form-name="Form 8"
+                                data-height="undefined"
+                                data-layout-iframe-id="inline-8FCz9ZMazpwyCu5h8Fo3"
+                                data-form-id="8FCz9ZMazpwyCu5h8Fo3"
+                                title="Formulário de Feedback"
+                                className={`review-iframe ${isFormLoading ? 'loading' : 'loaded'}`}
+                                onLoad={() => setIsFormLoading(false)}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

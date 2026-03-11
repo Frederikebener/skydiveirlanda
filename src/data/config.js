@@ -1,5 +1,5 @@
-import heroBg from '../assets/Banner03-2.jpg';
-import logoImageSrc from '../assets/LOGO 2 SKYDIVE THRU IRELAND.svg';
+import heroBg from '../assets/skydive-ireland-hero-banner.webp';
+import logoImageSrc from '../assets/skydive-ireland-icon.webp';
 import heroVideo from '../assets/Video-1.mp4';
 
 export const config = {
@@ -16,16 +16,12 @@ export const config = {
         backgroundImage: heroBg,
         logoImage: logoImageSrc // Path to logo
     },
-    experience: {
-        type: 'static' // 'static' or '360'
-    },
     map: {
         zoom: 7 // 7=all Ireland, 12=county, 14=neighborhood, 15=street level
     },
-    showPressel: true, // Set to false to disable the pressel page
+    showPressel: false, // Set to false to disable the pressel page
+    showRegistrationNumber: false, // Set to true to display the registration and VAT number in the footer
     tracking: {
-        gtmId: 'GTM-NQKBHD9K', // Updated GTM ID
-        gaId: 'G-XXXXXXXXXX', // Replace with your GA4 ID
-        fbPixelId: 'XXXXXXXXXXXXXXX' // Replace with your FB Pixel ID
+        gtmId: 'GTM-NQKBHD9K' // Updated GTM ID
     }
 };

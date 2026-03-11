@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { config } from '../../data/config';
 import { Play, Pause } from 'lucide-react';
-import logo from '../../assets/LOGO 2 SKYDIVE THRU IRELAND.svg';
 import audioFile from '../../assets/audio-skydive.mp3';
 
 export const Hero = () => {
@@ -57,9 +56,6 @@ export const Hero = () => {
             <div className="hero-overlay"></div>
 
             <div className="container hero-content">
-                {/* Logo for mobile - shows above badge */}
-                <img src={logo} alt="SkyDiveThru" className="hero-logo-mobile" />
-
                 <span className="hero-badge" dangerouslySetInnerHTML={{ __html: t('hero.badge') }}></span>
                 <h1
                     className="hero-title"

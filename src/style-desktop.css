@@ -260,7 +260,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 700px;
-    background-image: url('./assets/Banner03-2.jpg');
+    background-image: url('./assets/skydive-ireland-hero-banner.webp');
     background-size: 100% 100%;
     /* Forces image to fit exactly */
     background-position: center;
@@ -307,10 +307,6 @@ img {
     object-fit: cover;
 }
 
-/* Hide mobile logo on desktop */
-.hero-logo-mobile {
-    display: none;
-}
 
 /* Language Switcher */
 /* Language Switcher */
@@ -394,17 +390,6 @@ img {
     /* Removing extra padding, relying on container */
 }
 
-.hero-logo-container {
-    margin-bottom: 25px;
-    max-width: 200px;
-    /* Slightly smaller to match reference */
-}
-
-.hero-logo {
-    margin-bottom: 0px;
-    /* Force white logo if SVG is black */
-    filter: brightness(0) invert(1);
-}
 
 .hero-badge {
     display: inline-block;
@@ -690,7 +675,7 @@ img {
     font-size: 35px;
     line-height: 1.2;
     color: #151515;
-    opacity: 0;
+    opacity: 1;
     margin-bottom: 0;
 }
 
@@ -710,7 +695,7 @@ img {
     overflow: hidden;
     border-radius: 30px;
     position: relative;
-    opacity: 0;
+    opacity: 1;
     margin-top: 15px;
 }
 
@@ -1468,8 +1453,15 @@ img {
 }
 
 .footer-bottom-link:hover,
-.footer-bottom-link-btn:hover {
+.footer-bottom-link-btn:hover,
+.footer-developed-link:hover {
     color: #fff;
+}
+
+.footer-developed-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-divider {

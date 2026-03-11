@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import placeholderImg from '../../assets/Banner03-2.jpg';
+import placeholderImg from '../../assets/skydive-ireland-hero-banner.webp';
 
 export const Video = () => {
     const { t } = useLanguage();

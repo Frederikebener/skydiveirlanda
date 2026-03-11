@@ -2,9 +2,10 @@ import React from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { MapPin, Phone, Instagram, Facebook, Clock, Mail, Building2, Hash } from 'lucide-react';
-import logo from '../../assets/Sem nome (150 x 136 px) (320 x 320 px).png';
-import cbpLogo from '../../assets/19.png';
-import iadzLogo from '../../assets/Logo_Borda_2.png';
+import { config } from '../../data/config';
+import logo from '../../assets/skydive-ireland-icon.webp';
+import cbpLogo from '../../assets/skydive-ireland-19.webp';
+import iadzLogo from '../../assets/skydive-thru-ireland-logo.webp';
 
 const Footer = () => {
     const { t } = useLanguage();
@@ -55,7 +56,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="footer-column brand-column">
                         <div className="footer-logo-wrapper">
-                            <img src={logo} alt="SkyDiveThru" className="footer-logo-img" />
+                            <img src={logo} alt="SkyDiveThru" className="footer-logo-img" loading="lazy" />
                         </div>
                         <p className="footer-description">
                             {t('footer.description')}
@@ -87,8 +88,8 @@ const Footer = () => {
                             )}
                         </div>
                         <div className="footer-seals">
-                            <img src={cbpLogo} alt="CBP" className="footer-seal-img" />
-                            <img src={iadzLogo} alt="IADZ" className="footer-seal-img" />
+                            <img src={cbpLogo} alt="CBP" className="footer-seal-img" loading="lazy" />
+                            <img src={iadzLogo} alt="IADZ" className="footer-seal-img" loading="lazy" />
                         </div>
                     </div>
 
@@ -152,10 +153,12 @@ const Footer = () => {
                                 <Clock className="footer-contact-icon" />
                                 <span>{t('contact.hours.value')}</span>
                             </li>
-                            <li className="footer-contact-item">
-                                <Hash className="footer-contact-icon" />
-                                <span>{t('contact.reg.title')}: {t('contact.reg.value')}</span>
-                            </li>
+                            {config.showRegistrationNumber && (
+                                <li className="footer-contact-item">
+                                    <Hash className="footer-contact-icon" />
+                                    <span>{t('contact.reg.title')}: {t('contact.reg.value')}</span>
+                                </li>
+                            )}
                         </ul>
                     </div>
                 </div>
@@ -174,7 +177,11 @@ const Footer = () => {
                             Manage Cookies
                         </button>
                     </div>
-                    <p>{t('footer.developed')}</p>
+                    <p>
+                        <a href="https://15dmarketingdigital.com.br/" target="_blank" rel="noopener noreferrer" className="footer-developed-link">
+                            {t('footer.developed')}
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
