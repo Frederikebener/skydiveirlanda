@@ -1,4 +1,4 @@
-﻿/* =========================================
+/* =========================================
    MOBILE RESPONSIVE STYLES
    (Contains max-width overrides for screens up to 991px)
    ========================================= */
@@ -1409,8 +1409,6 @@
         width: 100%;
         display: block;
         position: relative;
-        min-height: 211px;
-        /* Fallback for 375px wide screens (16:9) */
     }
 
     .experience-main-image {
