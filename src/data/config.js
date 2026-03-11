@@ -1,10 +1,10 @@
 import heroBg from '../assets/skydive-ireland-hero-banner.webp';
 import logoImageSrc from '../assets/skydive-ireland-icon.webp';
-import heroVideo from '../assets/Video-1.mp4';
+import heroVideo from '../assets/0310 (1).mp4';
 
 export const config = {
     hero: {
-        backgroundType: 'image', // 'image' or 'video'
+        backgroundType: 'video', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
         enableCountdown: false, // Toggle to show or hide the countdown bar
