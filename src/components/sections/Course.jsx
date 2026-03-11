@@ -79,7 +79,7 @@ export const Course = () => {
                             <p dangerouslySetInnerHTML={{ __html: t('course.description') }} />
                         </div>
                         <div className="course-cta-wrapper">
-                            <button ref={ctaRef} className="course-cta" onClick={() => navigate('#coursejourney')}>
+                            <button ref={ctaRef} className="course-cta" onClick={() => navigate('/course')}>
                                 {t('course.cta')}
                             </button>
                         </div>
