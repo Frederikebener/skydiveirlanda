@@ -176,6 +176,15 @@ const Footer = () => {
                         >
                             Manage Cookies
                         </button>
+                        <span className="footer-divider">|</span>
+                        <a 
+                            href="https://webmail.skydivethru.ie" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="footer-bottom-link"
+                        >
+                            Webmail
+                        </a>
                     </div>
                     <p>
                         <a href="https://15dmarketingdigital.com.br/" target="_blank" rel="noopener noreferrer" className="footer-developed-link">
