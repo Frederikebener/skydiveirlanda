@@ -4,7 +4,7 @@ import heroVideo from '../assets/0310 (1).mp4';
 
 export const config = {
     hero: {
-        backgroundType: 'video', // 'image' or 'video'
+        backgroundType: 'image', // 'image' or 'video'
         videoUrl: heroVideo, // Local optimized video
         imageUrl: heroBg,
         enableCountdown: false, // Toggle to show or hide the countdown bar

@@ -720,7 +720,15 @@ export const translations = {
         "coursepage.cta.button": "Agende seu curso",
         "coursepage.cta.wa_message_aff": "Olá! Estou interessado em iniciar o Curso de Paraquedismo AFF na SkyDiveThru Ireland.",
         "coursepage.cta.wa_message_asl": "Olá! Estou interessado em iniciar o Curso de Paraquedismo ASL na SkyDiveThru Ireland.",
-        "contact.wa_message": "Hi! I have some questions and I would like to talk with someone from SkyDiveThru Ireland."
+        "contact.hours.title": "Horário de Atendimento",
+        "contact.hours.value": "De terça a domingo, das 8h até o pôr do sol.",
+        "contact.legal_name.title": "Nome Legal",
+        "contact.legal_name.value": "Skydive Thru Ireland",
+        "contact.email.title": "E-mail de Contato",
+        "contact.email.value": "info@skydivethru.ie",
+        "contact.vat.title": "Número de IVA",
+        "contact.vat.value": "IE1234567A",
+        "contact.wa_message": "Olá! Tenho algumas dúvidas e gostaria de falar com alguém da SkyDiveThru Ireland."
     },
     es: {
         "hero.audio_btn": "Tocar Tema Oficial",
