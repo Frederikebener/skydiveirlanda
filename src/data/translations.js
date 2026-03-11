@@ -567,7 +567,7 @@ export const translations = {
         "video.subtitle": "<strong style='color: var(--primary-color);'> Aperte o play, mova sua tela e mergulhe</strong> na experiência completa de queda livre em 360° acima da deslumbrante linha do horizonte de Birr.",
         "video.cta": "Agende seu salto agora",
         "about.title": "<strong style='color: var(--primary-color);'>Quem Somos</strong>",
-        "about.p1": "Somos a <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> uma das escolas de paraquedismo mais tradicionais do Brasil, com mais de duas décadas de experiência treinando alunos, atletas e instrutores. Nossa Equipe são formadas por profissionais certificados e reconhecidos internacionalmente, e utilizamos equipamentos certificados.",
+        "about.p1": "Somos a <strong style='color: var(--primary-color);'>SkyDiveThru,</strong> uma das escolas de paraquedismo mais tradicionais do Brasil, com mais de duas décadas de experiência treinando alunos, atletas e instrutores. Nossa Equipe é formada por profissionais certificados e reconhecidos internacionalmente, e utilizamos equipamentos certificados.",
         "about.p2": "Detemos o recorde de treinamento e formação de alunos, o recorde de grandes formações, com nossos próprios atletas, o recorde de saltos sem acidentes e sempre utilizamos equipamentos certificados com garantia do fabricante.",
         "about.p3": "Chegaremos à Irlanda em 26 de maio de 2026 para trazer toda a experiência de 27 anos de qualidade, segurança e muita diversão.",
         "dream.title": "Você está pronto para realizar seu <strong style='color: var(--primary-color);'>sonho de saltar de paraquedas?</strong>",
