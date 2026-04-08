@@ -20,7 +20,7 @@ export const config = {
         zoom: 7 // 7=all Ireland, 12=county, 14=neighborhood, 15=street level
     },
     showPressel: true, // Set to false to disable the pressel page
-    showRegistrationNumber: false, // Set to true to display the registration and VAT number in the footer
+    showRegistrationNumber: true, // Set to true to display the registration and VAT number in the footer
     tracking: {
         gtmId: 'GTM-NQKBHD9K' // Updated GTM ID
     }
