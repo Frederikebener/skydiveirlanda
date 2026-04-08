@@ -61,7 +61,7 @@ export const CookiePolicy = () => {
                 {/* Hero Section */}
                 <section className="privacy-hero">
                     <div className="privacy-hero-container">
-                        <h1>Cookie Policy</h1>
+                        <h1>Cookie Policys</h1>
                         <p>Skydive Thru Ireland Ltd</p>
                     </div>
                 </section>
