@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 import '../../style-cookies.css';
 
 const CookieConsent = () => {
+    const { t } = useLanguage();
     const [isVisible, setIsVisible] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [preferences, setPreferences] = useState({
@@ -31,28 +33,20 @@ const CookieConsent = () => {
         setPreferences(prefs);
         setIsVisible(false);
         setShowModal(false);
-        // Trigger site-wide event if needed to enable/disable scripts
         window.dispatchEvent(new CustomEvent('cookieConsentUpdated', { detail: prefs }));
     };
 
     const handleAcceptAll = () => {
-        const allPrefs = {
-            necessary: true,
-            analytics: true,
-            marketing: true,
-            functional: true
-        };
-        saveConsent(allPrefs);
+        saveConsent({ necessary: true, analytics: true, marketing: true, functional: true });
     };
 
     const handleRejectAll = () => {
-        const essentialPrefs = {
-            necessary: true,
-            analytics: false,
-            marketing: false,
-            functional: false
-        };
-        saveConsent(essentialPrefs);
+        saveConsent({ necessary: true, analytics: false, marketing: false, functional: false });
+    };
+
+    // Closing the banner counts as accepting consent
+    const handleCloseBanner = () => {
+        handleAcceptAll();
     };
 
     if (!isVisible && !showModal) return null;
@@ -62,22 +56,30 @@ const CookieConsent = () => {
             {/* Cookie Banner */}
             {isVisible && !showModal && (
                 <div className="cookie-banner">
+                    <button
+                        onClick={handleCloseBanner}
+                        className="cookie-banner-close"
+                        aria-label={t('cookie.close')}
+                    >
+                        <X size={18} />
+                    </button>
                     <div className="cookie-content">
-                        <h4>Cookie Consent</h4>
+                        <h4>{t('cookie.banner.title')}</h4>
                         <p>
-                            We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. Please choose your preferences below.
-                            See our <a href="/cookie-policy" className="cookie-btn-text">Cookie Policy</a> for more information.
+                            {t('cookie.banner.desc')}
+                            {' '}<a href="/cookie-policy" className="cookie-btn-text">{t('cookie.banner.policy_link')}</a>{' '}
+                            {t('cookie.banner.desc_suffix')}
                         </p>
                     </div>
                     <div className="cookie-actions">
                         <button onClick={() => setShowModal(true)} className="cookie-btn cookie-btn-secondary">
-                            Manage Preferences
+                            {t('cookie.banner.manage')}
                         </button>
                         <button onClick={handleRejectAll} className="cookie-btn cookie-btn-secondary">
-                            Reject Non-Essential
+                            {t('cookie.banner.reject')}
                         </button>
                         <button onClick={handleAcceptAll} className="cookie-btn cookie-btn-primary">
-                            Accept All
+                            {t('cookie.banner.accept')}
                         </button>
                     </div>
                 </div>
@@ -88,32 +90,28 @@ const CookieConsent = () => {
                 <div className="cookie-modal-overlay" onClick={() => setShowModal(false)}>
                     <div className="cookie-modal" onClick={e => e.stopPropagation()}>
                         <div className="cookie-modal-header">
-                            <h3>Cookie Settings</h3>
-                            <button onClick={() => setShowModal(false)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                            <h3>{t('cookie.modal.title')}</h3>
+                            <button onClick={() => setShowModal(false)} className="cookie-modal-close" aria-label={t('cookie.close')}>
                                 <X size={24} />
                             </button>
                         </div>
 
                         <div className="cookie-modal-body">
-                            <p>
-                                Manage your cookie preferences here. You can change these settings at any time.
-                            </p>
+                            <p>{t('cookie.modal.desc')}</p>
 
                             {/* Necessary */}
                             <div className="cookie-category">
                                 <div className="category-header">
-                                    <h5>Necessary Cookies</h5>
-                                    <span className="category-status">Always Active</span>
+                                    <h5>{t('cookie.necessary.title')}</h5>
+                                    <span className="category-status">{t('cookie.always_active')}</span>
                                 </div>
-                                <p className="category-description">
-                                    These cookies are essential for the website to function properly and cannot be disabled in our systems.
-                                </p>
+                                <p className="category-description">{t('cookie.necessary.desc')}</p>
                             </div>
 
                             {/* Functional */}
                             <div className="cookie-category">
                                 <div className="category-header">
-                                    <h5>Functional Cookies</h5>
+                                    <h5>{t('cookie.functional.title')}</h5>
                                     <label className="switch">
                                         <input
                                             type="checkbox"
@@ -123,15 +121,13 @@ const CookieConsent = () => {
                                         <span className="slider"></span>
                                     </label>
                                 </div>
-                                <p className="category-description">
-                                    These cookies allow the website to provide enhanced functionality and personalization based on your interactions.
-                                </p>
+                                <p className="category-description">{t('cookie.functional.desc')}</p>
                             </div>
 
                             {/* Analytics */}
                             <div className="cookie-category">
                                 <div className="category-header">
-                                    <h5>Analytics Cookies</h5>
+                                    <h5>{t('cookie.analytics.title')}</h5>
                                     <label className="switch">
                                         <input
                                             type="checkbox"
@@ -141,15 +137,13 @@ const CookieConsent = () => {
                                         <span className="slider"></span>
                                     </label>
                                 </div>
-                                <p className="category-description">
-                                    These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.
-                                </p>
+                                <p className="category-description">{t('cookie.analytics.desc')}</p>
                             </div>
 
                             {/* Marketing */}
                             <div className="cookie-category">
                                 <div className="category-header">
-                                    <h5>Marketing Cookies</h5>
+                                    <h5>{t('cookie.marketing.title')}</h5>
                                     <label className="switch">
                                         <input
                                             type="checkbox"
@@ -159,18 +153,16 @@ const CookieConsent = () => {
                                         <span className="slider"></span>
                                     </label>
                                 </div>
-                                <p className="category-description">
-                                    These cookies are used to track visitors across websites to enable publishers to display relevant and engaging advertisements.
-                                </p>
+                                <p className="category-description">{t('cookie.marketing.desc')}</p>
                             </div>
                         </div>
 
                         <div className="cookie-modal-footer">
                             <button onClick={handleRejectAll} className="cookie-btn cookie-btn-secondary">
-                                Reject All Optional
+                                {t('cookie.modal.reject')}
                             </button>
                             <button onClick={() => saveConsent(preferences)} className="cookie-btn cookie-btn-primary">
-                                Save Preferences
+                                {t('cookie.modal.save')}
                             </button>
                         </div>
                     </div>
