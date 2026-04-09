@@ -43,10 +43,10 @@ const Footer = () => {
 
     // Social links
     const LINKS = {
-        instagram: "https://www.instagram.com/skydivethru_ireland",
-        facebook: "https://www.facebook.com/skydivethruireland",
-        tiktok: "https://www.tiktok.com/@skydivethru_ireland",
-        youtube: "https://www.youtube.com/@skydivethruireland",
+        instagram: "https://www.instagram.com/skydivethru.ie/",
+        facebook: "https://www.facebook.com/skydivethru.ie",
+        tiktok: "https://www.tiktok.com/@skydivethru.ie",
+        youtube: "https://www.youtube.com/@skydivethruie",
     };
 
     return (
