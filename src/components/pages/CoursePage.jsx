@@ -230,10 +230,10 @@ export const CoursePage = () => {
                                                     <li><span>{t('pricing.asl.level1')}</span><strong>€434</strong></li>
                                                     <li><span>{t('pricing.level')} 2 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')} (€201 total)</strong></li>
                                                     <li><span>{t('pricing.level')} 3 (3 {t('pricing.jumps')})</span><strong>€67/{t('pricing.jump')} (€201 total)</strong></li>
-                                                    <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')} (€261 total)</strong></li>
-                                                    <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
-                                                    <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
-                                                    <li className="cj-last-level"><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€889 total)</strong></li>
+                                                    <li><span>{t('pricing.level')} 4 (2 {t('pricing.jumps')})</span><strong>€87/{t('pricing.jump')} (€174 total)</strong></li>
+                                                    <li><span>{t('pricing.level')} 5 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€254 total)</strong></li>
+                                                    <li><span>{t('pricing.level')} 6 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€254 total)</strong></li>
+                                                    <li className="cj-last-level"><span>{t('pricing.level')} 7 (2 {t('pricing.jumps')})</span><strong>€127/{t('pricing.jump')} (€254 total)</strong></li>
                                                 </ul>
                                             </div>
                                         </div>
