@@ -12,8 +12,10 @@ import img2 from '../../assets/group-skydive-birr-ireland.webp';
 import img3 from '../../assets/tandem-skydive-birr-ireland.webp';
 import img10 from '../../assets/static-line-skydiving-course.webp';
 import img11 from '../../assets/group-skydive-birr-ireland-2.webp'
-import heroVideo from '../../assets/Video-2.mp4';
-import ctaVideo from '../../assets/Takes-32.mp4';
+import heroVideoMp4 from '../../assets/course-hero.mp4';
+import heroVideoWebm from '../../assets/course-hero.webm';
+import ctaVideoMp4 from '../../assets/course-cta.mp4';
+import ctaVideoWebm from '../../assets/course-cta.webm';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -72,8 +74,11 @@ export const CoursePage = () => {
                     loop
                     muted
                     playsInline
-                    src={heroVideo}
-                />
+                    preload="metadata"
+                >
+                    <source src={heroVideoWebm} type="video/webm" />
+                    <source src={heroVideoMp4} type="video/mp4" />
+                </video>
 
                 <div className="cp-hero-overlay" />
                 <div className="cp-hero-container">
@@ -367,13 +372,16 @@ export const CoursePage = () => {
                 <div className="cp-cta-container">
                     <div className="cp-cta-video-wrapper">
                         <video
-                            src={ctaVideo}
                             className="cp-cta-video"
                             autoPlay
                             loop
                             muted
                             playsInline
-                        ></video>
+                            preload="metadata"
+                        >
+                            <source src={ctaVideoWebm} type="video/webm" />
+                            <source src={ctaVideoMp4} type="video/mp4" />
+                        </video>
                         <div className="cp-cta-overlay"></div>
                     </div>
                     <div className="cp-cta-content">

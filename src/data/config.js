@@ -1,11 +1,13 @@
 import heroBg from '../assets/skydive-ireland-hero-banner.webp';
 import logoImageSrc from '../assets/skydive-ireland-icon.webp';
-import heroVideo from '../assets/0310 (1).mp4';
+import heroVideoMp4 from '../assets/hero-background.mp4';
+import heroVideoWebm from '../assets/hero-background.webm';
 
 export const config = {
     hero: {
         backgroundType: 'video', // 'image' or 'video'
-        videoUrl: heroVideo, // Local optimized video
+        videoUrlMp4: heroVideoMp4,   // Fallback para Safari/iOS (~6 MB)
+        videoUrlWebm: heroVideoWebm, // Principal para Chrome/Firefox/Edge (~9 MB)
         imageUrl: heroBg,
         enableCountdown: true, // Toggle to show or hide the countdown bar
         enableAudio: true // Toggle to show the audio play button in the hero

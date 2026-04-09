@@ -6,7 +6,7 @@ import audioFile from '../../assets/audio-skydive.mp3';
 
 export const Hero = () => {
     const { language, setLanguage, t } = useLanguage();
-    const { backgroundType, videoUrl, imageUrl, enableAudio } = config.hero;
+    const { backgroundType, videoUrlMp4, videoUrlWebm, imageUrl, enableAudio } = config.hero;
     const [isPlayingTheme, setIsPlayingTheme] = useState(false);
     const audioRef = useRef(null);
 
@@ -39,11 +39,11 @@ export const Hero = () => {
                         loop
                         muted
                         playsInline
-                        preload="auto"
+                        preload="metadata"
                         className="hero-video"
                     >
-                        <source src={videoUrl} type="video/mp4" />
-                        Your browser does not support the video tag.
+                        <source src={videoUrlWebm} type="video/webm" />
+                        <source src={videoUrlMp4} type="video/mp4" />
                     </video>
                 </div>
             ) : null}
