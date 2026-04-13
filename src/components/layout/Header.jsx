@@ -19,6 +19,7 @@ const Header = ({ isHidden }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isPackagesOpen, setIsPackagesOpen] = useState(false);
     const [isCourseOpen, setIsCourseOpen] = useState(false);
+    const [isAthletesPopupOpen, setIsAthletesPopupOpen] = useState(false);
 
     const languages = [
         { code: 'ga', name: 'Gaeilge', flag: flagGa },
@@ -33,7 +34,7 @@ const Header = ({ isHidden }) => {
     const currentLang = languages.find(l => l.code === language) || languages[0];
 
     useEffect(() => {
-        if (isMobileMenuOpen) {
+        if (isMobileMenuOpen || isAthletesPopupOpen) {
             document.body.style.overflow = 'hidden';
             document.documentElement.style.overflow = 'hidden';
         } else {
@@ -44,7 +45,7 @@ const Header = ({ isHidden }) => {
             document.body.style.overflow = '';
             document.documentElement.style.overflow = '';
         };
-    }, [isMobileMenuOpen]);
+    }, [isMobileMenuOpen, isAthletesPopupOpen]);
 
     const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
@@ -133,7 +134,6 @@ const Header = ({ isHidden }) => {
                 <nav className="mobile-nav">
                     <a href="/" onClick={handleLogoClick}>{t('footer.home')}</a>
                     <a href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('footer.about')}</a>
-                    <a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a>
 
                     {/* Mobile Packages Accordion */}
                     <div className="mobile-packages-menu">
@@ -205,6 +205,10 @@ const Header = ({ isHidden }) => {
                             </a>
                         </div>
                     </div>
+                    
+                    <a href="#athletes" onClick={(e) => { e.preventDefault(); setIsAthletesPopupOpen(true); setIsMobileMenuOpen(false); }}>
+                        {t('header.athletes') || 'Athletes'}
+                    </a>
                 </nav>
             </div>
 
@@ -222,7 +226,6 @@ const Header = ({ isHidden }) => {
                     <ul>
                         <li><a href="/" onClick={handleLogoClick}>{t('footer.home')}</a></li>
                         <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('footer.about')}</a></li>
-                        <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('footer.experience')}</a></li>
                         <li className="has-dropdown">
                             <a href="#packages" onClick={(e) => handleNavClick(e, '#packages')}>
                                 {t('footer.packages')}
@@ -264,6 +267,11 @@ const Header = ({ isHidden }) => {
                                     </Link>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="#athletes" onClick={(e) => { e.preventDefault(); setIsAthletesPopupOpen(true); setIsMobileMenuOpen(false); }}>
+                                {t('header.athletes') || 'Athletes'}
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -309,6 +317,27 @@ const Header = ({ isHidden }) => {
                     )}
                 </button>
             </div>
+
+            {/* Athletes Pop-up */}
+            {isAthletesPopupOpen && (
+                <div className="athletes-modal-overlay" onClick={() => setIsAthletesPopupOpen(false)}>
+                    <div className="athletes-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="athletes-modal-close" onClick={() => setIsAthletesPopupOpen(false)} aria-label="Close modal">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                        <h3 className="athletes-modal-title">{t('header.athletes') || 'Athletes'}</h3>
+                        <p className="athletes-modal-text">
+                            {t('athletes.message') || 'Todos os atletas de paraquedismo são bem-vindos! A página dedicada para os atletas estará disponível em breve.'}
+                        </p>
+                        <button className="btn btn-primary" onClick={() => setIsAthletesPopupOpen(false)}>
+                            OK
+                        </button>
+                    </div>
+                </div>
+            )}
         </header>
     );
 };

@@ -1,5 +1,8 @@
 export const translations = {
     en: {
+        "header.athletes": "Athletes",
+        "athletes.message": "All skydiving athletes are welcome! The dedicated athletes page will be available soon.",
+
         "hero.audio_btn": "Play Official Theme",
         "404.title": "404",
         "404.subtitle": "Page Not Found",
@@ -256,6 +259,9 @@ export const translations = {
         "cookie.marketing.desc": "These cookies are used to track visitors across websites to enable publishers to display relevant and engaging advertisements.",
     },
     ga: {
+        "header.athletes": "Lúthchleasaithe",
+        "athletes.message": "Fáilte roimh gach lúthchleasaí scáthléimní! Beidh an leathanach tiomnaithe do lúthchleasaithe ar fáil go luath.",
+
         "hero.audio_btn": "Téama Oifigiúil",
         "404.title": "404",
         "404.subtitle": "Leathanach gan aimsiú",
@@ -512,6 +518,9 @@ export const translations = {
         "cookie.marketing.desc": "Úsáidtear na fianáin seo chun cuairteoirí a rianú ar fud láithreán gréasáin chun foilsitheoirí a chumasú fógraíocht ábhartha agus spraíúil a thaispeáint.",
     },
     pt: {
+        "header.athletes": "Atletas",
+        "athletes.message": "Todos os atletas de paraquedismo são bem-vindos! A página dedicada para os atletas estará disponível em breve.",
+
         "hero.audio_btn": "Tocar Tema Oficial",
         "coursepage.faq.title": "Tem alguma dúvida?<br/>Nós respondemos.",
         "404.title": "404",
@@ -794,6 +803,9 @@ export const translations = {
         "cookie.marketing.desc": "Esses cookies são usados para rastrear visitantes em sites, permitindo que os editores exibam anúncios relevantes e interessantes.",
     },
     es: {
+        "header.athletes": "Atletas",
+        "athletes.message": "¡Todos los atletas de paracaidismo son bienvenidos! La página dedicada a los atletas estará disponible pronto.",
+
         "hero.audio_btn": "Tocar Tema Oficial",
         "404.title": "404",
         "404.subtitle": "Página no encontrada",
@@ -1075,6 +1087,9 @@ export const translations = {
         "cookie.marketing.desc": "Estas cookies se utilizan para rastrear a los visitantes en los sitios web y permitir a los editores mostrar anuncios relevantes y atractivos.",
     },
     fr: {
+        "header.athletes": "Athlètes",
+        "athletes.message": "Tous les athlètes de parachutisme sont les bienvenus ! La page dédiée aux athlètes sera bientôt disponible.",
+
         "hero.audio_btn": "Thème Officiel",
         "404.title": "404",
         "404.subtitle": "Page non trouvée",
@@ -1353,6 +1368,9 @@ export const translations = {
         "cookie.marketing.desc": "Ces cookies sont utilisés pour suivre les visiteurs sur les sites web et permettre aux éditeurs d'afficher des publicités pertinentes et engageantes.",
     },
     de: {
+        "header.athletes": "Athleten",
+        "athletes.message": "Alle Fallschirmsportler sind willkommen! Die spezielle Athleten-Seite wird bald verfügbar sein.",
+
         "hero.audio_btn": "Offizielles Thema",
         "404.title": "404",
         "404.subtitle": "Seite nicht gefunden",
@@ -1632,6 +1650,9 @@ export const translations = {
         "cookie.marketing.desc": "Diese Cookies werden verwendet, um Besucher auf Websites zu verfolgen und Publishern zu ermöglichen, relevante und ansprechende Werbung anzuzeigen.",
     },
     it: {
+        "header.athletes": "Atleti",
+        "athletes.message": "Tutti gli atleti di paracadutismo sono i benvenuti! La pagina dedicata agli atleti sarà presto disponibile.",
+
         "hero.audio_btn": "Tema Ufficiale",
         "404.title": "404",
         "404.subtitle": "Pagina non trovata",
