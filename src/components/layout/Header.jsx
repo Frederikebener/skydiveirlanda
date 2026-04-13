@@ -207,7 +207,7 @@ const Header = ({ isHidden }) => {
                     </div>
                     
                     <a href="#athletes" onClick={(e) => { e.preventDefault(); setIsAthletesPopupOpen(true); setIsMobileMenuOpen(false); }}>
-                        {t('header.athletes') || 'Athletes'}
+                        {t('header.athletes') || 'Fun Jumpers'}
                     </a>
                 </nav>
             </div>
@@ -270,7 +270,7 @@ const Header = ({ isHidden }) => {
                         </li>
                         <li>
                             <a href="#athletes" onClick={(e) => { e.preventDefault(); setIsAthletesPopupOpen(true); setIsMobileMenuOpen(false); }}>
-                                {t('header.athletes') || 'Athletes'}
+                                {t('header.athletes') || 'Fun Jumpers'}
                             </a>
                         </li>
                     </ul>
@@ -328,9 +328,9 @@ const Header = ({ isHidden }) => {
                                 <line x1="6" y1="6" x2="18" y2="18"></line>
                             </svg>
                         </button>
-                        <h3 className="athletes-modal-title">{t('header.athletes') || 'Athletes'}</h3>
+                        <h3 className="athletes-modal-title">{t('header.athletes') || 'Fun Jumpers'}</h3>
                         <p className="athletes-modal-text">
-                            {t('athletes.message') || 'Todos os atletas de paraquedismo são bem-vindos! A página dedicada para os atletas estará disponível em breve.'}
+                            {t('athletes.message') || 'Todos os Fun Jumpers são bem-vindos! A página dedicada estará disponível em breve.'}
                         </p>
                         <button className="btn btn-primary" onClick={() => setIsAthletesPopupOpen(false)}>
                             OK
