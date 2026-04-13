@@ -63,13 +63,16 @@ function AppContent() {
                 script.setAttribute('data-widget-id', widgetId);
                 document.body.appendChild(script);
             }
+            document.body.classList.remove('hide-lc-widget');
         } else {
+            document.body.classList.add('hide-lc-widget');
+            
             // Remove script
             const script = document.getElementById(scriptId);
             if (script) script.remove();
 
             // Cleanup injected DOM elements
-            const widgetElements = document.querySelectorAll('[id^="lc_text-widget"], [class^="lc_text-widget"], #chat-widget-container, .chat-widget-container, #lc-chat-widget');
+            const widgetElements = document.querySelectorAll('chat-widget, [id^="lc_text-widget"], [class^="lc_text-widget"], #chat-widget-container, .chat-widget-container, #lc-chat-widget');
             widgetElements.forEach(el => el.remove());
 
             // Remove global styles or objects if any (some widgets leave trace)

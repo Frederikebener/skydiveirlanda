@@ -384,3 +384,13 @@ img {
     margin-bottom: 30px;
     line-height: 1.5;
 }
+
+/* Hide LeadConnector widget */
+body.hide-lc-widget chat-widget,
+body.hide-lc-widget [id^="lc_text-widget"],
+body.hide-lc-widget [class^="lc_text-widget"],
+body.hide-lc-widget #chat-widget-container,
+body.hide-lc-widget .chat-widget-container,
+body.hide-lc-widget #lc-chat-widget {
+    display: none !important;
+}
